@@ -4,7 +4,7 @@ AIDI Period Search Engine v1
 用法: python engine/period_search.py --start 2024-12-01 --end 2024-12-16 --period 2024-12-01
 """
 
-import json, os, sys, time, re, subprocess
+import json, os, sys, time, re, subprocess, copy
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
@@ -25,28 +25,120 @@ BENCHMARK_TERMS = [
 ]
 
 
-def search_arxiv(start_date, end_date, max_results=30):
-    """Search arXiv for AI papers within date range. Free API, no auth."""
-    # arXiv API supports date range in query:
-    # YYYYMMDDHHMMSS format
-    start_ts = start_date.replace("-", "") + "0000"
-    end_ts = end_date.replace("-", "") + "2359"
-    
-    categories = "+OR+".join([f"cat:{c}" for c in ARXIV_CATEGORIES])
-    date_filter = f"submittedDate:[{start_ts}+TO+{end_ts}]"
-    keywords = "(language+model+OR+artificial+intelligence+OR+deep+learning+OR+transformer+OR+benchmark+OR+GPT+OR+LLM+OR+foundation+model)"
-    
-    query = f"({categories})+AND+{keywords}+AND+{date_filter}"
+def _arxiv_fetch(query, max_results=30):
+    """Internal helper: fetch arXiv with query, return parsed entries."""
+    import urllib.request
     url = (f"https://export.arxiv.org/api/query"
            f"?search_query={query}"
            f"&start=0&max_results={max_results}"
            f"&sortBy=submittedDate&sortOrder=descending")
+    req = urllib.request.Request(url, headers={"User-Agent": "AIDI/1.0"})
+    resp = urllib.request.urlopen(req, timeout=30)
+    return resp.read().decode("utf-8")
+
+
+def _parse_arxiv_response(xml_data, start_date, end_date, min_relevance=1):
+    """Parse arXiv XML and return relevant papers."""
+    root = ET.fromstring(xml_data)
+    ns = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
+
+    papers = []
+    for entry in root.findall("atom:entry", ns):
+        pub_el = entry.find("atom:published", ns)
+        pub_date_str = ""
+        if pub_el is not None and pub_el.text:
+            pub_date_str = pub_el.text[:10]
+        elif entry.find("atom:updated", ns) is not None and entry.find("atom:updated", ns).text:
+            pub_date_str = entry.find("atom:updated", ns).text[:10]
+
+        if pub_date_str and not (start_date <= pub_date_str <= end_date):
+            continue
+
+        title = entry.find("atom:title", ns)
+        summary = entry.find("atom:summary", ns)
+        paper_id = entry.find("atom:id", ns)
+        authors = entry.findall("atom:author", ns)
+
+        title_text = (title.text or "").strip().replace("\n", " ") if title is not None else ""
+        summary_text = (summary.text or "").strip().replace("\n", " ") if summary is not None else ""
+        paper_url = (paper_id.text or "").strip() if paper_id is not None else ""
+
+        author_names = []
+        for a in authors[:5]:
+            an = a.find("atom:name", ns)
+            if an is not None and an.text:
+                author_names.append(an.text)
+
+        text_lower = (title_text + " " + summary_text).lower()
+        relevance = sum(1 for kw in MODEL_KEYWORDS + BENCHMARK_TERMS if kw.lower() in text_lower)
+        if "language model" in text_lower or "foundation model" in text_lower:
+            relevance += 2
+
+        if relevance >= min_relevance:
+            papers.append({
+                "title": title_text[:200],
+                "authors": author_names,
+                "published": pub_date_str,
+                "url": paper_url,
+                "abstract": summary_text[:500],
+                "relevance": relevance,
+            })
+
+    papers.sort(key=lambda x: x["relevance"], reverse=True)
+    return papers
+
+
+def search_arxiv(start_date, end_date, max_results=30):
+    """Search arXiv for AI papers within date range. Two-step: model search + general search."""
+    start_ts = start_date.replace("-", "") + "0000"
+    end_ts = end_date.replace("-", "") + "2359"
+    date_filter = f"submittedDate:[{start_ts}+TO+{end_ts}]"
+    categories = "+OR+".join([f"cat:{c}" for c in ARXIV_CATEGORIES])
+
+    all_papers = []
 
     try:
-        import urllib.request
-        req = urllib.request.Request(url, headers={"User-Agent": "AIDI/1.0"})
-        resp = urllib.request.urlopen(req, timeout=30)
-        xml_data = resp.read().decode("utf-8")
+        # Step 1: Search by specific model names (highly targeted)
+        model_search_terms = [
+            "GPT-4+OR+GPT-5+OR+Claude+OR+Gemini",
+            "DeepSeek+OR+Llama+OR+Grok+OR+Mistral",
+            "Qwen+OR+GLM+OR+Kimi",
+            "benchmark+OR+MMLU+OR+GPQA+OR+SWE-bench+OR+Arena",
+            "o1+OR+o3+OR+Sora+OR+foundation+model+OR+AGI",
+        ]
+        for term in model_search_terms:
+            query = f"({categories})+AND+({term})+AND+{date_filter}"
+            try:
+                xml_data = _arxiv_fetch(query, 10)
+                papers = _parse_arxiv_response(xml_data, start_date, end_date, min_relevance=1)
+                all_papers.extend(papers)
+                time.sleep(0.3)
+            except:
+                pass
+
+        # Step 2: General AI search (broader coverage)
+        keywords = "(language+model+OR+artificial+intelligence+OR+deep+learning+OR+transformer)"
+        query = f"({categories})+AND+{keywords}+AND+{date_filter}"
+        try:
+            xml_data = _arxiv_fetch(query, 30)
+            papers = _parse_arxiv_response(xml_data, start_date, end_date, min_relevance=1)
+            all_papers.extend(papers)
+        except:
+            pass
+
+        # Deduplicate by URL
+        seen_urls = set()
+        unique = []
+        for p in all_papers:
+            if p["url"] not in seen_urls:
+                seen_urls.add(p["url"])
+                unique.append(p)
+
+        unique.sort(key=lambda x: x["relevance"], reverse=True)
+        return unique[:15]
+
+    except Exception as e:
+        return [{"error": f"arxiv: {str(e)}"}]
 
         root = ET.fromstring(xml_data)
         ns = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
@@ -99,32 +191,47 @@ def search_arxiv(start_date, end_date, max_results=30):
 def search_github_trending(start_date, end_date):
     """Search GitHub for trending AI repos using gh CLI."""
     results = []
-    queries = ["large-language-model", "deep-learning", "transformer", "generative-ai"]
+    # Broader queries - don't use date filter (find top repos regardless)
+    queries = [
+        "large-language-model sort:stars",
+        "deep-learning sort:stars",
+    ]
 
     for q in queries:
         try:
+            env = os.environ.copy()
             result = subprocess.run(
                 ["gh", "api", "search/repositories",
-                 "-f", f"q={q}+created:{start_date}..{end_date}",
-                 "-f", "sort=stars", "-f", "order=desc", "-f", "per_page=3"],
-                capture_output=True, text=True, timeout=15,
+                 "-f", f"q={q}",
+                 "-f", "per_page=5"],
+                capture_output=True, text=True, timeout=15, env=env,
             )
             if result.returncode == 0:
                 data = json.loads(result.stdout)
-                for item in data.get("items", [])[:3]:
-                    results.append({
-                        "name": item["full_name"],
-                        "stars": item["stargazers_count"],
-                        "description": (item.get("description") or "")[:200],
-                        "created": item["created_at"][:10],
-                        "url": item["html_url"],
-                        "language": item.get("language", "") or "",
-                    })
+                for item in data.get("items", [])[:5]:
+                    created = item["created_at"][:10]
+                    # Only include if within or near our period
+                    if start_date <= created <= end_date:
+                        results.append({
+                            "name": item["full_name"],
+                            "stars": item["stargazers_count"],
+                            "description": (item.get("description") or "")[:200],
+                            "created": created,
+                            "url": item["html_url"],
+                            "language": item.get("language", "") or "",
+                        })
             time.sleep(0.3)
-        except Exception:
+        except Exception as e:
             pass
 
-    return results
+    # Deduplicate
+    seen = set()
+    unique = []
+    for r in results:
+        if r["name"] not in seen:
+            seen.add(r["name"])
+            unique.append(r)
+    return unique[:10]
 
 
 def parse_benchmarks(text):

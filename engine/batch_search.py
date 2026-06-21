@@ -75,7 +75,8 @@ def main():
              "--start", p_start, "--end", p_end, "--period", p_name,
              "--output", out_path],
             capture_output=True, text=True, timeout=60,
-            cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__))) or "."
+            cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__))) or ".",
+            env=os.environ.copy()
         )
 
         if result.returncode == 0:
