@@ -21,13 +21,15 @@
 │  └──────────┬──────────────┘       │  + 卡尔曼平滑         │    │
 │             │                      └──────────────────────┘    │
 │             ▼                                                   │
-│  v5 预测引擎 (算法层 × 语境层)          v6 能力演化引擎           │
+│  v5 预测引擎 (三层架构)                   v6 能力演化引擎           │
 │  ┌─────────────────────────┐       ┌──────────────────────┐    │
-│  │ Holt-Winters + ARIMA    │       │ 三阶段演化框架        │    │
-│  │  + 指数拟合 + Bootstrap │       │  + Granger因果检验    │    │
-│  │  + 语境调校因子         │       │  + S曲线相变预测      │    │
-│  │  → 6条断言预测          │       │  → 4条演化断言        │    │
-│  └─────────────────────────┘       └──────────────────────┘    │
+│  │ 算法层(统计模型)         │       │ 三阶段演化框架        │    │
+│  │  ↓                      │       │  + Granger因果检验    │    │
+│  │ 相变感知层(regime检测)   │       │  + S曲线相变预测      │    │
+│  │  ↓                      │       │  → 4条演化断言        │    │
+│  │ 语境层(LLM调校)         │       └──────────────────────┘    │
+│  │  → 三情景+6条断言       │                                    │
+│  └─────────────────────────┘                                    │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -40,7 +42,7 @@
 |:----|:----|:----|
 | `aidicore_v3.py` | **能力指数 (AIC)** | 六维向量(智力/感官/行动力/编程/知识/生态) + 跨维度交互乘数 |
 | `aidicore_v4.py` | **发展速度 (DVI)** | 四维(硬件/效率/定价/渗透) + PSO + HMM + 卡尔曼平滑 |
-| `aidicore_v5.py` | **预测引擎** | 双层架构: 算法层(统计) × 语境层(LLM调校) |
+| `aidicore_v5.py` | **预测引擎** | 三层架构: 算法层(统计) × 相变感知层(regime) × 语境层(LLM调校) |
 | `aidicore_v6.py` | **能力演化** | 三阶段框架 + Granger因果 + S曲线 + Phase Transition |
 | `backtest.py` | **历史回测** | 5个截断点 × 4个预测期 × 因果稳定性检验 |
 
@@ -80,9 +82,9 @@ python engine/aidicore_v3.py
 # 发展速度 (DVI)
 python engine/aidicore_v4.py
 
-# 预测引擎 (算法层 × 语境层)
-python engine/aidicore_v5.py                     # 双层融合
-python -c "from engine.aidicore_v5 import AIDIPredictor; AIDIPredictor().run(algorithm_only=True)"  # 纯算法
+# 预测引擎 (三层: 算法 x 相变感知 x 语境)
+python engine/aidicore_v5.py                     # 默认: 三层融合
+python -c "from engine.aidicore_v5 import AIDIPredictor; AIDIPredictor().run(algorithm_only=True)"  # 纯算法(可复现)
 
 # 能力演化 (Granger因果 + Phase Transition)
 python engine/aidicore_v6.py
