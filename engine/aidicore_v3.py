@@ -93,26 +93,41 @@ PERIOD_SIX_DIMS = json.load(open(
 
 
 
-def build_timeseries_v3():
-    """构建完整时间序列 (含AIC/AIDI计算)"""
+def build_timeseries_v3(normalize=False):
+    """构建完整时间序列 (含AIC/AIDI计算)
+    
+    Args:
+        normalize: True时归一化AIC使基线=1000
+    """
     periods = []
     prev_aic = None
+    base_aic = None
 
     sorted_keys = sorted(PERIOD_SIX_DIMS.keys())
     
     for key in sorted_keys:
         raw = PERIOD_SIX_DIMS[key]
-        # Extract dimension scores from the data structure
         if isinstance(raw, dict) and "scores" in raw:
             dims = {k: v for k, v in raw["scores"].items() if k in DIMS}
         else:
             dims = {k: v for k, v in raw.items() if k in DIMS}
-        aic = calc_aic_v3(dims)
+        aic_raw = calc_aic_v3(dims)
+        
+        # 记录原始基线值用于归一化
+        if base_aic is None:
+            base_aic = aic_raw
+        
+        # 归一化: AIC_norm = AIC_raw / base_raw * 1000
+        if normalize and base_aic:
+            aic = round(aic_raw / base_aic * 1000)
+        else:
+            aic = aic_raw
         
         if prev_aic is not None:
             aidi = calc_aidi_v3(prev_aic, aic)
         else:
             aidi = 100  # 基线速度 (用户设定)
+        
         note = raw.get("note", "") if isinstance(raw, dict) else ""
         
         periods.append({
@@ -129,16 +144,16 @@ def build_timeseries_v3():
 
 def run_full_v3():
     """全量分析"""
-    periods = build_timeseries_v3()
+    periods = build_timeseries_v3(normalize=True)
     base = periods[0]
     curr = periods[-1]
 
     print("=" * 65)
-    print("AIDI v3 — 六维交互指数")
+    print("AIDI v3 — 六维交互指数 (归一化: AIC基线=1000)")
     print("=" * 65)
     print(f"基线: {base['date']}  AIC={base['aic']}  AIDI={base['aidi']}")
     print(f"当前: {curr['date']}  AIC={curr['aic']}  AIDI={curr['aidi']:+}")
-    print(f"增长: +{curr['aic'] - base['aic']}点")
+    print(f"增长: +{curr['aic'] - base['aic']}点 (×{curr['aic']/base['aic']:.1f})")
     print()
     print(f"{'日期':<14} {'AIC':>6} {'AIDI':>6} {'智力':>5} {'感官':>5} {'行动':>5} {'编程':>5} {'知识':>5} {'生态':>5}")
     print("-" * 65)
