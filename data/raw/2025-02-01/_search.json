@@ -1,0 +1,141 @@
+{
+  "period": {
+    "start": "2025-02-01",
+    "end": "2025-02-15",
+    "name": "2025-02-01"
+  },
+  "searched_at": "2026-06-21T05:14:02Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 48,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Llama",
+      "LLaMA",
+      "Qwen",
+      "o3"
+    ],
+    "key_events": [
+      "Llama",
+      "LLaMA",
+      "Qwen"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "The underlying structures of self-attention: symmetry, directionality, and emergent dynamics in Transformer training",
+      "authors": [
+        "Matteo Saponati",
+        "Pascal Sager",
+        "Pau Vilimelis Aceituno"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10927v2",
+      "abstract": "Self-attention is essential to Transformer architectures, yet how information is embedded in the self-attention matrices and how different objective functions impact this process remains unclear. We present a mathematical framework to analyze self-attention matrices by deriving the structures govern"
+    },
+    {
+      "title": "An Open-Source Web-Based Tool for Evaluating Open-Source Large Language Models Leveraging Information Retrieval from Custom Documents",
+      "authors": [
+        "Godfrey I"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10916v2",
+      "abstract": "In our work, we present the first-of-its-kind open-source web-based tool which is able to demonstrate the impacts of a user's speech act during discourse with conversational agents, which leverages open-source large language models. With this software resource, it is possible for researchers and exp"
+    },
+    {
+      "title": "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation",
+      "authors": [
+        "Haoyuan Wu",
+        "Haisheng Zheng",
+        "Zhuolun He"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10857v1",
+      "abstract": "Recently, with the development of tool-calling capabilities in large language models (LLMs), these models have demonstrated significant potential for automating electronic design automation (EDA) flows by interacting with EDA tool APIs via EDA scripts. However, considering the limited understanding "
+    },
+    {
+      "title": "Multilingual Encoder Knows more than You Realize: Shared Weights Pretraining for Extremely Low-Resource Languages",
+      "authors": [
+        "Zeli Su",
+        "Ziyin Zhang",
+        "Guixian Xu"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10852v2",
+      "abstract": "While multilingual language models like XLM-R have advanced multilingualism in NLP, they still perform poorly in extremely low-resource languages. This situation is exacerbated by the fact that modern LLMs such as LLaMA and Qwen support far fewer languages than XLM-R, making text generation models n"
+    },
+    {
+      "title": "Fundamental Principles of Linguistic Structure are Not Represented by o3",
+      "authors": [
+        "Elliot Murphy",
+        "Evelina Leivada",
+        "Vittoria Dentella"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10934v1",
+      "abstract": "A core component of a successful artificial general intelligence would be the rapid creation and manipulation of grounded compositional abstractions and the demonstration of expertise in the family of recursive hierarchical syntactic objects necessary for the creative use of human language. We evalu"
+    },
+    {
+      "title": "PCGRLLM: Large Language Model-Driven Reward Design for Procedural Content Generation Reinforcement Learning",
+      "authors": [
+        "In-Chang Baek",
+        "Sung-Hyun Kim",
+        "Sam Earle"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10906v2",
+      "abstract": "Reward design plays a pivotal role in the training of game AIs, requiring substantial domain-specific knowledge and human effort. In recent years, several studies have explored reward generation for training game agents and controlling robots using large language models (LLMs). In the content genera"
+    },
+    {
+      "title": "Developing Conversational Speech Systems for Robots to Detect Speech Biomarkers of Cognition in People Living with Dementia",
+      "authors": [
+        "Rohith Perumandla",
+        "Young-Ho Bae",
+        "Diego Izaguirre"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10896v1",
+      "abstract": "This study presents the development and testing of a conversational speech system designed for robots to detect speech biomarkers indicative of cognitive impairments in people living with dementia (PLwD). The system integrates a backend Python WebSocket server and a central core module with a large "
+    },
+    {
+      "title": "Layerwise Recall and the Geometry of Interwoven Knowledge in LLMs",
+      "authors": [
+        "Ge Lei",
+        "Samuel J. Cooper"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10871v2",
+      "abstract": "This study explores how large language models (LLMs) encode interwoven scientific knowledge, using chemical elements and LLaMA-series models as a case study. We identify a 3D spiral structure in the hidden states that aligns with the conceptual structure of the periodic table, suggesting that LLMs c"
+    },
+    {
+      "title": "Breaking Down the Hierarchy: A New Approach to Leukemia Classification",
+      "authors": [
+        "Ibraheem Hamdi",
+        "Hosam El-Gendy",
+        "Ahmed Sharshar"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10899v1",
+      "abstract": "The complexities inherent to leukemia, multifaceted cancer affecting white blood cells, pose considerable diagnostic and treatment challenges, primarily due to reliance on laborious morphological analyses and expert judgment that are susceptible to errors. Addressing these challenges, this study pre"
+    },
+    {
+      "title": "NitiBench: A Comprehensive Study of LLM Framework Capabilities for Thai Legal Question Answering",
+      "authors": [
+        "Pawitsapak Akarajaradwong",
+        "Pirat Pothavorn",
+        "Chompakorn Chaksangchaichot"
+      ],
+      "published": "2025-02-15",
+      "url": "http://arxiv.org/abs/2502.10868v4",
+      "abstract": "The application of large language models (LLMs) in the legal domain holds significant potential for information retrieval and question answering, yet Thai legal QA systems face challenges due to a lack of standardized evaluation benchmarks and the complexity of Thai legal structures. This paper intr"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

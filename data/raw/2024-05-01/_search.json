@@ -1,0 +1,134 @@
+{
+  "period": {
+    "start": "2024-05-01",
+    "end": "2024-05-15",
+    "name": "2024-05-01"
+  },
+  "searched_at": "2026-06-21T05:12:18Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Benchmark Early and Red Team Often: A Framework for Assessing and Managing Dual-Use Hazards of AI Foundation Models",
+      "authors": [
+        "Anthony M. Barrett",
+        "Krystal Jackson",
+        "Evan R. Murphy"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.10986v1",
+      "abstract": "A concern about cutting-edge or \"frontier\" AI foundation models is that an adversary may use the models for preparing chemical, biological, radiological, nuclear, (CBRN), cyber, or other attacks. At least two methods can identify foundation models with potential dual-use capability; each has advanta"
+    },
+    {
+      "title": "Simulating Policy Impacts: Developing a Generative Scenario Writing Method to Evaluate the Perceived Effects of Regulation",
+      "authors": [
+        "Julia Barnett",
+        "Kimon Kieslich",
+        "Nicholas Diakopoulos"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.09679v2",
+      "abstract": "The rapid advancement of AI technologies yields numerous future impacts on individuals and society. Policymakers are tasked to react quickly and establish policies that mitigate those impacts. However, anticipating the effectiveness of policies is a difficult task, as some impacts might only be obse"
+    },
+    {
+      "title": "A survey on fairness of large language models in e-commerce: progress, application, and challenge",
+      "authors": [
+        "Qingyang Ren",
+        "Zilin Jiang",
+        "Jinghan Cao"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.13025v2",
+      "abstract": "This survey explores the fairness of large language models (LLMs) in e-commerce, examining their progress, applications, and the challenges they face. LLMs have become pivotal in the e-commerce domain, offering innovative solutions and enhancing customer experiences. This work presents a comprehensi"
+    },
+    {
+      "title": "Sensing technologies and machine learning methods for emotion recognition in autism: Systematic review",
+      "authors": [
+        "Oresti Banos",
+        "Zhoe Comas-González",
+        "Javier Medina"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2407.04712v1",
+      "abstract": "Background: Human Emotion Recognition (HER) has been a popular field of study in the past years. Despite the great progresses made so far, relatively little attention has been paid to the use of HER in autism. People with autism are known to face problems with daily social communication and the prot"
+    },
+    {
+      "title": "LoRA Learns Less and Forgets Less",
+      "authors": [
+        "Dan Biderman",
+        "Jacob Portes",
+        "Jose Javier Gonzalez Ortiz"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.09673v2",
+      "abstract": "Low-Rank Adaptation (LoRA) is a widely-used parameter-efficient finetuning method for large language models. LoRA saves memory by training only low rank perturbations to selected weight matrices. In this work, we compare the performance of LoRA and full finetuning on two target domains, programming "
+    },
+    {
+      "title": "Spectral Editing of Activations for Large Language Model Alignment",
+      "authors": [
+        "Yifu Qiu",
+        "Zheng Zhao",
+        "Yftah Ziser"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.09719v3",
+      "abstract": "Large language models (LLMs) often exhibit undesirable behaviours, such as generating untruthful or biased content. Editing their internal representations has been shown to be effective in mitigating such behaviours on top of the existing alignment methods. We propose a novel inference-time editing "
+    },
+    {
+      "title": "SOK-Bench: A Situated Video Reasoning Benchmark with Aligned Open-World Knowledge",
+      "authors": [
+        "Andong Wang",
+        "Bo Wu",
+        "Sunli Chen"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.09713v2",
+      "abstract": "Learning commonsense reasoning from visual contexts and scenes in real-world is a crucial step toward advanced artificial intelligence. However, existing video reasoning benchmarks are still inadequate since they were mainly designed for factual or situated reasoning and rarely involve broader knowl"
+    },
+    {
+      "title": "Generalized Holographic Reduced Representations",
+      "authors": [
+        "Calvin Yeung",
+        "Zhuowen Zou",
+        "SungHeon Jeong"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.09689v2",
+      "abstract": "Hyperdimensional Computing (HDC) is a computationally and data-efficient paradigm that acts as a bridge between connectionist and symbolic approaches to artificial intelligence (AI). However, HDC's simplicity poses challenges for encoding complex compositional structures, especially in its binding o"
+    },
+    {
+      "title": "A Theory of Synaptic Neural Balance: From Local to Global Order",
+      "authors": [
+        "Pierre Baldi",
+        "Antonios Alexos",
+        "Ian Domingo"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.09688v4",
+      "abstract": "We develop a general theory of synaptic neural balance and how it can emerge or be enforced in neural networks. For a given regularizer, a neuron is said to be in balance if the total cost of its input weights is equal to the total cost of its output weights. The basic example is provided by feedfor"
+    },
+    {
+      "title": "BEHAVIOR Vision Suite: Customizable Dataset Generation via Simulation",
+      "authors": [
+        "Yunhao Ge",
+        "Yihe Tang",
+        "Jiashu Xu"
+      ],
+      "published": "2024-05-15",
+      "url": "http://arxiv.org/abs/2405.09546v1",
+      "abstract": "The systematic evaluation and understanding of computer vision models under varying conditions require large amounts of data with comprehensive and customized labels, which real-world vision datasets rarely satisfy. While current synthetic data generators offer a promising alternative, particularly "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

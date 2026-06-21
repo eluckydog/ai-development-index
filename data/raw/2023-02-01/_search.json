@@ -1,0 +1,131 @@
+{
+  "period": {
+    "start": "2023-02-01",
+    "end": "2023-02-15",
+    "name": "2023-02-01"
+  },
+  "searched_at": "2026-06-21T05:10:18Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Stable Diffusion"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Commonsense Reasoning for Conversational AI: A Survey of the State of the Art",
+      "authors": [
+        "Christopher Richardson",
+        "Larry Heck"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07926v1",
+      "abstract": "Large, transformer-based pretrained language models like BERT, GPT, and T5 have demonstrated a deep understanding of contextual semantics and language syntax. Their success has enabled significant advances in conversational AI, including the development of open-dialogue systems capable of coherent, "
+    },
+    {
+      "title": "Platform-Independent and Curriculum-Oriented Intelligent Assistant for Higher Education",
+      "authors": [
+        "Ramteja Sajja",
+        "Yusuf Sermet",
+        "David Cwiertny"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.09294v1",
+      "abstract": "Miscommunication and communication challenges between instructors and students represents one of the primary barriers to post-secondary learning. Students often avoid or miss opportunities to ask questions during office hours due to insecurities or scheduling conflicts. Moreover, students need to wo"
+    },
+    {
+      "title": "Tree-Based Representation and Generation of Natural and Mathematical Language",
+      "authors": [
+        "Alexander Scarlatos",
+        "Andrew Lan"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07974v1",
+      "abstract": "Mathematical language in scientific communications and educational scenarios is important yet relatively understudied compared to natural languages. Recent works on mathematical language focus either on representing stand-alone mathematical expressions, especially in their natural tree format, or ma"
+    },
+    {
+      "title": "Meta-Reinforcement Learning via Exploratory Task Clustering",
+      "authors": [
+        "Zhendong Chu",
+        "Hongning Wang"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07958v1",
+      "abstract": "Meta-reinforcement learning (meta-RL) aims to quickly solve new tasks by leveraging knowledge from prior tasks. However, previous studies often assume a single mode homogeneous task distribution, ignoring possible structured heterogeneity among tasks. Leveraging such structures can better facilitate"
+    },
+    {
+      "title": "PRedItOR: Text Guided Image Editing with Diffusion Prior",
+      "authors": [
+        "Hareesh Ravi",
+        "Sachin Kelkar",
+        "Midhun Harikumar"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07979v2",
+      "abstract": "Diffusion models have shown remarkable capabilities in generating high quality and creative images conditioned on text. An interesting application of such models is structure preserving text guided image editing. Existing approaches rely on text conditioned diffusion models such as Stable Diffusion "
+    },
+    {
+      "title": "Interpretable Deep Learning Methods for Multiview Learning",
+      "authors": [
+        "Hengkang Wang",
+        "Han Lu",
+        "Ju Sun"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07930v2",
+      "abstract": "Technological advances have enabled the generation of unique and complementary types of data or views (e.g. genomics, proteomics, metabolomics) and opened up a new era in multiview learning research with the potential to lead to new biomedical discoveries. We propose iDeepViewLearn (Interpretable De"
+    },
+    {
+      "title": "COVID-VTS: Fact Extraction and Verification on Short Video Platforms",
+      "authors": [
+        "Fuxiao Liu",
+        "Yaser Yacoob",
+        "Abhinav Shrivastava"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07919v1",
+      "abstract": "We introduce a new benchmark, COVID-VTS, for fact-checking multi-modal information involving short-duration videos with COVID19- focused information from both the real world and machine generation. We propose, TwtrDetective, an effective model incorporating cross-media consistency checking to detect"
+    },
+    {
+      "title": "VideoSum: A Python Library for Surgical Video Summarization",
+      "authors": [
+        "Luis C. Garcia-Peraza-Herrera",
+        "Sebastien Ourselin",
+        "Tom Vercauteren"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2303.10173v2",
+      "abstract": "The performance of deep learning (DL) algorithms is heavily influenced by the quantity and the quality of the annotated data. However, in Surgical Data Science, access to it is limited. It is thus unsurprising that substantial research efforts are made to develop methods aiming at mitigating the sca"
+    },
+    {
+      "title": "From Graph Generation to Graph Classification",
+      "authors": [
+        "Oliver Schulte"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07989v3",
+      "abstract": "This note describes a new approach to classifying graphs that leverages graph generative models (GGM). Assuming a GGM that defines a joint probability distribution over graphs and their class labels, I derive classification formulas for the probability of a class label given a graph. A new condition"
+    },
+    {
+      "title": "A Meta-Learning Approach to Population-Based Modelling of Structures",
+      "authors": [
+        "G. Tsialiamanis",
+        "N. Dervilis",
+        "D. J. Wagg"
+      ],
+      "published": "2023-02-15",
+      "url": "http://arxiv.org/abs/2302.07980v1",
+      "abstract": "A major problem of machine-learning approaches in structural dynamics is the frequent lack of structural data. Inspired by the recently-emerging field of population-based structural health monitoring (PBSHM), and the use of transfer learning in this novel field, the current work attempts to create m"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

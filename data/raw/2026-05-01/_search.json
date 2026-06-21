@@ -1,0 +1,138 @@
+{
+  "period": {
+    "start": "2026-05-01",
+    "end": "2026-05-15",
+    "name": "2026-05-01"
+  },
+  "searched_at": "2026-06-21T05:15:49Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 24,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4",
+      "Qwen"
+    ],
+    "key_events": [
+      "GPT-4",
+      "Qwen"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Enhancing Metacognitive AI: Knowledge-Graph Population with Graph-Theoretic LLM Enrichment",
+      "authors": [
+        "Deniz Askin",
+        "Gal Hadar",
+        "Brendan Conway-Smith"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16676v1",
+      "abstract": "Metacognition-the ability to monitor one's own knowledge state, spot gaps, and autonomously fill them--remains largely absent from modern AI. Here, we present MetaKGEnrich, a fully automated pipeline that endows large language model (LLM) applications with self-directed knowledge repair. The system "
+    },
+    {
+      "title": "LinAlg-Bench: A Forensic Benchmark Revealing Structural Failure Modes in LLM Mathematical Reasoning",
+      "authors": [
+        "Shradha Agarwal",
+        "Deepak Rajbhar",
+        "Tariq J"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16675v1",
+      "abstract": "We introduce LinAlg-Bench, a diagnostic benchmark evaluating 10 frontier large language models on structured linear algebra computation across a strict dimensional gradient of 3x3, 4x4, and 5x5 matrices. Spanning 9 task types and 660 SymPy-certified problems, the benchmark exhaustively evaluates 6,6"
+    },
+    {
+      "title": "Convex Dataset Valuation for Post-Training",
+      "authors": [
+        "Siqi Zeng",
+        "Christopher Jung",
+        "Rui Li"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16704v1",
+      "abstract": "Improving LLM performance on downstream tasks sometimes requires leveraging auxiliary datasets during post-training. In practice, however, developers face constraints on compute, labeling, and licensing costs that preclude using all available data, necessitating principled dataset-level selection. T"
+    },
+    {
+      "title": "A Scalable Tool for Measuring Manner and Result Verbs in Developmental Language Research",
+      "authors": [
+        "Divyesh Pratap Singh",
+        "Dakshesh Gusain",
+        "Federica Bulgarelli"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16654v1",
+      "abstract": "Manner and result verbs encode different aspects of event structure and have been discussed in developmental work as a potentially informative distinction for studying early verb learning. However, this distinction remains difficult to measure at scale because large annotated resources for manner an"
+    },
+    {
+      "title": "Provably Shorter Scratchpads in Hybrid DeltaNet-Attention Decoders",
+      "authors": [
+        "Tomasz Steifer"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16640v1",
+      "abstract": "We investigate the expressive power of hybrid recurrent-attention decoders, a class of architectures used in recent open-source language models such as Qwen3-Next and its successors. These models combine Gated Attention heads with recurrent Gated DeltaNet heads. Is there a formal advantage, in terms"
+    },
+    {
+      "title": "GeoWorld-VLM: Geometry from World Models for Vision-Language Models",
+      "authors": [
+        "Renjie Gu",
+        "Kaichen Zhou",
+        "Yan Luo"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16713v2",
+      "abstract": "Modern Vision-Language Models (VLMs) achieve strong semantic recognition, yet remain brittle on elementary spatial relations such as left of, on, behind, and between. One cause of this failure arises before language reasoning begins: the visual pathway may compress or discard critical 3D structural "
+    },
+    {
+      "title": "Right Predictions, Misleading Explanations: On the Vulnerability of Vision-Language Model Explanations",
+      "authors": [
+        "Narges Babadi",
+        "Hadis Karimipour"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16651v2",
+      "abstract": "Explanation mechanisms are increasingly used to support transparency and trust in vision-language models (VLMs), particularly in settings where model decisions require human oversight. However, the robustness of these explanations remains insufficiently understood. In this work, we investigate wheth"
+    },
+    {
+      "title": "UB-SMoE: Universally Balanced Sparse Mixture-of-Experts for Resource-adaptive Federated Fine-tuning of Foundation Models",
+      "authors": [
+        "Van-Tuan Tran",
+        "Hong-Hanh Nguyen-Le",
+        "Marco Ruffini"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16690v1",
+      "abstract": "Heterogeneous LoRA-rank methods address system heterogeneity in federated fine-tuning of foundation models by assigning client-specific ranks based on computational capabilities. However, these methods achieve only marginal computational savings, as dense feed-forward computations dominate. Sparse M"
+    },
+    {
+      "title": "Sustainable Intelligence for the Wild: Democratizing Ecological Monitoring via Knowledge-Adaptive Edge Expert Agents",
+      "authors": [
+        "Jiaxing Li",
+        "Hao Fang",
+        "Chi Xu"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16671v1",
+      "abstract": "Rapid biodiversity loss underscore the urgency of effective monitoring, yet manual surveys remain resource-intensive. While on-device AI offers a scalable alternative, its performance in the wild is often challenged by environmental variability. Current methods rely heavily on cloud resource, which "
+    },
+    {
+      "title": "MedMIX: Modality-Internal Expert Fusion for Multimodal Medical Diagnosis",
+      "authors": [
+        "Seungik Cho",
+        "Anqi Li",
+        "Wei Qiu"
+      ],
+      "published": "2026-05-15",
+      "url": "http://arxiv.org/abs/2605.16639v1",
+      "abstract": "Multimodal clinical prediction faces three challenges: multiple foundation models (FMs) with complementary strengths per modality, pervasive missing modalities at training and test time, and sample-specific variation in modality contributions. We introduce MedMIX, a multimodal framework that combine"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

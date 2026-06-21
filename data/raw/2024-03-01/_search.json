@@ -1,0 +1,130 @@
+{
+  "period": {
+    "start": "2024-03-01",
+    "end": "2024-03-15",
+    "name": "2024-03-01"
+  },
+  "searched_at": "2026-06-21T05:12:03Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Discovering Latent Themes in Social Media Messaging: A Machine-in-the-Loop Approach Integrating LLMs",
+      "authors": [
+        "Tunazzina Islam",
+        "Dan Goldwasser"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10707v2",
+      "abstract": "Grasping the themes of social media content is key to understanding the narratives that influence public opinion and behavior. The thematic analysis goes beyond traditional topic-level analysis, which often captures only the broadest patterns, providing deeper insights into specific and actionable t"
+    },
+    {
+      "title": "Backdoor Secrets Unveiled: Identifying Backdoor Data with Optimized Scaled Prediction Consistency",
+      "authors": [
+        "Soumyadeep Pal",
+        "Yuguang Yao",
+        "Ren Wang"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10717v1",
+      "abstract": "Modern machine learning (ML) systems demand substantial training data, often resorting to external sources. Nevertheless, this practice renders them vulnerable to backdoor poisoning attacks. Prior backdoor defense strategies have primarily focused on the identification of backdoored models or poison"
+    },
+    {
+      "title": "A Multilingual Perspective on Probing Gender Bias",
+      "authors": [
+        "Karolina Stańczak"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10699v1",
+      "abstract": "Gender bias represents a form of systematic negative treatment that targets individuals based on their gender. This discrimination can range from subtle sexist remarks and gendered stereotypes to outright hate speech. Prior research has revealed that ignoring online abuse not only affects the indivi"
+    },
+    {
+      "title": "D-Net: Dynamic Large Kernel with Dynamic Feature Fusion for Volumetric Medical Image Segmentation",
+      "authors": [
+        "Jin Yang",
+        "Peijie Qiu",
+        "Yichi Zhang"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10674v2",
+      "abstract": "Hierarchical transformers have achieved significant success in medical image segmentation due to their large receptive field and capabilities of effectively leveraging global long-range contextual information. Convolutional neural networks (CNNs) can also deliver a large receptive field by using lar"
+    },
+    {
+      "title": "Leveraging Synthetic Data for Generalizable and Fair Facial Action Unit Detection",
+      "authors": [
+        "Liupei Lu",
+        "Yufeng Yin",
+        "Yuming Gu"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10737v1",
+      "abstract": "Facial action unit (AU) detection is a fundamental block for objective facial expression analysis. Supervised learning approaches require a large amount of manual labeling which is costly. The limited labeled data are also not diverse in terms of gender which can affect model fairness. In this paper"
+    },
+    {
+      "title": "Development and Application of a Monte Carlo Tree Search Algorithm for Simulating Da Vinci Code Game Strategies",
+      "authors": [
+        "Ye Zhang",
+        "Mengran Zhu",
+        "Kailin Gui"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10720v1",
+      "abstract": "In this study, we explore the efficiency of the Monte Carlo Tree Search (MCTS), a prominent decision-making algorithm renowned for its effectiveness in complex decision environments, contingent upon the volume of simulations conducted. Notwithstanding its broad applicability, the algorithm's perform"
+    },
+    {
+      "title": "PyHySCO: GPU-Enabled Susceptibility Artifact Distortion Correction in Seconds",
+      "authors": [
+        "Abigail Julian",
+        "Lars Ruthotto"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10706v1",
+      "abstract": "Over the past decade, reversed Gradient Polarity (RGP) methods have become a popular approach for correcting susceptibility artifacts in Echo-Planar Imaging (EPI). Although several post-processing tools for RGP are available, their implementations do not fully leverage recent hardware, algorithmic, "
+    },
+    {
+      "title": "Parameter Efficient Reinforcement Learning from Human Feedback",
+      "authors": [
+        "Hakim Sidahmed",
+        "Samrat Phatale",
+        "Alex Hutcheson"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10704v2",
+      "abstract": "While Reinforcement Learning from Human Feedback (RLHF) effectively aligns pretrained Large Language and Vision-Language Models (LLMs, and VLMs) with human preferences, its computational cost and complexity hamper its wider adoption. To alleviate some of the computational burden of fine-tuning, para"
+    },
+    {
+      "title": "Mind the Error! Detection and Localization of Instruction Errors in Vision-and-Language Navigation",
+      "authors": [
+        "Francesco Taioli",
+        "Stefano Rosa",
+        "Alberto Castellini"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10700v2",
+      "abstract": "Vision-and-Language Navigation in Continuous Environments (VLN-CE) is one of the most intuitive yet challenging embodied AI tasks. Agents are tasked to navigate towards a target goal by executing a set of low-level actions, following a series of natural language instructions. All VLN-CE methods in t"
+    },
+    {
+      "title": "On the low-shot transferability of [V]-Mamba",
+      "authors": [
+        "Diganta Misra",
+        "Jay Gala",
+        "Antonio Orvieto"
+      ],
+      "published": "2024-03-15",
+      "url": "http://arxiv.org/abs/2403.10696v1",
+      "abstract": "The strength of modern large-scale neural networks lies in their ability to efficiently adapt to new tasks with few examples. Although extensive research has investigated the transferability of Vision Transformers (ViTs) to various downstream tasks under diverse constraints, this study shifts focus "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

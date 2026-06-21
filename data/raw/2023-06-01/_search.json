@@ -1,0 +1,139 @@
+{
+  "period": {
+    "start": "2023-06-01",
+    "end": "2023-06-15",
+    "name": "2023-06-01"
+  },
+  "searched_at": "2026-06-21T05:10:45Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4"
+    ],
+    "key_events": [
+      "GPT-4"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Thrilled by Your Progress! Large Language Models (GPT-4) No Longer Struggle to Pass Assessments in Higher Education Programming Courses",
+      "authors": [
+        "Jaromir Savelka",
+        "Arav Agarwal",
+        "Marshall An"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.10073v1",
+      "abstract": "This paper studies recent developments in large language models' (LLM) abilities to pass assessments in introductory and intermediate Python programming courses at the postsecondary level. The emergence of ChatGPT resulted in heated debates of its potential uses (e.g., exercise generation, code expl"
+    },
+    {
+      "title": "Block-State Transformers",
+      "authors": [
+        "Mahan Fathi",
+        "Jonathan Pilault",
+        "Orhan Firat"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.09539v4",
+      "abstract": "State space models (SSMs) have shown impressive results on tasks that require modeling long-range dependencies and efficiently scale to long sequences owing to their subquadratic runtime complexity. Originally designed for continuous signals, SSMs have shown superior performance on a plethora of tas"
+    },
+    {
+      "title": "Explaining Legal Concepts with Augmented Large Language Models (GPT-4)",
+      "authors": [
+        "Jaromir Savelka",
+        "Kevin D. Ashley",
+        "Morgan A. Gray"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.09525v2",
+      "abstract": "Interpreting the meaning of legal open-textured terms is a key task of legal professionals. An important source for this interpretation is how the term was applied in previous court cases. In this paper, we evaluate the performance of GPT-4 in generating factually accurate, clear and relevant explan"
+    },
+    {
+      "title": "Opportunities and Challenges for ChatGPT and Large Language Models in Biomedicine and Health",
+      "authors": [
+        "Shubo Tian",
+        "Qiao Jin",
+        "Lana Yeganova"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.10070v2",
+      "abstract": "ChatGPT has drawn considerable attention from both the general public and domain experts with its remarkable text generation capabilities. This has subsequently led to the emergence of diverse applications in the field of biomedicine and health. In this work, we examine the diverse applications of l"
+    },
+    {
+      "title": "QuadSwarm: A Modular Multi-Quadrotor Simulator for Deep Reinforcement Learning with Direct Thrust Control",
+      "authors": [
+        "Zhehui Huang",
+        "Sumeet Batra",
+        "Tao Chen"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.09537v1",
+      "abstract": "Reinforcement learning (RL) has shown promise in creating robust policies for robotics tasks. However, contemporary RL algorithms are data-hungry, often requiring billions of environment transitions to train successful policies. This necessitates the use of fast and highly-parallelizable simulators."
+    },
+    {
+      "title": "Retrieving-to-Answer: Zero-Shot Video Question Answering with Frozen Large Language Models",
+      "authors": [
+        "Junting Pan",
+        "Ziyi Lin",
+        "Yuying Ge"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.11732v1",
+      "abstract": "Video Question Answering (VideoQA) has been significantly advanced from the scaling of recent Large Language Models (LLMs). The key idea is to convert the visual information into the language feature space so that the capacity of LLMs can be fully exploited. Existing VideoQA methods typically take t"
+    },
+    {
+      "title": "Inverse Scaling: When Bigger Isn't Better",
+      "authors": [
+        "Ian R. McKenzie",
+        "Alexander Lyzhov",
+        "Michael Pieler"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.09479v2",
+      "abstract": "Work on scaling laws has found that large language models (LMs) show predictable improvements to overall loss with increased scale (model size, training data, and compute). Here, we present evidence for the claim that LMs may show inverse scaling, or worse task performance with increased scale, e.g."
+    },
+    {
+      "title": "Geometric-Based Pruning Rules For Change Point Detection in Multiple Independent Time Series",
+      "authors": [
+        "Liudmila Pishchagina",
+        "Guillem Rigaill",
+        "Vincent Runge"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.09555v2",
+      "abstract": "We consider the problem of detecting multiple changes in multiple independent time series. The search for the best segmentation can be expressed as a minimization problem over a given cost function. We focus on dynamic programming algorithms that solve this problem exactly. When the number of change"
+    },
+    {
+      "title": "Low-Switching Policy Gradient with Exploration via Online Sensitivity Sampling",
+      "authors": [
+        "Yunfan Li",
+        "Yiran Wang",
+        "Yu Cheng"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.09554v1",
+      "abstract": "Policy optimization methods are powerful algorithms in Reinforcement Learning (RL) for their flexibility to deal with policy parameterization and ability to handle model misspecification. However, these methods usually suffer from slow convergence rates and poor sample complexity. Hence it is import"
+    },
+    {
+      "title": "Edit-DiffNeRF: Editing 3D Neural Radiance Fields using 2D Diffusion Model",
+      "authors": [
+        "Lu Yu",
+        "Wei Xiang",
+        "Kang Han"
+      ],
+      "published": "2023-06-15",
+      "url": "http://arxiv.org/abs/2306.09551v1",
+      "abstract": "Recent research has demonstrated that the combination of pretrained diffusion models with neural radiance fields (NeRFs) has emerged as a promising approach for text-to-3D generation. Simply coupling NeRF with diffusion models will result in cross-view inconsistency and degradation of stylized view "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

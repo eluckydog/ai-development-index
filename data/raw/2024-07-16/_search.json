@@ -1,0 +1,140 @@
+{
+  "period": {
+    "start": "2024-07-16",
+    "end": "2024-07-31",
+    "name": "2024-07-16"
+  },
+  "searched_at": "2026-06-21T05:13:15Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 36,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Llama",
+      "LLaMA",
+      "Gemma"
+    ],
+    "key_events": [
+      "Llama",
+      "LLaMA"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Finch: Prompt-guided Key-Value Cache Compression",
+      "authors": [
+        "Giulio Corallo",
+        "Paolo Papotti"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00167v2",
+      "abstract": "Recent large language model applications, such as Retrieval-Augmented Generation and chatbots, have led to an increased need to process longer input contexts. However, this requirement is hampered by inherent limitations. Architecturally, models are constrained by a context window defined during tra"
+    },
+    {
+      "title": "A Taxonomy of Stereotype Content in Large Language Models",
+      "authors": [
+        "Gandalf Nicolas",
+        "Aylin Caliskan"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00162v1",
+      "abstract": "This study introduces a taxonomy of stereotype content in contemporary large language models (LLMs). We prompt ChatGPT 3.5, Llama 3, and Mixtral 8x7B, three powerful and widely used LLMs, for the characteristics associated with 87 social categories (e.g., gender, race, occupations). We identify 14 s"
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "authors": [
+        " Gemma Team",
+        "Morgane Riviere",
+        "Shreya Pathak"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00118v3",
+      "abstract": "In this work, we introduce Gemma 2, a new addition to the Gemma family of lightweight, state-of-the-art open models, ranging in scale from 2 billion to 27 billion parameters. In this new version, we apply several known technical modifications to the Transformer architecture, such as interleaving loc"
+    },
+    {
+      "title": "Automatic Generation of Behavioral Test Cases For Natural Language Processing Using Clustering and Prompting",
+      "authors": [
+        "Ying Li",
+        "Rahul Singh",
+        "Tarun Joshi"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00161v2",
+      "abstract": "Recent work in behavioral testing for natural language processing (NLP) models, such as Checklist, is inspired by related paradigms in software engineering testing. They allow evaluation of general linguistic capabilities and domain understanding, hence can help evaluate conceptual soundness and ide"
+    },
+    {
+      "title": "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "authors": [
+        "Sangwon Yu",
+        "Jongyoon Song",
+        "Bongkyu Hwang"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00137v2",
+      "abstract": "A binary decision task, like yes-no questions or answer verification, reflects a significant real-world scenario such as where users look for confirmation about the correctness of their decisions on specific issues. In this work, we observe that language models exhibit a negative bias in the binary "
+    },
+    {
+      "title": "Automated Software Vulnerability Static Code Analysis Using Generative Pre-Trained Transformer Models",
+      "authors": [
+        "Elijah Pelofske",
+        "Vincent Urias",
+        "Lorie M. Liebrock"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00197v1",
+      "abstract": "Generative Pre-Trained Transformer models have been shown to be surprisingly effective at a variety of natural language processing tasks -- including generating computer code. We evaluate the effectiveness of open source GPT models for the task of automatic identification of the presence of vulnerab"
+    },
+    {
+      "title": "S-SYNTH: Knowledge-Based, Synthetic Generation of Skin Images",
+      "authors": [
+        "Andrea Kim",
+        "Niloufar Saharkhiz",
+        "Elena Sizikova"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00191v1",
+      "abstract": "Development of artificial intelligence (AI) techniques in medical imaging requires access to large-scale and diverse datasets for training and evaluation. In dermatology, obtaining such datasets remains challenging due to significant variations in patient populations, illumination conditions, and ac"
+    },
+    {
+      "title": "Review of Explainable Graph-Based Recommender Systems",
+      "authors": [
+        "Thanet Markchom",
+        "Huizhi Liang",
+        "James Ferryman"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00166v2",
+      "abstract": "Explainability of recommender systems has become essential to ensure users' trust and satisfaction. Various types of explainable recommender systems have been proposed including explainable graph-based recommender systems. This review paper discusses state-of-the-art approaches of these systems and "
+    },
+    {
+      "title": "A Culturally-Aware Tool for Crowdworkers: Leveraging Chronemics to Support Diverse Work Styles",
+      "authors": [
+        "Carlos Toxtli",
+        "Christopher Curtis",
+        "Saiph Savage"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.07838v1",
+      "abstract": "Crowdsourcing markets are expanding worldwide, but often feature standardized interfaces that ignore the cultural diversity of their workers, negatively impacting their well-being and productivity. To transform these workplace dynamics, this paper proposes creating culturally-aware workplace tools, "
+    },
+    {
+      "title": "Distributed In-Context Learning under Non-IID Among Clients",
+      "authors": [
+        "Siqi Liang",
+        "Sumyeong Ahn",
+        "Jiayu Zhou"
+      ],
+      "published": "2024-07-31",
+      "url": "http://arxiv.org/abs/2408.00144v1",
+      "abstract": "Advancements in large language models (LLMs) have shown their effectiveness in multiple complicated natural language reasoning tasks. A key challenge remains in adapting these models efficiently to new or unfamiliar tasks. In-context learning (ICL) provides a promising solution for few-shot adaptati"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

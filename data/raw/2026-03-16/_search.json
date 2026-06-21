@@ -1,0 +1,125 @@
+{
+  "period": {
+    "start": "2026-03-16",
+    "end": "2026-03-31",
+    "name": "2026-03-16"
+  },
+  "searched_at": "2026-06-21T05:15:38Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "The Persistent Vulnerability of Aligned AI Systems",
+      "authors": [
+        "Aengus Lynch"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00324v1",
+      "abstract": "Autonomous AI agents are being deployed with filesystem access, email control, and multi-step planning. This thesis contributes to four open problems in AI safety: understanding dangerous internal computations, removing dangerous behaviors once embedded, testing for vulnerabilities before deployment"
+    },
+    {
+      "title": "Collaborative AI Agents and Critics for Fault Detection and Cause Analysis in Network Telemetry",
+      "authors": [
+        "Syed Eqbal Alam",
+        "Zhan Shu"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00319v1",
+      "abstract": "We develop algorithms for collaborative control of AI agents and critics in a multi-actor, multi-critic federated multi-agent system. Each AI agent and critic has access to classical machine learning or generative AI foundation models. The AI agents and critics collaborate with a central server to c"
+    },
+    {
+      "title": "Can Large Language Models Self-Correct in Medical Question Answering? An Exploratory Study",
+      "authors": [
+        "Zaifu Zhan",
+        "Mengyuan Cui",
+        "Rui Zhang"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00261v2",
+      "abstract": "Large language models (LLMs) have achieved strong performance on medical question answering (medical QA), and chain-of-thought (CoT) prompting has further improved results by eliciting explicit intermediate reasoning; meanwhile, self-reflective (self-corrective) prompting has been widely claimed to "
+    },
+    {
+      "title": "Large Language Models in the Abuse Detection Pipeline",
+      "authors": [
+        "Suraj Kath",
+        "Sanket Badhe",
+        "Preet Shah"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00323v1",
+      "abstract": "Online abuse has grown increasingly complex, spanning toxic language, harassment, manipulation, and fraudulent behavior. Traditional machine-learning approaches dependent on static classifiers and labor-intensive labeling struggle to keep pace with evolving threat patterns and nuanced policy require"
+    },
+    {
+      "title": "Label-efficient underwater species classification with logistic regression on frozen foundation model embeddings",
+      "authors": [
+        "Thomas Manuel Rost"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00313v2",
+      "abstract": "Automated species classification from underwater imagery is bottlenecked by the cost of expert annotation, and supervised models trained on one dataset rarely transfer to new conditions. We investigate whether a simple classifier operating on frozen foundation model embeddings can close this gap. Us"
+    },
+    {
+      "title": "CardioSAM: Topology-Aware Decoder Design for High-Precision Cardiac MRI Segmentation",
+      "authors": [
+        "Ujjwal Jain"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.03313v1",
+      "abstract": "Accurate segmentation of cardiac structures in cardiovascular magnetic resonance (CMR) images is essential for reliable diagnosis and treatment of cardiovascular diseases. However, manual segmentation remains time-consuming and suffers from significant inter-observer variability. Recent advances in "
+    },
+    {
+      "title": "Human-in-the-Loop Control of Objective Drift in LLM-Assisted Computer Science Education",
+      "authors": [
+        "Mark Dranias",
+        "Adam Whitley"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00281v1",
+      "abstract": "Large language models (LLMs) are increasingly embedded in computer science education through AI-assisted programming tools, yet such workflows often exhibit objective drift, in which locally plausible outputs diverge from stated task specifications. Existing instructional responses frequently emphas"
+    },
+    {
+      "title": "Prompt-Guided Prefiltering for VLM Image Compression",
+      "authors": [
+        "Bardia Azizian",
+        "Ivan V. Bajic"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00314v1",
+      "abstract": "The rapid progress of large Vision-Language Models (VLMs) has enabled a wide range of applications, such as image understanding and Visual Question Answering (VQA). Query images are often uploaded to the cloud, where VLMs are typically hosted, hence efficient image compression becomes crucial. Howev"
+    },
+    {
+      "title": "Robust Multimodal Safety via Conditional Decoding",
+      "authors": [
+        "Anurag Kumar",
+        "Raghuveer Peri",
+        "Jon Burnsky"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00310v1",
+      "abstract": "Multimodal large-language models (MLLMs) often experience degraded safety alignment when harmful queries exploit cross-modal interactions. Models aligned on text alone show a higher rate of successful attacks when extended to two or more modalities. In this work, we propose a simple conditional deco"
+    },
+    {
+      "title": "SAGE: Subsurface AI-driven Geostatistical Extraction with proxy posterior",
+      "authors": [
+        "Huseyin Tuna Erdinc",
+        "Ipsita Bhar",
+        "Rafael Orozco"
+      ],
+      "published": "2026-03-31",
+      "url": "http://arxiv.org/abs/2604.00307v1",
+      "abstract": "Recent advances in generative networks have enabled new approaches to subsurface velocity model synthesis, offering a compelling alternative to traditional methods such as Full Waveform Inversion. However, these approaches predominantly rely on the availability of large-scale datasets of high-qualit"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

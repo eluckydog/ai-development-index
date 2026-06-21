@@ -1,0 +1,137 @@
+{
+  "period": {
+    "start": "2025-06-16",
+    "end": "2025-06-30",
+    "name": "2025-06-16"
+  },
+  "searched_at": "2026-06-21T05:14:34Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 24,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "DeepSeek",
+      "Qwen"
+    ],
+    "key_events": [
+      "DeepSeek",
+      "Qwen"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "How Safe Are AI-Generated Patches? A Large-scale Study on Security Risks in LLM and Agentic Automated Program Repair on SWE-bench",
+      "authors": [
+        "Amirali Sajadi",
+        "Kostadin Damevski",
+        "Preetha Chatterjee"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.02976v3",
+      "abstract": "Large language models (LLMs) and their agentic frameworks are increasingly adopted to perform development tasks such as automated program repair (APR). While prior work has identified security risks in LLM-generated code, most have focused on synthetic, simplified, or isolated tasks that lack the co"
+    },
+    {
+      "title": "EfficientXLang: Towards Improving Token Efficiency Through Cross-Lingual Reasoning",
+      "authors": [
+        "Sanchit Ahuja",
+        "Praneetha Vaddamanu",
+        "Barun Patra"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00246v1",
+      "abstract": "Despite recent advances in Language Reasoning Models (LRMs), most research focuses solely on English, even though many models are pretrained on multilingual data. In this work, we investigate: Is English the most token-efficient language for reasoning? We evaluate three open-source RLMs: DeepSeek R1"
+    },
+    {
+      "title": "$μ^2$Tokenizer: Differentiable Multi-Scale Multi-Modal Tokenizer for Radiology Report Generation",
+      "authors": [
+        "Siyou Li",
+        "Pengyao Qin",
+        "Huanan Wu"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00316v2",
+      "abstract": "Automated radiology report generation (RRG) aims to produce detailed textual reports from clinical imaging, such as computed tomography (CT) scans, to improve the accuracy and efficiency of diagnosis and provision of management advice. RRG is complicated by two key challenges: (1) inherent complexit"
+    },
+    {
+      "title": "Beyond Low-Rank Tuning: Model Prior-Guided Rank Allocation for Effective Transfer in Low-Data and Large-Gap Regimes",
+      "authors": [
+        "Chuyan Zhang",
+        "Kefan Wang",
+        "Yun Gu"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00327v1",
+      "abstract": "Low-Rank Adaptation (LoRA) has proven effective in reducing computational costs while maintaining performance comparable to fully fine-tuned foundation models across various tasks. However, its fixed low-rank structure restricts its adaptability in scenarios with substantial domain gaps, where highe"
+    },
+    {
+      "title": "Natural language processing for African languages",
+      "authors": [
+        "David Ifeoluwa Adelani"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00297v1",
+      "abstract": "Recent advances in word embeddings and language models use large-scale, unlabelled data and self-supervised learning to boost NLP performance. Multilingual models, often trained on web-sourced data like Wikipedia, face challenges: few low-resource languages are included, their data is often noisy, a"
+    },
+    {
+      "title": "AutoDiscovery: Open-ended Scientific Discovery via Bayesian Surprise",
+      "authors": [
+        "Dhruv Agarwal",
+        "Bodhisattwa Prasad Majumder",
+        "Reece Adamson"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00310v3",
+      "abstract": "The promise of autonomous scientific discovery (ASD) hinges not only on answering questions, but also on knowing which questions to ask. Most recent works in ASD explore the use of large language models (LLMs) in goal-driven settings, relying on human-specified research questions to guide hypothesis"
+    },
+    {
+      "title": "Room Scene Discovery and Grouping in Unstructured Vacation Rental Image Collections",
+      "authors": [
+        "Vignesh Ram Nithin Kappagantula",
+        "Shayan Hassantabar"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00263v1",
+      "abstract": "The rapid growth of vacation rental (VR) platforms has led to an increasing volume of property images, often uploaded without structured categorization. This lack of organization poses significant challenges for travelers attempting to understand the spatial layout of a property, particularly when m"
+    },
+    {
+      "title": "Impact of Fine-Tuning Methods on Memorization in Large Language Models",
+      "authors": [
+        "Jie Hou",
+        "Chuxiong Wu",
+        "Lannan Luo"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00258v1",
+      "abstract": "As the capabilities of pre-trained large language models (LLMs) continue to advance, the \"pre-train and fine-tune\" paradigm has become increasingly mainstream, leading to the development of various fine-tuning methods. However, the privacy risks arising from memorization during fine-tuning have rece"
+    },
+    {
+      "title": "Developing Lightweight DNN Models With Limited Data For Real-Time Sign Language Recognition",
+      "authors": [
+        "Nikita Nikitin",
+        "Eugene Fomin"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00248v1",
+      "abstract": "We present a novel framework for real-time sign language recognition using lightweight DNNs trained on limited data. Our system addresses key challenges in sign language recognition, including data scarcity, high computational costs, and discrepancies in frame rates between training and inference en"
+    },
+    {
+      "title": "Failure by Interference: Language Models Make Balanced Parentheses Errors When Faulty Mechanisms Overshadow Sound Ones",
+      "authors": [
+        "Daking Rai",
+        "Samuel Miller",
+        "Kevin Moran"
+      ],
+      "published": "2025-06-30",
+      "url": "http://arxiv.org/abs/2507.00322v2",
+      "abstract": "Despite remarkable advances in coding capabilities, language models (LMs) still struggle with simple syntactic tasks such as generating balanced parentheses. In this study, we investigate the underlying mechanisms behind the persistence of these errors across LMs of varying sizes (124M-7B) to both u"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

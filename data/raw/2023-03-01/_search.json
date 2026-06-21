@@ -1,0 +1,132 @@
+{
+  "period": {
+    "start": "2023-03-01",
+    "end": "2023-03-15",
+    "name": "2023-03-01"
+  },
+  "searched_at": "2026-06-21T05:10:25Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "DeltaScore: Fine-Grained Story Evaluation with Perturbations",
+      "authors": [
+        "Zhuohan Xie",
+        "Miao Li",
+        "Trevor Cohn"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08991v5",
+      "abstract": "Numerous evaluation metrics have been developed for natural language generation tasks, but their effectiveness in evaluating stories is limited as they are not specifically tailored to assess intricate aspects of storytelling, such as fluency and interestingness. In this paper, we introduce DELTASCO"
+    },
+    {
+      "title": "Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs",
+      "authors": [
+        "Yankai Zeng",
+        "Abhiramon Rajasekharan",
+        "Parth Padalkar"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08941v2",
+      "abstract": "Achieving human-like communication with machines remains a classic, challenging topic in the field of Knowledge Representation and Reasoning and Natural Language Processing. These Large Language Models (LLMs) rely on pattern-matching rather than a true understanding of the semantic meaning of a sent"
+    },
+    {
+      "title": "Gated Compression Layers for Efficient Always-On Models",
+      "authors": [
+        "Haiguang Li",
+        "Trausti Thormundsson",
+        "Ivan Poupyrev"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08970v1",
+      "abstract": "Mobile and embedded machine learning developers frequently have to compromise between two inferior on-device deployment strategies: sacrifice accuracy and aggressively shrink their models to run on dedicated low-power cores; or sacrifice battery by running larger models on more powerful compute core"
+    },
+    {
+      "title": "Towards an Hybrid Hodgkin-Huxley Action Potential Generation Model",
+      "authors": [
+        "Lautaro Estienne"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2304.01346v1",
+      "abstract": "Mathematical models for the generation of the action potential can improve the understanding of physiological mechanisms that are consequence of the electrical activity in neurons. In such models, some equations involving empirically obtained functions of the membrane potential are usually defined. "
+    },
+    {
+      "title": "MAtch, eXpand and Improve: Unsupervised Finetuning for Zero-Shot Action Recognition with Language Knowledge",
+      "authors": [
+        "Wei Lin",
+        "Leonid Karlinsky",
+        "Nina Shvetsova"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08914v2",
+      "abstract": "Large scale Vision-Language (VL) models have shown tremendous success in aligning representations between visual and text modalities. This enables remarkable progress in zero-shot recognition, image generation & editing, and many other exciting tasks. However, VL models tend to over-represent object"
+    },
+    {
+      "title": "Forecasting Particle Accelerator Interruptions Using Logistic LASSO Regression",
+      "authors": [
+        "Sichen Li",
+        "Jochem Snuverink",
+        "Fernando Perez-Cruz"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08984v1",
+      "abstract": "Unforeseen particle accelerator interruptions, also known as interlocks, lead to abrupt operational changes despite being necessary safety measures. These may result in substantial loss of beam time and perhaps even equipment damage. We propose a simple yet powerful binary classification model aimin"
+    },
+    {
+      "title": "Reinforce Data, Multiply Impact: Improved Model Accuracy and Robustness with Dataset Reinforcement",
+      "authors": [
+        "Fartash Faghri",
+        "Hadi Pouransari",
+        "Sachin Mehta"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08983v3",
+      "abstract": "We propose Dataset Reinforcement, a strategy to improve a dataset once such that the accuracy of any model architecture trained on the reinforced dataset is improved at no additional training cost for users. We propose a Dataset Reinforcement strategy based on data augmentation and knowledge distill"
+    },
+    {
+      "title": "CS-TGN: Community Search via Temporal Graph Neural Networks",
+      "authors": [
+        "Farnoosh Hashemi",
+        "Ali Behrouz",
+        "Milad Rezaei Hajidehi"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08964v1",
+      "abstract": "Searching for local communities is an important research challenge that allows for personalized community discovery and supports advanced data analysis in various complex networks, such as the World Wide Web, social networks, and brain networks. The evolution of these networks over time has motivate"
+    },
+    {
+      "title": "Exploring the Relevance of Data Privacy-Enhancing Technologies for AI Governance Use Cases",
+      "authors": [
+        "Emma Bluemke",
+        "Tantum Collins",
+        "Ben Garfinkel"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08956v2",
+      "abstract": "The development of privacy-enhancing technologies has made immense progress in reducing trade-offs between privacy and performance in data exchange and analysis. Similar tools for structured transparency could be useful for AI governance by offering capabilities such as external scrutiny, auditing, "
+    },
+    {
+      "title": "Large-scale End-of-Life Prediction of Hard Disks in Distributed Datacenters",
+      "authors": [
+        "Rohan Mohapatra",
+        "Austin Coursey",
+        "Saptarshi Sengupta"
+      ],
+      "published": "2023-03-15",
+      "url": "http://arxiv.org/abs/2303.08955v2",
+      "abstract": "On a daily basis, data centers process huge volumes of data backed by the proliferation of inexpensive hard disks. Data stored in these disks serve a range of critical functional needs from financial, and healthcare to aerospace. As such, premature disk failure and consequent loss of data can be cat"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

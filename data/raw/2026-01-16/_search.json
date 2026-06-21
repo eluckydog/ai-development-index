@@ -1,0 +1,140 @@
+{
+  "period": {
+    "start": "2026-01-16",
+    "end": "2026-01-31",
+    "name": "2026-01-16"
+  },
+  "searched_at": "2026-06-21T05:15:23Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 24,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Claude",
+      "Gemini"
+    ],
+    "key_events": [
+      "Claude",
+      "Gemini"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "EffGen: Enabling Small Language Models as Capable Autonomous Agents",
+      "authors": [
+        "Gaurav Srivastava",
+        "Aafiya Hussain",
+        "Chi Wang"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00887v2",
+      "abstract": "Most existing language model agentic systems today are built and optimized for large language models (e.g., GPT, Claude, Gemini) via API calls; while powerful, this approach faces several limitations including high token costs and privacy concerns for sensitive applications. We introduce EffGen, an "
+    },
+    {
+      "title": "Synapse: Federated Tool Routing via Typed Compendium Artifacts",
+      "authors": [
+        "Abhijit Chakraborty",
+        "Yash Shah",
+        "Vivek Gupta"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00911v2",
+      "abstract": "The unit of collaboration in federated learning determines what guarantees are even expressible. Flat units like weights, prompts, raw examples, carry no type signature on which privacy, conflict resolution, or cross-model transfer can dispatch as well-defined operations. We propose typed federated "
+    },
+    {
+      "title": "Continuous-Utility Direct Preference Optimization",
+      "authors": [
+        "Muhammad Ahmed Mohsin",
+        "Muhammad Umer",
+        "Ahsan Bilal"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00931v2",
+      "abstract": "Large language model reasoning is often treated as a monolithic capability, relying on binary preference supervision that fails to capture partial progress or fine-grained reasoning quality. We introduce Continuous Utility Direct Preference Optimization (CU-DPO), a framework that aligns models to a "
+    },
+    {
+      "title": "Learning Abstractions for Hierarchical Planning in Program-Synthesis Agents",
+      "authors": [
+        "Zergham Ahmed",
+        "Kazuki Irie",
+        "Joshua B. Tenenbaum"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00929v1",
+      "abstract": "Humans learn abstractions and use them to plan efficiently to quickly generalize across tasks -- an ability that remains challenging for state-of-the-art large language model (LLM) agents and deep reinforcement learning (RL) systems. Inspired by the cognitive science of how people form abstractions "
+    },
+    {
+      "title": "Do Schwartz Higher-Order Values Help Sentence-Level Human Value Detection? A Study of Hierarchical Gating and Calibration",
+      "authors": [
+        "Víctor Yeste",
+        "Paolo Rosso"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00913v3",
+      "abstract": "Human value detection from single sentences is a sparse, imbalanced multi-label task. We study whether Schwartz higher-order (HO) categories help this setting on ValueEval'24 / ValuesML (74K English sentences) under a compute-frugal budget. Rather than proposing a new architecture, we compare direct"
+    },
+    {
+      "title": "Dynamic Expert Sharing: Decoupling Memory from Parallelism in Mixture-of-Experts Diffusion LLMs",
+      "authors": [
+        "Hao Mark Chen",
+        "Zhiwen Mo",
+        "Royson Lee"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00879v1",
+      "abstract": "Among parallel decoding paradigms, diffusion large language models (dLLMs) have emerged as a promising candidate that balances generation quality and throughput. However, their integration with Mixture-of-Experts (MoE) architectures is constrained by an expert explosion: as the number of tokens gene"
+    },
+    {
+      "title": "Sublinear Time Quantum Algorithm for Attention Approximation",
+      "authors": [
+        "Zhao Song",
+        "Jianfei Xue",
+        "Jiahao Zhang"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00874v1",
+      "abstract": "Given the query, key and value matrices $Q, K, V\\in \\mathbb{R}^{n\\times d}$, the attention module is defined as $\\mathrm{Att}(Q, K, V)=D^{-1}AV$ where $A=\\exp(QK^\\top/\\sqrt{d})$ with $\\exp(\\cdot)$ applied entrywise, $D=\\mathrm{diag}(A{\\bf 1}_n)$. The attention module is the backbone of modern transf"
+    },
+    {
+      "title": "Learning Heat-based Equations in Self-similar variables",
+      "authors": [
+        "Shihao Wang",
+        "Qipeng Qian",
+        "Jingquan Wang"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00872v2",
+      "abstract": "We study solution learning for heat-based equations in self-similar variables (SSV). We develop an SSV training framework compatible with standard neural-operator training. We instantiate this framework on the two-dimensional incompressible Navier-Stokes equations and the one-dimensional viscous Bur"
+    },
+    {
+      "title": "MCP-Atlas: A Large-Scale Benchmark for Tool-Use Competency with Real MCP Servers",
+      "authors": [
+        "Chaithanya Bandi",
+        "Razvan-Gabriel Dumitru",
+        "Ben Hertzberg"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00933v3",
+      "abstract": "The Model Context Protocol (MCP) is emerging as a standard interface through which large language model (LLM) agents discover and invoke external tools. However, existing MCP evaluations fall short along three key axes: realistic multi-step workflows with cross-server orchestration, breadth across a"
+    },
+    {
+      "title": "Beyond What Seems Necessary: Hidden Gains from Scaling Training-Time Reasoning Length under Outcome Supervision",
+      "authors": [
+        "Yihao Xue",
+        "Allan Zhang",
+        "Jianhao Huang"
+      ],
+      "published": "2026-01-31",
+      "url": "http://arxiv.org/abs/2602.00927v1",
+      "abstract": "Training LLMs to think and reason for longer has become a key ingredient in building state-of-the-art models that can solve complex problems previously out of reach. Recent efforts pursue this in different ways, such as RL fine-tuning to elicit long CoT or scaling latent reasoning through architectu"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

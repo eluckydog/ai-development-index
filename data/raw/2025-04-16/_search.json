@@ -1,0 +1,133 @@
+{
+  "period": {
+    "start": "2025-04-16",
+    "end": "2025-04-30",
+    "name": "2025-04-16"
+  },
+  "searched_at": "2026-06-21T05:14:19Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Gemma"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Detecting and Mitigating Hateful Content in Multimodal Memes with Vision-Language Models",
+      "authors": [
+        "Minh-Hao Van",
+        "Xintao Wu"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00150v1",
+      "abstract": "The rapid evolution of social media has provided enhanced communication channels for individuals to create online content, enabling them to express their thoughts and opinions. Multimodal memes, often utilized for playful or humorous expressions with visual and textual elements, are sometimes misuse"
+    },
+    {
+      "title": "AdaptMI: Adaptive Skill-based In-context Math Instruction for Small Language Models",
+      "authors": [
+        "Yinghui He",
+        "Abhishek Panigrahi",
+        "Yong Lin"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00147v2",
+      "abstract": "In-context learning (ICL) allows a language model to improve its problem-solving capability when provided with suitable information in context. Since the choice of in-context information can be determined based on the problem itself, in-context learning is analogous to human learning from teachers i"
+    },
+    {
+      "title": "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
+      "authors": [
+        "Shaokun Zhang",
+        "Ming Yin",
+        "Jieyu Zhang"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00212v3",
+      "abstract": "Failure attribution in LLM multi-agent systems-identifying the agent and step responsible for task failures-provides crucial clues for systems debugging but remains underexplored and labor-intensive. In this paper, we propose and formulate a new research area: automated failure attribution for LLM m"
+    },
+    {
+      "title": "Generative Machine Learning in Adaptive Control of Dynamic Manufacturing Processes: A Review",
+      "authors": [
+        "Suk Ki Lee",
+        "Hyunwoong Ko"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00210v2",
+      "abstract": "Dynamic manufacturing processes exhibit complex characteristics defined by time-varying parameters, nonlinear behaviors, and uncertainties. These characteristics require sophisticated in-situ monitoring techniques utilizing multimodal sensor data and adaptive control systems that can respond to real"
+    },
+    {
+      "title": "RAIL in the Wild: Operationalizing Responsible AI Evaluation Using Anthropic's Value Dataset",
+      "authors": [
+        "Sumit Verma",
+        "Pritam Prasun",
+        "Arpit Jaiswal"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00204v1",
+      "abstract": "As AI systems become embedded in real-world applications, ensuring they meet ethical standards is crucial. While existing AI ethics frameworks emphasize fairness, transparency, and accountability, they often lack actionable evaluation methods. This paper introduces a systematic approach using the Re"
+    },
+    {
+      "title": "Algorithmic Collective Action with Two Collectives",
+      "authors": [
+        "Aditya Karan",
+        "Nicholas Vincent",
+        "Karrie Karahalios"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00195v1",
+      "abstract": "Given that data-dependent algorithmic systems have become impactful in more domains of life, the need for individuals to promote their own interests and hold algorithms accountable has grown. To have meaningful influence, individuals must band together to engage in collective action. Groups that eng"
+    },
+    {
+      "title": "Empirical Evaluation of Progressive Coding for Sparse Autoencoders",
+      "authors": [
+        "Hans Peter",
+        "Anders Søgaard"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00190v1",
+      "abstract": "Sparse autoencoders (SAEs) \\citep{bricken2023monosemanticity,gao2024scalingevaluatingsparseautoencoders} rely on dictionary learning to extract interpretable features from neural networks at scale in an unsupervised manner, with applications to representation engineering and information retrieval. S"
+    },
+    {
+      "title": "Stochastic Subspace Descent Accelerated via Bi-fidelity Line Search",
+      "authors": [
+        "Nuojin Cheng",
+        "Alireza Doostan",
+        "Stephen Becker"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00162v2",
+      "abstract": "Efficient optimization remains a fundamental challenge across numerous scientific and engineering domains, especially when objective function and gradient evaluations are computationally expensive. While zeroth-order optimization methods offer effective approaches when gradients are inaccessible, th"
+    },
+    {
+      "title": "Investigating Zero-Shot Diagnostic Pathology in Vision-Language Models with Efficient Prompt Design",
+      "authors": [
+        "Vasudev Sharma",
+        "Ahmed Alagha",
+        "Abdelhakim Khellaf"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00134v1",
+      "abstract": "Vision-language models (VLMs) have gained significant attention in computational pathology due to their multimodal learning capabilities that enhance big-data analytics of giga-pixel whole slide image (WSI). However, their sensitivity to large-scale clinical data, task formulations, and prompt desig"
+    },
+    {
+      "title": "Towards Robust and Generalizable Gerchberg Saxton based Physics Inspired Neural Networks for Computer Generated Holography: A Sensitivity Analysis Framework",
+      "authors": [
+        "Ankit Amrutkar",
+        "Björn Kampa",
+        "Volkmar Schulz"
+      ],
+      "published": "2025-04-30",
+      "url": "http://arxiv.org/abs/2505.00220v1",
+      "abstract": "Computer-generated holography (CGH) enables applications in holographic augmented reality (AR), 3D displays, systems neuroscience, and optical trapping. The fundamental challenge in CGH is solving the inverse problem of phase retrieval from intensity measurements. Physics-inspired neural networks (P"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

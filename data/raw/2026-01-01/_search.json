@@ -1,0 +1,139 @@
+{
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-01-15",
+    "name": "2026-01-01"
+  },
+  "searched_at": "2026-06-21T05:15:20Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 24,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Llama",
+      "LLaMA"
+    ],
+    "key_events": [
+      "Llama",
+      "LLaMA"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "The Llama 4 Herd: Architecture, Training, Evaluation, and Deployment Notes",
+      "authors": [
+        "Redacted by arXiv"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.11659v1",
+      "abstract": "This document consolidates publicly reported technical details about Metas Llama 4 model family. It summarizes (i) released variants (Scout and Maverick) and the broader herd context including the previewed Behemoth teacher model, (ii) architectural characteristics beyond a high-level MoE descriptio"
+    },
+    {
+      "title": "Medical SAM3: A Foundation Model for Universal Prompt-Driven Medical Image Segmentation",
+      "authors": [
+        "Chongcong Jiang",
+        "Tianxingjian Ding",
+        "Chuhan Song"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.10880v1",
+      "abstract": "Promptable segmentation foundation models such as SAM3 have demonstrated strong generalization capabilities through interactive and concept-based prompting. However, their direct applicability to medical image segmentation remains limited by severe domain shifts, the absence of privileged spatial pr"
+    },
+    {
+      "title": "Towards AGI A Pragmatic Approach Towards Self Evolving Agent",
+      "authors": [
+        "Indrajit Kar",
+        "Sammy Zonunpuia",
+        "Zonunfeli Ralte"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.11658v1",
+      "abstract": "Large Language Model (LLM) based agents are powerful yet fundamentally static after deployment, lacking the ability to autonomously expand capabilities, generate new tools, or evolve their reasoning. This work introduces a hierarchical self-evolving multi-agent framework that integrates a Base LLM, "
+    },
+    {
+      "title": "Can Vision-Language Models Understand Construction Workers? An Exploratory Study",
+      "authors": [
+        "Hieu Bui",
+        "Nathaniel E. Chodosh",
+        "Arash Tavakoli"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.10835v1",
+      "abstract": "As robotics become increasingly integrated into construction workflows, their ability to interpret and respond to human behavior will be essential for enabling safe and effective collaboration. Vision-Language Models (VLMs) have emerged as a promising tool for visual understanding tasks and offer th"
+    },
+    {
+      "title": "FrankenMotion: Part-level Human Motion Generation and Composition",
+      "authors": [
+        "Chuqiao Li",
+        "Xianghui Xie",
+        "Yong Cao"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.10909v1",
+      "abstract": "Human motion generation from text prompts has made remarkable progress in recent years. However, existing methods primarily rely on either sequence-level or action-level descriptions due to the absence of fine-grained, part-level motion annotations. This limits their controllability over individual "
+    },
+    {
+      "title": "LTV-YOLO: A Lightweight Thermal Object Detector for Young Pedestrians in Adverse Conditions",
+      "authors": [
+        "Abdullah Jirjees",
+        "Ryan Myers",
+        "Muhammad Haris Ikram"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.11662v1",
+      "abstract": "Detecting vulnerable road users (VRUs), particularly children and adolescents, in low light and adverse weather conditions remains a critical challenge in computer vision, surveillance, and autonomous vehicle systems. This paper presents a purpose-built lightweight object detection model designed to"
+    },
+    {
+      "title": "Reasoning Models Generate Societies of Thought",
+      "authors": [
+        "Junsol Kim",
+        "Shiyang Lai",
+        "Nino Scherrer"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.10825v1",
+      "abstract": "Large language models have achieved remarkable capabilities across domains, yet mechanisms underlying sophisticated reasoning remain elusive. Recent reasoning models outperform comparable instruction-tuned models on complex cognitive tasks, attributed to extended computation through longer chains of"
+    },
+    {
+      "title": "Mugi: Value Level Parallelism For Efficient LLMs",
+      "authors": [
+        "Daniel Price",
+        "Prabhu Vellaisamy",
+        "John Shen"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.10823v2",
+      "abstract": "Value level parallelism (VLP) has been proposed to improve the efficiency of large-batch, low-precision general matrix multiply (GEMM) between symmetric activations and weights. In transformer based large language models (LLMs), there exist more sophisticated operations beyond activation-weight GEMM"
+    },
+    {
+      "title": "Serverless AI Security: Attack Surface Analysis and Runtime Protection Mechanisms for FaaS-Based Machine Learning",
+      "authors": [
+        "Chetan Pathade",
+        "Vinod Dhimam",
+        "Sheheryar Ahmad"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.11664v1",
+      "abstract": "Serverless computing has achieved widespread adoption, with over 70% of AWS organizations using serverless solutions [1]. Meanwhile, machine learning inference workloads increasingly migrate to Function-as-a-Service (FaaS) platforms for their scalability and cost-efficiency [2], [3], [4]. However, t"
+    },
+    {
+      "title": "ARC Prize 2025: Technical Report",
+      "authors": [
+        "François Chollet",
+        "Mike Knoop",
+        "Gregory Kamradt"
+      ],
+      "published": "2026-01-15",
+      "url": "http://arxiv.org/abs/2601.10904v1",
+      "abstract": "The ARC-AGI benchmark series serves as a critical measure of few-shot generalization on novel tasks, a core aspect of intelligence. The ARC Prize 2025 global competition targeted the newly released ARC-AGI-2 dataset, which features greater task complexity compared to its predecessor. The Kaggle comp"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

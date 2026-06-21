@@ -1,0 +1,133 @@
+{
+  "period": {
+    "start": "2022-12-16",
+    "end": "2022-12-31",
+    "name": "2022-12-16"
+  },
+  "searched_at": "2026-06-21T05:10:08Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "A Survey on In-context Learning",
+      "authors": [
+        "Qingxiu Dong",
+        "Lei Li",
+        "Damai Dai"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.00234v6",
+      "abstract": "With the increasing capabilities of large language models (LLMs), in-context learning (ICL) has emerged as a new paradigm for natural language processing (NLP), where LLMs make predictions based on contexts augmented with a few examples. It has been a significant trend to explore ICL to evaluate and"
+    },
+    {
+      "title": "Logic Mill -- A Knowledge Navigation System",
+      "authors": [
+        "Sebastian Erhardt",
+        "Mainak Ghosh",
+        "Erik Buunk"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.00200v2",
+      "abstract": "Logic Mill is a scalable and openly accessible software system that identifies semantically similar documents within either one domain-specific corpus or multi-domain corpora. It uses advanced Natural Language Processing (NLP) techniques to generate numerical representations of documents. Currently "
+    },
+    {
+      "title": "Rethinking with Retrieval: Faithful Large Language Model Inference",
+      "authors": [
+        "Hangfeng He",
+        "Hongming Zhang",
+        "Dan Roth"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.00303v1",
+      "abstract": "Despite the success of large language models (LLMs) in various natural language processing (NLP) tasks, the stored knowledge in these models may inevitably be incomplete, out-of-date, or incorrect. This motivates the need to utilize external knowledge to assist LLMs. Unfortunately, current methods f"
+    },
+    {
+      "title": "Application Of ADNN For Background Subtraction In Smart Surveillance System",
+      "authors": [
+        "Piyush Batra",
+        "Gagan Raj Singh",
+        "Neeraj Goyal"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.00264v1",
+      "abstract": "Object movement identification is one of the most researched problems in the field of computer vision. In this task, we try to classify a pixel as foreground or background. Even though numerous traditional machine learning and deep learning methods already exist for this problem, the two major issue"
+    },
+    {
+      "title": "Unpacking the \"Black Box\" of AI in Education",
+      "authors": [
+        "Nabeel Gillani",
+        "Rebecca Eynon",
+        "Catherine Chiabaut"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.01602v1",
+      "abstract": "Recent advances in Artificial Intelligence (AI) have sparked renewed interest in its potential to improve education. However, AI is a loose umbrella term that refers to a collection of methods, capabilities, and limitations-many of which are often not explicitly articulated by researchers, education"
+    },
+    {
+      "title": "Identification of lung nodules CT scan using YOLOv5 based on convolution neural network",
+      "authors": [
+        "Haytham Al Ewaidat",
+        "Youness El Brag"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.02166v1",
+      "abstract": "Purpose: The lung nodules localization in CT scan images is the most difficult task due to the complexity of the arbitrariness of shape, size, and texture of lung nodules. This is a challenge to be faced when coming to developing different solutions to improve detection systems. the deep learning ap"
+    },
+    {
+      "title": "DensePose From WiFi",
+      "authors": [
+        "Jiaqi Geng",
+        "Dong Huang",
+        "Fernando De la Torre"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.00250v1",
+      "abstract": "Advances in computer vision and machine learning techniques have led to significant development in 2D and 3D human pose estimation from RGB cameras, LiDAR, and radars. However, human pose estimation from images is adversely affected by occlusion and lighting, which are common in many scenarios of in"
+    },
+    {
+      "title": "Hospital transfer risk prediction for COVID-19 patients from a medicalized hotel based on Diffusion GraphSAGE",
+      "authors": [
+        "Jun-En Ding",
+        "Chih-Ho Hsu",
+        "Kuan-Chia Ling"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.01596v1",
+      "abstract": "The global COVID-19 pandemic has caused more than six million deaths worldwide. Medicalized hotels were established in Taiwan as quarantine facilities for COVID-19 patients with no or mild symptoms. Due to limited medical care available at these hotels, it is of paramount importance to identify pati"
+    },
+    {
+      "title": "Sample-Efficient Unsupervised Domain Adaptation of Speech Recognition Systems A case study for Modern Greek",
+      "authors": [
+        "Georgios Paraskevopoulos",
+        "Theodoros Kouzelis",
+        "Georgios Rouvalis"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.00304v1",
+      "abstract": "Modern speech recognition systems exhibits rapid performance degradation under domain shift. This issue is especially prevalent in data-scarce settings, such as low-resource languages, where diversity of training data is limited. In this work we propose M2DS2, a simple and sample-efficient finetunin"
+    },
+    {
+      "title": "Pseudo-Inverted Bottleneck Convolution for DARTS Search Space",
+      "authors": [
+        "Arash Ahmadian",
+        "Louis S. P. Liu",
+        "Yue Fei"
+      ],
+      "published": "2022-12-31",
+      "url": "http://arxiv.org/abs/2301.01286v3",
+      "abstract": "Differentiable Architecture Search (DARTS) has attracted considerable attention as a gradient-based neural architecture search method. Since the introduction of DARTS, there has been little work done on adapting the action space based on state-of-art architecture design principles for CNNs. In this "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

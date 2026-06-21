@@ -1,0 +1,139 @@
+{
+  "period": {
+    "start": "2023-10-01",
+    "end": "2023-10-15",
+    "name": "2023-10-01"
+  },
+  "searched_at": "2026-06-21T05:11:29Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4"
+    ],
+    "key_events": [
+      "GPT-4"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Can GPT-4V(ision) Serve Medical Applications? Case Studies on GPT-4V for Multimodal Medical Diagnosis",
+      "authors": [
+        "Chaoyi Wu",
+        "Jiayu Lei",
+        "Qiaoyu Zheng"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09909v3",
+      "abstract": "Driven by the large foundation models, the development of artificial intelligence has witnessed tremendous progress lately, leading to a surge of general interest from the public. In this study, we aim to assess the performance of OpenAI's newest model, GPT-4V(ision), specifically in the realm of mu"
+    },
+    {
+      "title": "Farzi Data: Autoregressive Data Distillation",
+      "authors": [
+        "Noveen Sachdeva",
+        "Zexue He",
+        "Wang-Cheng Kang"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09983v1",
+      "abstract": "We study data distillation for auto-regressive machine learning tasks, where the input and output have a strict left-to-right causal structure. More specifically, we propose Farzi, which summarizes an event sequence dataset into a small number of synthetic sequences -- Farzi Data -- which are optimi"
+    },
+    {
+      "title": "Chameleon: a Heterogeneous and Disaggregated Accelerator System for Retrieval-Augmented Language Models",
+      "authors": [
+        "Wenqi Jiang",
+        "Marco Zeller",
+        "Roger Waleffe"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09949v4",
+      "abstract": "A Retrieval-Augmented Language Model (RALM) combines a large language model (LLM) with a vector database to retrieve context-specific knowledge during text generation. This strategy facilitates impressive generation quality even with smaller models, thus reducing computational demands by orders of m"
+    },
+    {
+      "title": "Estimating Uncertainty in Multimodal Foundation Models using Public Internet Data",
+      "authors": [
+        "Shiladitya Dutta",
+        "Hongbo Wei",
+        "Lars van der Laan"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09926v2",
+      "abstract": "Foundation models are trained on vast amounts of data at scale using self-supervised learning, enabling adaptation to a wide range of downstream tasks. At test time, these models exhibit zero-shot capabilities through which they can classify previously unseen (user-specified) categories. In this pap"
+    },
+    {
+      "title": "Lifelong Sequence Generation with Dynamic Module Expansion and Adaptation",
+      "authors": [
+        "Chengwei Qin",
+        "Chen Chen",
+        "Shafiq Joty"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09886v4",
+      "abstract": "Lifelong sequence generation (LSG), a problem in continual learning, aims to continually train a model on a sequence of generation tasks to learn constantly emerging new generation patterns while avoiding the forgetting of previous knowledge. Existing LSG methods mainly focus on maintaining old know"
+    },
+    {
+      "title": "FiLM: Fill-in Language Models for Any-Order Generation",
+      "authors": [
+        "Tianxiao Shen",
+        "Hao Peng",
+        "Ruoqi Shen"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09930v1",
+      "abstract": "Language models have become the backbone of today's AI systems. However, their predominant left-to-right generation limits the use of bidirectional context, which is essential for tasks that involve filling text in the middle. We propose the Fill-in Language Model (FiLM), a new language modeling app"
+    },
+    {
+      "title": "Prompting Scientific Names for Zero-Shot Species Recognition",
+      "authors": [
+        "Shubham Parashar",
+        "Zhiqiu Lin",
+        "Yanan Li"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09929v1",
+      "abstract": "Trained on web-scale image-text pairs, Vision-Language Models (VLMs) such as CLIP can recognize images of common objects in a zero-shot fashion. However, it is underexplored how to use CLIP for zero-shot recognition of highly specialized concepts, e.g., species of birds, plants, and animals, for whi"
+    },
+    {
+      "title": "Homophone Disambiguation Reveals Patterns of Context Mixing in Speech Transformers",
+      "authors": [
+        "Hosein Mohebbi",
+        "Grzegorz Chrupała",
+        "Willem Zuidema"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09925v1",
+      "abstract": "Transformers have become a key architecture in speech processing, but our understanding of how they build up representations of acoustic and linguistic structure is limited. In this study, we address this gap by investigating how measures of 'context-mixing' developed for text models can be adapted "
+    },
+    {
+      "title": "Empirical study of pretrained multilingual language models for zero-shot cross-lingual knowledge transfer in generation",
+      "authors": [
+        "Nadezhda Chirkova",
+        "Sheng Liang",
+        "Vassilina Nikoulina"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09917v3",
+      "abstract": "Zero-shot cross-lingual knowledge transfer enables the multilingual pretrained language model (mPLM), finetuned on a task in one language, make predictions for this task in other languages. While being broadly studied for natural language understanding tasks, the described setting is understudied fo"
+    },
+    {
+      "title": "Reformulating NLP tasks to Capture Longitudinal Manifestation of Language Disorders in People with Dementia",
+      "authors": [
+        "Dimitris Gkoumas",
+        "Matthew Purver",
+        "Maria Liakata"
+      ],
+      "published": "2023-10-15",
+      "url": "http://arxiv.org/abs/2310.09897v1",
+      "abstract": "Dementia is associated with language disorders which impede communication. Here, we automatically learn linguistic disorder patterns by making use of a moderately-sized pre-trained language model and forcing it to focus on reformulated natural language processing (NLP) tasks and associated linguisti"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

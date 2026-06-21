@@ -1,0 +1,132 @@
+{
+  "period": {
+    "start": "2024-06-01",
+    "end": "2024-06-15",
+    "name": "2024-06-01"
+  },
+  "searched_at": "2026-06-21T05:12:50Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "FreeMotion: MoCap-Free Human Motion Synthesis with Multimodal Large Language Models",
+      "authors": [
+        "Zhikai Zhang",
+        "Yitang Li",
+        "Haofeng Huang"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10740v3",
+      "abstract": "Human motion synthesis is a fundamental task in computer animation. Despite recent progress in this field utilizing deep learning and motion capture data, existing methods are always limited to specific motion categories, environments, and styles. This poor generalizability can be partially attribut"
+    },
+    {
+      "title": "A Comprehensive Survey of Foundation Models in Medicine",
+      "authors": [
+        "Wasif Khan",
+        "Seowung Leem",
+        "Kyle B. See"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10729v3",
+      "abstract": "Foundation models (FMs) are large-scale deep learning models trained on massive datasets, often using self-supervised learning techniques. These models serve as a versatile base for a wide range of downstream tasks, including those in medicine and healthcare. FMs have demonstrated remarkable success"
+    },
+    {
+      "title": "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+      "authors": [
+        "Zhikai Chen",
+        "Haitao Mao",
+        "Jingzhe Liu"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10727v1",
+      "abstract": "Given the ubiquity of graph data and its applications in diverse domains, building a Graph Foundation Model (GFM) that can work well across different graphs and tasks with a unified backbone has recently garnered significant interests. A major obstacle to achieving this goal stems from the fact that"
+    },
+    {
+      "title": "RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics",
+      "authors": [
+        "Wentao Yuan",
+        "Jiafei Duan",
+        "Valts Blukis"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10721v1",
+      "abstract": "From rearranging objects on a table to putting groceries into shelves, robots must plan precise action points to perform tasks accurately and reliably. In spite of the recent adoption of vision language models (VLMs) to control robot behavior, VLMs struggle to precisely articulate robot actions usin"
+    },
+    {
+      "title": "MIND: Multimodal Shopping Intention Distillation from Large Vision-language Models for E-commerce Purchase Understanding",
+      "authors": [
+        "Baixuan Xu",
+        "Weiqi Wang",
+        "Haochen Shi"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10701v3",
+      "abstract": "Improving user experience and providing personalized search results in E-commerce platforms heavily rely on understanding purchase intention. However, existing methods for acquiring large-scale intentions bank on distilling large language models with human annotation for verification. Such an approa"
+    },
+    {
+      "title": "SparseCL: Sparse Contrastive Learning for Contradiction Retrieval",
+      "authors": [
+        "Haike Xu",
+        "Zongyu Lin",
+        "Yizhou Sun"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10746v1",
+      "abstract": "Contradiction retrieval refers to identifying and extracting documents that explicitly disagree with or refute the content of a query, which is important to many downstream applications like fact checking and data cleaning. To retrieve contradiction argument to the query from large document corpora,"
+    },
+    {
+      "title": "Technique Report of CVPR 2024 PBDL Challenges",
+      "authors": [
+        "Ying Fu",
+        "Yu Li",
+        "Shaodi You"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10744v3",
+      "abstract": "The intersection of physics-based vision and deep learning presents an exciting frontier for advancing computer vision technologies. By leveraging the principles of physics to inform and enhance deep learning models, we can develop more robust and accurate vision systems. Physics-based vision aims t"
+    },
+    {
+      "title": "Spuriousness-Aware Meta-Learning for Learning Robust Classifiers",
+      "authors": [
+        "Guangtao Zheng",
+        "Wenqian Ye",
+        "Aidong Zhang"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10742v1",
+      "abstract": "Spurious correlations are brittle associations between certain attributes of inputs and target variables, such as the correlation between an image background and an object class. Deep image classifiers often leverage them for predictions, leading to poor generalization on the data where the correlat"
+    },
+    {
+      "title": "Speech Emotion Recognition Using CNN and Its Use Case in Digital Healthcare",
+      "authors": [
+        "Nishargo Nigar"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2406.10741v1",
+      "abstract": "The process of identifying human emotion and affective states from speech is known as speech emotion recognition (SER). This is based on the observation that tone and pitch in the voice frequently convey underlying emotion. Speech recognition includes the ability to recognize emotions, which is beco"
+    },
+    {
+      "title": "Poetry2Image: An Iterative Correction Framework for Images Generated from Chinese Classical Poetry",
+      "authors": [
+        "Jing Jiang",
+        "Yiran Ling",
+        "Binzhu Li"
+      ],
+      "published": "2024-06-15",
+      "url": "http://arxiv.org/abs/2407.06196v1",
+      "abstract": "Text-to-image generation models often struggle with key element loss or semantic confusion in tasks involving Chinese classical poetry.Addressing this issue through fine-tuning models needs considerable training costs. Additionally, manual prompts for re-diffusion adjustments need professional knowl"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

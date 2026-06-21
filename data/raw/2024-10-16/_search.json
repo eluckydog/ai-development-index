@@ -1,0 +1,136 @@
+{
+  "period": {
+    "start": "2024-10-16",
+    "end": "2024-10-31",
+    "name": "2024-10-16"
+  },
+  "searched_at": "2026-06-21T05:13:37Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Grok"
+    ],
+    "key_events": [
+      "Grok"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "A Systematic Review of NeurIPS Dataset Management Practices",
+      "authors": [
+        "Yiwei Wu",
+        "Leah Ajmani",
+        "Shayne Longpre"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00266v1",
+      "abstract": "As new machine learning methods demand larger training datasets, researchers and developers face significant challenges in dataset management. Although ethics reviews, documentation, and checklists have been established, it remains uncertain whether consistent dataset management practices exist acro"
+    },
+    {
+      "title": "TurtleBench: A Visual Programming Benchmark in Turtle Geometry",
+      "authors": [
+        "Sina Rismanchian",
+        "Yasaman Razeghi",
+        "Sameer Singh"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00264v2",
+      "abstract": "Humans have the ability to reason about geometric patterns in images and scenes from a young age. However, developing large multimodal models (LMMs) capable of similar reasoning remains a challenge, highlighting the need for robust evaluation methods to assess these capabilities. We introduce \\Turtl"
+    },
+    {
+      "title": "Using Large Language Models for a standard assessment mapping for sustainable communities",
+      "authors": [
+        "Luc Jonveaux"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00208v2",
+      "abstract": "This paper presents a new approach to urban sustainability assessment through the use of Large Language Models (LLMs) to streamline the use of the ISO 37101 framework to automate and standardise the assessment of urban initiatives against the six \"sustainability purposes\" and twelve \"issues\" outline"
+    },
+    {
+      "title": "Space for Improvement: Navigating the Design Space for Federated Learning in Satellite Constellations",
+      "authors": [
+        "Grace Kim",
+        "Luca Powell",
+        "Filip Svoboda"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00263v1",
+      "abstract": "Space has emerged as an exciting new application area for machine learning, with several missions equipping deep learning capabilities on-board spacecraft. Pre-processing satellite data through on-board training is necessary to address the satellite downlink deficit, as not enough transmission oppor"
+    },
+    {
+      "title": "Understanding Graphical Perception in Data Visualization through Zero-shot Prompting of Vision-Language Models",
+      "authors": [
+        "Grace Guo",
+        "Jenna Jiayi Kang",
+        "Raj Sanjay Shah"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00257v1",
+      "abstract": "Vision Language Models (VLMs) have been successful at many chart comprehension tasks that require attending to both the images of charts and their accompanying textual descriptions. However, it is not well established how VLM performance profiles map to human-like behaviors. If VLMs can be shown to "
+    },
+    {
+      "title": "A Demonstration of Adaptive Collaboration of Large Language Models for Medical Decision-Making",
+      "authors": [
+        "Yubin Kim",
+        "Chanwoo Park",
+        "Hyewon Jeong"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00248v2",
+      "abstract": "Medical Decision-Making (MDM) is a multi-faceted process that requires clinicians to assess complex multi-modal patient data patient, often collaboratively. Large Language Models (LLMs) promise to streamline this process by synthesizing vast medical knowledge and multi-modal health data. However, si"
+    },
+    {
+      "title": "Deep Learning Through A Telescoping Lens: A Simple Model Provides Empirical Insights On Grokking, Gradient Boosting & Beyond",
+      "authors": [
+        "Alan Jeffares",
+        "Alicia Curth",
+        "Mihaela van der Schaar"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00247v1",
+      "abstract": "Deep learning sometimes appears to work in unexpected ways. In pursuit of a deeper understanding of its surprising behaviors, we investigate the utility of a simple yet accurate model of a trained neural network consisting of a sequence of first-order approximations telescoping out into a single emp"
+    },
+    {
+      "title": "ResiDual Transformer Alignment with Spectral Decomposition",
+      "authors": [
+        "Lorenzo Basile",
+        "Valentino Maiorca",
+        "Luca Bortolussi"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00246v2",
+      "abstract": "When examined through the lens of their residual streams, a puzzling property emerges in transformer networks: residual contributions (e.g., attention heads) sometimes specialize in specific tasks or input attributes. In this paper, we analyze this phenomenon in vision transformers, focusing on the "
+    },
+    {
+      "title": "Blind Time-of-Flight Imaging: Sparse Deconvolution on the Continuum with Unknown Kernels",
+      "authors": [
+        "Ruiming Guo",
+        "Ayush Bhandari"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00893v1",
+      "abstract": "In recent years, computational Time-of-Flight (ToF) imaging has emerged as an exciting and a novel imaging modality that offers new and powerful interpretations of natural scenes, with applications extending to 3D, light-in-flight, and non-line-of-sight imaging. Mathematically, ToF imaging relies on"
+    },
+    {
+      "title": "Understanding the Limits of Vision Language Models Through the Lens of the Binding Problem",
+      "authors": [
+        "Declan Campbell",
+        "Sunayana Rane",
+        "Tyler Giallanza"
+      ],
+      "published": "2024-10-31",
+      "url": "http://arxiv.org/abs/2411.00238v2",
+      "abstract": "Recent work has documented striking heterogeneity in the performance of state-of-the-art vision language models (VLMs), including both multimodal language models and text-to-image models. These models are able to describe and generate a diverse array of complex, naturalistic images, yet they exhibit"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

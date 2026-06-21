@@ -1,0 +1,134 @@
+{
+  "period": {
+    "start": "2024-02-01",
+    "end": "2024-02-15",
+    "name": "2024-02-01"
+  },
+  "searched_at": "2026-06-21T05:11:57Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Mistral"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Analyzing the Roles of Language and Vision in Learning from Limited Data",
+      "authors": [
+        "Allison Chen",
+        "Ilia Sucholutsky",
+        "Olga Russakovsky"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2403.19669v2",
+      "abstract": "Does language help make sense of the visual world? How important is it to actually see the world rather than having it described with words? These basic questions about the nature of intelligence have been difficult to answer because we only had one example of an intelligent system -- humans -- and "
+    },
+    {
+      "title": "On the Vulnerability of LLM/VLM-Controlled Robotics",
+      "authors": [
+        "Xiyang Wu",
+        "Souradip Chakraborty",
+        "Ruiqi Xian"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10340v5",
+      "abstract": "In this work, we highlight vulnerabilities in robotic systems integrating large language models (LLMs) and vision-language models (VLMs) due to input modality sensitivities. While LLM/VLM-controlled robots show impressive performance across various tasks, their reliability under slight input variati"
+    },
+    {
+      "title": "SportsMetrics: Blending Text and Numerical Data to Understand Information Fusion in LLMs",
+      "authors": [
+        "Yebowen Hu",
+        "Kaiqiang Song",
+        "Sangwoo Cho"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10979v2",
+      "abstract": "Large language models hold significant potential for integrating various data types, such as text documents and database records, for advanced analytics. However, blending text and numerical data presents substantial challenges. LLMs need to process and cross-reference entities and numbers, handle d"
+    },
+    {
+      "title": "BioMistral: A Collection of Open-Source Pretrained Large Language Models for Medical Domains",
+      "authors": [
+        "Yanis Labrak",
+        "Adrien Bazoge",
+        "Emmanuel Morin"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10373v3",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable versatility in recent years, offering potential applications across specialized domains such as healthcare and medicine. Despite the availability of various open-source LLMs tailored for health contexts, adapting general-purpose LLMs to the m"
+    },
+    {
+      "title": "Can we Soft Prompt LLMs for Graph Learning Tasks?",
+      "authors": [
+        "Zheyuan Liu",
+        "Xiaoxin He",
+        "Yijun Tian"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10359v2",
+      "abstract": "Graph plays an important role in representing complex relationships in real-world applications such as social networks, biological data and citation networks. In recent years, Large Language Models (LLMs) have achieved tremendous success in various domains, which makes applying LLMs to graphs partic"
+    },
+    {
+      "title": "Prompt-Based Bias Calibration for Better Zero/Few-Shot Learning of Language Models",
+      "authors": [
+        "Kang He",
+        "Yinghan Long",
+        "Kaushik Roy"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10353v2",
+      "abstract": "Prompt-based learning is susceptible to intrinsic bias present in pre-trained language models (LMs), leading to sub-optimal performance in prompt-based zero/few-shot settings. In this work, we propose a null-input prompting method to calibrate intrinsic bias encoded in pre-trained LMs. Different fro"
+    },
+    {
+      "title": "Large Language Models for Forecasting and Anomaly Detection: A Systematic Literature Review",
+      "authors": [
+        "Jing Su",
+        "Chufeng Jiang",
+        "Xin Jin"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10350v1",
+      "abstract": "This systematic literature review comprehensively examines the application of Large Language Models (LLMs) in forecasting and anomaly detection, highlighting the current state of research, inherent challenges, and prospective future directions. LLMs have demonstrated significant potential in parsing"
+    },
+    {
+      "title": "ChemReasoner: Heuristic Search over a Large Language Model's Knowledge Space using Quantum-Chemical Feedback",
+      "authors": [
+        "Henry W. Sprueill",
+        "Carl Edwards",
+        "Khushbu Agarwal"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10980v5",
+      "abstract": "The discovery of new catalysts is essential for the design of new and more efficient chemical processes in order to transition to a sustainable future. We introduce an AI-guided computational screening framework unifying linguistic reasoning with quantum-chemistry based feedback from 3D atomistic re"
+    },
+    {
+      "title": "LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing",
+      "authors": [
+        "Bryan Wang",
+        "Yuliang Li",
+        "Zhaoyang Lv"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10294v1",
+      "abstract": "Video creation has become increasingly popular, yet the expertise and effort required for editing often pose barriers to beginners. In this paper, we explore the integration of large language models (LLMs) into the video editing workflow to reduce these barriers. Our design vision is embodied in LAV"
+    },
+    {
+      "title": "Mathematical Opportunities in Digital Twins (MATH-DT)",
+      "authors": [
+        "Harbir Antil"
+      ],
+      "published": "2024-02-15",
+      "url": "http://arxiv.org/abs/2402.10326v2",
+      "abstract": "The report describes the discussions from the Workshop on Mathematical Opportunities in Digital Twins (MATH-DT) from December 11-13, 2023, George Mason University.   It illustrates that foundational Mathematical advances are required for Digital Twins (DTs) that are different from traditional approa"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

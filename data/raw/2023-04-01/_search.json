@@ -1,0 +1,134 @@
+{
+  "period": {
+    "start": "2023-04-01",
+    "end": "2023-04-15",
+    "name": "2023-04-01"
+  },
+  "searched_at": "2026-06-21T05:10:32Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4"
+    ],
+    "key_events": [
+      "GPT-4"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models",
+      "authors": [
+        "Alejandro Lopez-Lira",
+        "Yuehua Tang"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07619v6",
+      "abstract": "We document the capability of large language models (LLMs) like ChatGPT to predict stock market reactions from news headlines without direct financial training. Using post-knowledge-cutoff headlines, GPT-4 captures initial market responses, achieving approximately 90% portfolio-day hit rates for the"
+    },
+    {
+      "title": "LASER: A Neuro-Symbolic Framework for Learning Spatial-Temporal Scene Graphs with Weak Supervision",
+      "authors": [
+        "Jiani Huang",
+        "Ziyang Li",
+        "Mayur Naik"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07647v7",
+      "abstract": "Supervised approaches for learning spatio-temporal scene graphs (STSG) from video are greatly hindered due to their reliance on STSG-annotated videos, which are labor-intensive to construct at scale. Is it feasible to instead use readily available video captions as weak supervision? To address this "
+    },
+    {
+      "title": "Analyzing the Performance of ChatGPT in Cardiology and Vascular Pathologies",
+      "authors": [
+        "Walid Hariri"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2307.02518v2",
+      "abstract": "The article aims to analyze the performance of ChatGPT, a large language model developed by OpenAI, in the context of cardiology and vascular pathologies. The study evaluated the accuracy of ChatGPT in answering challenging multiple-choice questions (QCM) using a dataset of 190 questions from the Si"
+    },
+    {
+      "title": "Causal models in string diagrams",
+      "authors": [
+        "Robin Lorenz",
+        "Sean Tull"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07638v1",
+      "abstract": "The framework of causal models provides a principled approach to causal reasoning, applied today across many scientific domains. Here we present this framework in the language of string diagrams, interpreted formally using category theory. A class of string diagrams, called network diagrams, are in "
+    },
+    {
+      "title": "TransDocs: Optical Character Recognition with word to word translation",
+      "authors": [
+        "Abhishek Bamotra",
+        "Phani Krishna Uppala"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07637v1",
+      "abstract": "While OCR has been used in various applications, its output is not always accurate, leading to misfit words. This research work focuses on improving the optical character recognition (OCR) with ML techniques with integration of OCR with long short-term memory (LSTM) based sequence to sequence deep l"
+    },
+    {
+      "title": "Interpretable Detection of Out-of-Context Misinformation with Neural-Symbolic-Enhanced Large Multimodal Model",
+      "authors": [
+        "Yizhou Zhang",
+        "Loc Trinh",
+        "Defu Cao"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07633v2",
+      "abstract": "Recent years have witnessed the sustained evolution of misinformation that aims at manipulating public opinions. Unlike traditional rumors or fake news editors who mainly rely on generated and/or counterfeited images, text and videos, current misinformation creators now more tend to use out-of-conte"
+    },
+    {
+      "title": "A CTC Alignment-based Non-autoregressive Transformer for End-to-end Automatic Speech Recognition",
+      "authors": [
+        "Ruchao Fan",
+        "Wei Chu",
+        "Peng Chang"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07611v1",
+      "abstract": "Recently, end-to-end models have been widely used in automatic speech recognition (ASR) systems. Two of the most representative approaches are connectionist temporal classification (CTC) and attention-based encoder-decoder (AED) models. Autoregressive transformers, variants of AED, adopt an autoregr"
+    },
+    {
+      "title": "Can SAM Segment Polyps?",
+      "authors": [
+        "Tao Zhou",
+        "Yizhe Zhang",
+        "Yi Zhou"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07583v1",
+      "abstract": "Recently, Meta AI Research releases a general Segment Anything Model (SAM), which has demonstrated promising performance in several segmentation tasks. As we know, polyp segmentation is a fundamental task in the medical imaging field, which plays a critical role in the diagnosis and cure of colorect"
+    },
+    {
+      "title": "CoVLR: Coordinating Cross-Modal Consistency and Intra-Modal Structure for Vision-Language Retrieval",
+      "authors": [
+        "Yang Yang",
+        "Zhongtian Fu",
+        "Xiangyu Wu"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.07567v2",
+      "abstract": "Current vision-language retrieval aims to perform cross-modal instance search, in which the core idea is to learn the consistent visionlanguage representations. Although the performance of cross-modal retrieval has greatly improved with the development of deep models, we unfortunately find that trad"
+    },
+    {
+      "title": "The Design Space of Generative Models",
+      "authors": [
+        "Meredith Ringel Morris",
+        "Carrie J. Cai",
+        "Jess Holbrook"
+      ],
+      "published": "2023-04-15",
+      "url": "http://arxiv.org/abs/2304.10547v1",
+      "abstract": "Card et al.'s classic paper \"The Design Space of Input Devices\" established the value of design spaces as a tool for HCI analysis and invention. We posit that developing design spaces for emerging pre-trained, generative AI models is necessary for supporting their integration into human-centered sys"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

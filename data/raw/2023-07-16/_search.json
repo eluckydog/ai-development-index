@@ -1,0 +1,130 @@
+{
+  "period": {
+    "start": "2023-07-16",
+    "end": "2023-07-31",
+    "name": "2023-07-16"
+  },
+  "searched_at": "2026-06-21T05:10:55Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Generative Models as a Complex Systems Science: How can we make sense of large language model behavior?",
+      "authors": [
+        "Ari Holtzman",
+        "Peter West",
+        "Luke Zettlemoyer"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.00189v1",
+      "abstract": "Coaxing out desired behavior from pretrained models, while avoiding undesirable ones, has redefined NLP and is reshaping how we interact with computers. What was once a scientific engineering discipline-in which building blocks are stacked one on top of the other-is arguably already a complex system"
+    },
+    {
+      "title": "DiviML: A Module-based Heuristic for Mapping Neural Networks onto Heterogeneous Platforms",
+      "authors": [
+        "Yassine Ghannane",
+        "Mohamed S. Abdelfattah"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.00127v2",
+      "abstract": "Datacenters are increasingly becoming heterogeneous, and are starting to include specialized hardware for networking, video processing, and especially deep learning. To leverage the heterogeneous compute capability of modern datacenters, we develop an approach for compiler-level partitioning of deep"
+    },
+    {
+      "title": "Performance Evaluation of Swin Vision Transformer Model using Gradient Accumulation Optimization Technique",
+      "authors": [
+        "Sanad Aburass",
+        "Osama Dorgham"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.00197v1",
+      "abstract": "Vision Transformers (ViTs) have emerged as a promising approach for visual recognition tasks, revolutionizing the field by leveraging the power of transformer-based architectures. Among the various ViT models, Swin Transformers have gained considerable attention due to their hierarchical design and "
+    },
+    {
+      "title": "Multicriteria Optimization Techniques for Understanding the Case Mix Landscape of a Hospital",
+      "authors": [
+        "Robert L Burdett",
+        "Paul Corry",
+        "Prasad Yarlagadda"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.07322v1",
+      "abstract": "Various medical and surgical units operate in a typical hospital and to treat their patients these units compete for infrastructure like operating rooms (OR) and ward beds. How that competition is regulated affects the capacity and output of a hospital. This article considers the impact of treating "
+    },
+    {
+      "title": "Detecting the Anomalies in LiDAR Pointcloud",
+      "authors": [
+        "Chiyu Zhang",
+        "Ji Han",
+        "Yao Zou"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.00187v1",
+      "abstract": "LiDAR sensors play an important role in the perception stack of modern autonomous driving systems. Adverse weather conditions such as rain, fog and dust, as well as some (occasional) LiDAR hardware fault may cause the LiDAR to produce pointcloud with abnormal patterns such as scattered noise points "
+    },
+    {
+      "title": "Hierarchical Semi-Supervised Learning Framework for Surgical Gesture Segmentation and Recognition Based on Multi-Modality Data",
+      "authors": [
+        "Zhili Yuan",
+        "Jialin Lin",
+        "Dandan Zhang"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.02529v1",
+      "abstract": "Segmenting and recognizing surgical operation trajectories into distinct, meaningful gestures is a critical preliminary step in surgical workflow analysis for robot-assisted surgery. This step is necessary for facilitating learning from demonstrations for autonomous robotic surgery, evaluating surgi"
+    },
+    {
+      "title": "MTUncertainty: Assessing the Need for Post-editing of Machine Translation Outputs by Fine-tuning OpenAI LLMs",
+      "authors": [
+        "Serge Gladkoff",
+        "Lifeng Han",
+        "Gleb Erofeev"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.00158v6",
+      "abstract": "Translation Quality Evaluation (TQE) is an essential step of the modern translation production process. TQE is critical in assessing both machine translation (MT) and human translation (HT) quality without reference translations. The ability to evaluate or even simply estimate the quality of transla"
+    },
+    {
+      "title": "A Case for AI Safety via Law",
+      "authors": [
+        "Jeffrey W. Johnston"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2309.12321v2",
+      "abstract": "How to make artificial intelligence (AI) systems safe and aligned with human values is an open research question. Proposed solutions tend toward relying on human intervention in uncertain situations, learning human values and intentions through training or observation, providing off-switches, implem"
+    },
+    {
+      "title": "C-DARL: Contrastive diffusion adversarial representation learning for label-free blood vessel segmentation",
+      "authors": [
+        "Boah Kim",
+        "Yujin Oh",
+        "Bradford J. Wood"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.00193v1",
+      "abstract": "Blood vessel segmentation in medical imaging is one of the essential steps for vascular disease diagnosis and interventional planning in a broad spectrum of clinical scenarios in image-based medicine and interventional medicine. Unfortunately, manual annotation of the vessel masks is challenging and"
+    },
+    {
+      "title": "Analytical Techniques to Support Hospital Case Mix Planning",
+      "authors": [
+        "Robert L Burdett",
+        "Paul corry",
+        "David Cook"
+      ],
+      "published": "2023-07-31",
+      "url": "http://arxiv.org/abs/2308.07323v1",
+      "abstract": "This article introduces analytical techniques and a decision support tool to support capacity assessment and case mix planning (CMP) approaches previously created for hospitals. First, an optimization model is proposed to analyse the impact of making a change to an existing case mix. This model iden"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

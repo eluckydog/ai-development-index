@@ -1,0 +1,131 @@
+{
+  "period": {
+    "start": "2023-12-01",
+    "end": "2023-12-15",
+    "name": "2023-12-01"
+  },
+  "searched_at": "2026-06-21T05:11:43Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Stable Diffusion"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "KGLens: Towards Efficient and Effective Knowledge Probing of Large Language Models with Knowledge Graphs",
+      "authors": [
+        "Shangshang Zheng",
+        "He Bai",
+        "Yizhe Zhang"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.11539v3",
+      "abstract": "Large Language Models (LLMs) might hallucinate facts, while curated Knowledge Graph (KGs) are typically factually reliable especially with domain-specific knowledge. Measuring the alignment between KGs and LLMs can effectively probe the factualness and identify the knowledge blind spots of LLMs. How"
+    },
+    {
+      "title": "Rich Human Feedback for Text-to-Image Generation",
+      "authors": [
+        "Youwei Liang",
+        "Junfeng He",
+        "Gang Li"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10240v2",
+      "abstract": "Recent Text-to-Image (T2I) generation models such as Stable Diffusion and Imagen have made significant progress in generating high-resolution images based on text descriptions. However, many generated images still suffer from issues such as artifacts/implausibility, misalignment with text descriptio"
+    },
+    {
+      "title": "A Distributed Privacy Preserving Model for the Detection of Alzheimer's Disease",
+      "authors": [
+        "Paul K. Mandal"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10237v5",
+      "abstract": "In the era of rapidly advancing medical technologies, the segmentation of medical data has become inevitable, necessitating the development of privacy preserving machine learning algorithms that can train on distributed data. Consolidating sensitive medical data is not always an option particularly "
+    },
+    {
+      "title": "Asset Ownership Identification: Using machine learning to predict enterprise asset ownership",
+      "authors": [
+        "Craig Jacobik"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10266v1",
+      "abstract": "Asset owner identification is an important first step for any information security organization, allowing organizations the ability to identify and detect data breaches and losses, vulnerabilities, possible attack surfaces, and define effective countermeasures. Using existing asset ownership data, t"
+    },
+    {
+      "title": "VoCopilot: Voice-Activated Tracking of Everyday Interactions",
+      "authors": [
+        "Sheen An Goh",
+        "Manoj Gulati",
+        "Ambuj Varshney"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10265v1",
+      "abstract": "Voice plays an important role in our lives by facilitating communication, conveying emotions, and indicating health. Therefore, tracking vocal interactions can provide valuable insight into many aspects of our lives. This paper presents our ongoing efforts to design a new vocal tracking system we ca"
+    },
+    {
+      "title": "Multi-agent Reinforcement Learning: A Comprehensive Survey",
+      "authors": [
+        "Dom Huh",
+        "Prasant Mohapatra"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10256v2",
+      "abstract": "Multi-agent systems (MAS) are widely prevalent and crucially important in numerous real-world applications, where multiple agents must make decisions to achieve their objectives in a shared environment. Despite their ubiquity, the development of intelligent decision-making agents in MAS poses severa"
+    },
+    {
+      "title": "Catwalk: A Unified Language Model Evaluation Framework for Many Datasets",
+      "authors": [
+        "Dirk Groeneveld",
+        "Anas Awadalla",
+        "Iz Beltagy"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10253v1",
+      "abstract": "The success of large language models has shifted the evaluation paradigms in natural language processing (NLP). The community's interest has drifted towards comparing NLP models across many tasks, domains, and datasets, often at an extreme scale. This imposes new engineering challenges: efforts in c"
+    },
+    {
+      "title": "Iterative Motion Editing with Natural Language",
+      "authors": [
+        "Purvi Goel",
+        "Kuan-Chieh Wang",
+        "C. Karen Liu"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.11538v2",
+      "abstract": "Text-to-motion diffusion models can generate realistic animations from text prompts, but do not support fine-grained motion editing controls. In this paper, we present a method for using natural language to iteratively specify local edits to existing character animations, a task that is common in mo"
+    },
+    {
+      "title": "Flexible Nonparametric Inference for Causal Effects under the Front-Door Model",
+      "authors": [
+        "Anna Guo",
+        "David Benkeser",
+        "Razieh Nabi"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10234v3",
+      "abstract": "Evaluating causal treatment effects in observational studies requires addressing confounding. While the back-door criterion enables identification through adjustment for observed covariates, it fails in the presence of unmeasured confounding. The front-door criterion offers an alternative by leverag"
+    },
+    {
+      "title": "Low-resource classification of mobility functioning information in clinical sentences using large language models",
+      "authors": [
+        "Tuan Dung Le",
+        "Thanh Duong",
+        "Thanh Thieu"
+      ],
+      "published": "2023-12-15",
+      "url": "http://arxiv.org/abs/2312.10202v1",
+      "abstract": "Objective: Function is increasingly recognized as an important indicator of whole-person health. This study evaluates the ability of publicly available large language models (LLMs) to accurately identify the presence of functioning information from clinical notes. We explore various strategies to im"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

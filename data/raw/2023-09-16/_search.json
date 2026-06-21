@@ -1,0 +1,128 @@
+{
+  "period": {
+    "start": "2023-09-16",
+    "end": "2023-09-30",
+    "name": "2023-09-16"
+  },
+  "searched_at": "2026-06-21T05:11:25Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "UPAR: A Kantian-Inspired Prompting Framework for Enhancing Large Language Model Capabilities",
+      "authors": [
+        "Hejia Geng",
+        "Boxun Xu",
+        "Peng Li"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.01441v2",
+      "abstract": "Large Language Models (LLMs) have demonstrated impressive inferential capabilities, with numerous research endeavors devoted to enhancing this capacity through prompting. Despite these efforts, a unified epistemological foundation is still conspicuously absent. Drawing inspiration from Kant's a prio"
+    },
+    {
+      "title": "A Brief History of Prompt: Leveraging Language Models. (Through Advanced Prompting)",
+      "authors": [
+        "Golam Md Muktadir"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.04438v2",
+      "abstract": "This paper presents a comprehensive exploration of the evolution of prompt engineering and generation in the field of natural language processing (NLP). Starting from the early language models and information retrieval systems, we trace the key developments that have shaped prompt engineering over t"
+    },
+    {
+      "title": "Unveiling the Unborn: Advancing Fetal Health Classification through Machine Learning",
+      "authors": [
+        "Sujith K Mandala"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00505v2",
+      "abstract": "Fetal health classification is a critical task in obstetrics, enabling early identification and management of potential health problems. However, it remains challenging due to data complexity and limited labeled samples. This research paper presents a novel machine-learning approach for fetal health"
+    },
+    {
+      "title": "Self-Supervised Open-Ended Classification with Small Visual Language Models",
+      "authors": [
+        "Mohammad Mahdi Derakhshani",
+        "Ivona Najdenkoska",
+        "Cees G. M. Snoek"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00500v2",
+      "abstract": "We present Self-Context Adaptation (SeCAt), a self-supervised approach that unlocks few-shot abilities for open-ended classification with small visual language models. Our approach imitates image captions in a self-supervised way based on clustering a large pool of images followed by assigning seman"
+    },
+    {
+      "title": "From Language Modeling to Instruction Following: Understanding the Behavior Shift in LLMs after Instruction Tuning",
+      "authors": [
+        "Xuansheng Wu",
+        "Wenlin Yao",
+        "Jianshu Chen"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00492v3",
+      "abstract": "Large Language Models (LLMs) have achieved remarkable success, where instruction tuning is the critical step in aligning LLMs with user intentions. In this work, we investigate how the instruction tuning adjusts pre-trained models with a focus on intrinsic changes. Specifically, we first develop sev"
+    },
+    {
+      "title": "Generative Design of inorganic compounds using deep diffusion language models",
+      "authors": [
+        "Rongzhi Dong",
+        "Nihang Fu",
+        "dirisuriya M. D. Siriwardane"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00475v1",
+      "abstract": "Due to the vast chemical space, discovering materials with a specific function is challenging. Chemical formulas are obligated to conform to a set of exacting criteria such as charge neutrality, balanced electronegativity, synthesizability, and mechanical stability. In response to this formidable ta"
+    },
+    {
+      "title": "Learning Informative Latent Representation for Quantum State Tomography",
+      "authors": [
+        "Hailan Ma",
+        "Zhenhong Sun",
+        "Daoyi Dong"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00518v2",
+      "abstract": "Quantum state tomography (QST) is the process of reconstructing the complete state of a quantum system (mathematically described as a density matrix) through a series of different measurements. These measurements are performed on a number of identical copies of the quantum system, with outcomes gath"
+    },
+    {
+      "title": "Enhancing Efficiency and Privacy in Memory-Based Malware Classification through Feature Selection",
+      "authors": [
+        "Salim Sazzed",
+        "Sharif Ullah"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00516v2",
+      "abstract": "Malware poses a significant security risk to individuals, organizations, and critical infrastructure by compromising systems and data. Leveraging memory dumps that offer snapshots of computer memory can aid the analysis and detection of malicious content, including malware. To improve the efficacy a"
+    },
+    {
+      "title": "SimLVSeg: Simplifying Left Ventricular Segmentation in 2D+Time Echocardiograms with Self- and Weakly-Supervised Learning",
+      "authors": [
+        "Fadillah Maani",
+        "Asim Ukaye",
+        "Nada Saadi"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00454v3",
+      "abstract": "Echocardiography has become an indispensable clinical imaging modality for general heart health assessment. From calculating biomarkers such as ejection fraction to the probability of a patient's heart failure, accurate segmentation of the heart structures allows doctors to assess the heart's condit"
+    },
+    {
+      "title": "On the Role of Neural Collapse in Meta Learning Models for Few-shot Learning",
+      "authors": [
+        "Saaketh Medepalli",
+        "Naren Doraiswamy"
+      ],
+      "published": "2023-09-30",
+      "url": "http://arxiv.org/abs/2310.00451v2",
+      "abstract": "Meta-learning frameworks for few-shot learning aims to learn models that can learn new skills or adapt to new environments rapidly with a few training examples. This has led to the generalizability of the developed model towards new classes with just a few labelled samples. However these networks ar"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

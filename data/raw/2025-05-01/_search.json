@@ -1,0 +1,139 @@
+{
+  "period": {
+    "start": "2025-05-01",
+    "end": "2025-05-15",
+    "name": "2025-05-01"
+  },
+  "searched_at": "2026-06-21T05:14:23Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 24,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4",
+      "Claude"
+    ],
+    "key_events": [
+      "GPT-4",
+      "Claude"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Code-Driven Planning in Grid Worlds with Large Language Models",
+      "authors": [
+        "Ashwath Vaithinathan Aravindan",
+        "Zhisheng Tang",
+        "Mayank Kejriwal"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10749v1",
+      "abstract": "We propose an iterative programmatic planning (IPP) framework for solving grid-based tasks by synthesizing interpretable agent policies expressed in code using large language models (LLMs). Instead of relying on traditional search or reinforcement learning, our approach uses code generation as polic"
+    },
+    {
+      "title": "Automating Security Audit Using Large Language Model based Agent: An Exploration Experiment",
+      "authors": [
+        "Jia Hui Chin",
+        "Pu Zhang",
+        "Yu Xin Cheong"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10732v1",
+      "abstract": "In the current rapidly changing digital environment, businesses are under constant stress to ensure that their systems are secured. Security audits help to maintain a strong security posture by ensuring that policies are in place, controls are implemented, gaps are identified for cybersecurity risks"
+    },
+    {
+      "title": "A Modular Approach for Clinical SLMs Driven by Synthetic Data with Pre-Instruction Tuning, Model Merging, and Clinical-Tasks Alignment",
+      "authors": [
+        "Jean-Philippe Corbeil",
+        "Amin Dada",
+        "Jean-Michel Attendu"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10717v2",
+      "abstract": "High computation costs and latency of large language models such as GPT-4 have limited their deployment in clinical settings. Small language models (SLMs) offer a cost-effective alternative, but their limited capacity requires biomedical domain adaptation, which remains challenging. An additional bo"
+    },
+    {
+      "title": "Precision Proactivity: Measuring Cognitive Load in Real-World AI-Assisted Work",
+      "authors": [
+        "Brandon Lepine",
+        "Juho Kim",
+        "Pamela Mishkin"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10742v3",
+      "abstract": "Systems like ChatGPT and Claude assist billions through proactive dialogue-offering unsolicited, task-relevant information. Drawing on Cognitive Load Theory, we study how cognitive load shapes performance in AI-assisted knowledge work. We recruited 34 financial professionals to complete a complex va"
+    },
+    {
+      "title": "Model Performance-Guided Evaluation Data Selection for Effective Prompt Optimization",
+      "authors": [
+        "Ximing Dong",
+        "Shaowei Wang",
+        "Dayi Lin"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10736v3",
+      "abstract": "Optimizing Large Language Model (LLM) performance requires well-crafted prompts, but manual prompt engineering is labor-intensive and often ineffective. Automated prompt optimization techniques address this challenge but the majority of them rely on randomly selected evaluation subsets, which fail t"
+    },
+    {
+      "title": "Tracr-Injection: Distilling Algorithms into Pre-trained Language Models",
+      "authors": [
+        "Tomás Vergara-Browne",
+        "Álvaro Soto"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10719v3",
+      "abstract": "Motivated by the surge of large language models, there has been a push to formally characterize the symbolic abilities intrinsic to the transformer architecture. A programming language, called RASP, has been proposed, which can be directly compiled into transformer weights to implement these algorit"
+    },
+    {
+      "title": "AI-enhanced semantic feature norms for 786 concepts",
+      "authors": [
+        "Siddharth Suresh",
+        "Kushin Mukherjee",
+        "Tyler Giallanza"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10718v1",
+      "abstract": "Semantic feature norms have been foundational in the study of human conceptual knowledge, yet traditional methods face trade-offs between concept/feature coverage and verifiability of quality due to the labor-intensive nature of norming studies. Here, we introduce a novel approach that augments a da"
+    },
+    {
+      "title": "GeoGrid-Bench: Can Foundation Models Understand Multimodal Gridded Geo-Spatial Data?",
+      "authors": [
+        "Bowen Jiang",
+        "Yangxinyu Xie",
+        "Xiaomeng Wang"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10714v2",
+      "abstract": "We present GeoGrid-Bench, a benchmark designed to evaluate the ability of foundation models to understand geo-spatial data in the grid structure. Geo-spatial datasets pose distinct challenges due to their dense numerical values, strong spatial and temporal dependencies, and unique multimodal represe"
+    },
+    {
+      "title": "Embodied AI in Machine Learning -- is it Really Embodied?",
+      "authors": [
+        "Matej Hoffmann",
+        "Shubhan Parag Patni"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.10705v1",
+      "abstract": "Embodied Artificial Intelligence (Embodied AI) is gaining momentum in the machine learning communities with the goal of leveraging current progress in AI (deep learning, transformers, large language and visual-language models) to empower robots. In this chapter we put this work in the context of \"Go"
+    },
+    {
+      "title": "Learning Hierarchical Domain Models Through Environment-Grounded Interaction",
+      "authors": [
+        "Claudius Kienle",
+        "Benjamin Alt",
+        "Oleg Arenz"
+      ],
+      "published": "2025-05-15",
+      "url": "http://arxiv.org/abs/2505.13497v3",
+      "abstract": "Domain models enable autonomous agents to solve long-horizon tasks by producing interpretable plans. However, in open-world environments, a single general domain model cannot capture the variety of tasks, so agents must generate suitable task-specific models on the fly. Large Language Models (LLMs),"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

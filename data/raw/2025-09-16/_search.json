@@ -1,0 +1,135 @@
+{
+  "period": {
+    "start": "2025-09-16",
+    "end": "2025-09-30",
+    "name": "2025-09-16"
+  },
+  "searched_at": "2026-06-21T05:14:55Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 12,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4"
+    ],
+    "key_events": [
+      "GPT-4"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "LLM-Generated Samples for Android Malware Detection",
+      "authors": [
+        "Nik Rollinson",
+        "Nikolaos Polatidis"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.02391v1",
+      "abstract": "Android malware continues to evolve through obfuscation and polymorphism, posing challenges for both signature-based defenses and machine learning models trained on limited and imbalanced datasets. Synthetic data has been proposed as a remedy for scarcity, yet the role of large language models (LLMs"
+    },
+    {
+      "title": "Which Programming Language and Model Work Best With LLM-as-a-Judge For Code Retrieval?",
+      "authors": [
+        "Lucas Roberts",
+        "Denisa Roberts"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.00324v1",
+      "abstract": "Code search is an important information retrieval application. Benefits of better code search include faster new developer on-boarding, reduced software maintenance, and ease of understanding for large repositories. Despite improvements in search algorithms and search benchmarks, the domain of code "
+    },
+    {
+      "title": "DecepChain: Inducing Deceptive Reasoning in Large Language Models",
+      "authors": [
+        "Wei Shen",
+        "Han Wang",
+        "Haoyu Li"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.00319v2",
+      "abstract": "Large Language Models (LLMs) have been demonstrating strong reasoning capability with their chain-of-thoughts (CoT), which are routinely used by humans to judge answer quality. This reliance creates a powerful yet fragile basis for trust. In this work, we study an underexplored phenomenon: whether L"
+    },
+    {
+      "title": "Scaling Laws Revisited: Modeling the Role of Data Quality in Language Model Pretraining",
+      "authors": [
+        "Anirudh Subramanyam",
+        "Yuxin Chen",
+        "Robert L. Grossman"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.03313v2",
+      "abstract": "Scaling laws for language model training traditionally characterize how performance scales with model size and dataset volume. Prior work has explored architecture variants and data treatments such as dataset filtering and noise injection in language model pretraining; however, these studies have no"
+    },
+    {
+      "title": "LLM-Based Multi-Agent Blackboard System for Information Discovery in Data Science",
+      "authors": [
+        "Alireza Salemi",
+        "Mihir Parmar",
+        "Palash Goyal"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.01285v2",
+      "abstract": "Advances in large language models (LLMs) have created new opportunities in data science, but their deployment is often limited by the challenge of finding relevant data in large data lakes. Existing methods struggle with this: both single- and multi-agent systems are quickly overwhelmed by large, he"
+    },
+    {
+      "title": "Reasoning-Aware Prompt Orchestration: A Foundation Model for Multi-Agent Language Model Coordination",
+      "authors": [
+        "Hassen Dhrif"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.00326v1",
+      "abstract": "The emergence of large language models has enabled sophisticated multi-agent systems, yet coordinating their reasoning capabilities through prompt engineering remains challenging. We present a theoretically-grounded framework for dynamic prompt orchestration that enhances reasoning across multiple s"
+    },
+    {
+      "title": "Learning to Route: A Rule-Driven Agent Framework for Hybrid-Source Retrieval-Augmented Generation",
+      "authors": [
+        "Haoyue Bai",
+        "Haoyu Wang",
+        "Shengyu Chen"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.02388v2",
+      "abstract": "Large Language Models (LLMs) have shown remarkable performance on general Question Answering (QA), yet they often struggle in domain-specific scenarios where accurate and up-to-date information is required. Retrieval-Augmented Generation (RAG) addresses this limitation by enriching LLMs with externa"
+    },
+    {
+      "title": "DiSA-IQL: Offline Reinforcement Learning for Robust Soft Robot Control under Distribution Shifts",
+      "authors": [
+        "Linjin He",
+        "Xinda Qi",
+        "Dong Chen"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.00358v1",
+      "abstract": "Soft snake robots offer remarkable flexibility and adaptability in complex environments, yet their control remains challenging due to highly nonlinear dynamics. Existing model-based and bio-inspired controllers rely on simplified assumptions that limit performance. Deep reinforcement learning (DRL) "
+    },
+    {
+      "title": "A Comprehensive Review on Artificial Intelligence Empowered Solutions for Enhancing Pedestrian and Cyclist Safety",
+      "authors": [
+        "Shucheng Zhang",
+        "Yan Shi",
+        "Bingzhang Wang"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.03314v1",
+      "abstract": "Ensuring the safety of vulnerable road users (VRUs), such as pedestrians and cyclists, remains a critical global challenge, as conventional infrastructure-based measures often prove inadequate in dynamic urban environments. Recent advances in artificial intelligence (AI), particularly in visual perc"
+    },
+    {
+      "title": "Emergent evaluation hubs in a decentralizing large language model ecosystem",
+      "authors": [
+        "Manuel Cebrian",
+        "Tomomi Kito",
+        "Raul Castro Fernandez"
+      ],
+      "published": "2025-09-30",
+      "url": "http://arxiv.org/abs/2510.01286v1",
+      "abstract": "Large language models are proliferating, and so are the benchmarks that serve as their common yardsticks. We ask how the agglomeration patterns of these two layers compare: do they evolve in tandem or diverge? Drawing on two curated proxies for the ecosystem, the Stanford Foundation-Model Ecosystem "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

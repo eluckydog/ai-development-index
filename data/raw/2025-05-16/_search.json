@@ -1,0 +1,143 @@
+{
+  "period": {
+    "start": "2025-05-16",
+    "end": "2025-05-31",
+    "name": "2025-05-16"
+  },
+  "searched_at": "2026-06-21T05:14:27Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 60,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Llama",
+      "LLaMA",
+      "GPT-4",
+      "Gemma",
+      "Claude"
+    ],
+    "key_events": [
+      "Llama",
+      "LLaMA",
+      "GPT-4"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "A Large Language Model Based Pipeline for Review of Systems Entity Recognition from Clinical Notes",
+      "authors": [
+        "Hieu Nghiem",
+        "Zhuqi Miao",
+        "Hemanth Reddy Singareddy"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.11067v3",
+      "abstract": "Objective: Develop a cost-effective, large language model (LLM)-based pipeline for automatically extracting Review of Systems (ROS) entities from clinical notes. Materials and Methods: The pipeline extracts ROS section from the clinical note using SecTag header terminology, followed by few-shot LLMs"
+    },
+    {
+      "title": "DefenderBench: A Toolkit for Evaluating Language Agents in Cybersecurity Environments",
+      "authors": [
+        "Chiyu Zhang",
+        "Marc-Alexandre Cote",
+        "Michael Albada"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00739v4",
+      "abstract": "Large language model (LLM) agents have shown impressive capabilities in human language comprehension and reasoning, yet their potential in cybersecurity remains underexplored. We introduce DefenderBench, a practical, open-source toolkit for evaluating language agents across offense, defense, and cyb"
+    },
+    {
+      "title": "Machine vs Machine: Using AI to Tackle Generative AI Threats in Assessment",
+      "authors": [
+        "Mohammad Saleh Torkestani",
+        "Taha Mansouri"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.02046v1",
+      "abstract": "This paper presents a theoretical framework for addressing the challenges posed by generative artificial intelligence (AI) in higher education assessment through a machine-versus-machine approach. Large language models like GPT-4, Claude, and Llama increasingly demonstrate the ability to produce sop"
+    },
+    {
+      "title": "Blending Complementary Memory Systems in Hybrid Quadratic-Linear Transformers",
+      "authors": [
+        "Kazuki Irie",
+        "Morris Yau",
+        "Samuel J. Gershman"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00744v2",
+      "abstract": "We develop hybrid memory architectures for general-purpose sequence processing neural networks, that combine key-value memory using softmax attention (KV-memory) with fast weight memory through dynamic synaptic modulation (FW-memory) -- the core principles of quadratic and linear transformers, respe"
+    },
+    {
+      "title": "Common Inpainted Objects In-N-Out of Context",
+      "authors": [
+        "Tianze Yang",
+        "Tyson Jordan",
+        "Ruitong Sun"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00721v2",
+      "abstract": "We present Common Inpainted Objects In-N-Out of Context (COinCO), a novel dataset addressing the scarcity of out-of-context examples in existing vision datasets. By systematically replacing objects in COCO images through diffusion-based inpainting, we create 97,722 unique images featuring both conte"
+    },
+    {
+      "title": "RFCAudit: An LLM Agent for Functional Bug Detection in Network Protocols",
+      "authors": [
+        "Mingwei Zheng",
+        "Chengpeng Wang",
+        "Xuwei Liu"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00714v2",
+      "abstract": "Functional correctness is critical for ensuring the reliability and security of network protocol implementations. Functional bugs, instances where implementations diverge from behaviors specified in RFC documents, can lead to severe consequences, including faulty routing, authentication bypasses, an"
+    },
+    {
+      "title": "Translate With Care: Addressing Gender Bias, Neutrality, and Reasoning in Large Language Model Translations",
+      "authors": [
+        "Pardis Sadat Zahraei",
+        "Ali Emami"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00748v1",
+      "abstract": "Addressing gender bias and maintaining logical coherence in machine translation remains challenging, particularly when translating between natural gender languages, like English, and genderless languages, such as Persian, Indonesian, and Finnish. We introduce the Translate-with-Care (TWC) dataset, c"
+    },
+    {
+      "title": "Chain-of-Thought Training for Open E2E Spoken Dialogue Systems",
+      "authors": [
+        "Siddhant Arora",
+        "Jinchuan Tian",
+        "Hayato Futami"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00722v1",
+      "abstract": "Unlike traditional cascaded pipelines, end-to-end (E2E) spoken dialogue systems preserve full differentiability and capture non-phonemic information, making them well-suited for modeling spoken interactions. However, existing E2E approaches often require large-scale training data and generates respo"
+    },
+    {
+      "title": "Alignment Revisited: Are Large Language Models Consistent in Stated and Revealed Preferences?",
+      "authors": [
+        "Zhuojun Gu",
+        "Quan Wang",
+        "Shuchu Han"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00751v1",
+      "abstract": "Recent advances in Large Language Models (LLMs) highlight the need to align their behaviors with human values. A critical, yet understudied, issue is the potential divergence between an LLM's stated preferences (its reported alignment with general principles) and its revealed preferences (inferred f"
+    },
+    {
+      "title": "Assortment of Attention Heads: Accelerating Federated PEFT with Head Pruning and Strategic Client Selection",
+      "authors": [
+        "Yeshwanth Venkatesha",
+        "Souvik Kundu",
+        "Priyadarshini Panda"
+      ],
+      "published": "2025-05-31",
+      "url": "http://arxiv.org/abs/2506.00743v1",
+      "abstract": "Parameter Efficient Fine-Tuning (PEFT) has become the de-facto approach in adapting Large Language Models (LLMs) for downstream tasks in Natural Language Processing. However, its adoption in privacy-preserving distributed learning frameworks, such as Federated Learning (FL), remains relatively limit"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

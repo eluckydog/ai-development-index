@@ -1,0 +1,130 @@
+{
+  "period": {
+    "start": "2024-12-01",
+    "end": "2024-12-15",
+    "name": "2024-12-01"
+  },
+  "searched_at": "2026-06-21T05:13:48Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Data Laundering: Artificially Boosting Benchmark Results through Knowledge Distillation",
+      "authors": [
+        "Jonibek Mansurov",
+        "Akhmed Sakip",
+        "Alham Fikri Aji"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.15255v2",
+      "abstract": "In this paper, we show that knowledge distillation can be subverted to manipulate language model benchmark scores, revealing a critical vulnerability in current evaluation practices. We introduce \"Data Laundering,\" a process that enables the covert transfer of benchmark-specific knowledge through se"
+    },
+    {
+      "title": "CATER: Leveraging LLM to Pioneer a Multidimensional, Reference-Independent Paradigm in Translation Quality Evaluation",
+      "authors": [
+        "Kurando IIDA",
+        "Kenjiro MIMURA"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.11261v1",
+      "abstract": "This paper introduces the Comprehensive AI-assisted Translation Edit Ratio (CATER), a novel and fully prompt-driven framework for evaluating machine translation (MT) quality. Leveraging large language models (LLMs) via a carefully designed prompt-based protocol, CATER expands beyond traditional refe"
+    },
+    {
+      "title": "Sequence-Level Leakage Risk of Training Data in Large Language Models",
+      "authors": [
+        "Trishita Tiwari",
+        "G. Edward Suh"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.11302v3",
+      "abstract": "This work quantifies the risk of training data leakage from LLMs (Large Language Models) using sequence-level probabilities. Computing extraction probabilities for individual sequences provides finer-grained information than has been studied in prior benchmarking work. We re-analyze the effects of d"
+    },
+    {
+      "title": "Detecting Daily Living Gait Amid Huntington's Disease Chorea using a Foundation Deep Learning Model",
+      "authors": [
+        "Dafna Schwartz",
+        "Lori Quinn",
+        "Nora E. Fritz"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.11286v1",
+      "abstract": "Wearable sensors offer a non-invasive way to collect physical activity (PA) data, with walking as a key component. Existing models often struggle to detect gait bouts in individuals with neurodegenerative diseases (NDDs) involving involuntary movements. We developed J-Net, a deep learning model insp"
+    },
+    {
+      "title": "Nanoscaling Floating-Point (NxFP): NanoMantissa, Adaptive Microexponents, and Code Recycling for Direct-Cast Compression of Large Language Models",
+      "authors": [
+        "Yun-Chen Lo",
+        "Gu-Yeon Wei",
+        "David Brooks"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.19821v1",
+      "abstract": "As cutting-edge large language models (LLMs) continue to transform various industries, their fast-growing model size and sequence length have led to memory traffic and capacity challenges. Recently, AMD, Arm, Intel, Meta, Microsoft, NVIDIA, and Qualcomm have proposed a Microscaling standard (Mx), wh"
+    },
+    {
+      "title": "Finding a Wolf in Sheep's Clothing: Combating Adversarial Text-To-Image Prompts with Text Summarization",
+      "authors": [
+        "Portia Cooper",
+        "Harshita Narnoli",
+        "Mihai Surdeanu"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.12212v1",
+      "abstract": "Text-to-image models are vulnerable to the stepwise \"Divide-and-Conquer Attack\" (DACA) that utilize a large language model to obfuscate inappropriate content in prompts by wrapping sensitive text in a benign narrative. To mitigate stepwise DACA attacks, we propose a two-layer method involving text s"
+    },
+    {
+      "title": "Generics are puzzling. Can language models find the missing piece?",
+      "authors": [
+        "Gustavo Cilleruelo Calderón",
+        "Emily Allaway",
+        "Barry Haddow"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.11318v1",
+      "abstract": "Generic sentences express generalisations about the world without explicit quantification. Although generics are central to everyday communication, building a precise semantic framework has proven difficult, in part because speakers use generics to generalise properties with widely different statist"
+    },
+    {
+      "title": "RoLargeSum: A Large Dialect-Aware Romanian News Dataset for Summary, Headline, and Keyword Generation",
+      "authors": [
+        "Andrei-Marius Avram",
+        "Mircea Timpuriu",
+        "Andreea Iuga"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.11317v1",
+      "abstract": "Using supervised automatic summarisation methods requires sufficient corpora that include pairs of documents and their summaries. Similarly to many tasks in natural language processing, most of the datasets available for summarization are in English, posing challenges for developing summarization mo"
+    },
+    {
+      "title": "Reliable, Reproducible, and Really Fast Leaderboards with Evalica",
+      "authors": [
+        "Dmitry Ustalov"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.11314v1",
+      "abstract": "The rapid advancement of natural language processing (NLP) technologies, such as instruction-tuned large language models (LLMs), urges the development of modern evaluation protocols with human and machine feedback. We introduce Evalica, an open-source toolkit that facilitates the creation of reliabl"
+    },
+    {
+      "title": "Wearable Accelerometer Foundation Models for Health via Knowledge Distillation",
+      "authors": [
+        "Salar Abbaspourazad",
+        "Anshuman Mishra",
+        "Joseph Futoma"
+      ],
+      "published": "2024-12-15",
+      "url": "http://arxiv.org/abs/2412.11276v2",
+      "abstract": "Modern wearable devices can conveniently record various biosignals in the many different environments of daily living, enabling a rich view of individual health. However, not all biosignals are the same: high-fidelity biosignals, such as photoplethysmogram (PPG), contain more physiological informati"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

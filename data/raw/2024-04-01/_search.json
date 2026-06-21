@@ -1,0 +1,133 @@
+{
+  "period": {
+    "start": "2024-04-01",
+    "end": "2024-04-15",
+    "name": "2024-04-01"
+  },
+  "searched_at": "2026-06-21T05:12:11Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "On the Effects of Fine-tuning Language Models for Text-Based Reinforcement Learning",
+      "authors": [
+        "Mauricio Gruppi",
+        "Soham Dan",
+        "Keerthiram Murugesan"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10174v1",
+      "abstract": "Text-based reinforcement learning involves an agent interacting with a fictional environment using observed text and admissible actions in natural language to complete a task. Previous works have shown that agents can succeed in text-based interactive environments even in the complete absence of sem"
+    },
+    {
+      "title": "The Fault in our Stars: Quality Assessment of Code Generation Benchmarks",
+      "authors": [
+        "Mohammed Latif Siddiq",
+        "Simantika Dristi",
+        "Joy Saha"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10155v3",
+      "abstract": "Large Language Models (LLMs) are gaining popularity among software engineers. A crucial aspect of developing effective code generation LLMs is to evaluate these models using a robust benchmark. Evaluation benchmarks with quality issues can provide a false sense of performance. In this work, we condu"
+    },
+    {
+      "title": "Cross-Modal Self-Training: Aligning Images and Pointclouds to Learn Classification without Labels",
+      "authors": [
+        "Amaya Dharmasiri",
+        "Muzammal Naseer",
+        "Salman Khan"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10146v1",
+      "abstract": "Large-scale vision 2D vision language models, such as CLIP can be aligned with a 3D encoder to learn generalizable (open-vocabulary) 3D vision models. However, current methods require supervised pre-training for such alignment, and the performance of such 3D zero-shot models remains sub-optimal for "
+    },
+    {
+      "title": "High-Resolution Detection of Earth Structural Heterogeneities from Seismic Amplitudes using Convolutional Neural Networks with Attention layers",
+      "authors": [
+        "Luiz Schirmer",
+        "Guilherme Schardong",
+        "Vinícius da Silva"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10170v1",
+      "abstract": "Earth structural heterogeneities have a remarkable role in the petroleum economy for both exploration and production projects. Automatic detection of detailed structural heterogeneities is challenging when considering modern machine learning techniques like deep neural networks. Typically, these tec"
+    },
+    {
+      "title": "Optimal Kernel Tuning Parameter Prediction using Deep Sequence Models",
+      "authors": [
+        "Khawir Mahmood",
+        "Jehandad Khan",
+        "Hammad Afzal"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10162v1",
+      "abstract": "GPU kernels have come to the forefront of computing due to their utility in varied fields, from high-performance computing to machine learning. A typical GPU compute kernel is invoked millions, if not billions of times in a typical application, which makes their performance highly critical. Due to t"
+    },
+    {
+      "title": "Salient Object-Aware Background Generation using Text-Guided Diffusion Models",
+      "authors": [
+        "Amir Erfan Eshratifar",
+        "Joao V. B. Soares",
+        "Kapil Thadani"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10157v1",
+      "abstract": "Generating background scenes for salient objects plays a crucial role across various domains including creative design and e-commerce, as it enhances the presentation and context of subjects by integrating them into tailored environments. Background generation can be framed as a task of text-conditi"
+    },
+    {
+      "title": "SegFormer3D: an Efficient Transformer for 3D Medical Image Segmentation",
+      "authors": [
+        "Shehan Perera",
+        "Pouyan Navard",
+        "Alper Yilmaz"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10156v2",
+      "abstract": "The adoption of Vision Transformers (ViTs) based architectures represents a significant advancement in 3D Medical Image (MI) segmentation, surpassing traditional Convolutional Neural Network (CNN) models by enhancing global contextual understanding. While this paradigm shift has significantly enhanc"
+    },
+    {
+      "title": "TabSQLify: Enhancing Reasoning Capabilities of LLMs Through Table Decomposition",
+      "authors": [
+        "Md Mahadi Hasan Nahid",
+        "Davood Rafiei"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10150v1",
+      "abstract": "Table reasoning is a challenging task that requires understanding both natural language questions and structured tabular data. Large language models (LLMs) have shown impressive capabilities in natural language understanding and generation, but they often struggle with large tables due to their limi"
+    },
+    {
+      "title": "ANCHOR: LLM-driven Subject Conditioning for Text-to-Image Synthesis",
+      "authors": [
+        "Aashish Anantha Ramakrishnan",
+        "Sharon X. Huang",
+        "Dongwon Lee"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10141v2",
+      "abstract": "Text-to-image (T2I) models have achieved remarkable progress in high-quality image synthesis, yet most benchmarks rely on simple, self-contained prompts, failing to capture the complexity of real-world captions. Human-written captions often involve multiple interacting subjects, rich contextual refe"
+    },
+    {
+      "title": "Language Model Cascades: Token-level uncertainty and beyond",
+      "authors": [
+        "Neha Gupta",
+        "Harikrishna Narasimhan",
+        "Wittawat Jitkrittum"
+      ],
+      "published": "2024-04-15",
+      "url": "http://arxiv.org/abs/2404.10136v1",
+      "abstract": "Recent advances in language models (LMs) have led to significant improvements in quality on complex NLP tasks, but at the expense of increased inference costs. Cascading offers a simple strategy to achieve more favorable cost-quality tradeoffs: here, a small model is invoked for most \"easy\" instance"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

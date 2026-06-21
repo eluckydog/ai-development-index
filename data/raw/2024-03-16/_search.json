@@ -1,0 +1,133 @@
+{
+  "period": {
+    "start": "2024-03-16",
+    "end": "2024-03-31",
+    "name": "2024-03-16"
+  },
+  "searched_at": "2026-06-21T05:12:07Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Rethinking Interactive Image Segmentation with Low Latency, High Quality, and Diverse Prompts",
+      "authors": [
+        "Qin Liu",
+        "Jaemin Cho",
+        "Mohit Bansal"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00741v1",
+      "abstract": "The goal of interactive image segmentation is to delineate specific regions within an image via visual or language prompts. Low-latency and high-quality interactive segmentation with diverse prompts remain challenging for existing specialist and generalist models. Specialist models, with their limit"
+    },
+    {
+      "title": "Extracting Social Determinants of Health from Pediatric Patient Notes Using Large Language Models: Novel Corpus and Methods",
+      "authors": [
+        "Yujuan Fu",
+        "Giridhar Kaushik Ramachandran",
+        "Nicholas J Dobbins"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00826v2",
+      "abstract": "Social determinants of health (SDoH) play a critical role in shaping health outcomes, particularly in pediatric populations where interventions can have long-term implications. SDoH are frequently studied in the Electronic Health Record (EHR), which provides a rich repository for diverse patient dat"
+    },
+    {
+      "title": "Fairness in Large Language Models: A Taxonomic Survey",
+      "authors": [
+        "Zhibo Chu",
+        "Zichong Wang",
+        "Wenbin Zhang"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.01349v2",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable success across various domains. However, despite their promising performance in numerous real-world applications, most of these algorithms lack fairness considerations. Consequently, they may lead to discriminatory outcomes against certain co"
+    },
+    {
+      "title": "Algorithmic Collusion by Large Language Models",
+      "authors": [
+        "Sara Fish",
+        "Yannai A. Gonczarowski",
+        "Ran I. Shorrer"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00806v5",
+      "abstract": "We conduct experiments with algorithmic pricing agents based on Large Language Models (LLMs). In oligopoly settings, LLM-based pricing agents quickly and autonomously reach supracompetitive prices and profits. Variation in seemingly innocuous phrases in LLM instructions (\"prompts\") substantially inf"
+    },
+    {
+      "title": "From Robustness to Improved Generalization and Calibration in Pre-trained Language Models",
+      "authors": [
+        "Josip Jukić",
+        "Jan Šnajder"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00758v1",
+      "abstract": "Enhancing generalization and uncertainty quantification in pre-trained language models (PLMs) is crucial for their effectiveness and reliability. Building on machine learning research that established the importance of robustness for improving generalization, we investigate the role of representatio"
+    },
+    {
+      "title": "Can Language Models Recognize Convincing Arguments?",
+      "authors": [
+        "Paula Rescala",
+        "Manoel Horta Ribeiro",
+        "Tiancheng Hu"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00750v2",
+      "abstract": "The capabilities of large language models (LLMs) have raised concerns about their potential to create and propagate convincing narratives. Here, we study their performance in detecting convincing arguments to gain insights into LLMs' persuasive capabilities without directly engaging in experimentati"
+    },
+    {
+      "title": "Returning to the Start: Generating Narratives with Related Endpoints",
+      "authors": [
+        "Anneliese Brei",
+        "Chao Zhao",
+        "Snigdha Chaturvedi"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00829v1",
+      "abstract": "Human writers often bookend their writing with ending sentences that relate back to the beginning sentences in order to compose a satisfying narrative that \"closes the loop.\" Motivated by this observation, we propose RENarGen, a controllable story-generation paradigm that generates narratives by ens"
+    },
+    {
+      "title": "PID Control-Based Self-Healing to Improve the Robustness of Large Language Models",
+      "authors": [
+        "Zhuotong Chen",
+        "Zihu Wang",
+        "Yifan Yang"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00828v1",
+      "abstract": "Despite the effectiveness of deep neural networks in numerous natural language processing applications, recent findings have exposed the vulnerability of these language models when minor perturbations are introduced. While appearing semantically indistinguishable to humans, these perturbations can s"
+    },
+    {
+      "title": "Uncertain Boundaries: Multidisciplinary Approaches to Copyright Issues in Generative AI",
+      "authors": [
+        "Archer Amon",
+        "Zhipeng Yin",
+        "Zichong Wang"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.08221v2",
+      "abstract": "Generative AI is becoming increasingly prevalent in creative fields, sparking urgent debates over how current copyright laws can keep pace with technological innovation. Recent controversies of AI models generating near-replicas of copyrighted material highlight the need to adapt current legal frame"
+    },
+    {
+      "title": "Rehearsal-Free Modular and Compositional Continual Learning for Language Models",
+      "authors": [
+        "Mingyang Wang",
+        "Heike Adel",
+        "Lukas Lange"
+      ],
+      "published": "2024-03-31",
+      "url": "http://arxiv.org/abs/2404.00790v1",
+      "abstract": "Continual learning aims at incrementally acquiring new knowledge while not forgetting existing knowledge. To overcome catastrophic forgetting, methods are either rehearsal-based, i.e., store data examples from previous tasks for data replay, or isolate parameters dedicated to each task. However, reh"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

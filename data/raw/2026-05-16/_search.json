@@ -1,41 +1,140 @@
 {
   "period": {
     "start": "2026-05-16",
+    "end": "2026-05-31",
     "name": "2026-05-16"
   },
+  "searched_at": "2026-06-21T05:15:52Z",
   "sources": [
-    "AIC_ANCHORS"
+    "arxiv",
+    "github"
   ],
-  "anchor_event": {
-    "name": "Claude Opus 4.8 + Qwen3.7 Max",
-    "org": "Anthropic",
-    "country": "US",
-    "aic": 4850
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 60,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Llama",
+      "LLaMA",
+      "Claude",
+      "Opus",
+      "Sonnet"
+    ],
+    "key_events": [
+      "Llama",
+      "LLaMA",
+      "Claude"
+    ]
   },
-  "dimensions": {
-    "model": {
-      "score": 970,
-      "rationale": "Claude Opus 4.8 + Qwen3.7 Max"
+  "arxiv": [
+    {
+      "title": "Truthful AI Advisors: A Pre-Specified Benchmark for Large Language Model Honesty Under Preference Misalignment",
+      "authors": [
+        "Hamidreza Hasani Balyani",
+        "Seyed Pouyan Mousavi Davoudi",
+        "Alireza Amiri-Margavi"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01456v1",
+      "abstract": "Large language models are increasingly deployed as advisors whose objective is not aligned with the user's: recommenders optimize for engagement, sales assistants for purchases, negotiation agents for concessions. Whether such advisors stay truthful when honesty conflicts with their own payoff is a "
     },
-    "hardware": {
-      "score": 0,
-      "rationale": ""
+    {
+      "title": "Before and After Temperature: A Distributional View of Creative LLM Generation",
+      "authors": [
+        "V. S. Raghu Parupudi",
+        "Harsha Ponnada",
+        "Aditi Kaushal"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01451v1",
+      "abstract": "Reference-free evaluation of large language model (LLM) creativity relies on perplexity, entropy, and top-1 margin. We show that a much stronger signal lives one step earlier in the pipeline: in how sampling temperature \\emph{reshapes} the model's token distribution before the next token is drawn. O"
     },
-    "algorithm": {
-      "score": 0,
-      "rationale": ""
+    {
+      "title": "LLM Consortium for Software Design Refinement: A Controlled Experiment on Multi-Agent Collaboration Topologies",
+      "authors": [
+        "Nagarjuna Kanamarlapudi",
+        "Praveen K"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01490v1",
+      "abstract": "We present a controlled experiment evaluating 12 multi-agent LLM collaboration topologies for software architecture design. Using a $2\\times2\\times2$ factorial design (Authority $\\times$ Roles $\\times$ Dynamics), we conducted 520 experimental runs across 8 design tasks of varying complexity, with 5 "
     },
-    "business": {
-      "score": 0,
-      "rationale": ""
+    {
+      "title": "OmniOPD: Logit-Free On-Policy Distillation via Speculative Verification",
+      "authors": [
+        "Yuhang Zhou",
+        "Lizhu Zhang",
+        "Yifan Wu"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01476v2",
+      "abstract": "On-Policy Distillation (OPD) trains a student model on its own generative trajectories under dense token-level feedback from a stronger teacher, mitigating both the off-policy distribution shift of Supervised Fine-Tuning (SFT) and the sparse credit assignment of Reinforcement Learning (RL). However,"
     },
-    "adoption": {
-      "score": 0,
-      "rationale": ""
+    {
+      "title": "Move the Query, Not the Cache: Characterizing Cross-Instance Latent Attention Redistribution Across GPU Fabrics",
+      "authors": [
+        "Bole Ma",
+        "Jan Eitzinger",
+        "Harald Köstler"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01502v1",
+      "abstract": "Frontier LLMs increasingly decide what a query attends to with a sparse-attention indexer that picks a few KV-cache blocks per query: attention's unit is now a small, reusable chunk. Agentic workloads hammer it: many sub-agents query one large codebase, reusing the same blocks. When that corpus outg"
     },
-    "opensource": {
-      "score": 0,
-      "rationale": ""
+    {
+      "title": "TimeSage-MT: A Multi-Turn Benchmark for Evaluating Agentic Time Series Reasoning",
+      "authors": [
+        "Yaxuan Kong",
+        "Qingren Yao",
+        "Yuqi Nie"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01498v1",
+      "abstract": "Time series data inform critical decisions across many real-world domains. While large language model (LLM) agents can analyze data through natural language and tools, it remains unclear whether they can conduct reliable time series analysis across multi-turn conversations. Existing benchmarks focus"
+    },
+    {
+      "title": "CART: Context-Anchored Recurrent Transformer -- A Parameter-Efficient Architecture with Learned Stability",
+      "authors": [
+        "Chad A. Capps"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01495v2",
+      "abstract": "We present CART (Context-Anchored Recurrent Transformer), a parameter-efficient language model that reuses a single shared core block R times across depth. Unlike prior looped transformers that recompute key-value tensors at every iteration, CART computes K and V once from a multi-layer prelude and "
+    },
+    {
+      "title": "Hierarchical Online Prompt Mutation with Dual-Loop Feedback for Guardrailed Evidence Document Generation: A Production-Evaluation Case Study",
+      "authors": [
+        "Nataraj Agaram Sundar",
+        "Tejas Morabia"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01472v1",
+      "abstract": "High-stakes production document-generation systems require language models to be adaptive, evidence-grounded, and auditable. We present HOPM, a hierarchical online prompt mutation framework evaluated on a real marketplace dispute-evidence workflow. HOPM treats prompts as online policies: a family/ve"
+    },
+    {
+      "title": "Cross-lingual Self-Consistency for Multilingual Reasoning with Language Models",
+      "authors": [
+        "Ahmed Elhady",
+        "Eneko Agirre",
+        "Mikel Artetxe"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01464v1",
+      "abstract": "Despite expanding their multilingual coverage, the advanced reasoning capabilities of LLMs remain largely confined to a few high-resource languages like English. To address this, we propose an unsupervised Reinforcement Learning (RL) approach to enhance multilingual reasoning by enforcing cross-ling"
+    },
+    {
+      "title": "Self-Revising Discovery Systems for Science: A Categorical Framework for Agentic Artificial Intelligence",
+      "authors": [
+        "Fiona Y. Wang",
+        "Markus J. Buehler"
+      ],
+      "published": "2026-05-31",
+      "url": "http://arxiv.org/abs/2606.01444v1",
+      "abstract": "Scientific discovery is not only answer generation but revision of the representational regime in which evidence, artifacts, operations, and verifiers are typed. We develop a category-theoretic account of agentic discovery for materials science. In a fixed regime b with schema category S_b, the syst"
     }
-  }
+  ],
+  "github": [],
+  "benchmarks_found": {}
 }

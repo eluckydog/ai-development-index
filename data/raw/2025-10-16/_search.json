@@ -1,0 +1,133 @@
+{
+  "period": {
+    "start": "2025-10-16",
+    "end": "2025-10-31",
+    "name": "2025-10-16"
+  },
+  "searched_at": "2026-06-21T05:15:02Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Spot The Ball: A Benchmark for Visual Social Inference",
+      "authors": [
+        "Neha Balamurugan",
+        "Sarah Wu",
+        "Adam Chun"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00261v2",
+      "abstract": "Humans excel at visual social inference, the ability to infer hidden elements of a scene from subtle behavioral cues such as other people's gaze, pose, and orientation. This ability drives everyday social reasoning in humans and is critical for developing more human-like AI agents. We introduce Spot"
+    },
+    {
+      "title": "Scalable Processing-Near-Memory for 1M-Token LLM Inference: CXL-Enabled KV-Cache Management Beyond GPU Limits",
+      "authors": [
+        "Dowon Kim",
+        "MinJae Lee",
+        "Janghyeon Kim"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00321v1",
+      "abstract": "The expansion of context windows in large language models (LLMs) to multi-million tokens introduces severe memory and compute bottlenecks, particularly in managing the growing Key-Value (KV) cache. While Compute Express Link (CXL) enables non-eviction frameworks that offload the full KV-cache to sca"
+    },
+    {
+      "title": "Language Modeling With Factorization Memory",
+      "authors": [
+        "Lee Xiong",
+        "Maksim Tkachenko",
+        "Johanes Effendi"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00315v1",
+      "abstract": "We propose Factorization Memory, an efficient recurrent neural network (RNN) architecture that achieves performance comparable to Transformer models on short-context language modeling tasks while also demonstrating superior generalization in long-context scenarios. Our model builds upon Mamba-2, ena"
+    },
+    {
+      "title": "BeetleFlow: An Integrative Deep Learning Pipeline for Beetle Image Processing",
+      "authors": [
+        "Fangxun Liu",
+        "S M Rayeed",
+        "Samuel Stevens"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00255v2",
+      "abstract": "In entomology and ecology research, biologists often need to collect a large number of insects, among which beetles are the most common species. A common practice for biologists to organize beetles is to place them on trays and take a picture of each tray. Given the images of thousands of such trays"
+    },
+    {
+      "title": "A Technical Exploration of Causal Inference with Hybrid LLM Synthetic Data",
+      "authors": [
+        "Dana Kim",
+        "Yichen Xu",
+        "Tiffany Lin"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00318v1",
+      "abstract": "Large Language Models (LLMs) offer a flexible means to generate synthetic tabular data, yet existing approaches often fail to preserve key causal parameters such as the average treatment effect (ATE). In this technical exploration, we first demonstrate that state-of-the-art synthetic data generators"
+    },
+    {
+      "title": "Calibration Across Layers: Understanding Calibration Evolution in LLMs",
+      "authors": [
+        "Abhinav Joshi",
+        "Areeb Ahmad",
+        "Ashutosh Modi"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00280v1",
+      "abstract": "Large Language Models (LLMs) have demonstrated inherent calibration capabilities, where predicted probabilities align well with correctness, despite prior findings that deep neural networks are often overconfident. Recent studies have linked this behavior to specific components in the final layer, s"
+    },
+    {
+      "title": "FedReplay: A Feature Replay Assisted Federated Transfer Learning Framework for Efficient and Privacy-Preserving Smart Agriculture",
+      "authors": [
+        "Long Li",
+        "Jiajia Li",
+        "Dong Chen"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00269v1",
+      "abstract": "Accurate classification plays a pivotal role in smart agriculture, enabling applications such as crop monitoring, fruit recognition, and pest detection. However, conventional centralized training often requires large-scale data collection, which raises privacy concerns, while standard federated lear"
+    },
+    {
+      "title": "Advancing AI Challenges for the United States Department of the Air Force",
+      "authors": [
+        "Christian Prothmann",
+        "Vijay Gadepally",
+        "Jeremy Kepner"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00267v1",
+      "abstract": "The DAF-MIT AI Accelerator is a collaboration between the United States Department of the Air Force (DAF) and the Massachusetts Institute of Technology (MIT). This program pioneers fundamental advances in artificial intelligence (AI) to expand the competitive advantage of the United States in the de"
+    },
+    {
+      "title": "AgentBnB: A Browser-Based Cybersecurity Tabletop Exercise with Large Language Model Support and Retrieval-Aligned Scaffolding",
+      "authors": [
+        "Arman Anwar",
+        "Zefang Liu"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00265v1",
+      "abstract": "Traditional cybersecurity tabletop exercises (TTXs) provide valuable training but are often scripted, resource-intensive, and difficult to scale. We introduce AgentBnB, a browser-based re-imagining of the Backdoors & Breaches game that integrates large language model teammates with a Bloom-aligned, "
+    },
+    {
+      "title": "MagicView: Multi-View Consistent Identity Customization via Priors-Guided In-Context Learning",
+      "authors": [
+        "Hengjia Li",
+        "Jianjin Xu",
+        "Keli Cheng"
+      ],
+      "published": "2025-10-31",
+      "url": "http://arxiv.org/abs/2511.00293v2",
+      "abstract": "Recent advances in personalized generative models have demonstrated impressive capabilities in producing identity-consistent images of the same individual across diverse scenes. However, most existing methods lack explicit viewpoint control and fail to ensure multi-view consistency of generated iden"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

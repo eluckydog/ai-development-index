@@ -1,0 +1,142 @@
+{
+  "period": {
+    "start": "2025-01-01",
+    "end": "2025-01-15",
+    "name": "2025-01-01"
+  },
+  "searched_at": "2026-06-21T05:13:55Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 60,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4",
+      "Llama",
+      "LLaMA",
+      "Mistral",
+      "Qwen"
+    ],
+    "key_events": [
+      "GPT-4",
+      "Llama",
+      "LLaMA"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Towards Multilingual LLM Evaluation for Baltic and Nordic languages: A study on Lithuanian History",
+      "authors": [
+        "Yevhen Kostiuk",
+        "Oxana Vitman",
+        "Łukasz Gagała"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09154v1",
+      "abstract": "In this work, we evaluated Lithuanian and general history knowledge of multilingual Large Language Models (LLMs) on a multiple-choice question-answering task. The models were tested on a dataset of Lithuanian national and general history questions translated into Baltic, Nordic, and other languages "
+    },
+    {
+      "title": "The Veln(ia)s is in the Details: Evaluating LLM Judgment on Latvian and Lithuanian Short Answer Matching",
+      "authors": [
+        "Yevhen Kostiuk",
+        "Oxana Vitman",
+        "Łukasz Gagała"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09164v1",
+      "abstract": "In this work, we address the challenge of evaluating large language models (LLMs) on the short answer matching task for Latvian and Lithuanian languages. We introduce novel datasets consisting of 502 Latvian and 690 Lithuanian question-answer pairs. For each question-answer pair, we generated matche"
+    },
+    {
+      "title": "3D Modeling and Automated Measurement of Concrete Cracks via Segment Anything Refinement and Visual Inertial LiDAR Fusion",
+      "authors": [
+        "Pengru Deng",
+        "Jiapeng Yao",
+        "Chun Li"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09203v2",
+      "abstract": "Visual-Spatial Systems has become increasingly essential in concrete crack inspection. However, existing methods often lacks adaptability to diverse scenarios, exhibits limited robustness in image-based approaches, and struggles with curved or complex geometries. To address these limitations, an inn"
+    },
+    {
+      "title": "Guiding Retrieval using LLM-based Listwise Rankers",
+      "authors": [
+        "Mandeep Rathee",
+        "Sean MacAvaney",
+        "Avishek Anand"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09186v1",
+      "abstract": "Large Language Models (LLMs) have shown strong promise as rerankers, especially in ``listwise'' settings where an LLM is prompted to rerank several search results at once. However, this ``cascading'' retrieve-and-rerank approach is limited by the bounded recall problem: relevant documents not retrie"
+    },
+    {
+      "title": "Evaluating GenAI for Simplifying Texts for Education: Improving Accuracy and Consistency for Enhanced Readability",
+      "authors": [
+        "Stephanie L. Day",
+        "Jacapo Cirica",
+        "Steven R. Clapp"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09158v1",
+      "abstract": "Generative artificial intelligence (GenAI) holds great promise as a tool to support personalized learning. Teachers need tools to efficiently and effectively enhance content readability of educational texts so that they are matched to individual students reading levels, while retaining key details. "
+    },
+    {
+      "title": "Few-Shot Adaptation of Training-Free Foundation Model for 3D Medical Image Segmentation",
+      "authors": [
+        "Xingxin He",
+        "Yifan Hu",
+        "Zhaoye Zhou"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09138v1",
+      "abstract": "Vision foundation models have achieved remarkable progress across various image analysis tasks. In the image segmentation task, foundation models like the Segment Anything Model (SAM) enable generalizable zero-shot segmentation through user-provided prompts. However, SAM primarily trained on natural"
+    },
+    {
+      "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "authors": [
+        "Aditi Singh",
+        "Abul Ehtesham",
+        "Saket Kumar"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09136v4",
+      "abstract": "Large Language Models (LLMs) have advanced artificial intelligence by enabling human-like text generation and natural language understanding. However, their reliance on static training data limits their ability to respond to dynamic, real-time queries, resulting in outdated or inaccurate outputs. Re"
+    },
+    {
+      "title": "Multilingual LLMs Struggle to Link Orthography and Semantics in Bilingual Word Processing",
+      "authors": [
+        "Eshaan Tanwar",
+        "Gayatri Oke",
+        "Tanmoy Chakraborty"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09127v2",
+      "abstract": "Bilingual lexical processing is shaped by the complex interplay of phonological, orthographic, and semantic features of two languages within an integrated mental lexicon. In humans, this is evident in the ease with which cognate words - words similar in both orthographic form and meaning (e.g., blin"
+    },
+    {
+      "title": "Growth Patterns of Inference",
+      "authors": [
+        "Abhishek Sharma"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2502.00019v1",
+      "abstract": "What properties of a first-order search space support/hinder inference? What kinds of facts would be most effective to learn? Answering these questions is essential for understanding the dynamics of deductive reasoning and creating large-scale knowledge-based learning systems that support efficient "
+    },
+    {
+      "title": "Grounding Text-to-Image Diffusion Models for Controlled High-Quality Image Generation",
+      "authors": [
+        "Ahmad Süleyman",
+        "Göksel Biricik"
+      ],
+      "published": "2025-01-15",
+      "url": "http://arxiv.org/abs/2501.09194v2",
+      "abstract": "Text-to-image (T2I) generative diffusion models have demonstrated outstanding performance in synthesizing diverse, high-quality visuals from text captions. Several layout-to-image models have been developed to control the generation process by utilizing a wide range of layouts, such as segmentation "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

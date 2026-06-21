@@ -1,0 +1,139 @@
+{
+  "period": {
+    "start": "2024-10-01",
+    "end": "2024-10-15",
+    "name": "2024-10-01"
+  },
+  "searched_at": "2026-06-21T05:13:33Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 24,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4",
+      "Stable Diffusion"
+    ],
+    "key_events": [
+      "GPT-4"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming",
+      "authors": [
+        "Yilun Hao",
+        "Yang Zhang",
+        "Chuchu Fan"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12112v3",
+      "abstract": "While large language models (LLMs) have recently demonstrated strong potential in solving planning problems, there is a trade-off between flexibility and complexity. LLMs, as zero-shot planners themselves, are still not capable of directly generating valid plans for complex planning problems such as"
+    },
+    {
+      "title": "Beyond the Comfort Zone: Emerging Solutions to Overcome Challenges in Integrating LLMs into Software Products",
+      "authors": [
+        "Nadia Nahar",
+        "Christian Kästner",
+        "Jenna Butler"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12071v2",
+      "abstract": "Large Language Models (LLMs) are increasingly embedded into software products across diverse industries, enhancing user experiences, but at the same time introducing numerous challenges for developers. Unique characteristics of LLMs force developers, who are accustomed to traditional software develo"
+    },
+    {
+      "title": "De-jargonizing Science for Journalists with GPT-4: A Pilot Study",
+      "authors": [
+        "Sachita Nishal",
+        "Eric Lee",
+        "Nicholas Diakopoulos"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12069v1",
+      "abstract": "This study offers an initial evaluation of a human-in-the-loop system leveraging GPT-4 (a large language model or LLM), and Retrieval-Augmented Generation (RAG) to identify and define jargon terms in scientific abstracts, based on readers' self-reported knowledge. The system achieves fairly high rec"
+    },
+    {
+      "title": "Generative AI's aggregated knowledge versus web-based curated knowledge",
+      "authors": [
+        "Ted Selker",
+        "Yunzi Wu"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12091v1",
+      "abstract": "his paper explores what kinds of questions are best served by the way generative AI (GenAI) using Large Language Models(LLMs) that aggregate and package knowledge, and when traditional curated web-sourced search results serve users better.   An experiment compared product searches using ChatGPT, Goo"
+    },
+    {
+      "title": "Taking off the Rose-Tinted Glasses: A Critical Look at Adversarial ML Through the Lens of Evasion Attacks",
+      "authors": [
+        "Kevin Eykholt",
+        "Farhan Ahmed",
+        "Pratik Vaishnavi"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12076v1",
+      "abstract": "The vulnerability of machine learning models in adversarial scenarios has garnered significant interest in the academic community over the past decade, resulting in a myriad of attacks and defenses. However, while the community appears to be overtly successful in devising new attacks across new cont"
+    },
+    {
+      "title": "WeatherDG: LLM-assisted Diffusion Model for Procedural Weather Generation in Domain-Generalized Semantic Segmentation",
+      "authors": [
+        "Chenghao Qian",
+        "Yuhu Guo",
+        "Yuhong Mo"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12075v2",
+      "abstract": "In this work, we propose a novel approach, namely WeatherDG, that can generate realistic, weather-diverse, and driving-screen images based on the cooperation of two foundation models, i.e, Stable Diffusion (SD) and Large Language Model (LLM). Specifically, we first fine-tune the SD with source data,"
+    },
+    {
+      "title": "A Phenomenological AI Foundation Model for Physical Signals",
+      "authors": [
+        "Jaime Lien",
+        "Laura I. Galindez Olascoaga",
+        "Hasan Dogan"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.14724v1",
+      "abstract": "The objective of this work is to develop an AI foundation model for physical signals that can generalize across diverse phenomena, domains, applications, and sensing apparatuses. We propose a phenomenological approach and framework for creating and validating such AI foundation models. Based on this"
+    },
+    {
+      "title": "Scaling Laws for Post Training Quantized Large Language Models",
+      "authors": [
+        "Zifei Xu",
+        "Alexander Lan",
+        "Wanzin Yazar"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12119v3",
+      "abstract": "Generalization abilities of well-trained large language models (LLMs) are known to scale predictably as a function of model size. In contrast to the existence of practical scaling laws governing pre-training, the quality of LLMs after post-training compression remains highly unpredictable, often req"
+    },
+    {
+      "title": "OMCAT: Omni Context Aware Transformer",
+      "authors": [
+        "Arushi Goel",
+        "Karan Sapra",
+        "Matthieu Le"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12109v1",
+      "abstract": "Large Language Models (LLMs) have made significant strides in text generation and comprehension, with recent advancements extending into multimodal LLMs that integrate visual and audio inputs. However, these models continue to struggle with fine-grained, cross-modal temporal understanding, particula"
+    },
+    {
+      "title": "Just-In-Time Software Defect Prediction via Bi-modal Change Representation Learning",
+      "authors": [
+        "Yuze Jiang",
+        "Beijun Shen",
+        "Xiaodong Gu"
+      ],
+      "published": "2024-10-15",
+      "url": "http://arxiv.org/abs/2410.12107v1",
+      "abstract": "For predicting software defects at an early stage, researchers have proposed just-in-time defect prediction (JIT-DP) to identify potential defects in code commits. The prevailing approaches train models to represent code changes in history commits and utilize the learned representations to predict t"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

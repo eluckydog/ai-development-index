@@ -1,0 +1,139 @@
+{
+  "period": {
+    "start": "2026-04-16",
+    "end": "2026-04-30",
+    "name": "2026-04-16"
+  },
+  "searched_at": "2026-06-21T05:15:45Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 24,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Claude",
+      "Haiku"
+    ],
+    "key_events": [
+      "Claude"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Retrieval-Augmented Reasoning for Chartered Accountancy",
+      "authors": [
+        "Jatin Gupta",
+        "Akhil Sharma",
+        "Saransh Singhania"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00257v1",
+      "abstract": "The inception of Large Language Models (LLMs) has catalyzed AI adoption in the finance sector, yet their reliability in complex, jurisdiction-specific tasks like Indian Chartered Accountancy (CA) remains limited. The models display difficulty in executing numerical tasks which require multiple steps"
+    },
+    {
+      "title": "Jailbroken Frontier Models Retain Their Capabilities",
+      "authors": [
+        "Daniel Zhu",
+        "Zihan Wang",
+        "Xuchan Bao"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00267v2",
+      "abstract": "As language model safeguards become more robust, attackers are pushed toward developing increasingly complex jailbreaks. Prior work has found that this complexity imposes a \"jailbreak tax\" that degrades the target model's task performance. We show that this tax scales inversely with model capability"
+    },
+    {
+      "title": "What Don't You Understand? Using Large Language Models to Identify and Characterize Student Misconceptions About Challenging Topics",
+      "authors": [
+        "Michael J. Parker",
+        "Maria G. Zavala-Cerna"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00294v1",
+      "abstract": "This study presents a systematic approach to identifying and characterizing student misconceptions in online learning environments through a novel combination of quantitative performance analysis and large language model (LLM) assessment. We analyzed data from 9 course periods across 5 online biomed"
+    },
+    {
+      "title": "Caracal: Causal Architecture via Spectral Mixing",
+      "authors": [
+        "Bingzheng Gan",
+        "Tianyi Zhang",
+        "Yusu Li"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00292v2",
+      "abstract": "The scalability of Large Language Models to long sequences is hindered by the quadratic cost of attention and the limitations of positional encodings. To address these, we introduce Caracal, a novel architecture that replaces attention with a parameter-efficient, O(L log(L)) Multi-Head Fourier (MHF)"
+    },
+    {
+      "title": "REALM: An RGB and Event Aligned Latent Manifold for Cross-Modal Perception",
+      "authors": [
+        "Vincenzo Polizzi",
+        "David B. Lindell",
+        "Jonathan Kelly"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00271v2",
+      "abstract": "Event cameras provide several unique advantages over standard frame-based sensors, including high temporal resolution, low latency, and robustness to extreme lighting. However, existing learning-based approaches for event processing are typically confined to narrow, task-specific silos and lack the "
+    },
+    {
+      "title": "When Jokes Cross the Line: Analyzing Regular Humor and Dark Humor in YouTube Shorts",
+      "authors": [
+        "Sydney Johns",
+        "Sanjeev Parthasarathy",
+        "Shantnu Bhalla"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2606.00046v1",
+      "abstract": "Video platforms such as YouTube have reshaped how users engage with entertainment and information, emphasizing brief, highly engaging content such as Shorts. Within this ecosystem, certain content occupies a gray area where it remains allowed but may still have unintended negative effects on some au"
+    },
+    {
+      "title": "CellxPert: Inference-Time MCMC Steering of a Multi-Omics Single-Cell Foundation Model for In-Silico Perturbation",
+      "authors": [
+        "Andac Demir",
+        "Erik W. Anderson",
+        "Jeremy L. Jenkins"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00930v1",
+      "abstract": "In this work, we introduce CellxPert, a scalable multimodal foundation model that unifies single-cell and spatial multi-omics within a common representation space. CellxPert jointly encodes transcriptomic (scRNA-seq), chromatin-accessibility (ATAC-seq), and surface-proteomic (CITE-seq) measurements,"
+    },
+    {
+      "title": "Trident: Improving Malware Detection with LLMs and Behavioral Features",
+      "authors": [
+        "Rebecca Saul",
+        "Jingzhi Jiang",
+        "Elliott Chia"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00297v1",
+      "abstract": "Traditionally, machine learning methods for PE malware detection have relied on static features like byte histograms, string information, and PE header contents. One barrier to incorporating dynamic analysis features has been the semi-structured nature of sandbox behavior reports. We show that, usin"
+    },
+    {
+      "title": "Finding Hidden Relationships Between Medical Concepts by Leveraging Metamap and Text Mining Techniques",
+      "authors": [
+        "Weikang Yang",
+        "S M Mazharul Hoque Chowdhury",
+        "Wei Jin"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2606.07540v1",
+      "abstract": "Text is one of the most common ways to store data in this computerized world. At a glance, it may seem that those data are not interconnected. But in reality, data can have hidden connections. Therefore, in this research, a new model has been presented that can find hidden relationships between two "
+    },
+    {
+      "title": "Are You the A-hole? A Fair, Multi-Perspective Ethical Reasoning Framework",
+      "authors": [
+        "Sheza Munir",
+        "Ahanaf Rodoshi",
+        "Sumin Lee"
+      ],
+      "published": "2026-04-30",
+      "url": "http://arxiv.org/abs/2605.00270v1",
+      "abstract": "Standard methods for aggregating natural language judgments, such as majority voting, often fail to produce logically consistent results when applied to high-conflict domains, treating differing opinions as noise. We propose a neuro-symbolic aggregation framework that formalizes conflict resolution "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

@@ -1,0 +1,142 @@
+{
+  "period": {
+    "start": "2025-09-01",
+    "end": "2025-09-15",
+    "name": "2025-09-01"
+  },
+  "searched_at": "2026-06-21T05:14:52Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 36,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "Llama",
+      "LLaMA",
+      "DeepSeek"
+    ],
+    "key_events": [
+      "Llama",
+      "LLaMA",
+      "DeepSeek"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Does Language Model Understand Language?",
+      "authors": [
+        "Suvojit Acharjee",
+        "Utathya Aich",
+        "Asfak Ali"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12459v1",
+      "abstract": "Despite advances in natural language generation and understanding, LM still struggle with fine grained linguistic phenomena such as tense, negation, voice, and modality which are the elements central to effective human communication. In the context of the United Nations SDG 4, where linguistic clari"
+    },
+    {
+      "title": "DinoAtten3D: Slice-Level Attention Aggregation of DinoV2 for 3D Brain MRI Anomaly Classification",
+      "authors": [
+        "Fazle Rafsani",
+        "Jay Shah",
+        "Catherine D. Chong"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12512v1",
+      "abstract": "Anomaly detection and classification in medical imaging are critical for early diagnosis but remain challenging due to limited annotated data, class imbalance, and the high cost of expert labeling. Emerging vision foundation models such as DINOv2, pretrained on extensive, unlabeled datasets, offer g"
+    },
+    {
+      "title": "A comparison of pipelines for the translation of a low resource language based on transformers",
+      "authors": [
+        "Chiara Bonfanti",
+        "Michele Colombino",
+        "Giulia Coucourde"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12514v1",
+      "abstract": "This work compares three pipelines for training transformer-based neural networks to produce machine translators for Bambara, a Mandè language spoken in Africa by about 14,188,850 people. The first pipeline trains a simple transformer to translate sentences from French into Bambara. The second fine-"
+    },
+    {
+      "title": "Prediction and Causality of functional MRI and synthetic signal using a Zero-Shot Time-Series Foundation Model",
+      "authors": [
+        "Alessandro Crimi",
+        "Andrea Brovelli"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12497v2",
+      "abstract": "Time-series forecasting and causal discovery are central in neuroscience, as predicting brain activity and identifying causal relationships between neural populations and circuits can shed light on the mechanisms underlying cognition and disease. With the rise of foundation models, an open question "
+    },
+    {
+      "title": "Audited Reasoning Refinement: Fine-Tuning Language Models via LLM-Guided Step-Wise Evaluation and Correction",
+      "authors": [
+        "Sumanta Bhattacharyya",
+        "Sara Riazi",
+        "Pedram Rooshenas"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12476v2",
+      "abstract": "Training a task-specific small reasoning model is challenging when direct human supervision or high-quality labels are scarce. However, LLMs with reasoning capabilities produce abundant intermediate reasoning traces that can be systematically refined to create effective supervision signals. We propo"
+    },
+    {
+      "title": "Empowering Clinical Trial Design through AI: A Randomized Evaluation of PowerGPT",
+      "authors": [
+        "Yiwen Lu",
+        "Lu Li",
+        "Dazheng Zhang"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12471v1",
+      "abstract": "Sample size calculations for power analysis are critical for clinical research and trial design, yet their complexity and reliance on statistical expertise create barriers for many researchers. We introduce PowerGPT, an AI-powered system integrating large language models (LLMs) with statistical engi"
+    },
+    {
+      "title": "Reasoning Models Can be Accurately Pruned Via Chain-of-Thought Reconstruction",
+      "authors": [
+        "Ryan Lucas",
+        "Kayhan Behdin",
+        "Zhipeng Wang"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12464v2",
+      "abstract": "Reasoning language models such as DeepSeek-R1 produce long chain-of-thought traces during inference time which make them costly to deploy at scale. We show that using compression techniques such as neural network pruning produces greater performance loss than in typical language modeling tasks, and "
+    },
+    {
+      "title": "Phi: Preference Hijacking in Multi-modal Large Language Models at Inference Time",
+      "authors": [
+        "Yifan Lan",
+        "Yuanpu Cao",
+        "Weitong Zhang"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12521v1",
+      "abstract": "Recently, Multimodal Large Language Models (MLLMs) have gained significant attention across various domains. However, their widespread adoption has also raised serious safety concerns. In this paper, we uncover a new safety risk of MLLMs: the output preference of MLLMs can be arbitrarily manipulated"
+    },
+    {
+      "title": "Context-Aware Language Models for Forecasting Market Impact from Sequences of Financial News",
+      "authors": [
+        "Ross Koval",
+        "Nicholas Andrews",
+        "Xifeng Yan"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12519v1",
+      "abstract": "Financial news plays a critical role in the information diffusion process in financial markets and is a known driver of stock prices. However, the information in each news article is not necessarily self-contained, often requiring a broader understanding of the historical news coverage for accurate "
+    },
+    {
+      "title": "Fun-ASR Technical Report",
+      "authors": [
+        "Keyu An",
+        "Yanni Chen",
+        "Zhigao Chen"
+      ],
+      "published": "2025-09-15",
+      "url": "http://arxiv.org/abs/2509.12508v4",
+      "abstract": "In recent years, automatic speech recognition (ASR) has witnessed transformative advancements driven by three complementary paradigms: data scaling, model size scaling, and deep integration with large language models (LLMs). However, LLMs are prone to hallucination, which can significantly degrade u"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

@@ -1,0 +1,139 @@
+{
+  "period": {
+    "start": "2025-12-16",
+    "end": "2025-12-31",
+    "name": "2025-12-16"
+  },
+  "searched_at": "2026-06-21T05:15:16Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 36,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": [
+      "GPT-4",
+      "Claude",
+      "Gemini"
+    ],
+    "key_events": [
+      "GPT-4",
+      "Claude",
+      "Gemini"
+    ]
+  },
+  "arxiv": [
+    {
+      "title": "Ask, Clarify, Optimize: Human-LLM Agent Collaboration for Smarter Inventory Control",
+      "authors": [
+        "Yaqi Duan",
+        "Yichun Hu",
+        "Jiashuo Jiang"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00121v1",
+      "abstract": "Inventory management remains a challenge for many small and medium-sized businesses that lack the expertise to deploy advanced optimization methods. This paper investigates whether Large Language Models (LLMs) can help bridge this gap. We show that employing LLMs as direct, end-to-end solvers incurs"
+    },
+    {
+      "title": "Placenta Accreta Spectrum Detection using Multimodal Deep Learning",
+      "authors": [
+        "Sumaiya Ali",
+        "Areej Alhothali",
+        "Sameera Albasri"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00907v1",
+      "abstract": "Placenta Accreta Spectrum (PAS) is a life-threatening obstetric complication involving abnormal placental invasion into the uterine wall. Early and accurate prenatal diagnosis is essential to reduce maternal and neonatal risks. This study aimed to develop and validate a deep learning framework that "
+    },
+    {
+      "title": "PCEval: A Benchmark for Evaluating Physical Computing Capabilities of Large Language Models",
+      "authors": [
+        "Inpyo Song",
+        "Eunji Jeon",
+        "Jangwon Lee"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.02404v1",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains, including software development, education, and technical assistance. Among these, software development is one of the key areas where LLMs are increasingly adopted. However, when hardware constraints are co"
+    },
+    {
+      "title": "Constructing a Neuro-Symbolic Mathematician from First Principles",
+      "authors": [
+        "Keqin Xie"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00125v1",
+      "abstract": "Large Language Models (LLMs) exhibit persistent logical failures in complex reasoning due to the lack of an internal axiomatic framework. We propose Mathesis, a neuro-symbolic architecture that encodes mathematical states as higher-order hypergraphs and uses a Symbolic Reasoning Kernel (SRK)--a diff"
+    },
+    {
+      "title": "Evaluating Contextual Intelligence in Recyclability: A Comprehensive Study of Image-Based Reasoning Systems",
+      "authors": [
+        "Eliot Park",
+        "Abhi Kumar",
+        "Pranav Rajpurkar"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00905v1",
+      "abstract": "While the importance of efficient recycling is widely acknowledged, accurately determining the recyclability of items and their proper disposal remains a complex task for the general public. In this study, we explore the application of cutting-edge vision-language models (GPT-4o, GPT-4o-mini, and Cl"
+    },
+    {
+      "title": "Explicit Abstention Knobs for Predictable Reliability in Video Question Answering",
+      "authors": [
+        "Jorge Ortiz"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00138v2",
+      "abstract": "High-stakes deployment of vision-language models (VLMs) requires selective prediction, where systems abstain when uncertain rather than risk costly errors. We investigate whether confidence-based abstention provides reliable control over error rates in video question answering, and whether that cont"
+    },
+    {
+      "title": "Democratizing Electronic-Photonic AI Systems: An Open-Source AI-Infused Cross-Layer Co-Design and Design Automation Toolflow",
+      "authors": [
+        "Hongjian Zhou",
+        "Ziang Yin",
+        "Jiaqi Gu"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00130v1",
+      "abstract": "Photonics is becoming a cornerstone technology for high-performance AI systems and scientific computing, offering unparalleled speed, parallelism, and energy efficiency. Despite this promise, the design and deployment of electronic-photonic AI systems remain highly challenging due to a steep learnin"
+    },
+    {
+      "title": "Mortar: Evolving Mechanics for Automatic Game Design",
+      "authors": [
+        "Muhammad U. Nasir",
+        "Yuchen Li",
+        "Steven James"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00105v1",
+      "abstract": "We present Mortar, a system for autonomously evolving game mechanics for automatic game design. Game mechanics define the rules and interactions that govern gameplay, and designing them manually is a time-consuming and expert-driven process. Mortar combines a quality-diversity algorithm with a large"
+    },
+    {
+      "title": "Speculative Decoding: Performance or Illusion?",
+      "authors": [
+        "Xiaoxuan Liu",
+        "Jiaxiang Yu",
+        "Jongseok Park"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.11580v2",
+      "abstract": "Speculative decoding (SD) has become a popular technique to accelerate Large Language Model (LLM) inference, yet its real-world effectiveness remains unclear as prior evaluations rely on research prototypes and unrealistically small batch sizes. We present, to our knowledge, the first systematic stu"
+    },
+    {
+      "title": "Adaptive Constraint Propagation: Scaling Structured Inference for Large Language Models via Meta-Reinforcement Learning",
+      "authors": [
+        "Ibne Farabi Shihab",
+        "Sanjeda Akter",
+        "Anuj Sharma"
+      ],
+      "published": "2025-12-31",
+      "url": "http://arxiv.org/abs/2601.00095v3",
+      "abstract": "Large language models increasingly require structured inference, from JSON schema enforcement to multi-lingual parsing, where outputs must satisfy complex constraints. We introduce MetaJuLS, a meta-reinforcement learning approach that learns universal constraint propagation policies applicable acros"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

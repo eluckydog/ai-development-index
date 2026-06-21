@@ -1,0 +1,127 @@
+{
+  "period": {
+    "start": "2024-01-01",
+    "end": "2024-01-15",
+    "name": "2024-01-01"
+  },
+  "searched_at": "2026-06-21T05:11:50Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "authors": [
+        "Dan Zhang",
+        "Ziniu Hu",
+        "Sining Zhoubian"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07950v3",
+      "abstract": "Large Language Models (LLMs) have shown promise in assisting scientific discovery. However, such applications are currently limited by LLMs' deficiencies in understanding intricate scientific concepts, deriving symbolic equations, and solving advanced numerical calculations. To bridge these gaps, we"
+    },
+    {
+      "title": "Assessing the Latent Automated Program Repair Capabilities of Large Language Models using Round-Trip Translation",
+      "authors": [
+        "Fernando Vallecillos Ruiz",
+        "Anastasiia Grishina",
+        "Max Hort"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07994v2",
+      "abstract": "Research shows that errors in natural language can be corrected by translating texts to another language and back using language models. We explore to what extent this latent correction capability extends to Automated Program Repair (APR) by investigating Round-Trip Translation (RTT): translating co"
+    },
+    {
+      "title": "AI-as-exploration: Navigating intelligence space",
+      "authors": [
+        "Dimitri Coelho Mollo"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07964v3",
+      "abstract": "Artificial Intelligence is a field that lives many lives, and the term has come to encompass a motley collection of scientific and commercial endeavours. In this paper, I articulate the contours of a rather neglected but central scientific role that AI has to play, which I dub `AI-as-exploration'.Th"
+    },
+    {
+      "title": "Solution of the Probabilistic Lambert Problem: Connections with Optimal Mass Transport, Schrödinger Bridge and Reaction-Diffusion PDEs",
+      "authors": [
+        "Alexis M. H. Teter",
+        "Iman Nodozi",
+        "Abhishek Halder"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07961v4",
+      "abstract": "The Lambert problem originated in orbital mechanics. It concerns with determining the initial velocity for a boundary value problem involving the dynamical constraint due to gravitational potential with additional time horizon and endpoint position constraints. Its solution has application in transf"
+    },
+    {
+      "title": "SemEval-2017 Task 4: Sentiment Analysis in Twitter using BERT",
+      "authors": [
+        "Rupak Kumar Das",
+        "Ted Pedersen"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07944v2",
+      "abstract": "This paper uses the BERT model, which is a transformer-based architecture, to solve task 4A, English Language, Sentiment Analysis in Twitter of SemEval2017. BERT is a very powerful large language model for classification tasks when the amount of training data is small. For this experiment, we have u"
+    },
+    {
+      "title": "Jewelry Recognition via Encoder-Decoder Models",
+      "authors": [
+        "José M. Alcalde-Llergo",
+        "Enrique Yeguas-Bolívar",
+        "Andrea Zingoni"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.08003v1",
+      "abstract": "Jewelry recognition is a complex task due to the different styles and designs of accessories. Precise descriptions of the various accessories is something that today can only be achieved by experts in the field of jewelry. In this work, we propose an approach for jewelry recognition using computer v"
+    },
+    {
+      "title": "Carrying over algorithm in transformers",
+      "authors": [
+        "Jorrit Kruthoff"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07993v2",
+      "abstract": "Addition is perhaps one of the simplest arithmetic tasks one can think of and is usually performed using the carrying over algorithm. This algorithm consists of two tasks: adding digits in the same position and carrying over a one whenever necessary. We study how transformer models implement this al"
+    },
+    {
+      "title": "Towards Efficient Methods in Medical Question Answering using Knowledge Graph Embeddings",
+      "authors": [
+        "Saptarshi Sengupta",
+        "Connor Heaton",
+        "Suhan Cui"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07977v3",
+      "abstract": "In Natural Language Processing (NLP), Machine Reading Comprehension (MRC) is the task of answering a question based on a given context. To handle questions in the medical domain, modern language models such as BioBERT, SciBERT and even ChatGPT are trained on vast amounts of in-domain medical corpora"
+    },
+    {
+      "title": "MCMChaos: Improvising Rap Music with MCMC Methods and Chaos Theory",
+      "authors": [
+        "Robert G. Kimelman"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07967v1",
+      "abstract": "A novel freestyle rap software, MCMChaos 0.0.1, based on rap music transcriptions created in previous research is presented. The software has three different versions, each making use of different mathematical simulation methods: collapsed gibbs sampler and lorenz attractor simulation. As far as we "
+    },
+    {
+      "title": "Cesium Tiles for High-realism Simulation and Comparing SLAM Results in Corresponding Virtual and Real-world Environments",
+      "authors": [
+        "Chris Beam",
+        "Jincheng Zhang",
+        "Nicholas Kakavitsas"
+      ],
+      "published": "2024-01-15",
+      "url": "http://arxiv.org/abs/2401.07962v1",
+      "abstract": "This article discusses the use of a simulated environment to predict algorithm results in the real world. Simulators are crucial in allowing researchers to test algorithms, sensor integration, and navigation systems without deploying expensive hardware. This article examines how the AirSim simulator"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

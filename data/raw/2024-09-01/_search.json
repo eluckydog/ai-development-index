@@ -1,0 +1,127 @@
+{
+  "period": {
+    "start": "2024-09-01",
+    "end": "2024-09-15",
+    "name": "2024-09-01"
+  },
+  "searched_at": "2026-06-21T05:13:26Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "GP-GPT: Large Language Model for Gene-Phenotype Mapping",
+      "authors": [
+        "Yanjun Lyu",
+        "Zihao Wu",
+        "Lu Zhang"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09825v4",
+      "abstract": "Pre-trained large language models(LLMs) have attracted increasing attention in biomedical domains due to their success in natural language processing. However, the complex traits and heterogeneity of multi-sources genomics data pose significant challenges when adapting these models to the bioinforma"
+    },
+    {
+      "title": "Causal Inference with Large Language Model: A Survey",
+      "authors": [
+        "Jing Ma"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09822v3",
+      "abstract": "Causal inference has been a pivotal challenge across diverse domains such as medicine and economics, demanding a complicated integration of human knowledge, mathematical reasoning, and data mining capabilities. Recent advancements in natural language processing (NLP), particularly with the advent of"
+    },
+    {
+      "title": "Estimating Wage Disparities Using Foundation Models",
+      "authors": [
+        "Keyon Vafa",
+        "Susan Athey",
+        "David M. Blei"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09894v2",
+      "abstract": "The rise of foundation models marks a paradigm shift in machine learning: instead of training specialized models from scratch, foundation models are first trained on massive datasets before being adapted or fine-tuned to make predictions on smaller datasets. Initially developed for text, foundation "
+    },
+    {
+      "title": "Generating Synthetic Free-text Medical Records with Low Re-identification Risk using Masked Language Modeling",
+      "authors": [
+        "Samuel Belkadi",
+        "Libo Ren",
+        "Nicolo Micheletti"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09831v3",
+      "abstract": "The vast amount of available medical records has the potential to improve healthcare and biomedical research. However, privacy restrictions make these data accessible for internal use only. Recent works have addressed this problem by generating synthetic data using Causal Language Modeling. Unfortun"
+    },
+    {
+      "title": "Veridical Data Science for Medical Foundation Models",
+      "authors": [
+        "Ahmed Alaa",
+        "Bin Yu"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.10580v1",
+      "abstract": "The advent of foundation models (FMs) such as large language models (LLMs) has led to a cultural shift in data science, both in medicine and beyond. This shift involves moving away from specialized predictive models trained for specific, well-defined domain questions to generalist FMs pre-trained on"
+    },
+    {
+      "title": "Loneliness Forecasting Using Multi-modal Wearable and Mobile Sensing in Everyday Settings",
+      "authors": [
+        "Zhongqi Yang",
+        "Iman Azimi",
+        "Salar Jafarlou"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2410.00020v1",
+      "abstract": "The adverse effects of loneliness on both physical and mental well-being are profound. Although previous research has utilized mobile sensing techniques to detect mental health issues, few studies have utilized state-of-the-art wearable devices to forecast loneliness and estimate the physiological m"
+    },
+    {
+      "title": "Dynamic Fraud Detection: Integrating Reinforcement Learning into Graph Neural Networks",
+      "authors": [
+        "Yuxin Dong",
+        "Jianhua Yao",
+        "Jiajing Wang"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09892v2",
+      "abstract": "Financial fraud refers to the act of obtaining financial benefits through dishonest means. Such behavior not only disrupts the order of the financial market but also harms economic and social development and breeds other illegal and criminal activities. With the popularization of the internet and on"
+    },
+    {
+      "title": "REG: Refined Generalized Focal Loss for Road Asset Detection on Thai Highways Using Vision-Based Detection and Segmentation Models",
+      "authors": [
+        "Teerapong Panboonyuen"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09877v2",
+      "abstract": "This paper introduces a novel framework for detecting and segmenting critical road assets on Thai highways using an advanced Refined Generalized Focal Loss (REG) formulation. Integrated into state-of-the-art vision-based detection and segmentation models, the proposed method effectively addresses cl"
+    },
+    {
+      "title": "A Survey of Out-of-distribution Generalization for Graph Machine Learning from a Causal View",
+      "authors": [
+        "Jing Ma"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09858v3",
+      "abstract": "Graph machine learning (GML) has been successfully applied across a wide range of tasks. Nonetheless, GML faces significant challenges in generalizing over out-of-distribution (OOD) data, which raises concerns about its wider applicability. Recent advancements have underscored the crucial role of ca"
+    },
+    {
+      "title": "Latent Diffusion Models for Controllable RNA Sequence Generation",
+      "authors": [
+        "Kaixuan Huang",
+        "Yukang Yang",
+        "Kaidi Fu"
+      ],
+      "published": "2024-09-15",
+      "url": "http://arxiv.org/abs/2409.09828v2",
+      "abstract": "This work presents RNAdiffusion, a latent diffusion model for generating and optimizing discrete RNA sequences of variable lengths. RNA is a key intermediary between DNA and protein, exhibiting high sequence diversity and complex three-dimensional structures to support a wide range of functions. We "
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

@@ -1,0 +1,131 @@
+{
+  "period": {
+    "start": "2025-03-16",
+    "end": "2025-03-31",
+    "name": "2025-03-16"
+  },
+  "searched_at": "2026-06-21T05:14:12Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Large Language Models in Numberland: A Quick Test of Their Numerical Reasoning Abilities",
+      "authors": [
+        "Roussel Rahman"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00226v1",
+      "abstract": "An essential element of human mathematical reasoning is our number sense -- an abstract understanding of numbers and their relationships -- which allows us to solve problems involving vast number spaces using limited computational resources. Mathematical reasoning of Large Language Models (LLMs) is "
+    },
+    {
+      "title": "$\\textit{Agents Under Siege}$: Breaking Pragmatic Multi-Agent LLM Systems with Optimized Prompt Attacks",
+      "authors": [
+        "Rana Muhammad Shahroz Khan",
+        "Zhen Tan",
+        "Sukwon Yun"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00218v2",
+      "abstract": "Most discussions about Large Language Model (LLM) safety have focused on single-agent settings but multi-agent LLM systems now create novel adversarial risks because their behavior depends on communication between agents and decentralized reasoning. In this work, we innovatively focus on attacking p"
+    },
+    {
+      "title": "Inference-Time Scaling for Complex Tasks: Where We Stand and What Lies Ahead",
+      "authors": [
+        "Vidhisha Balachandran",
+        "Jingya Chen",
+        "Lingjiao Chen"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00294v1",
+      "abstract": "Inference-time scaling can enhance the reasoning capabilities of large language models (LLMs) on complex problems that benefit from step-by-step problem solving. Although lengthening generated scratchpads has proven effective for mathematical tasks, the broader impact of this approach on other tasks"
+    },
+    {
+      "title": "Text Chunking for Document Classification for Urban System Management using Large Language Models",
+      "authors": [
+        "Joshua Rodriguez",
+        "Om Sanan",
+        "Guillermo Vizarreta-Luna"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00274v1",
+      "abstract": "Urban systems are managed using complex textual documentation that need coding and analysis to set requirements and evaluate built environment performance. This paper contributes to the study of applying large-language models (LLM) to qualitative coding activities to reduce resource requirements whi"
+    },
+    {
+      "title": "PIM-LLM: A High-Throughput Hybrid PIM Architecture for 1-bit LLMs",
+      "authors": [
+        "Jinendra Malekar",
+        "Peyton Chandarana",
+        "Md Hasibul Amin"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.01994v1",
+      "abstract": "In this paper, we propose PIM-LLM, a hybrid architecture developed to accelerate 1-bit large language models (LLMs). PIM-LLM leverages analog processing-in-memory (PIM) architectures and digital systolic arrays to accelerate low-precision matrix multiplication (MatMul) operations in projection layer"
+    },
+    {
+      "title": "SciReplicate-Bench: Benchmarking LLMs in Agent-driven Algorithmic Reproduction from Research Papers",
+      "authors": [
+        "Yanzheng Xiang",
+        "Hanqi Yan",
+        "Shuyin Ouyang"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00255v2",
+      "abstract": "This study evaluates large language models (LLMs) in generating code from algorithm descriptions in recent NLP papers. The task requires two key competencies: (1) algorithm comprehension: synthesizing information from papers and academic literature to understand implementation logic, and (2) coding "
+    },
+    {
+      "title": "Synthesizing Public Opinions with LLMs: Role Creation, Impacts, and the Future to eDemorcacy",
+      "authors": [
+        "Rabimba Karanjai",
+        "Boris Shor",
+        "Amanda Austin"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00241v1",
+      "abstract": "This paper investigates the use of Large Language Models (LLMs) to synthesize public opinion data, addressing challenges in traditional survey methods like declining response rates and non-response bias. We introduce a novel technique: role creation based on knowledge injection, a form of in-context"
+    },
+    {
+      "title": "Opportunistic Screening for Pancreatic Cancer using Computed Tomography Imaging and Radiology Reports",
+      "authors": [
+        "David Le",
+        "Ramon Correa-Medero",
+        "Amara Tariq"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00232v1",
+      "abstract": "Pancreatic ductal adenocarcinoma (PDAC) is a highly aggressive cancer, with most cases diagnosed at stage IV and a five-year overall survival rate below 5%. Early detection and prognosis modeling are crucial for improving patient outcomes and guiding early intervention strategies. In this study, we "
+    },
+    {
+      "title": "A discrete physics-informed training for projection-based reduced order models with neural networks",
+      "authors": [
+        "N. Sibuet",
+        "S. Ares de Parga",
+        "J. R. Bravo"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.13875v2",
+      "abstract": "This paper presents a physics-informed training framework for projection-based Reduced Order Models (ROMs). We extend the PROM-ANN architecture by complementing snapshot-based training with a FEM-based, discrete physics-informed residual loss, bridging the gap between traditional projection-based RO"
+    },
+    {
+      "title": "Do Large Language Models Exhibit Spontaneous Rational Deception?",
+      "authors": [
+        "Samuel M. Taylor",
+        "Benjamin K. Bergen"
+      ],
+      "published": "2025-03-31",
+      "url": "http://arxiv.org/abs/2504.00285v1",
+      "abstract": "Large Language Models (LLMs) are effective at deceiving, when prompted to do so. But under what conditions do they deceive spontaneously? Models that demonstrate better performance on reasoning tasks are also better at prompted deception. Do they also increasingly deceive spontaneously in situations"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}

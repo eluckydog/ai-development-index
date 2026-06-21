@@ -1,0 +1,131 @@
+{
+  "period": {
+    "start": "2024-06-16",
+    "end": "2024-06-30",
+    "name": "2024-06-16"
+  },
+  "searched_at": "2026-06-21T05:12:53Z",
+  "sources": [
+    "arxiv",
+    "github"
+  ],
+  "summary": {
+    "arxiv_papers": 10,
+    "github_repos": 0,
+    "model_activity": 0,
+    "research_activity": 80,
+    "open_source_activity": 0.0,
+    "hype_models": []
+  },
+  "arxiv": [
+    {
+      "title": "Step-Controlled DPO: Leveraging Stepwise Error for Enhanced Mathematical Reasoning",
+      "authors": [
+        "Zimu Lu",
+        "Aojun Zhou",
+        "Ke Wang"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00782v3",
+      "abstract": "Direct Preference Optimization (DPO) has proven effective at improving the performance of large language models (LLMs) on downstream tasks such as reasoning and alignment. In this work, we propose Step-Controlled DPO (SCDPO), a method for automatically providing stepwise error supervision by creatin"
+    },
+    {
+      "title": "NeurIPS 2024 ML4CFD Competition: Harnessing Machine Learning for Computational Fluid Dynamics in Airfoil Design",
+      "authors": [
+        "Mouadh Yagoubi",
+        "David Danan",
+        "Milad Leyli-abadi"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.01641v1",
+      "abstract": "The integration of machine learning (ML) techniques for addressing intricate physics problems is increasingly recognized as a promising avenue for expediting simulations. However, assessing ML-derived physical models poses a significant challenge for their adoption within industrial contexts. This c"
+    },
+    {
+      "title": "NAIST Simultaneous Speech Translation System for IWSLT 2024",
+      "authors": [
+        "Yuka Ko",
+        "Ryo Fukuda",
+        "Yuta Nishikawa"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00826v1",
+      "abstract": "This paper describes NAIST's submission to the simultaneous track of the IWSLT 2024 Evaluation Campaign: English-to-{German, Japanese, Chinese} speech-to-text translation and English-to-Japanese speech-to-speech translation. We develop a multilingual end-to-end speech-to-text translation model combi"
+    },
+    {
+      "title": "Image Classification for Snow Detection to Improve Pedestrian Safety",
+      "authors": [
+        "Ricardo de Deijn",
+        "Rajeev Bukralia"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00818v1",
+      "abstract": "This study presents a computer vision approach aimed at detecting snow on sidewalks and pavements to reduce winter-related fall injuries, especially among elderly and visually impaired individuals. Leveraging fine-tuned VGG-19 and ResNet50 convolutional neural networks (CNNs), the research focuses o"
+    },
+    {
+      "title": "Exploring a Physics-Informed Decision Transformer for Distribution System Restoration: Methodology and Performance Analysis",
+      "authors": [
+        "Hong Zhao",
+        "Jin Wei-Kocsis",
+        "Adel Heidari Akhijahani"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00808v1",
+      "abstract": "Driven by advancements in sensing and computing, deep reinforcement learning (DRL)-based methods have demonstrated significant potential in effectively tackling distribution system restoration (DSR) challenges under uncertain operational scenarios. However, the data-intensive nature of DRL poses obs"
+    },
+    {
+      "title": "Understanding Transformers via N-gram Statistics",
+      "authors": [
+        "Timothy Nguyen"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.12034v2",
+      "abstract": "Transformer based large-language models (LLMs) display extreme proficiency with language yet a precise understanding of how they work remains elusive. One way of demystifying transformer predictions would be to describe how they depend on their context in terms of simple template functions. This pap"
+    },
+    {
+      "title": "MUSE-Net: Missingness-aware mUlti-branching Self-attention Encoder for Irregular Longitudinal Electronic Health Records",
+      "authors": [
+        "Zekai Wang",
+        "Tieming Liu",
+        "Bing Yao"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00840v2",
+      "abstract": "The era of big data has made vast amounts of clinical data readily available, particularly in the form of electronic health records (EHRs), which provides unprecedented opportunities for developing data-driven diagnostic tools to enhance clinical decision making. However, the application of EHRs in "
+    },
+    {
+      "title": "Diffusion Models and Representation Learning: A Survey",
+      "authors": [
+        "Michael Fuest",
+        "Pingchuan Ma",
+        "Ming Gui"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00783v1",
+      "abstract": "Diffusion Models are popular generative modeling methods in various vision tasks, attracting significant attention. They can be considered a unique instance of self-supervised learning methods due to their independence from label annotation. This survey explores the interplay between diffusion model"
+    },
+    {
+      "title": "Characterizing Stereotypical Bias from Privacy-preserving Pre-Training",
+      "authors": [
+        "Stefan Arnold",
+        "Rene Gröbner",
+        "Annika Schreiner"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00764v1",
+      "abstract": "Differential Privacy (DP) can be applied to raw text by exploiting the spatial arrangement of words in an embedding space. We investigate the implications of such text privatization on Language Models (LMs) and their tendency towards stereotypical associations. Since previous studies documented that"
+    },
+    {
+      "title": "SAFE: a SAR Feature Extractor based on self-supervised learning and masked Siamese ViTs",
+      "authors": [
+        "Max Muzeau",
+        "Joana Frontera-Pons",
+        "Chengfang Ren"
+      ],
+      "published": "2024-06-30",
+      "url": "http://arxiv.org/abs/2407.00851v1",
+      "abstract": "Due to its all-weather and day-and-night capabilities, Synthetic Aperture Radar imagery is essential for various applications such as disaster management, earth monitoring, change detection and target recognition. However, the scarcity of labeled SAR data limits the performance of most deep learning"
+    }
+  ],
+  "github": [],
+  "benchmarks_found": {}
+}
