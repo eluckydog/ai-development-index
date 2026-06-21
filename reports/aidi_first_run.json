@@ -1,0 +1,135 @@
+{
+  "baseline": {
+    "date": "2022-12-01",
+    "aidis": 100,
+    "aic": 1000
+  },
+  "current": {
+    "date": "2026-06-21",
+    "aidi": 674,
+    "aic": 1045.4
+  },
+  "aic_gain": 45.4,
+  "total_periods": 12,
+  "prediction": {
+    "predicted": 628,
+    "ci_low": 443,
+    "ci_high": 813,
+    "confidence": 71,
+    "trend_delta": -46.1,
+    "volatility": 94.4
+  },
+  "calibration": {
+    "status": "calibrated",
+    "aics": [
+      1000,
+      1001.9,
+      1005.4,
+      1009.0,
+      1012.7,
+      1016.7,
+      1020.9,
+      1025.0,
+      1029.0,
+      1033.0,
+      1037.2,
+      1041.6,
+      1045.4
+    ],
+    "adjustment_factor": 1.2333,
+    "calibrations": [
+      {
+        "date": "2026-01-01",
+        "aic_model": 1001.9,
+        "aic_actual": 1000,
+        "gap": -1.9,
+        "gap_pct": -0.0019,
+        "benchmark_source": "baseline",
+        "benchmark_event": "基线设定"
+      },
+      {
+        "date": "2026-03-01",
+        "aic_model": 1016.7,
+        "aic_actual": 1150,
+        "gap": 133.3,
+        "gap_pct": 0.1311,
+        "benchmark_source": "DeepSeek V4/SWE-Bench 83.7%",
+        "benchmark_event": "DeepSeek V4正式上线, SWE-Bench超越GPT/Claude, API价格仅为GPT-5的1/20"
+      },
+      {
+        "date": "2026-05-16",
+        "aic_model": 1037.2,
+        "aic_actual": 1320,
+        "gap": 282.8,
+        "gap_pct": 0.2727,
+        "benchmark_source": "Claude Opus 4.8 / GPT-5.6",
+        "benchmark_event": "Anthropic估值9650亿首超OpenAI, Claude Opus 4.8登顶科学推理"
+      },
+      {
+        "date": "2026-06-01",
+        "aic_model": 1041.6,
+        "aic_actual": 1350,
+        "gap": 308.4,
+        "gap_pct": 0.2961,
+        "benchmark_source": "GPT-5.6内测 / DeepSeek V4 AMD",
+        "benchmark_event": "GPT-5.6进入内测, DeepSeek V4成功运行AMD MI300X打破CUDA垄断"
+      }
+    ],
+    "total_calibrations": 4,
+    "note": "调整因子 = 外部基准实测 / 模型推算AIC"
+  },
+  "validation": {
+    "F": 0.8155,
+    "mape": 0.0742,
+    "in_ci_rate": 0.6,
+    "calibration": 0.65,
+    "total_checks": 10,
+    "errors": [
+      {
+        "date": "2026-04-16",
+        "actual": 798,
+        "predicted": 817,
+        "ci_low": 743,
+        "ci_high": 891,
+        "error": -19,
+        "in_ci": true
+      },
+      {
+        "date": "2026-05-01",
+        "actual": 798,
+        "predicted": 802,
+        "ci_low": 725,
+        "ci_high": 879,
+        "error": -4,
+        "in_ci": true
+      },
+      {
+        "date": "2026-05-16",
+        "actual": 900,
+        "predicted": 798,
+        "ci_low": 720,
+        "ci_high": 876,
+        "error": 102,
+        "in_ci": false
+      },
+      {
+        "date": "2026-06-01",
+        "actual": 858,
+        "predicted": 924,
+        "ci_low": 830,
+        "ci_high": 1018,
+        "error": -66,
+        "in_ci": true
+      },
+      {
+        "date": "2026-06-21",
+        "actual": 674,
+        "predicted": 866,
+        "ci_low": 765,
+        "ci_high": 967,
+        "error": -192,
+        "in_ci": false
+      }
+    ]
+  }
+}

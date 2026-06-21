@@ -1,0 +1,158 @@
+{
+  "baseline": {
+    "date": "2022-12-01",
+    "aic": 1000
+  },
+  "current": {
+    "date": "2026-06-16",
+    "aic": 4900,
+    "aidi": 0
+  },
+  "aic_gain": 3900,
+  "total_periods": 86,
+  "prediction": {
+    "predicted": 4959,
+    "ci_low": 4902,
+    "ci_high": 1000,
+    "confidence": 99,
+    "trend_delta": 59.2,
+    "volatility": 29.0,
+    "predicted_aidi": 59.2
+  },
+  "validation": {
+    "F": 0.6143,
+    "mape": 0.0096,
+    "in_ci_rate": 0.0,
+    "calibration": 0.05,
+    "total_checks": 84,
+    "errors": [
+      {
+        "date": "2026-04-16",
+        "actual": 4721,
+        "predicted": 4741,
+        "error": -20,
+        "in_ci": false
+      },
+      {
+        "date": "2026-05-01",
+        "actual": 4761,
+        "predicted": 4780,
+        "error": -19,
+        "in_ci": false
+      },
+      {
+        "date": "2026-05-16",
+        "actual": 4800,
+        "predicted": 4820,
+        "error": -20,
+        "in_ci": false
+      },
+      {
+        "date": "2026-06-01",
+        "actual": 4900,
+        "predicted": 4859,
+        "error": 41,
+        "in_ci": false
+      },
+      {
+        "date": "2026-06-16",
+        "actual": 4900,
+        "predicted": 4959,
+        "error": -59,
+        "in_ci": false
+      }
+    ]
+  },
+  "anchors": [
+    {
+      "date": "2022-12-01",
+      "event": "GPT-4发布",
+      "aic": 1000
+    },
+    {
+      "date": "2023-03-15",
+      "event": "GPT-4正式上线",
+      "aic": 1400
+    },
+    {
+      "date": "2023-12-15",
+      "event": "Gemini Ultra发布",
+      "aic": 1600
+    },
+    {
+      "date": "2024-02-15",
+      "event": "Sora发布",
+      "aic": 1750
+    },
+    {
+      "date": "2024-05-15",
+      "event": "GPT-4o发布",
+      "aic": 2100
+    },
+    {
+      "date": "2024-07-15",
+      "event": "Claude 3.5 Sonnet",
+      "aic": 2250
+    },
+    {
+      "date": "2024-09-15",
+      "event": "o1-preview发布",
+      "aic": 2500
+    },
+    {
+      "date": "2024-12-15",
+      "event": "DeepSeek V3",
+      "aic": 2750
+    },
+    {
+      "date": "2025-01-15",
+      "event": "o3发布",
+      "aic": 3000
+    },
+    {
+      "date": "2025-03-15",
+      "event": "Claude Opus 4",
+      "aic": 3250
+    },
+    {
+      "date": "2025-05-15",
+      "event": "Gemini 2.5 Pro",
+      "aic": 3400
+    },
+    {
+      "date": "2025-07-15",
+      "event": "Llama 4开源",
+      "aic": 3500
+    },
+    {
+      "date": "2025-09-15",
+      "event": "GPT-5发布",
+      "aic": 3900
+    },
+    {
+      "date": "2025-11-15",
+      "event": "Claude Opus 4.5",
+      "aic": 4100
+    },
+    {
+      "date": "2026-01-15",
+      "event": "DeepSeek V4预告",
+      "aic": 4250
+    },
+    {
+      "date": "2026-03-01",
+      "event": "DeepSeek V4上线",
+      "aic": 4600
+    },
+    {
+      "date": "2026-05-16",
+      "event": "Claude Opus 4.8",
+      "aic": 4800
+    },
+    {
+      "date": "2026-06-01",
+      "event": "GPT-5.6内测",
+      "aic": 4900
+    }
+  ]
+}

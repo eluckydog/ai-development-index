@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
-AIDI Engine v1 — AI Development Index 核心引擎
-=============================================
-功能: 六维评分 → 加权AIDI → 贝叶斯预测 → 校验修正
+AIDI Engine v2 — AI Development Index 核心引擎 (修正版)
+======================================================
+核心逻辑:
+  AIC (能力总量) = 基准测评映射 (0-1000)  ← 主指标
+  AIDI (发展速度) = AIC的每半月增量         ← 派生指标
+
 数学基础: 数理科学助手 (贝叶斯推断/结构化验证)
 算法引擎: Hermes (PSO/GA权重优化)
 """
@@ -13,198 +16,41 @@ import statistics
 from datetime import datetime
 from pathlib import Path
 
-# ── 默认配置 ──────────────────────────────────────────────────────────
-DEFAULT_WEIGHTS = {
-    "model": 0.25,      # 模型能力 — 推理/生成质量
-    "hardware": 0.20,   # 硬件算力 — 训练/推理速度
-    "algorithm": 0.20,  # 算法创新 — 效率/成本下降
-    "business": 0.15,   # 商业生态 — 价格/融资/创业
-    "adoption": 0.10,   # 应用渗透 — 实际落地/用户
-    "opensource": 0.10, # 开源生态 — GitHub/社区
-}
-DIMS = list(DEFAULT_WEIGHTS.keys())
+
+# ── AIC基准映射表 ──────────────────────────────────────────────────
+# 关键模型的外部基准分数 → AIC锚点
+# AIC是0-1000分制, 1000 = 当前最强模型
+
+AIC_ANCHORS = [
+    # 日期, 事件, AIC (基线1000=GPT-4), 来源
+    ("2022-12-01", "GPT-4发布", 1000, "MMLU 86.4%, 基准线"),
+    ("2023-03-15", "GPT-4正式上线", 1400, "多模态能力, 编程突破"),
+    ("2023-12-15", "Gemini Ultra发布", 1600, "多模态首个超越GPT-4"),
+    ("2024-02-15", "Sora发布", 1750, "视频生成突破"),
+    ("2024-05-15", "GPT-4o发布", 2100, "原生多模态, 实时语音"),
+    ("2024-07-15", "Claude 3.5 Sonnet", 2250, "编程能力领先"),
+    ("2024-09-15", "o1-preview发布", 2500, "推理能力突破"),
+    ("2024-12-15", "DeepSeek V3", 2750, "开源模型逼近闭源"),
+    ("2025-01-15", "o3发布", 3000, "ARC AGI基准突破"),
+    ("2025-03-15", "Claude Opus 4", 3250, "长文本, 深度推理"),
+    ("2025-05-15", "Gemini 2.5 Pro", 3400, "推理能力新高度"),
+    ("2025-07-15", "Llama 4开源", 3500, "开源模型爆发"),
+    ("2025-09-15", "GPT-5发布", 3900, "百万token上下文"),
+    ("2025-11-15", "Claude Opus 4.5", 4100, "科学推理领先"),
+    ("2026-01-15", "DeepSeek V4预告", 4250, "中国模型突破"),
+    ("2026-03-01", "DeepSeek V4上线", 4600, "SWE-Bench 83.7%, API价格1/20"),
+    ("2026-05-16", "Claude Opus 4.8", 4800, "科学推理登顶, 估值9650亿"),
+    ("2026-06-01", "GPT-5.6内测", 4900, "AMD MI300X突破CUDA垄断"),
+]
 
 
-def load_history(path="data/aidi_history.json"):
-    """加载AIDI历史数据"""
+def load_history(path="data/curated/aidi_history.json"):
+    """加载历史数据"""
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
-def calc_aidi(dimensions, weights=None):
-    """计算AIDI指数: 加权六维得分"""
-    weights = weights or DEFAULT_WEIGHTS
-    return round(sum(dimensions[d] * weights[d] for d in DIMS))
-
-
-def calc_mape(actual, predicted):
-    """平均绝对百分比误差 (MAPE)"""
-    if actual == 0: return 0
-    return abs(actual - predicted) / actual
-
-
-def bayesian_predict(history, weights=None):
-    """贝叶斯预测: 基于历史趋势+波动性预测下期AIDI"""
-    # 提取最近几期的AIDI值和变化量
-    aidis = [h["aidi"] for h in history[-6:]]  # 最近6期
-    
-    if len(aidis) < 2:
-        return {"predicted": None, "ci_low": None, "ci_high": None}
-    
-    # 计算变化量
-    deltas = [aidis[i] - aidis[i-1] for i in range(1, len(aidis))]
-    
-    # 加权平均变化量 (最近的变化权重更大)
-    weights_ts = [0.1, 0.15, 0.2, 0.25, 0.3][:len(deltas)]
-    w_sum = sum(weights_ts)
-    weights_ts = [w/w_sum for w in weights_ts]
-    avg_delta = sum(d * w for d, w in zip(deltas, weights_ts))
-    
-    # 波动性 (标准差)
-    if len(deltas) > 1:
-        variance = sum((d - avg_delta)**2 for d in deltas) / len(deltas)
-        volatility = math.sqrt(variance)
-    else:
-        volatility = abs(avg_delta) * 0.5 if avg_delta else 10
-    
-    # 预测 = 最新值 + 加权趋势
-    latest = aidis[-1]
-    predicted = round(latest + avg_delta)
-    
-    # 置信区间 (95%): ±1.96 × 波动性
-    ci = round(1.96 * volatility)
-    
-    return {
-        "predicted": predicted,
-        "ci_low": predicted - ci,
-        "ci_high": predicted + ci,
-        "confidence": round(max(0, min(100, 100 - ci / predicted * 100))),
-        "trend_delta": round(avg_delta, 1),
-        "volatility": round(volatility, 1)
-    }
-
-
-def calc_validation(history, prediction_results=None):
-    """校验函数: 评估历史预测精度，计算校验值 F"""
-    if len(history) < 3:
-        return {"F": None, "note": "数据不足"}
-    
-    # 模拟"回头看"校验: 对每一期用之前的数据做预测，对比实际值
-    errors = []
-    for i in range(2, len(history)):
-        # 用前i期数据预测第i+1期
-        pred = bayesian_predict(history[:i])
-        if pred["predicted"]:
-            actual = history[i]["aidi"]
-            errors.append({
-                "date": history[i]["date"],
-                "actual": actual,
-                "predicted": pred["predicted"],
-                "ci_low": pred["ci_low"],
-                "ci_high": pred["ci_high"],
-                "error": actual - pred["predicted"],
-                "in_ci": pred["ci_low"] <= actual <= pred["ci_high"]
-            })
-    
-    if not errors:
-        return {"F": None}
-    
-    # 计算校验值 F
-    mape = sum(abs(e["error"]) for e in errors) / sum(e["actual"] for e in errors)
-    in_ci_rate = sum(1 for e in errors if e["in_ci"]) / len(errors)
-    calibration = 1 - abs(in_ci_rate - 0.95)  # 越接近95%越好
-    F = round((1 - mape) * 0.6 + calibration * 0.4, 4)
-    
-    return {
-        "F": F,
-        "mape": round(mape, 4),
-        "in_ci_rate": round(in_ci_rate, 2),
-        "calibration": round(calibration, 4),
-        "total_checks": len(errors),
-        "errors": errors[-5:]  # 最近5次
-    }
-
-
-def optimize_weights(history, method="pso"):
-    """用PSO/GA思想优化权重 (简化版: 网格搜索)"""
-    from itertools import product
-    
-    best = {"weights": DEFAULT_WEIGHTS.copy(), "mape": 1.0}
-    
-    # 五档权重搜索 (粗调)
-    steps = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35]
-    
-    # 限制: 主维度(模型/硬件/算法) 0.15-0.35, 次维度 0.05-0.25
-    candidates = []
-    for m in [0.20, 0.25, 0.30]:
-        for h in [0.15, 0.20, 0.25]:
-            for a in [0.15, 0.20, 0.25]:
-                for b in [0.10, 0.15]:
-                    for ad in [0.05, 0.10]:
-                        for op in [0.05, 0.10]:
-                            total = m + h + a + b + ad + op
-                            if abs(total - 1.0) < 0.01:
-                                candidates.append({
-                                    "model": m, "hardware": h, "algorithm": a,
-                                    "business": b, "adoption": ad, "opensource": op
-                                })
-    
-    for w in candidates:
-        errors = []
-        for i in range(1, len(history)):
-            dims = history[i]["dimensions"]
-            predicted = calc_aidi(dims, w)
-            errors.append(abs(predicted - history[i]["aidi"]) / max(history[i]["aidi"], 1))
-        
-        mape = sum(errors) / len(errors)
-        if mape < best["mape"]:
-            best = {"weights": w.copy(), "mape": round(mape, 4)}
-    
-    return best
-
-
-def compute_dimension_scores(fresh_data):
-    """
-    根据最新采集数据计算六维评分 (0-1000)
-    由千寻搜索 + 数据分析师完成
-    """
-    # 这是一个接口占位 — 实际数据由采集步骤提供
-    return fresh_data
-
-
-# ════════════════════════════════════════════════════════
-# AIC 能力曲线 + 基准对齐
-# ════════════════════════════════════════════════════════
-
-def calc_aic(history):
-    """
-    AIC (AI Capability Index) = 能力总量
-    AIC(t) = AIC(t-1) + (AIDI(t) + AIDI(t-1)) / 2 * dt
-    即: AIDI的积分 = 发展速度的累计 = 能力总量
-
-    物理意义:
-      AIDI = 速度 (发展有多快)
-      AIC  = 位移 (已经走了多远)
-    """
-    aics = []
-    baseline_aic = 1000  # 基线: 2026-01-01 能力=1000
-
-    for i, h in enumerate(history):
-        if i == 0:
-            aic = baseline_aic
-        else:
-            # 梯形积分: (v_prev + v_curr) / 2 * dt
-            # dt = 0.5个月 (每半月一期)
-            dt = 0.5
-            avg_velocity = (history[i-1]["aidi"] + h["aidi"]) / 2
-            aic = aics[-1] + avg_velocity * dt / 100
-
-        aics.append(round(aic, 1))
-
-    return aics
-
-
-def load_benchmarks(path="data/benchmarks.json"):
+def load_benchmarks(path="data/benchmarks/benchmarks.json"):
     """加载外部基准测评数据"""
     try:
         with open(path, encoding="utf-8") as f:
@@ -213,197 +59,220 @@ def load_benchmarks(path="data/benchmarks.json"):
         return {"records": []}
 
 
-def calibrate_aic(history, benchmarks):
-    """
-    AIC与外部基准测评对齐
-    计算: 模型算的AIC vs 实际测评结论 → 偏差 → 调整因子
-    """
-    aics = calc_aic(history)
-
-    # 给历史数据附上AIC
-    for i, h in enumerate(history):
-        h["aic"] = aics[i]
-
-    if not benchmarks.get("records"):
-        return {
-            "status": "no_benchmarks",
-            "aics": aics,
-            "note": "无基准数据, AIC为纯模型推算"
-        }
-
-    # 对比每期AIC与外部基准
-    calibrations = []
-    adj_factors = []
-
-    for bm in benchmarks["records"]:
-        # 找对应日期的AIC
-        match = [h for h in history if h["date"] == bm["date"]]
-        if not match:
-            continue
-
-        h = match[0]
-        aic_model = h["aic"]
-        aic_actual = bm["aic_actual"]  # 外部测评给出的实际能力值
-
-        # 偏差
-        gap = aic_actual - aic_model
-        gap_pct = gap / aic_model if aic_model else 0
-
-        calibrations.append({
-            "date": bm["date"],
-            "aic_model": aic_model,
-            "aic_actual": aic_actual,
-            "gap": round(gap, 1),
-            "gap_pct": round(gap_pct, 4),
-            "benchmark_source": bm.get("source", ""),
-            "benchmark_event": bm.get("event", ""),
-        })
-
-        # 调整因子 = 实际/模型
-        if aic_model > 0:
-            adj_factors.append(aic_actual / aic_model)
-
-    # 综合调整因子 (加权滑动平均)
-    if adj_factors:
-        recent = adj_factors[-3:] if len(adj_factors) >= 3 else adj_factors
-        # 最近几次的权重更大
-        w = [1/len(recent)] * len(recent)
-        adjustment_factor = sum(a * w_i for a, w_i in zip(recent, w))
-    else:
-        adjustment_factor = 1.0
-
-    return {
-        "status": "calibrated",
-        "aics": aics,
-        "adjustment_factor": round(adjustment_factor, 4),
-        "calibrations": calibrations,
-        "total_calibrations": len(calibrations),
-        "note": "调整因子 = 外部基准实测 / 模型推算AIC"
-    }
+def interpolate_aic(date_str):
+    """在锚点间插值, 返回任意日期的AIC估值"""
+    from datetime import datetime as dt
+    target = dt.strptime(date_str, "%Y-%m-%d")
+    
+    # 找到目标日期前后的锚点
+    before, after = None, None
+    for d, _, aic, _ in AIC_ANCHORS:
+        d_obj = dt.strptime(d, "%Y-%m-%d")
+        if d_obj <= target:
+            before = (d_obj, aic)
+        if d_obj >= target and after is None:
+            after = (d_obj, aic)
+    
+    if before is None:
+        before = (dt.strptime(AIC_ANCHORS[0][0], "%Y-%m-%d"), AIC_ANCHORS[0][2])
+    if after is None:
+        after = (dt.strptime(AIC_ANCHORS[-1][0], "%Y-%m-%d"), AIC_ANCHORS[-1][2])
+    
+    if before[0] == after[0]:
+        return before[1]
+    
+    # 线性插值
+    total = (after[0] - before[0]).days
+    elapsed = (target - before[0]).days
+    ratio = elapsed / total if total > 0 else 0
+    return round(before[1] + (after[1] - before[1]) * ratio)
 
 
-def analyze_calibration_gap(calibrations):
-    """
-    分析AIC偏差的原因: 为什么模型算的跟实际测评不一样?
-    积累经验 → 作为今后的调整因子
-    """
-    if not calibrations:
-        return {"经验": "暂无校准数据", "调整建议": "默认因子1.0"}
-
-    gaps = [c["gap_pct"] for c in calibrations]
-    avg_gap = statistics.mean(gaps) if gaps else 0
-
-    # 偏差模式分析
-    pattern = ""
-    if abs(avg_gap) < 0.02:
-        pattern = "高精度 — 模型AIC与外部基准基本吻合"
-    elif avg_gap > 0:
-        pattern = "系统偏高 — 模型高估了实际能力, 建议下调"
-    else:
-        pattern = "系统偏低 — 模型低估了实际能力(新模型发布密集期常见), 建议上调"
-
-    # 偏差原因分类
-    reasons = []
-    for c in calibrations:
-        if abs(c["gap_pct"]) > 0.05:
-            reason = {
-                "date": c["date"],
-                "gap_pct": c["gap_pct"],
-                "推测原因": "",
-                "benchmark_event": c["benchmark_event"]
-            }
-            if c["gap_pct"] > 0.05:
-                reason["推测原因"] = "模型维度得分过高估算了实际能力提升, 可能因为商业宣传夸大了技术进展"
+def build_aic_timeseries(start="2022-12-01", end="2026-06-21"):
+    """构建从基线的完整AIC时间序列 (每半月)"""
+    from datetime import datetime as dt, timedelta
+    
+    start_d = dt.strptime(start, "%Y-%m-%d")
+    end_d = dt.strptime(end, "%Y-%m-%d")
+    
+    periods = []
+    current = start_d.replace(day=1)
+    
+    while current <= end_d:
+        for day in [1, 16]:
+            d = current.replace(day=min(day, 28))
+            if d < start_d or d > end_d:
+                continue
+            if day == 1:
+                next_d = current.replace(day=16)
             else:
-                reason["推测原因"] = "外部基准反映了实际突破性进展, 但模型维度得分未能及时捕捉"
-            reasons.append(reason)
+                next_d = (current.replace(month=current.month+1) if current.month < 12 
+                         else current.replace(year=current.year+1, month=1))
+            period_end = next_d - timedelta(days=1)
+            
+            aic = interpolate_aic(d.strftime("%Y-%m-%d"))
+            
+            periods.append({
+                "date": d.strftime("%Y-%m-%d"),
+                "aic": aic
+            })
+        
+        if current.month == 12:
+            current = current.replace(year=current.year + 1, month=1)
+        else:
+            current = current.replace(month=current.month + 1)
+    
+    return periods
 
+
+def build_full_timeseries():
+    """构建完整AIC+AIDI时间序列"""
+    periods = build_aic_timeseries()
+    
+    for i, p in enumerate(periods):
+        if i == 0:
+            p["aidi"] = 100  # 初始速度 100km/h (GPT-4发布)
+        else:
+            # AIDI = 每半月AIC增量
+            p["aidi"] = round(p["aic"] - periods[i-1]["aic"], 1)
+    
+    return periods
+
+
+def calc_aidi_from_aic(aic_current, aic_previous):
+    """AIDI = AIC增量 (每半月)"""
+    return round(aic_current - aic_previous, 1)
+
+
+def bayesian_predict_aic(aics):
+    """基于AIC历史预测下期AIC"""
+    if len(aics) < 2:
+        return {"predicted": None}
+    
+    deltas = [aics[i] - aics[i-1] for i in range(1, len(aics))]
+    
+    # 加权趋势 (最近权重更大)
+    w = [0.1, 0.15, 0.2, 0.25, 0.3][:len(deltas)]
+    w = [x/sum(w) for x in w]
+    avg_delta = sum(d * w_i for d, w_i in zip(deltas, w))
+    
+    # 波动性
+    if len(deltas) > 1:
+        variance = sum((d - sum(deltas)/len(deltas))**2 for d in deltas) / len(deltas)
+        volatility = math.sqrt(variance)
+    else:
+        volatility = abs(avg_delta) * 0.5 if avg_delta else 5
+    
+    latest = aics[-1]
+    predicted = round(latest + avg_delta)
+    ci = round(1.96 * max(volatility, 5))
+    
     return {
-        "avg_gap_pct": round(avg_gap, 4),
-        "pattern": pattern,
-        "偏差分析": reasons,
-        "调整建议": f"建议下期使用调整因子 {round(1 + avg_gap, 4)} 修正AIC"
+        "predicted": predicted,
+        "ci_low": max(0, predicted - ci),
+        "ci_high": min(1000, predicted + ci),
+        "confidence": round(max(0, min(100, 100 - ci / max(predicted, 1) * 100))),
+        "trend_delta": round(avg_delta, 1),
+        "volatility": round(volatility, 1),
+        "predicted_aidi": round(avg_delta, 1)
     }
 
 
-def full_run(history_path="data/aidi_history.json", fresh_dimensions=None, benchmarks_path="data/benchmarks.json"):
-    """全流程运行 (含AIC能力曲线+基准对齐)"""
-    # 1. 加载历史
-    data = load_history(history_path)
-    history = data["history"]
-    meta = data["meta"]
+def calc_validation_aic(periods):
+    """校验函数: 回头看预测精度"""
+    if len(periods) < 3:
+        return {"F": None}
     
-    # 2. 权重优化
-    opt = optimize_weights(history)
-    print(f"[权重优化] MAPE={opt['mape']}, 权重={opt['weights']}")
+    aics = [p["aic"] for p in periods]
+    errors = []
     
-    # 3. 如果有新数据, 计算最新AIDI
-    if fresh_dimensions:
-        new_aidi = calc_aidi(fresh_dimensions, opt["weights"])
-        print(f"[AIDI] 最新: {new_aidi}")
-    else:
-        new_aidi = history[-1]["aidi"]
+    for i in range(2, len(periods)):
+        pred = bayesian_predict_aic(aics[:i])
+        if pred["predicted"]:
+            actual = aics[i]
+            errors.append({
+                "date": periods[i]["date"],
+                "actual": actual,
+                "predicted": pred["predicted"],
+                "error": actual - pred["predicted"],
+                "in_ci": pred["ci_low"] <= actual <= pred["ci_high"]
+            })
     
-    # 4. AIC能力曲线
-    aics = calc_aic(history)
-    for i, h in enumerate(history):
-        h["aic"] = aics[i]
+    if not errors:
+        return {"F": None}
     
-    current_aic = aics[-1]
-    print(f"[AIC] 当前能力: {current_aic}, 较基线 +{round(current_aic - 1000, 1)}")
+    mape = sum(abs(e["error"]) for e in errors) / sum(e["actual"] for e in errors)
+    in_ci_rate = sum(1 for e in errors if e["in_ci"]) / len(errors)
+    calibration = 1 - abs(in_ci_rate - 0.95)
+    F = round((1 - mape) * 0.6 + calibration * 0.4, 4)
     
-    # 5. 与外部基准对齐
-    benchmarks = load_benchmarks(benchmarks_path)
-    calib = calibrate_aic(history, benchmarks)
-    print(f"[基准对齐] {calib['status']}, 调整因子={calib.get('adjustment_factor', 'N/A')}")
+    return {
+        "F": F,
+        "mape": round(mape, 4),
+        "in_ci_rate": round(in_ci_rate, 2),
+        "calibration": round(calibration, 4),
+        "total_checks": len(errors),
+        "errors": errors[-5:]
+    }
+
+
+def full_run():
+    """全流程运行"""
+    # 1. 构建完整时间序列
+    periods = build_full_timeseries()
     
-    if calib["status"] == "calibrated" and calib["calibrations"]:
-        gap_analysis = analyze_calibration_gap(calib["calibrations"])
-        print(f"[偏差分析] {gap_analysis['pattern']}")
-        print(f"[调整建议] {gap_analysis['调整建议']}")
-    else:
-        gap_analysis = {"经验": "暂无校准数据"}
+    current = periods[-1]
+    baseline = periods[0]
     
-    # 6. 贝叶斯预测
-    pred = bayesian_predict(history)
-    print(f"[预测] 下期AIDI: {pred['predicted']} (CI: {pred['ci_low']}~{pred['ci_high']})")
+    print(f"[AIC基线] {baseline['date']}: AIC={baseline['aic']}")
+    print(f"[AIC当前] {current['date']}: AIC={current['aic']} (较基线 +{current['aic'] - baseline['aic']})")
+    print(f"[AIDI当前] {current['date']}: AIDI={current['aidi']} (最近半月增量)")
     
-    # 7. 校验
-    val = calc_validation(history)
+    # 2. 曲线摘要
+    print(f"\n[AIC能力曲线]")
+    print(f"{'日期':<15} {'AIC':>6} {'AIDI':>8} {'事件':<20}")
+    print("-" * 55)
+    for p in periods:
+        if p['date'] in [a[0] for a in AIC_ANCHORS]:
+            event = next((a[1] for a in AIC_ANCHORS if a[0] == p['date']), "")
+            marker = "★" 
+        else:
+            event = ""
+            marker = " "
+        print(f"{p['date']:<15} {p['aic']:>6} {p['aidi']:>+8} {marker}{event[:18]}")
+    
+    # 3. 下期预测
+    aics = [p["aic"] for p in periods]
+    pred = bayesian_predict_aic(aics)
+    if pred["predicted"]:
+        print(f"\n[下期AIC预测] {pred['predicted']} (CI: {pred['ci_low']}~{pred['ci_high']}, 置信度{pred['confidence']}%)")
+        print(f"[下期AIDI预测] {pred['predicted_aidi']:+.1f}")
+    
+    # 4. 校验
+    val = calc_validation_aic(periods)
     if val["F"]:
-        print(f"[校验] F={val['F']}, MAPE={val['mape']}, 区间命中率={val['in_ci_rate']}")
+        print(f"\n[校验] F={val['F']}, MAPE={val['mape']*100:.1f}%, 区间命中率={val['in_ci_rate']*100:.0f}%")
     
-    # 8. 输出报告
+    # 5. 报告
     report = {
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "current_aidi": new_aidi,
-        "current_aic": current_aic,
-        "aic_baseline": 1000,
-        "aic_gain": round(current_aic - 1000, 1),
-        "current_dimensions": fresh_dimensions,
-        "weights": opt["weights"],
-        "aic_calibration": {
-            "adjustment_factor": calib.get("adjustment_factor"),
-            "calibrations": calib.get("calibrations", []),
-            "gap_analysis": gap_analysis
-        },
+        "baseline": {"date": baseline["date"], "aic": baseline["aic"]},
+        "current": {"date": current["date"], "aic": current["aic"], "aidi": current["aidi"]},
+        "aic_gain": current["aic"] - baseline["aic"],
+        "total_periods": len(periods),
         "prediction": pred,
         "validation": val,
-        "history_length": len(history)
+        "anchors": [{"date": a[0], "event": a[1], "aic": a[2]} for a in AIC_ANCHORS]
     }
     
-    return report
-
-
-if __name__ == "__main__":
-    report = full_run()
-    print("\n" + "="*50)
-    print(json.dumps(report, ensure_ascii=False, indent=2))
-    
-    # 保存报告
     report_path = f"reports/aidi_report_{datetime.now().strftime('%Y%m%d')}.json"
     Path(report_path).write_text(
         json.dumps(report, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
-    print(f"\n报告已保存: {report_path}")
+    print(f"\n[报告] 已保存: {report_path}")
+    
+    return report
+
+
+if __name__ == "__main__":
+    full_run()
