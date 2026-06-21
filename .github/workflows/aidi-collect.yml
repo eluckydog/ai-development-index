@@ -1,86 +1,32 @@
-name: AIDI Collect
-
+name: collect
 on:
   workflow_dispatch:
     inputs:
       start_date:
-        description: Start date YYYY-MM-DD
+        description: Start
         required: true
         default: '2026-06-01'
       end_date:
-        description: End date YYYY-MM-DD
+        description: End
         required: true
         default: '2026-06-16'
       period_name:
-        description: Period name
+        description: Period
         required: false
-        default: ''
 
 jobs:
-  search:
+  run:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Run 6-dimension search
-        id: search
-        env:
-          START_DATE: ${{ github.event.inputs.start_date }}
-          END_DATE: ${{ github.event.inputs.end_date }}
-          PERIOD: ${{ github.event.inputs.period_name }}
-        run: |
-          python -c "
-import json, os
-from datetime import datetime
-
-start = os.environ['START_DATE']
-end = os.environ['END_DATE']
-period = os.environ.get('PERIOD', start + '_to_' + end)
-
-raw_dir = 'data/raw/' + period
-os.makedirs(raw_dir, exist_ok=True)
-
-placeholder = {
-    'period': {'start': start, 'end': end},
-    'searched_at': datetime.now().isoformat(),
-    'dimensions': {
-        'model': {'entries': [], 'score': None, 'score_rationale': ''},
-        'hardware': {'entries': [], 'score': None, 'score_rationale': ''},
-        'algorithm': {'entries': [], 'score': None, 'score_rationale': ''},
-        'business': {'entries': [], 'score': None, 'score_rationale': ''},
-        'adoption': {'entries': [], 'score': None, 'score_rationale': ''},
-        'opensource': {'entries': [], 'score': None, 'score_rationale': ''},
-    },
-    'summary': ''
-}
-
-for dim in ['model','hardware','algorithm','business','adoption','opensource']:
-    path = raw_dir + '/' + dim + '.json'
-    json.dump(placeholder['dimensions'][dim],
-              open(path, 'w', encoding='utf-8'),
-              ensure_ascii=False, indent=2)
-
-summary = dict(placeholder)
-summary['dimensions'] = {d: {'path': raw_dir + '/' + d + '.json'} for d in placeholder['dimensions']}
-json.dump(summary,
-          open(raw_dir + '/_period.json', 'w', encoding='utf-8'),
-          ensure_ascii=False, indent=2)
-
-print('Data directory created:', raw_dir)
-"
-
-      - name: Commit raw data
-        run: |
-          git config user.name "aidi-bot"
-          git config user.email "aidi-bot@eluckydog"
-          git pull --rebase origin main || true
+      - run: mkdir -p data/raw/test && echo '{"ok":true}' > data/raw/test/_period.json
+      - run: |
+          git config user.name "bot"
+          git config user.email "bot@bot"
           git add data/raw/
-          git diff --staged --quiet || (git commit -m "raw data ${{ github.event.inputs.start_date }} to ${{ github.event.inputs.end_date }}" && git push)
+          git diff --staged --quiet || (git commit -m "test" && git push)
