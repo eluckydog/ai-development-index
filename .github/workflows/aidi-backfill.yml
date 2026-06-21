@@ -1,5 +1,5 @@
 name: backfill
-on:
+"on":
   workflow_dispatch:
     inputs:
       start_date:
