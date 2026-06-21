@@ -9,6 +9,10 @@
     "aidi": 0
   },
   "aic_gain": 3900,
+  "cn_us_parity": {
+    "date": "2026-06-16",
+    "parity": 78
+  },
   "total_periods": 86,
   "prediction": {
     "predicted": 4959,

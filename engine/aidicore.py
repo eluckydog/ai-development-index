@@ -49,6 +49,29 @@ AIC_ANCHORS = [
     ("2026-06-01", "GPT-5.6内测 + Gemini 3.1 Pro", 4900, "OpenAI+Google, AMD突破CUDA"),
 ]
 
+# ── 中美大模型能力差距锚点 ──────────────────────────────────────
+# parity 0-100: 中国模型能力相当于美国最先进水平的百分比
+# 100 = 完全持平, 0 = 差距极大
+# 用于修正AIC系数, 反映"全球AI能力"中的中国贡献度
+
+CN_US_PARITY = [
+    ("2022-12-01", "GPT-4 vs 百度文心", 15, "中国大模型刚起步"),
+    ("2023-03-15", "GPT-4正式 vs 阿里通义", 18, "中国快速跟进"),
+    ("2023-12-15", "Gemini vs 百度ERNIE 4.0", 25, "中国模型开始追赶"),
+    ("2024-05-15", "GPT-4o vs 字节豆包", 30, "多模态差距缩小"),
+    ("2024-09-15", "o1 vs 智谱GLM-4", 35, "推理能力追赶"),
+    ("2024-12-15", "DeepSeek V3发布", 55, "开源模型重大突破"),
+    ("2025-03-15", "Claude Opus4 vs DeepSeek V3", 50, "美国仍有优势"),
+    ("2025-07-15", "Llama4 vs 阿里Qwen3", 55, "开源生态同步发展"),
+    ("2025-09-15", "GPT-5 vs DeepSeek V3.5", 50, "差距拉大(百万token)"), 
+    ("2025-11-15", "Claude 4.5 vs Kimi K2", 55, "长文本中国追赶"),
+    ("2026-01-15", "Gemini 3.0 vs DeepSeek V4预告", 60, "中国加速"),
+    ("2026-03-01", "DeepSeek V4上线", 85, "SWE-Bench超越GPT-5"),
+    ("2026-03-15", "Capybara泄露", 75, "美国反超(第四档)"),
+    ("2026-04-15", "GPT-5.5 vs DeepSeek V4 Pro", 80, "中美交替领先"),
+    ("2026-06-01", "GPT-5.6 + Gemini 3.1 Pro vs DS V4 Pro", 78, "美国仍有微弱优势"),
+]
+
 
 def load_history(path="data/curated/aidi_history.json"):
     """加载历史数据"""
@@ -222,19 +245,82 @@ def calc_validation_aic(periods):
     }
 
 
+def calc_cn_us_parity():
+    """计算中美AI能力差距时间序列"""
+    from datetime import datetime as dt, timedelta
+    
+    # 构建每半月的parity插值
+    start = dt.strptime("2022-12-01", "%Y-%m-%d")
+    end = dt.strptime("2026-06-16", "%Y-%m-%d")
+    
+    parities = []
+    current = start.replace(day=1)
+    
+    while current <= end:
+        for day in [1, 16]:
+            d = current.replace(day=min(day, 28))
+            if d < start or d > end:
+                continue
+            
+            ds = d.strftime("%Y-%m-%d")
+            
+            # 找前后锚点插值
+            before, after = None, None
+            for date_str, _, p, _ in CN_US_PARITY:
+                dd = dt.strptime(date_str, "%Y-%m-%d")
+                if dd <= d:
+                    before = (dd, p)
+                if dd >= d and after is None:
+                    after = (dd, p)
+            
+            if before is None:
+                before = after or (d, 15)
+            if after is None:
+                after = before
+            
+            if before[0] == after[0]:
+                parity = before[1]
+            else:
+                total_days = (after[0] - before[0]).days
+                elapsed = (d - before[0]).days
+                ratio = elapsed / total_days if total_days > 0 else 0
+                parity = round(before[1] + (after[1] - before[1]) * ratio)
+            
+            parities.append({"date": ds, "parity": parity})
+        
+        if current.month == 12:
+            current = current.replace(year=current.year + 1, month=1)
+        else:
+            current = current.replace(month=current.month + 1)
+    
+    return parities
+
+
 def full_run():
     """全流程运行"""
     # 1. 构建完整时间序列
     periods = build_full_timeseries()
+    parities = calc_cn_us_parity()
     
     current = periods[-1]
     baseline = periods[0]
+    current_parity = parities[-1]
     
     print(f"[AIC基线] {baseline['date']}: AIC={baseline['aic']}")
     print(f"[AIC当前] {current['date']}: AIC={current['aic']} (较基线 +{current['aic'] - baseline['aic']})")
     print(f"[AIDI当前] {current['date']}: AIDI={current['aidi']} (最近半月增量)")
+    print(f"[中美差距] {current_parity['date']}: 中国能力=美国{current_parity['parity']}%")
     
-    # 2. 曲线摘要
+    # 2. 中美差距曲线
+    print(f"\n[中美AI能力差距演变]")
+    print(f"{'日期':<15} {'中国/美国':>10}")
+    print("-" * 30)
+    for p in parities:
+        if p['date'] in [a[0] for a in CN_US_PARITY]:
+            event = next((a[1] for a in CN_US_PARITY if a[0] == p['date']), "")
+            print(f"{p['date']:<15} {p['parity']:>3}%    ← {event[:25]}")
+    
+    # 3. 曲线摘要
     print(f"\n[AIC能力曲线]")
     print(f"{'日期':<15} {'AIC':>6} {'AIDI':>8} {'事件':<20}")
     print("-" * 55)
@@ -247,28 +333,38 @@ def full_run():
             marker = " "
         print(f"{p['date']:<15} {p['aic']:>6} {p['aidi']:>+8} {marker}{event[:18]}")
     
-    # 3. 下期预测
+    # 4. 下期预测
     aics = [p["aic"] for p in periods]
     pred = bayesian_predict_aic(aics)
     if pred["predicted"]:
         print(f"\n[下期AIC预测] {pred['predicted']} (CI: {pred['ci_low']}~{pred['ci_high']}, 置信度{pred['confidence']}%)")
         print(f"[下期AIDI预测] {pred['predicted_aidi']:+.1f}")
     
-    # 4. 校验
+    # 5. 校验
     val = calc_validation_aic(periods)
     if val["F"]:
         print(f"\n[校验] F={val['F']}, MAPE={val['mape']*100:.1f}%, 区间命中率={val['in_ci_rate']*100:.0f}%")
     
-    # 5. 报告
+    # 6. 报告
     report = {
         "baseline": {"date": baseline["date"], "aic": baseline["aic"]},
         "current": {"date": current["date"], "aic": current["aic"], "aidi": current["aidi"]},
         "aic_gain": current["aic"] - baseline["aic"],
+        "cn_us_parity": current_parity,
         "total_periods": len(periods),
         "prediction": pred,
         "validation": val,
         "anchors": [{"date": a[0], "event": a[1], "aic": a[2]} for a in AIC_ANCHORS]
     }
+    
+    # 中美差距修正系数
+    p = current_parity["parity"]
+    # 如果中国能力只有美国的78%, 则全球AIC实际应略低于美国AIC
+    # 修正: 全球AIC ≈ 美国AIC × (0.5 + 中国占比/2)
+    # 当parity=100时, 全球AIC=美国AIC; parity=0时, 全球AIC=美国AIC×0.5
+    correction = 0.5 + p / 200
+    print(f"\n[中美修正系数] {correction:.3f} (parity={p}% → 全球AIC=美国AIC×{correction:.3f})")
+    print(f"[修正后全球AIC] {round(current['aic'] * correction)}")
     
     report_path = f"reports/aidi_report_{datetime.now().strftime('%Y%m%d')}.json"
     Path(report_path).write_text(
