@@ -167,6 +167,170 @@ def detect_change_points(y, min_size=4, penalty=10):
 
 
 # ═══════════════════════════════════════════════════════════
+#  相变感知层 (Phase Transition Layer) — 检测Regime Change
+# ═══════════════════════════════════════════════════════════
+#
+#  问题: 2025-06截断点预测+12月偏差-33.5%, 因为算法无法预见GPT-5爆发
+#  解法: 独立于三种算法的regime change检测器
+#  输入: AIDI加速度 + v6领先指标(Granger因果信号)
+#  输出: regime_risk (0~1), ci_multiplier, scenario_adjustments
+#
+#  设计原则: 不是"预测爆发", 而是"在爆发前承认自己不知道"
+# ═══════════════════════════════════════════════════════════
+
+class PhaseTransitionDetector:
+    """相变感知层 — 检测发展阶段的Regime Change
+
+    三层信号:
+    1. AIDI加速度 (二阶导数): 已发生的加速 → 当前状态
+    2. 领先指标 (维度增速差异): 将发生的加速 → 预警信号
+    3. 交互效应增速 (intel×prog): AI造AI的信号强度
+    """
+
+    def __init__(self, aic_series, aidi_series, dim_series):
+        self.aic = np.array(aic_series, dtype=float)
+        self.aidi = np.array(aidi_series, dtype=float)
+        self.dims = {k: np.array(v, dtype=float) for k, v in dim_series.items()}
+        self._compute_signals()
+
+    def _compute_signals(self):
+        """计算所有检测信号"""
+        n = len(self.aidi)
+
+        # ── 信号1: AIDI加速度 (二阶导数) ──
+        # 加速度 = AIDI[t] - AIDI[t-1]
+        acceleration = np.diff(self.aidi) if n > 2 else np.array([0])
+        # 填充到等长
+        self.acceleration = np.concatenate([[0], acceleration]) if len(acceleration) > 0 else np.array([0.0])
+        # 平滑加速度 (3期移动平均)
+        if len(self.acceleration) >= 3:
+            self.accel_smooth = np.convolve(self.acceleration, np.ones(3)/3, mode='same')
+        else:
+            self.accel_smooth = self.acceleration.copy()
+
+        # ── 信号2: 加速度持续期数 ──
+        # 连续几期加速度 > 0?
+        pos_accel_streak = 0
+        for acc in reversed(self.acceleration[-6:]):
+            if acc > 0:
+                pos_accel_streak += 1
+            else:
+                break
+        self.pos_accel_streak = pos_accel_streak
+
+        # ── 信号3: 领先指标 (Granger因果信号) ──
+        # agent增速 > 编程增速 预示AIC加速
+        if "agent" in self.dims and "programming" in self.dims and len(self.dims["agent"]) >= 12:
+            agent_growth = self.dims["agent"][-1] / max(self.dims["agent"][-12], 1) - 1
+            prog_growth = self.dims["programming"][-1] / max(self.dims["programming"][-12], 1) - 1
+            self.agent_prog_gap = agent_growth - prog_growth
+        else:
+            self.agent_prog_gap = 0.0
+
+        # ── 信号4: 交互效应增速 ──
+        # intel×prog交互效应增速 > AIC增速 预示自增强循环启动
+        if "intelligence" in self.dims and "programming" in self.dims and len(self.dims["intelligence"]) >= 6:
+            intel_latest = self.dims["intelligence"][-1]
+            prog_latest = self.dims["programming"][-1]
+            intel_prev = self.dims["intelligence"][-6] if len(self.dims["intelligence"]) >= 6 else intel_latest
+            prog_prev = self.dims["programming"][-6] if len(self.dims["programming"]) >= 6 else prog_latest
+
+            def synergy(i, p):
+                s = SYNERGY.get(("intelligence", "programming"), 0.30)
+                w = min(i, p) / 1000.0
+                pd = (i * p) / 1_000_000.0
+                return s * w * pd * 500
+
+            syn_now = synergy(intel_latest, prog_latest)
+            syn_before = synergy(intel_prev, prog_prev)
+            syn_growth = syn_now / max(syn_before, 1) - 1 if syn_before > 0 else 0
+            aic_growth = self.aic[-1] / max(self.aic[-6], 1) - 1 if len(self.aic) >= 6 else 0
+            self.synergy_accel_ratio = syn_growth / max(aic_growth, 0.001)
+        else:
+            self.synergy_accel_ratio = 1.0
+
+        # ── 信号5: AIDI相对于历史均值的偏离 ──
+        aidi_mean = np.mean(self.aidi[1:])  # 去掉基线100
+        aidi_std = np.std(self.aidi[1:]) if len(self.aidi) > 2 else 1
+        self.aidi_z_score = (self.aidi[-1] - aidi_mean) / max(aidi_std, 1)
+
+    def compute_risk(self):
+        """计算综合regime风险指数
+
+        Returns:
+            dict:
+                regime_risk: 0~1 (0=绝对稳定, 1=极可能相变)
+                regime_label: "stable" | "warning" | "accelerating" | "explosive"
+                ci_multiplier: 置信区间扩缩倍数
+                scenario_adjustments: {conservative, baseline, explosive} AIC调整因子
+        """
+        # ── 信号加权 ──
+        # 1. 加速度连续正期数: max 6期 → 贡献0~0.25
+        signal1 = min(self.pos_accel_streak / 6.0, 1.0) * 0.25
+
+        # 2. 最近3期平均加速度 > 历史95分位: 贡献0~0.25
+        if len(self.accel_smooth) >= 3:
+            recent_accel = np.mean(self.accel_smooth[-3:])
+            hist_accel = self.accel_smooth[:-3] if len(self.accel_smooth) > 3 else [0]
+            threshold = np.percentile(hist_accel, 95) if len(hist_accel) > 5 else recent_accel * 2
+            signal2 = min(max(recent_accel / max(threshold, 1), 0), 3) / 3 * 0.25
+        else:
+            signal2 = 0
+
+        # 3. 领先指标: agent增速 > 编程增速 → 预示爆发
+        signal3 = min(max(self.agent_prog_gap / 0.5, 0), 1) * 0.20
+
+        # 4. 交互效应加速比 > 2 → AI造AI启动
+        signal4 = min(max((self.synergy_accel_ratio - 1) / 3, 0), 1) * 0.15
+
+        # 5. AIDI z-score > 2 → 显著偏离历史均值
+        signal5 = min(max((abs(self.aidi_z_score) - 1) / 3, 0), 1) * 0.15
+
+        total_risk = signal1 + signal2 + signal3 + signal4 + signal5
+        total_risk = min(total_risk, 1.0)
+
+        # ── Regime标签 ──
+        if total_risk < 0.2:
+            label = "stable"
+            ci_mult = 1.0
+        elif total_risk < 0.4:
+            label = "warning"
+            ci_mult = 1.3
+        elif total_risk < 0.7:
+            label = "accelerating"
+            ci_mult = 1.6
+        else:
+            label = "explosive"
+            ci_mult = 2.0
+
+        # ── 情景调整 ──
+        # 保守: 假设当前趋势减速
+        # 基线: 聚合预测
+        # 爆炸: 假设相变发生 (AIDI跳跃到历史2倍)
+        if label == "stable":
+            adj = {"conservative": -0.05, "baseline": 0.0, "explosive": +0.10}
+        elif label == "warning":
+            adj = {"conservative": -0.10, "baseline": 0.0, "explosive": +0.20}
+        elif label == "accelerating":
+            adj = {"conservative": -0.10, "baseline": 0.0, "explosive": +0.35}
+        else:  # explosive
+            adj = {"conservative": -0.15, "baseline": 0.0, "explosive": +0.50}
+
+        return {
+            "regime_risk": round(total_risk, 3),
+            "regime_label": label,
+            "ci_multiplier": ci_mult,
+            "scenario_adjustments": adj,
+            "signals": {
+                "acceleration_streak": self.pos_accel_streak,
+                "agent_prog_gap": round(self.agent_prog_gap, 4),
+                "synergy_accel_ratio": round(self.synergy_accel_ratio, 4),
+                "aidi_z_score": round(self.aidi_z_score, 2),
+            }
+        }
+
+
+# ═══════════════════════════════════════════════════════════
 #  语境层 (Context Layer) — LLM调校因子管理
 # ═══════════════════════════════════════════════════════════
 #
@@ -284,6 +448,7 @@ class AIDIPredictor:
         self.context_adjustments = DEFAULT_CONTEXT_ADJUSTMENTS
         self._load_data()
         self._build_timeseries()
+        self.phase_detector = PhaseTransitionDetector(self.aic, self.aidi, self.dims)
 
     def _load_data(self):
         self._raw = json.loads(self.dims_file.read_text(encoding="utf-8"))
@@ -313,8 +478,21 @@ class AIDIPredictor:
 
     # ── 公共AIC预测接口 ─────────────────────────────────────
 
-    def predict_aic(self, horizon=12):
-        """AIC三算法加权预测 (纯算法层, 可复现)"""
+    def predict_aic(self, horizon=12, with_regime=True):
+        """AIC三算法加权预测 + 相变感知
+
+        Args:
+            horizon: 预测期数
+            with_regime: True=使用相变感知层 (推荐)
+
+        Returns:
+            dict {
+                algorithm_layer: {holtwinters, arima, exponential, aggregate},
+                regime_layer: {regime_label, regime_risk, ci_multiplier, scenario_adjustments},
+                scenarios: {conservative, baseline, explosive},
+                ci_95: [low, high] (已考虑regime扩缩)
+            }
+        """
         h = horizon
         hw = holt_winters(self.aic, h)[0]
         arima_v = arima_predict(self.aic, h=h)[0]
@@ -323,11 +501,60 @@ class AIDIPredictor:
         aic_hw, aic_arima, aic_exp = hw[-1], arima_v[-1], exp_v[-1]
         w_hw, w_arima, w_exp = 0.4, 0.3, 0.3
         agg = w_hw * aic_hw + w_arima * aic_arima + w_exp * aic_exp
+
+        # 相变感知层
+        regime_info = self.phase_detector.compute_risk()
+        ci_mult = regime_info["ci_multiplier"] if with_regime else 1.0
+        scenarios = regime_info["scenario_adjustments"] if with_regime \
+            else {"conservative": -0.05, "baseline": 0.0, "explosive": +0.10}
+
+        # 基础CI (固定权重)
         ci_low = w_hw * hw_low[-1] + w_arima * (aic_arima * 0.95) + w_exp * aic_exp * 0.85
         ci_high = w_hw * hw_high[-1] + w_arima * (aic_arima * 1.05) + w_exp * aic_exp * 1.15
-        return {"holtwinters": round(aic_hw), "arima": round(aic_arima),
-                "exponential": round(aic_exp), "aggregate": round(agg),
-                "ci_95": [round(ci_low), round(ci_high)]}
+
+        # CI动态扩缩 (不对称: 向上风险 > 向下风险)
+        center = agg
+        low_width = center - ci_low
+        high_width = ci_high - center
+        ci_low_dynamic = center - low_width * ci_mult
+        if regime_info["regime_label"] in ("accelerating", "explosive"):
+            # 爆发期: 上尾远长于下尾 (爆发总是向上的)
+            ci_high_dynamic = center + high_width * ci_mult * 1.5
+        else:
+            ci_high_dynamic = center + high_width * ci_mult
+
+        # 三情景
+        conservative = round(agg * (1 + scenarios["conservative"]))
+        baseline = round(agg)
+        explosive = round(agg * (1 + scenarios["explosive"]))
+
+        output = {
+            "algorithm_layer": {
+                "holtwinters": round(aic_hw),
+                "arima": round(aic_arima),
+                "exponential": round(aic_exp),
+                "aggregate": baseline,
+            },
+            "regime_layer": {
+                "regime_label": regime_info["regime_label"],
+                "regime_risk": regime_info["regime_risk"],
+                "ci_multiplier": ci_mult,
+                "signal_breakdown": regime_info["signals"],
+            },
+            "scenarios": {
+                "conservative": conservative,
+                "baseline": baseline,
+                "explosive": explosive,
+            },
+            "ci_95": [round(ci_low_dynamic), round(ci_high_dynamic)],
+        }
+
+        if not with_regime:
+            # 兼容旧接口
+            output["aggregate"] = baseline
+            output["ci_95"] = [round(ci_low), round(ci_high)]
+
+        return output
 
     def predict_dimension(self, dim, horizon=25):
         """单维度Holt-Winters预测"""
@@ -479,6 +706,9 @@ class AIDIPredictor:
         pred_2027 = self.predict_aic(horizon_2027)
         assertions = self.get_assertions(horizon_2026, horizon_2027, algorithm_only)
 
+        # 相变感知摘要
+        regime = self.phase_detector.compute_risk()
+
         # 语境层摘要
         adj_count = sum(len(self.context_adjustments.get(i, [])) for i in range(1, 7))
         total_adj = sum(sum(abs(d*m) for _, d, m, _ in self.context_adjustments.get(i, [])) for i in range(1, 7))
@@ -487,13 +717,19 @@ class AIDIPredictor:
             "meta": {
                 "generated": "2026-06-21",
                 "engine": "AIDI v5 Predictor",
-                "architecture": "双层: 算法层(统计) × 语境层(LLM调校)",
+                "architecture": "三层: 算法层(统计) × 相变感知层(regime) × 语境层(LLM调校)",
                 "algorithm_only": algorithm_only,
                 "algorithms": ["Holt-Winters", "ARIMA(2,1,2)", "Exponential fit",
-                               "Logistic S-curve", "Bootstrap CI", "Change Point Detection"],
+                               "Logistic S-curve", "Bootstrap CI", "Change Point Detection",
+                               "PhaseTransitionDetector"],
                 "context_adjustments_applied": adj_count,
                 "total_adjustment_magnitude": round(total_adj, 3),
-                "reproducibility_note": "算法层完全可复现; 语境层调整因子可审计",
+                "reproducibility_note": "算法层完全可复现; 相变感知层可复现; 语境层调整因子可审计",
+            },
+            "current_regime": {
+                "label": regime["regime_label"],
+                "risk_score": regime["regime_risk"],
+                "signal_breakdown": regime["signals"],
             },
             "aic_predictions": {
                 "current": {"date": self.dates[-1], "aic": int(self.aic[-1])},
@@ -508,7 +744,7 @@ class AIDIPredictor:
     def run(self, horizon_2026=12, horizon_2027=25, save=True, algorithm_only=False,
             context_overrides=None):
         """完整运行 + 打印 + 保存
-        
+
         Args:
             algorithm_only: True=跳过语境调整, 只看算法
             context_overrides: {id: [(factor, dir, mag, rationale), ...]} 自定义覆盖
@@ -519,22 +755,41 @@ class AIDIPredictor:
         result = self.predict_all(horizon_2026, horizon_2027, algorithm_only)
 
         # ── 打印 ──
-        mode_label = "纯算法层" if algorithm_only else "算法层 × 语境层(双层融合)"
+        mode_label = "纯算法层" if algorithm_only else "算法层 x 相变感知层 x 语境层(三层融合)"
         print("=" * 75)
         print(f"AIDI v5 — 预测引擎 [{mode_label}]")
         print("=" * 75)
         print(f"基线: {self.dates[0]} AIC={int(self.aic[0])}")
         print(f"当前: {self.dates[-1]} AIC={int(self.aic[-1])}")
 
-        # AIC
+        # Regime状态
+        r = result["current_regime"]
+        print(f"\n当前Regime: {r['label']} (风险指数={r['risk_score']:.2f})")
+        sig = r["signal_breakdown"]
+        print(f"  加速度连续期: {sig['acceleration_streak']}, "
+              f"agent-prog增速差: {sig['agent_prog_gap']:+.2f}, "
+              f"交互效应加速比: {sig['synergy_accel_ratio']:.1f}x, "
+              f"AIDI z-score: {sig['aidi_z_score']:+.1f}")
+
+        # AIC预测 (含情景)
         p26, p27 = result["aic_predictions"]["2026-12-16"], result["aic_predictions"]["2027-07-01"]
         print(f"\n{'方法':<35} {'2026-12-16 AIC':>18} {'2027-07-01 AIC':>18}")
         print("-" * 73)
-        print(f"{'Holt-Winters':<35} {p26['holtwinters']:>18,} {p27['holtwinters']:>18,}")
-        print(f"{'ARIMA(2,1,2)':<35} {p26['arima']:>18,} {p27['arima']:>18,}")
-        print(f"{'指数增长(24期)':<35} {p26['exponential']:>18,} {p27['exponential']:>18,}")
-        print(f"{'聚合预测':<35} {p26['aggregate']:>18,} {p27['aggregate']:>18,}")
-        print(f"{'95% CI':<35} {p26['ci_95'][0]:>8,}~{p26['ci_95'][1]:>9,}  {p27['ci_95'][0]:>8,}~{p27['ci_95'][1]:>9,}")
+        al = p26["algorithm_layer"]
+        print(f"{'Holt-Winters':<35} {al['holtwinters']:>18,} {p27['algorithm_layer']['holtwinters']:>18,}")
+        print(f"{'ARIMA(2,1,2)':<35} {al['arima']:>18,} {p27['algorithm_layer']['arima']:>18,}")
+        print(f"{'指数增长(24期)':<35} {al['exponential']:>18,} {p27['algorithm_layer']['exponential']:>18,}")
+        print(f"{'聚合基准':<35} {al['aggregate']:>18,} {p27['algorithm_layer']['aggregate']:>18,}")
+
+        # 三情景
+        s26, s27 = p26["scenarios"], p27["scenarios"]
+        print(f"\n{'情景':<35} {'2026-12-16 AIC':>18} {'2027-07-01 AIC':>18}")
+        print("-" * 73)
+        print(f"{'保守情景':<35} {s26['conservative']:>18,} {s27['conservative']:>18,}")
+        print(f"{'基准情景':<35} {s26['baseline']:>18,} {s27['baseline']:>18,}")
+        print(f"{'爆发情景':<35} {s26['explosive']:>18,} {s27['explosive']:>18,}")
+        print(f"{'95% CI (动态)':<35} {p26['ci_95'][0]:>8,}~{p26['ci_95'][1]:>9,}  {p27['ci_95'][0]:>8,}~{p27['ci_95'][1]:>9,}")
+        print(f"{'CI multiplier':<35} {p26['regime_layer']['ci_multiplier']:>18.1f}x {p27['regime_layer']['ci_multiplier']:>18.1f}x")
 
         # 六维
         print(f"\n{'维度':<14} {'当前':>6} {'2026-12-16':>10} {'2027-07-01':>10}")
