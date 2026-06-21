@@ -1,133 +1,43 @@
 {
   "period": {
     "start": "2026-02-16",
-    "end": "2026-02-28",
-    "name": "2026-02-16"
+    "name": "2026"
   },
-  "searched_at": "2026-06-21T05:15:31Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 45,
+    "research_activity": 30,
     "hype_models": [
-      "GPT-5"
+      "Gemini 3.1 Flash",
+      "GPT-5.3-Codex",
+      "GPT-5.3-Codex-Spark"
     ],
-    "key_events": [
-      "GPT-5"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "A Gauge Theory of Superposition: Toward a Sheaf-Theoretic Atlas of Neural Representations",
-      "authors": [
-        "Hossein Javidnia"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00824v2",
-      "abstract": "We develop a discrete gauge-theoretic framework for superposition in large language models (LLMs) that replaces the single-global-dictionary premise with a sheaf-theoretic atlas of local semantic charts. Contexts are clustered into a stratified context complex; each chart carries a local feature spa"
+      "org": "Google",
+      "model": "Gemini 3.1 Flash",
+      "date": "2026-02-26",
+      "description": "快速模型"
     },
     {
-      "title": "ContextCov: Deriving and Enforcing Executable Constraints from Agent Instruction Files",
-      "authors": [
-        "Reshabh K Sharma"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00822v2",
-      "abstract": "As Large Language Model (LLM) agents increasingly execute complex, autonomous software engineering tasks, developers rely on natural language instruction files such as AGENTS.md to express project-specific coding conventions, tooling restrictions, and architectural boundaries. However, because these"
+      "org": "OpenAI",
+      "model": "GPT-5.3-Codex",
+      "date": "2026-02-05",
+      "description": "代码模型"
     },
     {
-      "title": "Constitutional Black-Box Monitoring for Scheming in LLM Agents",
-      "authors": [
-        "Simon Storf",
-        "Rich Barton-Cooper",
-        "James Peters-Gill"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00829v2",
-      "abstract": "Safe deployment of Large Language Model (LLM) agents in autonomous settings requires reliable oversight mechanisms. A central challenge is detecting scheming, where agents covertly pursue misaligned goals. One approach to mitigating such risks is LLM-based monitoring: using language models to examin"
-    },
-    {
-      "title": "PRISM: Exploring Heterogeneous Pretrained EEG Foundation Model Transfer to Clinical Differential Diagnosis",
-      "authors": [
-        "Jeet Bandhu Lahiri",
-        "Parshva Runwal",
-        "Arvasu Kulkarni"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.02268v1",
-      "abstract": "EEG foundation models are typically pretrained on narrow-source clinical archives and evaluated on benchmarks from the same ecosystem, leaving unclear whether representations encode neural physiology or recording-distribution artifacts. We introduce PRISM (Population Representative Invariant Signal "
-    },
-    {
-      "title": "Identifying the Geographic Foci of US Local News",
-      "authors": [
-        "Gangani Ariyarathne",
-        "Isuru Ariyarathne",
-        "Greatness Emmanuel-King"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00787v1",
-      "abstract": "Local journalism is vital in democratic societies where it informs people about local issues like, school board elections, small businesses, local health services, etc. But mounting economic pressures have made it increasingly difficult for local news stations to report these issues, underscoring th"
-    },
-    {
-      "title": "A Comprehensive Evaluation of LLM Unlearning Robustness under Multi-Turn Interaction",
-      "authors": [
-        "Ruihao Pan",
-        "Suhang Wang"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00823v2",
-      "abstract": "Machine unlearning aims to remove the influence of specific training data from pre-trained models without retraining from scratch, and is increasingly important for large language models (LLMs) due to safety, privacy, and legal concerns. Although prior work primarily evaluates unlearning in static, "
-    },
-    {
-      "title": "NERFIFY: A Multi-Agent Framework for Turning NeRF Papers into Code",
-      "authors": [
-        "Seemandhar Jain",
-        "Keshav Gupta",
-        "Kunal Gupta"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00805v1",
-      "abstract": "The proliferation of neural radiance field (NeRF) research requires significant efforts to reimplement papers before building upon them. We introduce NERFIFY, a multi-agent framework that reliably converts NeRF research papers into trainable Nerfstudio plugins, in contrast to generic paper-to-code m"
-    },
-    {
-      "title": "The Synthetic Web: Adversarially-Curated Mini-Internets for Diagnosing Epistemic Weaknesses of Language Agents",
-      "authors": [
-        "Shrey Shah",
-        "Levent Ozgur"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00801v1",
-      "abstract": "Language agents increasingly act as web-enabled systems that search, browse, and synthesize information from diverse sources. However, these sources can include unreliable or adversarial content, and the robustness of agents to adversarial ranking - where misleading information appears prominently i"
-    },
-    {
-      "title": "Interpretable Cross-Network Attention for Resting-State fMRI Representation Learning",
-      "authors": [
-        "Karanpartap Singh",
-        "Adam Turnbull",
-        "Mohammad Abbasi"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00786v1",
-      "abstract": "Understanding how large-scale functional brain networks reorganize during cognitive decline remains a central challenge in neuroimaging. While recent self-supervised models have shown promise for learning representations from resting-state fMRI, their internal mechanisms are difficult to interpret, "
-    },
-    {
-      "title": "QANTIS: A Hardware-Validated Quantum Platform for POMDP Planning and Multi-Target Data Association",
-      "authors": [
-        "Bayram Yüksel Eker",
-        "Suayb S. Arslan",
-        "Özgür Nazlı"
-      ],
-      "published": "2026-02-28",
-      "url": "http://arxiv.org/abs/2603.00785v1",
-      "abstract": "Autonomous navigation under uncertainty requires solving partially observable Markov decision processes (POMDPs) for planning and assigning sensor measurements to tracked targets--a task known as multi-target data association (MTDA). Both problems become computationally demanding at scale: belief co"
+      "org": "OpenAI",
+      "model": "GPT-5.3-Codex-Spark",
+      "date": "2026-02-12",
+      "description": "快速代码模型"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

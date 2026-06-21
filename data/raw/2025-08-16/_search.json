@@ -1,133 +1,29 @@
 {
   "period": {
     "start": "2025-08-16",
-    "end": "2025-08-31",
-    "name": "2025-08-16"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:48Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 15,
+    "research_activity": 20,
+    "hype_models": [
+      "DeepSeek V3.1"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Causal MAS: A Survey of Large Language Model Architectures for Discovery and Effect Estimation",
-      "authors": [
-        "Adib Bazgir",
-        "Amir Habibdoust",
-        "Yuwen Zhang"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.00987v1",
-      "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in various reasoning and generation tasks. However, their proficiency in complex causal reasoning, discovery, and estimation remains an area of active development, often hindered by issues like hallucination, reliance on spurious"
-    },
-    {
-      "title": "ForensicsData: A Digital Forensics Dataset for Large Language Models",
-      "authors": [
-        "Youssef Chakir",
-        "Iyad Lahsen-Cherif"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.05331v1",
-      "abstract": "The growing complexity of cyber incidents presents significant challenges for digital forensic investigators, especially in evidence collection and analysis. Public resources are still limited because of ethical, legal, and privacy concerns, even though realistic datasets are necessary to support re"
-    },
-    {
-      "title": "Self-Exploring Language Models for Explainable Link Forecasting on Temporal Graphs via Reinforcement Learning",
-      "authors": [
-        "Zifeng Ding",
-        "Shenyang Huang",
-        "Zeyu Cao"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.00975v2",
-      "abstract": "Forecasting future links is a central task in temporal graph (TG) reasoning, requiring models to leverage historical interactions to predict upcoming ones. Traditional neural approaches, such as temporal graph neural networks, achieve strong performance but lack explainability and cannot be applied "
-    },
-    {
-      "title": "CoreThink: A Symbolic Reasoning Layer to reason over Long Horizon Tasks with LLMs",
-      "authors": [
-        "Jay Vaghasiya",
-        "Omkar Ghugarkar",
-        "Vishvesh Bhat"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.00971v2",
-      "abstract": "We introduce CoreThink, a state-of-the-art Reasoning Layer built upon a novel reasoning method called General Symbolics. This approach diverges from reasoning paradigms such as test-time scaling, Supervised Fine-Tuning (SFT), and Reinforcement Learning with Verifiable Rewards (RLVR). CoreThink Gener"
-    },
-    {
-      "title": "Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First",
-      "authors": [
-        "Shu Liu",
-        "Soujanya Ponnapalli",
-        "Shreya Shankar"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.00997v2",
-      "abstract": "Large Language Model (LLM) agents, acting on their users' behalf to manipulate and analyze data, are likely to become the dominant workload for data systems in the future. When working with data, agents employ a high-throughput process of exploration and solution formulation for the given task, one "
-    },
-    {
-      "title": "Clone What You Can't Steal: Black-Box LLM Replication via Logit Leakage and Distillation",
-      "authors": [
-        "Kanchon Gharami",
-        "Hansaka Aluvihare",
-        "Shafika Showkat Moni"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.00973v1",
-      "abstract": "Large Language Models (LLMs) are increasingly deployed in mission-critical systems, facilitating tasks such as satellite operations, command-and-control, military decision support, and cyber defense. Many of these systems are accessed through application programming interfaces (APIs). When such APIs"
-    },
-    {
-      "title": "Who Gets Left Behind? Auditing Disability Inclusivity in Large Language Models",
-      "authors": [
-        "Deepika Dash",
-        "Yeshil Bangera",
-        "Mithil Bangera"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.00963v1",
-      "abstract": "Large Language Models (LLMs) are increasingly used for accessibility guidance, yet many disability groups remain underserved by their advice. To address this gap, we present taxonomy aligned benchmark1 of human validated, general purpose accessibility questions, designed to systematically audit incl"
-    },
-    {
-      "title": "A Hybrid Ai Framework For Strategic Patent Portfolio Pruning: Integrating Learning To-Rank And Market Need Analysis For Technology Transfer Optimization",
-      "authors": [
-        "Manish Verma",
-        "Vivek Sharma",
-        "Vishal Singh"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.00958v1",
-      "abstract": "This paper introduces a novel, multi stage hybrid intelligence framework for pruning patent portfolios to identify high value assets for technology transfer. Current patent valuation methods often rely on retrospective indicators or manual, time intensive analysis. Our framework automates and deepen"
-    },
-    {
-      "title": "CompSlider: Compositional Slider for Disentangled Multiple-Attribute Image Generation",
-      "authors": [
-        "Zixin Zhu",
-        "Kevin Duarte",
-        "Mamshad Nayeem Rizve"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.01028v2",
-      "abstract": "In text-to-image (T2I) generation, achieving fine-grained control over attributes - such as age or smile - remains challenging, even with detailed text prompts. Slider-based methods offer a solution for precise control of image attributes. Existing approaches typically train individual adapter for e"
-    },
-    {
-      "title": "Any-Order Flexible Length Masked Diffusion",
-      "authors": [
-        "Jaeyeon Kim",
-        "Lee Cheuk-Kit",
-        "Carles Domingo-Enrich"
-      ],
-      "published": "2025-08-31",
-      "url": "http://arxiv.org/abs/2509.01025v2",
-      "abstract": "Masked diffusion models (MDMs) have recently emerged as a promising alternative to autoregressive models over discrete domains. MDMs generate sequences in an any-order, parallel fashion, enabling fast inference and strong performance on non-causal tasks. However, a crucial limitation is that they do"
+      "org": "DeepSeek",
+      "model": "DeepSeek V3.1",
+      "date": "2025-08-21",
+      "description": "V3重大升级版"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

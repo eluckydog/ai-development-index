@@ -1,137 +1,50 @@
 {
   "period": {
     "start": "2025-11-01",
-    "end": "2025-11-15",
-    "name": "2025-11-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:15:05Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 60,
+    "research_activity": 40,
     "hype_models": [
-      "Qwen"
+      "GPT-5.1",
+      "GPT-5.1 Codex-Max",
+      "Gemini 3.0 Pro",
+      "Claude Opus 4.5"
     ],
-    "key_events": [
-      "Qwen"
-    ]
+    "period_name": "Claude 4.5 + GPT-5.1期",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "BitSnap: Checkpoint Sparsification and Quantization in LLM Training",
-      "authors": [
-        "Yanxin Peng",
-        "Qingping Li",
-        "Baodong Wu"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12376v2",
-      "abstract": "As large language models (LLMs) continue to grow in size and complexity, efficient checkpoint saving\\&loading has become crucial for managing storage, memory usage, and fault tolerance in LLM training. The current works do not comprehensively take into account the optimization of these several aspec"
+      "org": "OpenAI",
+      "model": "GPT-5.1",
+      "date": "2025-11-12",
+      "description": "GPT-5升级版"
     },
     {
-      "title": "Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning",
-      "authors": [
-        "Baolong Bi",
-        "Shenghua Liu",
-        "Yiwei Wang"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12344v2",
-      "abstract": "Recent advances in reinforcement learning (RL) have significantly improved the complex reasoning capabilities of large language models (LLMs). Despite these successes, existing methods mainly focus on single-domain RL (e.g., mathematics) with verifiable rewards (RLVR), and their reliance on purely o"
+      "org": "OpenAI",
+      "model": "GPT-5.1 Codex-Max",
+      "date": "2025-11-19",
+      "description": "代码模型升级"
     },
     {
-      "title": "Decision and Gender Biases in Large Language Models: A Behavioral Economic Perspective",
-      "authors": [
-        "Luca Corazzini",
-        "Elisa Deriu",
-        "Marco Guerzoni"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12319v1",
-      "abstract": "Large language models (LLMs) increasingly mediate economic and organisational processes, from automated customer support and recruitment to investment advice and policy analysis. These systems are often assumed to embody rational decision making free from human error; yet they are trained on human l"
+      "org": "Google",
+      "model": "Gemini 3.0 Pro",
+      "date": "2025-11-18",
+      "description": "Gemini 3.0系列"
     },
     {
-      "title": "From Phonemes to Meaning: Evaluating Large Language Models on Tamil",
-      "authors": [
-        "Jeyarajalingam Varsha",
-        "Menan Velayuthan",
-        "Sumirtha Karunakaran"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12387v1",
-      "abstract": "Large Language Models (LLMs) have shown strong generalization across tasks in high-resource languages; however, their linguistic competence in low-resource and morphologically rich languages such as Tamil remains largely unexplored. Existing multilingual benchmarks often rely on translated English d"
-    },
-    {
-      "title": "Reasoning Text-to-Video Retrieval via Digital Twin Video Representations and Large Language Models",
-      "authors": [
-        "Yiqing Shen",
-        "Chenxiao Fan",
-        "Chenjia Li"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12371v1",
-      "abstract": "The goal of text-to-video retrieval is to search large databases for relevant videos based on text queries. Existing methods have progressed to handling explicit queries where the visual content of interest is described explicitly; however, they fail with implicit queries where identifying videos re"
-    },
-    {
-      "title": "Constructing and Interpreting Digital Twin Representations for Visual Reasoning via Reinforcement Learning",
-      "authors": [
-        "Yiqing Shen",
-        "Mathias Unberath"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12365v1",
-      "abstract": "Visual reasoning may require models to interpret images and videos and respond to implicit text queries across diverse output formats, from pixel-level segmentation masks to natural language descriptions. Existing approaches rely on supervised fine-tuning with task-specific architectures. For exampl"
-    },
-    {
-      "title": "Explainable AI-Generated Image Detection RewardBench",
-      "authors": [
-        "Michael Yang",
-        "Shijian Deng",
-        "William T. Doan"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12363v1",
-      "abstract": "Conventional, classification-based AI-generated image detection methods cannot explain why an image is considered real or AI-generated in a way a human expert would, which reduces the trustworthiness and persuasiveness of these detection tools for real-world applications. Leveraging Multimodal Large"
-    },
-    {
-      "title": "VoiceCraft-X: Unifying Multilingual, Voice-Cloning Speech Synthesis and Speech Editing",
-      "authors": [
-        "Zhisheng Zheng",
-        "Puyuan Peng",
-        "Anuj Diwan"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12347v1",
-      "abstract": "We introduce VoiceCraft-X, an autoregressive neural codec language model which unifies multilingual speech editing and zero-shot Text-to-Speech (TTS) synthesis across 11 languages: English, Mandarin, Korean, Japanese, Spanish, French, German, Dutch, Italian, Portuguese, and Polish. VoiceCraft-X util"
-    },
-    {
-      "title": "Studying Illustrations in Manuscripts: An Efficient Deep-Learning Approach",
-      "authors": [
-        "Yoav Evron",
-        "Michal Bar-Asher Siegal",
-        "Michael Fire"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2601.05269v2",
-      "abstract": "The recent Artificial Intelligence (AI) revolution has opened transformative possibilities for the humanities, particularly in unlocking the visual-artistic content embedded in historical illuminated manuscripts. While digital archives now offer unprecedented access to these materials, the ability t"
-    },
-    {
-      "title": "Leveraging Quantum-Based Architectures for Robust Diagnostics",
-      "authors": [
-        "Shabnam Sodagari",
-        "Tommy Long"
-      ],
-      "published": "2025-11-15",
-      "url": "http://arxiv.org/abs/2511.12386v2",
-      "abstract": "Quantum machine learning has emerged as a promising approach for medical image analysis, particularly in settings where compact models and expressive feature representations are desired. This paper presents a hybrid classical--quantum diagnostic framework that integrates dataset-specific preprocessi"
+      "org": "Anthropic",
+      "model": "Claude Opus 4.5",
+      "date": "2025-11-24",
+      "description": "科学推理领先"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

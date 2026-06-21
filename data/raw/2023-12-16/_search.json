@@ -1,128 +1,20 @@
 {
   "period": {
     "start": "2023-12-16",
-    "end": "2023-12-31",
-    "name": "2023-12-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:11:46Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "A Reliable Knowledge Processing Framework for Combustion Science using Foundation Models",
-      "authors": [
-        "Vansh Sharma",
-        "Venkat Raman"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00544v2",
-      "abstract": "This research explores the integration of large language models (LLMs) into scientific data assimilation, focusing on combustion science as a case study. Leveraging foundational models integrated with Retrieval-Augmented Generation (RAG) framework, the study introduces an approach to process diverse"
-    },
-    {
-      "title": "An Analysis of Embedding Layers and Similarity Scores using Siamese Neural Networks",
-      "authors": [
-        "Yash Bingi",
-        "Yiqiao Yin"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00582v1",
-      "abstract": "Large Lanugage Models (LLMs) are gaining increasing popularity in a variety of use cases, from language understanding and writing to assistance in application development. One of the most important aspects for optimal funcionality of LLMs is embedding layers. Word embeddings are distributed represen"
-    },
-    {
-      "title": "Exploring the Effectiveness of Instruction Tuning in Biomedical Language Processing",
-      "authors": [
-        "Omid Rohanian",
-        "Mohammadmahdi Nouriborji",
-        "David A. Clifton"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00579v1",
-      "abstract": "Large Language Models (LLMs), particularly those similar to ChatGPT, have significantly influenced the field of Natural Language Processing (NLP). While these models excel in general language tasks, their performance in domain-specific downstream tasks such as biomedical and clinical Named Entity Re"
-    },
-    {
-      "title": "KernelGPT: Enhanced Kernel Fuzzing via Large Language Models",
-      "authors": [
-        "Chenyuan Yang",
-        "Zijie Zhao",
-        "Lingming Zhang"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00563v3",
-      "abstract": "Bugs in operating system kernels can affect billions of devices and users all over the world. As a result, a large body of research has been focused on kernel fuzzing, i.e., automatically generating syscall (system call) sequences to detect potential kernel bugs or vulnerabilities. Kernel fuzzing ai"
-    },
-    {
-      "title": "State of What Art? A Call for Multi-Prompt LLM Evaluation",
-      "authors": [
-        "Moran Mizrahi",
-        "Guy Kaplan",
-        "Dan Malkin"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00595v3",
-      "abstract": "Recent advances in large language models (LLMs) have led to the development of various evaluation benchmarks. These benchmarks typically rely on a single instruction template for evaluating all LLMs on a specific task. In this paper, we comprehensively analyze the brittleness of results obtained via"
-    },
-    {
-      "title": "LaFFi: Leveraging Hybrid Natural Language Feedback for Fine-tuning Language Models",
-      "authors": [
-        "Qianxi Li",
-        "Yingyue Cao",
-        "Jikun Kang"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00907v1",
-      "abstract": "Fine-tuning Large Language Models (LLMs) adapts a trained model to specific downstream tasks, significantly improving task-specific performance. Supervised Fine-Tuning (SFT) is a common approach, where an LLM is trained to produce desired answers. However, LLMs trained with SFT sometimes make simple"
-    },
-    {
-      "title": "Neural Networks Against (and For) Self-Training: Classification with Small Labeled and Large Unlabeled Sets",
-      "authors": [
-        "Payam Karisani"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00575v1",
-      "abstract": "We propose a semi-supervised text classifier based on self-training using one positive and one negative property of neural networks. One of the weaknesses of self-training is the semantic drift problem, where noisy pseudo-labels accumulate over iterations and consequently the error rate soars. In or"
-    },
-    {
-      "title": "AllSpark: A Multimodal Spatio-Temporal General Intelligence Model with Ten Modalities via Language as a Reference Framework",
-      "authors": [
-        "Run Shao",
-        "Cheng Yang",
-        "Qiujun Li"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00546v3",
-      "abstract": "Leveraging multimodal data is an inherent requirement for comprehending geographic objects. However, due to the high heterogeneity in structure and semantics among various spatio-temporal modalities, the joint interpretation of multimodal spatio-temporal data has long been an extremely challenging p"
-    },
-    {
-      "title": "GraphGPT: Generative Pre-trained Graph Eulerian Transformer",
-      "authors": [
-        "Qifang Zhao",
-        "Weidong Ren",
-        "Tianyu Li"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00529v3",
-      "abstract": "We introduceGraphGPT, a novel self-supervised generative pre-trained model for graph learning based on the Graph Eulerian Transformer (GET). First, we propose GET, which combines a standard transformer encoder or decoder architecture with an innovative graph-to-sequence transformation method. This m"
-    },
-    {
-      "title": "A Survey of Personality, Persona, and Profile in Conversational Agents and Chatbots",
-      "authors": [
-        "Richard Sutcliffe"
-      ],
-      "published": "2023-12-31",
-      "url": "http://arxiv.org/abs/2401.00609v1",
-      "abstract": "We present a review of personality in neural conversational agents (CAs), also called chatbots. First, we define Personality, Persona, and Profile. We explain all personality schemes which have been used in CAs, and list models under the scheme(s) which they use. Second we describe 21 datasets which"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

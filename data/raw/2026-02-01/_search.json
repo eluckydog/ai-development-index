@@ -1,140 +1,50 @@
 {
   "period": {
     "start": "2026-02-01",
-    "end": "2026-02-15",
-    "name": "2026-02-01"
+    "name": "2026"
   },
-  "searched_at": "2026-06-21T05:15:26Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 24,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 60,
+    "research_activity": 40,
     "hype_models": [
-      "DeepSeek",
-      "Qwen"
+      "Claude Opus 4.6",
+      "Grok 4发布",
+      "Claude Sonnet 4.6",
+      "Gemini 3.1 Pro"
     ],
-    "key_events": [
-      "DeepSeek",
-      "Qwen"
-    ]
+    "period_name": "Claude Opus 4.6 + Gemini 3.1期",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "DeepFusion: Accelerating MoE Training via Federated Knowledge Distillation from Heterogeneous Edge Devices",
-      "authors": [
-        "Songyuan Li",
-        "Jia Hu",
-        "Ahmed M. Abdelmoniem"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14301v1",
-      "abstract": "Recent Mixture-of-Experts (MoE)-based large language models (LLMs) such as Qwen-MoE and DeepSeek-MoE are transforming generative AI in natural language processing. However, these models require vast and diverse training data. Federated learning (FL) addresses this challenge by leveraging private dat"
+      "org": "Anthropic",
+      "model": "Claude Opus 4.6",
+      "date": "2026-02-05",
+      "description": "Opus升级"
     },
     {
-      "title": "Train Less, Learn More: Adaptive Efficient Rollout Optimization for Group-Based Reinforcement Learning",
-      "authors": [
-        "Zhi Zhang",
-        "Zhen Han",
-        "Costas Mavromatis"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14338v1",
-      "abstract": "Reinforcement learning (RL) plays a central role in large language model (LLM) post-training. Among existing approaches, Group Relative Policy Optimization (GRPO) is widely used, especially for RL with verifiable rewards (RLVR) fine-tuning. In GRPO, each query prompts the LLM to generate a group of "
+      "org": "xAI",
+      "model": "Grok 4发布",
+      "date": "2026-02",
+      "description": "xAI新一代模型"
     },
     {
-      "title": "Automated evaluation of LLMs for effective machine translation of Mandarin Chinese to English",
-      "authors": [
-        "Yue Zhang",
-        "Rodney Beard",
-        "John Hawkins"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2603.09998v1",
-      "abstract": "Although Large Language Models (LLMs) have exceptional performance in machine translation, only a limited systematic assessment of translation quality has been done. The challenge lies in automated frameworks, as human-expert-based evaluations can be time-consuming, given the fast-evolving LLMs and "
+      "org": "Anthropic",
+      "model": "Claude Sonnet 4.6",
+      "date": "2026-02-17",
+      "description": "Sonnet升级"
     },
     {
-      "title": "Benchmarking at the Edge of Comprehension",
-      "authors": [
-        "Samuele Marro",
-        "Jialin Yu",
-        "Emanuele La Malfa"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14307v4",
-      "abstract": "As frontier Large Language Models (LLMs) increasingly saturate new benchmarks shortly after they are published, benchmarking itself is at a juncture: if frontier models keep improving, it will become increasingly hard for humans to generate discriminative tasks, provide accurate ground-truth answers"
-    },
-    {
-      "title": "Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook",
-      "authors": [
-        "Ming Li",
-        "Xirui Li",
-        "Tianyi Zhou"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14299v2",
-      "abstract": "As large language model agents increasingly populate networked environments, a fundamental question arises: do artificial intelligence (AI) agent societies undergo convergence dynamics similar to human social systems? Lately, Moltbook approximates a plausible future scenario in which autonomous agen"
-    },
-    {
-      "title": "Machine Learning as a Tool (MLAT): A Framework for Integrating Statistical ML Models as Callable Tools within LLM Agent Workflows",
-      "authors": [
-        "Edwin Chen",
-        "Zulekha Bibi"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14295v1",
-      "abstract": "We introduce Machine Learning as a Tool (MLAT), a design pattern in which pre-trained statistical machine learning models are exposed as callable tools within large language model (LLM) agent workflows. This allows an orchestrating agent to invoke quantitative predictions when needed and reason abou"
-    },
-    {
-      "title": "KernelBlaster: Continual Cross-Task CUDA Optimization via Memory-Augmented In-Context Reinforcement Learning",
-      "authors": [
-        "Kris Shengjun Dong",
-        "Sahil Modi",
-        "Dima Nikiforov"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14293v1",
-      "abstract": "Optimizing CUDA code across multiple generations of GPU architectures is challenging, as achieving peak performance requires an extensive exploration of an increasingly complex, hardware-specific optimization space. Traditional compilers are constrained by fixed heuristics, whereas finetuning Large "
-    },
-    {
-      "title": "Online LLM watermark detection via e-processes",
-      "authors": [
-        "Weijie Su",
-        "Ruodu Wang",
-        "Zinan Zhao"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14286v4",
-      "abstract": "Watermarking for large language models (LLMs) has emerged as an effective tool for distinguishing AI-generated text from human-written content. Statistically, watermark schemes induce dependence between generated tokens and a pseudo-random sequence, reducing watermark detection to a hypothesis testi"
-    },
-    {
-      "title": "Integrating Unstructured Text into Causal Inference: Empirical Evidence from Real Data",
-      "authors": [
-        "Boning Zhou",
-        "Ziyu Wang",
-        "Han Hong"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.14274v1",
-      "abstract": "Causal inference, a critical tool for informing business decisions, traditionally relies heavily on structured data. However, in many real-world scenarios, such data can be incomplete or unavailable. This paper presents a framework that leverages transformer-based language models to perform causal i"
-    },
-    {
-      "title": "A Comprehensive Survey on Deep Learning-Based LiDAR Super-Resolution for Autonomous Driving",
-      "authors": [
-        "June Moh Goo",
-        "Zichao Zeng",
-        "Jan Boehm"
-      ],
-      "published": "2026-02-15",
-      "url": "http://arxiv.org/abs/2602.15904v1",
-      "abstract": "LiDAR sensors are often considered essential for autonomous driving, but high-resolution sensors remain expensive while affordable low-resolution sensors produce sparse point clouds that miss critical details. LiDAR super-resolution addresses this challenge by using deep learning to enhance sparse p"
+      "org": "Google",
+      "model": "Gemini 3.1 Pro",
+      "date": "2026-02-19",
+      "description": "Gemini 3.1系列"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

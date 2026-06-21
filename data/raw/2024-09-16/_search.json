@@ -1,134 +1,29 @@
 {
   "period": {
     "start": "2024-09-16",
-    "end": "2024-09-30",
-    "name": "2024-09-16"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:13:30Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 15,
+    "research_activity": 20,
+    "hype_models": [
+      "Gemini 1.5 Pro-002/F"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "A Methodology for Explainable Large Language Models with Integrated Gradients and Linguistic Analysis in Text Classification",
-      "authors": [
-        "Marina Ribeiro",
-        "Bárbara Malcorra",
-        "Natália B. Mota"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00250v1",
-      "abstract": "Neurological disorders that affect speech production, such as Alzheimer's Disease (AD), significantly impact the lives of both patients and caregivers, whether through social, psycho-emotional effects or other aspects not yet fully understood. Recent advancements in Large Language Model (LLM) archit"
-    },
-    {
-      "title": "GalaxiesML: a dataset of galaxy images, photometry, redshifts, and structural parameters for machine learning",
-      "authors": [
-        "Tuan Do",
-        "Bernie Boscoe",
-        "Evan Jones"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00271v1",
-      "abstract": "We present a dataset built for machine learning applications consisting of galaxy photometry, images, spectroscopic redshifts, and structural properties. This dataset comprises 286,401 galaxy images and photometry from the Hyper-Suprime-Cam Survey PDR2 in five imaging filters ($g,r,i,z,y$) with spec"
-    },
-    {
-      "title": "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
-      "authors": [
-        "Kun Yuan",
-        "Vinkle Srivastav",
-        "Nassir Navab"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00263v2",
-      "abstract": "Surgical video-language pretraining (VLP) faces unique challenges due to the knowledge domain gap and the scarcity of multi-modal data. This study aims to bridge the gap by addressing issues regarding textual information loss in surgical lecture videos and the spatial-temporal challenges of surgical"
-    },
-    {
-      "title": "DoPAMine: Domain-specific Pre-training Adaptation from seed-guided data Mining",
-      "authors": [
-        "Vinayak Arannil",
-        "Neha Narwal",
-        "Sourav Sanjukta Bhabesh"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00260v2",
-      "abstract": "Large Language Models (LLMs) have shown remarkable ability to generalize effectively across numerous industry domains while executing a range of tasks. Many of these competencies are obtained from the data utilized during the pre-training phase of the Language Models (LMs). However, these models exh"
-    },
-    {
-      "title": "Helpful DoggyBot: Open-World Object Fetching using Legged Robots and Vision-Language Models",
-      "authors": [
-        "Qi Wu",
-        "Zipeng Fu",
-        "Xuxin Cheng"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00231v1",
-      "abstract": "Learning-based methods have achieved strong performance for quadrupedal locomotion. However, several challenges prevent quadrupeds from learning helpful indoor skills that require interaction with environments and humans: lack of end-effectors for manipulation, limited semantic understanding using o"
-    },
-    {
-      "title": "Exploring Social Media Image Categorization Using Large Models with Different Adaptation Methods: A Case Study on Cultural Nature's Contributions to People",
-      "authors": [
-        "Rohaifa Khaldi",
-        "Domingo Alcaraz-Segura",
-        "Ignacio Sánchez-Herrera"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00275v3",
-      "abstract": "Social media images provide valuable insights for modeling, mapping, and understanding human interactions with natural and cultural heritage. However, categorizing these images into semantically meaningful groups remains highly complex due to the vast diversity and heterogeneity of their visual cont"
-    },
-    {
-      "title": "Comprehensive Performance Modeling and System Design Insights for Foundation Models",
-      "authors": [
-        "Shashank Subramanian",
-        "Ermal Rrapaj",
-        "Peter Harrington"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00273v1",
-      "abstract": "Generative AI, in particular large transformer models, are increasingly driving HPC system design in science and industry. We analyze performance characteristics of such transformer models and discuss their sensitivity to the transformer type, parallelization strategy, and HPC system features (accel"
-    },
-    {
-      "title": "ImmersePro: End-to-End Stereo Video Synthesis Via Implicit Disparity Learning",
-      "authors": [
-        "Jian Shi",
-        "Zhenyu Li",
-        "Peter Wonka"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00262v1",
-      "abstract": "We introduce \\textit{ImmersePro}, an innovative framework specifically designed to transform single-view videos into stereo videos. This framework utilizes a novel dual-branch architecture comprising a disparity branch and a context branch on video data by leveraging spatial-temporal attention mecha"
-    },
-    {
-      "title": "Possible Principles for Aligned Structure Learning Agents",
-      "authors": [
-        "Lancelot Da Costa",
-        "Tomáš Gavenčiak",
-        "David Hyland"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00258v3",
-      "abstract": "This paper offers a roadmap for the development of scalable aligned artificial intelligence (AI) from first principle descriptions of natural intelligence. In brief, a possible path toward scalable aligned AI rests upon enabling artificial agents to learn a good model of the world that includes a go"
-    },
-    {
-      "title": "Enhanced Credit Score Prediction Using Ensemble Deep Learning Model",
-      "authors": [
-        "Qianwen Xing",
-        "Chang Yu",
-        "Sining Huang"
-      ],
-      "published": "2024-09-30",
-      "url": "http://arxiv.org/abs/2410.00256v2",
-      "abstract": "In contemporary economic society, credit scores are crucial for every participant. A robust credit evaluation system is essential for the profitability of core businesses such as credit cards, loans, and investments for commercial banks and the financial sector. This paper combines high-performance "
+      "org": "Google",
+      "model": "Gemini 1.5 Pro-002/Flash-002",
+      "date": "2024-09-24",
+      "description": "Gemini升级版"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

@@ -1,133 +1,20 @@
 {
   "period": {
     "start": "2023-09-01",
-    "end": "2023-09-15",
-    "name": "2023-09-01"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:11:22Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "BioinspiredLLM: Conversational Large Language Model for the Mechanics of Biological and Bio-inspired Materials",
-      "authors": [
-        "Rachel K. Luu",
-        "Markus J. Buehler"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08788v2",
-      "abstract": "The study of biological materials and bio-inspired materials science is well established; however, surprisingly little knowledge has been systematically translated to engineering solutions. To accelerate discovery and guide insights, an open-source autoregressive transformer large language model (LL"
-    },
-    {
-      "title": "Self-training Strategies for Sentiment Analysis: An Empirical Study",
-      "authors": [
-        "Haochen Liu",
-        "Sai Krishna Rallabandi",
-        "Yijing Wu"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08777v2",
-      "abstract": "Sentiment analysis is a crucial task in natural language processing that involves identifying and extracting subjective sentiment from text. Self-training has recently emerged as an economical and efficient technique for developing sentiment analysis models by leveraging a small amount of labeled da"
-    },
-    {
-      "title": "Biased Attention: Do Vision Transformers Amplify Gender Bias More than Convolutional Neural Networks?",
-      "authors": [
-        "Abhishek Mandal",
-        "Susan Leavy",
-        "Suzanne Little"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08760v1",
-      "abstract": "Deep neural networks used in computer vision have been shown to exhibit many social biases such as gender bias. Vision Transformers (ViTs) have become increasingly popular in computer vision applications, outperforming Convolutional Neural Networks (CNNs) in many tasks such as image classification. "
-    },
-    {
-      "title": "Long-term Neurological Sequelae in Post-COVID-19 Patients: A Machine Learning Approach to Predict Outcomes",
-      "authors": [
-        "Hayder A. Albaqer",
-        "Kadhum J. Al-Jibouri",
-        "John Martin"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.09993v1",
-      "abstract": "The COVID-19 pandemic has brought to light a concerning aspect of long-term neurological complications in post-recovery patients. This study delved into the investigation of such neurological sequelae in a cohort of 500 post-COVID-19 patients, encompassing individuals with varying illness severity. "
-    },
-    {
-      "title": "EgoObjects: A Large-Scale Egocentric Dataset for Fine-Grained Object Understanding",
-      "authors": [
-        "Chenchen Zhu",
-        "Fanyi Xiao",
-        "Andres Alvarado"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08816v1",
-      "abstract": "Object understanding in egocentric visual data is arguably a fundamental research topic in egocentric vision. However, existing object datasets are either non-egocentric or have limitations in object categories, visual content, and annotation granularities. In this work, we introduce EgoObjects, a l"
-    },
-    {
-      "title": "Enhance audio generation controllability through representation similarity regularization",
-      "authors": [
-        "Yangyang Shi",
-        "Gael Le Lan",
-        "Varun Nagaraja"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08773v1",
-      "abstract": "This paper presents an innovative approach to enhance control over audio generation by emphasizing the alignment between audio and text representations during model training. In the context of language model-based audio generation, the model leverages input from both textual and audio token represen"
-    },
-    {
-      "title": "Mining Patents with Large Language Models Elucidates the Chemical Function Landscape",
-      "authors": [
-        "Clayton W. Kosonocky",
-        "Claus O. Wilke",
-        "Edward M. Marcotte"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08765v2",
-      "abstract": "The fundamental goal of small molecule discovery is to generate chemicals with target functionality. While this often proceeds through structure-based methods, we set out to investigate the practicality of orthogonal methods that leverage the extensive corpus of chemical literature. We hypothesize t"
-    },
-    {
-      "title": "Personalized Food Image Classification: Benchmark Datasets and New Baseline",
-      "authors": [
-        "Xinyue Pan",
-        "Jiangpeng He",
-        "Fengqing Zhu"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08744v1",
-      "abstract": "Food image classification is a fundamental step of image-based dietary assessment, enabling automated nutrient analysis from food images. Many current methods employ deep neural networks to train on generic food image datasets that do not reflect the dynamism of real-life food consumption patterns, "
-    },
-    {
-      "title": "URA*: Uncertainty-aware Path Planning using Image-based Aerial-to-Ground Traversability Estimation for Off-road Environments",
-      "authors": [
-        "Charles Moore",
-        "Shaswata Mitra",
-        "Nisha Pillai"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08814v1",
-      "abstract": "A major challenge with off-road autonomous navigation is the lack of maps or road markings that can be used to plan a path for autonomous robots. Classical path planning methods mostly assume a perfectly known environment without accounting for the inherent perception and sensing uncertainty from de"
-    },
-    {
-      "title": "SHAPNN: Shapley Value Regularized Tabular Neural Network",
-      "authors": [
-        "Qisen Cheng",
-        "Shuhui Qu",
-        "Janghwan Lee"
-      ],
-      "published": "2023-09-15",
-      "url": "http://arxiv.org/abs/2309.08799v1",
-      "abstract": "We present SHAPNN, a novel deep tabular data modeling architecture designed for supervised learning. Our approach leverages Shapley values, a well-established technique for explaining black-box models. Our neural network is trained using standard backward propagation optimization methods, and is reg"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

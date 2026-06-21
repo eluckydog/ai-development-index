@@ -1,138 +1,36 @@
 {
   "period": {
     "start": "2025-06-01",
-    "end": "2025-06-15",
-    "name": "2025-06-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:30Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 30,
+    "research_activity": 20,
     "hype_models": [
-      "GPT-4"
+      "DeepSeek R1-0528",
+      "o3-pro"
     ],
-    "key_events": [
-      "GPT-4"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Reasoning Model Unlearning: Forgetting Traces, Not Just Answers, While Preserving Reasoning Skills",
-      "authors": [
-        "Changsheng Wang",
-        "Chongyu Fan",
-        "Yihua Zhang"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12963v2",
-      "abstract": "Recent advances in large reasoning models (LRMs) have enabled strong chain-of-thought (CoT) generation through test-time computation. While these multi-step reasoning capabilities represent a major milestone in language model performance, they also introduce new safety risks. In this work, we presen"
+      "org": "DeepSeek",
+      "model": "DeepSeek R1-0528",
+      "date": "2025-05-28",
+      "description": "R1升级版"
     },
     {
-      "title": "Domain Specific Benchmarks for Evaluating Multimodal Large Language Models",
-      "authors": [
-        "Khizar Anjum",
-        "Muhammad Arbab Arshad",
-        "Kadhim Hayawi"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12958v2",
-      "abstract": "Large language models (LLMs) are increasingly being deployed across disciplines due to their advanced reasoning and problem solving capabilities. To measure their effectiveness, various benchmarks have been developed that measure aspects of LLM reasoning, comprehension, and problem-solving. While se"
-    },
-    {
-      "title": "Humans, Machine Learning, and Language Models in Union: A Cognitive Study on Table Unionability",
-      "authors": [
-        "Sreeram Marimuthu",
-        "Nina Klimenkova",
-        "Roee Shraga"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12990v1",
-      "abstract": "Data discovery and table unionability in particular became key tasks in modern Data Science. However, the human perspective for these tasks is still under-explored. Thus, this research investigates the human behavior in determining table unionability within data discovery. We have designed an experi"
-    },
-    {
-      "title": "Boundary-Aware Vision Transformer for Angiography Vascular Network Segmentation",
-      "authors": [
-        "Nabil Hezil",
-        "Suraj Singh",
-        "Vita Vlasova"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12980v1",
-      "abstract": "Accurate segmentation of vascular structures in coronary angiography remains a core challenge in medical image analysis due to the complexity of elongated, thin, and low-contrast vessels. Classical convolutional neural networks (CNNs) often fail to preserve topological continuity, while recent Visio"
-    },
-    {
-      "title": "HypER: Literature-grounded Hypothesis Generation and Distillation with Provenance",
-      "authors": [
-        "Rosni Vasu",
-        "Chandrayee Basu",
-        "Bhavana Dalvi Mishra"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12937v2",
-      "abstract": "Large Language models have demonstrated promising performance in research ideation across scientific domains. Hypothesis development, the process of generating a highly specific declarative statement connecting a research idea with empirical validation, has received relatively less attention. Existi"
-    },
-    {
-      "title": "Latent Representation Learning of Multi-scale Thermophysics: Application to Dynamics in Shocked Porous Energetic Material",
-      "authors": [
-        "Shahab Azarfar",
-        "Joseph B. Choi",
-        "Phong CH. Nguyen"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12996v2",
-      "abstract": "Coupling of physics across length and time scales plays an important role in the response of microstructured materials to external loads. In a multi-scale framework, unresolved (subgrid) meso-scale dynamics is upscaled to the homogenized (macro-scale) representation of the heterogeneous material thr"
-    },
-    {
-      "title": "SymRAG: Efficient Neuro-Symbolic Retrieval Through Adaptive Query Routing",
-      "authors": [
-        "Safayat Bin Hakim",
-        "Muhammad Adil",
-        "Alvaro Velasquez"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12981v2",
-      "abstract": "Current Retrieval-Augmented Generation systems use uniform processing, causing inefficiency as simple queries consume resources similar to complex multi-hop tasks. We present SymRAG, a framework that introduces adaptive query routing via real-time complexity and load assessment to select symbolic, n"
-    },
-    {
-      "title": "Forecasting Time Series with LLMs via Patch-Based Prompting and Decomposition",
-      "authors": [
-        "Mayank Bumb",
-        "Anshul Vemulapalli",
-        "Sri Harsha Vardhan Prasad Jella"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12953v1",
-      "abstract": "Recent advances in Large Language Models (LLMs) have demonstrated new possibilities for accurate and efficient time series analysis, but prior work often required heavy fine-tuning and/or ignored inter-series correlations. In this work, we explore simple and flexible prompt-based strategies that ena"
-    },
-    {
-      "title": "SoundMind: RL-Incentivized Logic Reasoning for Audio-Language Models",
-      "authors": [
-        "Xingjian Diao",
-        "Chunhui Zhang",
-        "Keyi Kong"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.12935v2",
-      "abstract": "While large language models have demonstrated impressive reasoning abilities, their extension to the audio modality, particularly within large audio-language models (LALMs), remains underexplored. Addressing this gap requires a systematic approach that involves a capable base model, high-quality rea"
-    },
-    {
-      "title": "Digital Gatekeepers: Exploring Large Language Model's Role in Immigration Decisions",
-      "authors": [
-        "Yicheng Mao",
-        "Yang Zhao"
-      ],
-      "published": "2025-06-15",
-      "url": "http://arxiv.org/abs/2506.21574v1",
-      "abstract": "With globalization and increasing immigrant populations, immigration departments face significant work-loads and the challenge of ensuring fairness in decision-making processes. Integrating artificial intelligence offers a promising solution to these challenges. This study investigates the potential"
+      "org": "OpenAI",
+      "model": "o3-pro",
+      "date": "2025-06-10",
+      "description": "o3专业版"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

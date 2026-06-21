@@ -1,138 +1,36 @@
 {
   "period": {
     "start": "2023-11-16",
-    "end": "2023-11-30",
-    "name": "2023-11-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:11:40Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 30,
+    "research_activity": 20,
     "hype_models": [
-      "GPT-4"
+      "DeepSeek Coder",
+      "DeepSeek-LLM"
     ],
-    "key_events": [
-      "GPT-4"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Raising the Bar of AI-generated Image Detection with CLIP",
-      "authors": [
-        "Davide Cozzolino",
-        "Giovanni Poggi",
-        "Riccardo Corvi"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00195v2",
-      "abstract": "The aim of this work is to explore the potential of pre-trained vision-language models (VLMs) for universal detection of AI-generated images. We develop a lightweight detection strategy based on CLIP features and study its performance in a wide variety of challenging scenarios. We find that, contrar"
+      "org": "DeepSeek",
+      "model": "DeepSeek Coder",
+      "date": "2023-11-02",
+      "description": "开源代码模型"
     },
     {
-      "title": "Applying Large Language Models and Chain-of-Thought for Automatic Scoring",
-      "authors": [
-        "Gyeong-Geon Lee",
-        "Ehsan Latif",
-        "Xuansheng Wu"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.03748v2",
-      "abstract": "This study investigates the application of large language models (LLMs), specifically GPT-3.5 and GPT-4, with Chain-of-Though (CoT) in the automatic scoring of student-written responses to science assessments. We focused on overcoming the challenges of accessibility, technical complexity, and lack o"
-    },
-    {
-      "title": "Brainformer: Mimic Human Visual Brain Functions to Machine Vision Models via fMRI",
-      "authors": [
-        "Xuan-Bac Nguyen",
-        "Xin Li",
-        "Pawan Sinha"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00236v4",
-      "abstract": "Human perception plays a vital role in forming beliefs and understanding reality. A deeper understanding of brain functionality will lead to the development of novel deep neural networks. In this work, we introduce a novel framework named Brainformer, a straightforward yet effective Transformer-base"
-    },
-    {
-      "title": "DFU: scale-robust diffusion model for zero-shot super-resolution image generation",
-      "authors": [
-        "Alex Havrilla",
-        "Kevin Rojas",
-        "Wenjing Liao"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2401.06144v2",
-      "abstract": "Diffusion generative models have achieved remarkable success in generating images with a fixed resolution. However, existing models have limited ability to generalize to different resolutions when training data at those resolutions are not available. Leveraging techniques from operator learning, we "
-    },
-    {
-      "title": "Deep Equilibrium Based Neural Operators for Steady-State PDEs",
-      "authors": [
-        "Tanya Marwah",
-        "Ashwini Pokle",
-        "J. Zico Kolter"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00234v1",
-      "abstract": "Data-driven machine learning approaches are being increasingly used to solve partial differential equations (PDEs). They have shown particularly striking successes when training an operator, which takes as input a PDE in some family, and outputs its solution. However, the architectural design space,"
-    },
-    {
-      "title": "Planning Reliability Assurance Tests for Autonomous Vehicles",
-      "authors": [
-        "Simin Zheng",
-        "Lu Lu",
-        "Yili Hong"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00186v1",
-      "abstract": "Artificial intelligence (AI) technology has become increasingly prevalent and transforms our everyday life. One important application of AI technology is the development of autonomous vehicles (AV). However, the reliability of an AV needs to be carefully demonstrated via an assurance test so that th"
-    },
-    {
-      "title": "AV-RIR: Audio-Visual Room Impulse Response Estimation",
-      "authors": [
-        "Anton Ratnarajah",
-        "Sreyan Ghosh",
-        "Sonal Kumar"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00834v2",
-      "abstract": "Accurate estimation of Room Impulse Response (RIR), which captures an environment's acoustic properties, is important for speech processing and AR/VR applications. We propose AV-RIR, a novel multi-modal multi-task learning approach to accurately estimate the RIR from a given reverberant speech signa"
-    },
-    {
-      "title": "Uncertainty in Graph Contrastive Learning with Bayesian Neural Networks",
-      "authors": [
-        "Alexander Möllers",
-        "Alexander Immer",
-        "Elvin Isufi"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00232v1",
-      "abstract": "Graph contrastive learning has shown great promise when labeled data is scarce, but large unlabeled datasets are available. However, it often does not take uncertainty estimation into account. We show that a variational Bayesian neural network approach can be used to improve not only the uncertainty"
-    },
-    {
-      "title": "Learning active tactile perception through belief-space control",
-      "authors": [
-        "Jean-François Tremblay",
-        "David Meger",
-        "Francois Hogan"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00215v1",
-      "abstract": "Robots operating in an open world will encounter novel objects with unknown physical properties, such as mass, friction, or size. These robots will need to sense these properties through interaction prior to performing downstream tasks with the objects. We propose a method that autonomously learns t"
-    },
-    {
-      "title": "Relevance-guided Neural Machine Translation",
-      "authors": [
-        "Isidora Chara Tourni",
-        "Derry Wijaya"
-      ],
-      "published": "2023-11-30",
-      "url": "http://arxiv.org/abs/2312.00214v1",
-      "abstract": "With the advent of the Transformer architecture, Neural Machine Translation (NMT) results have shown great improvement lately. However, results in low-resource conditions still lag behind in both bilingual and multilingual setups, due to the limited amount of available monolingual and/or parallel da"
+      "org": "DeepSeek",
+      "model": "DeepSeek-LLM",
+      "date": "2023-11-29",
+      "description": "DeepSeek首个通用大模型"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

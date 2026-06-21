@@ -1,133 +1,29 @@
 {
   "period": {
     "start": "2023-01-16",
-    "end": "2023-01-31",
-    "name": "2023-01-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:10:15Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 15,
+    "research_activity": 20,
+    "hype_models": [
+      "LLaMA泄露"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Large Language Models Can Be Easily Distracted by Irrelevant Context",
-      "authors": [
-        "Freda Shi",
-        "Xinyun Chen",
-        "Kanishka Misra"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00093v3",
-      "abstract": "Large language models have achieved impressive performance on various natural language processing tasks. However, so far they have been evaluated primarily on benchmarks where all information in the input context is relevant for solving the task. In this work, we investigate the distractibility of l"
-    },
-    {
-      "title": "In-Context Retrieval-Augmented Language Models",
-      "authors": [
-        "Ori Ram",
-        "Yoav Levine",
-        "Itay Dalmedigos"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00083v3",
-      "abstract": "Retrieval-Augmented Language Modeling (RALM) methods, which condition a language model (LM) on relevant documents from a grounding corpus during generation, were shown to significantly improve language modeling performance. In addition, they can mitigate the problem of factually inaccurate text gene"
-    },
-    {
-      "title": "Revisiting Bellman Errors for Offline Model Selection",
-      "authors": [
-        "Joshua P. Zitovsky",
-        "Daniel de Marchi",
-        "Rishabh Agarwal"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00141v2",
-      "abstract": "Offline model selection (OMS), that is, choosing the best policy from a set of many policies given only logged data, is crucial for applying offline RL in real-world settings. One idea that has been extensively explored is to select policies based on the mean squared Bellman error (MSBE) of the asso"
-    },
-    {
-      "title": "Learning Topology-Preserving Data Representations",
-      "authors": [
-        "Ilya Trofimov",
-        "Daniil Cherniavskii",
-        "Eduard Tulchinskii"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00136v2",
-      "abstract": "We propose a method for learning topology-preserving data representations (dimensionality reduction). The method aims to provide topological similarity between the data manifold and its latent representation via enforcing the similarity in topological features (clusters, loops, 2D voids, etc.) and t"
-    },
-    {
-      "title": "Design and Implementation of A Soccer Ball Detection System with Multiple Cameras",
-      "authors": [
-        "Lei Li",
-        "Tianfang Zhang",
-        "Zhongfeng Kang"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00123v1",
-      "abstract": "The detection of small and medium-sized objects in three dimensions has always been a frontier exploration problem. This technology has a very wide application in sports analysis, games, virtual reality, human animation and other fields. The traditional three-dimensional small target detection techn"
-    },
-    {
-      "title": "Machine Translation Impact in E-commerce Multilingual Search",
-      "authors": [
-        "Bryan Zhang",
-        "Amita Misra"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00119v1",
-      "abstract": "Previous work suggests that performance of cross-lingual information retrieval correlates highly with the quality of Machine Translation. However, there may be a threshold beyond which improving query translation quality yields little or no benefit to further improve the retrieval performance. This "
-    },
-    {
-      "title": "Distributed sequential federated learning",
-      "authors": [
-        "Z. F. Wang",
-        "X. Y. Zhang",
-        "Y-c I. Chang"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00107v1",
-      "abstract": "The analysis of data stored in multiple sites has become more popular, raising new concerns about the security of data storage and communication. Federated learning, which does not require centralizing data, is a common approach to preventing heavy data transportation, securing valued data, and prot"
-    },
-    {
-      "title": "The Impacts of Unanswerable Questions on the Robustness of Machine Reading Comprehension Models",
-      "authors": [
-        "Son Quoc Tran",
-        "Phong Nguyen-Thuan Do",
-        "Uyen Le"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00094v1",
-      "abstract": "Pretrained language models have achieved super-human performances on many Machine Reading Comprehension (MRC) benchmarks. Nevertheless, their relative inability to defend against adversarial attacks has spurred skepticism about their natural language understanding. In this paper, we ask whether trai"
-    },
-    {
-      "title": "Debiasing Vision-Language Models via Biased Prompts",
-      "authors": [
-        "Ching-Yao Chuang",
-        "Varun Jampani",
-        "Yuanzhen Li"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00070v2",
-      "abstract": "Machine learning models have been shown to inherit biases from their training datasets. This can be particularly problematic for vision-language foundation models trained on uncurated datasets scraped from the internet. The biases can be amplified and propagated to downstream applications like zero-"
-    },
-    {
-      "title": "Dynamic Flows on Curved Space Generated by Labeled Data",
-      "authors": [
-        "Xinru Hua",
-        "Truyen Nguyen",
-        "Tam Le"
-      ],
-      "published": "2023-01-31",
-      "url": "http://arxiv.org/abs/2302.00061v1",
-      "abstract": "The scarcity of labeled data is a long-standing challenge for many machine learning tasks. We propose our gradient flow method to leverage the existing dataset (i.e., source) to generate new samples that are close to the dataset of interest (i.e., target). We lift both datasets to the space of proba"
+      "org": "Meta",
+      "model": "LLaMA泄露",
+      "date": "2023-03-03",
+      "description": "LLaMA模型权重泄露, 引发开源AI爆发"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

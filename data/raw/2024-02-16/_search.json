@@ -1,131 +1,20 @@
 {
   "period": {
     "start": "2024-02-16",
-    "end": "2024-02-29",
-    "name": "2024-02-16"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:12:00Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "LLM-Ensemble: Optimal Large Language Model Ensemble Method for E-commerce Product Attribute Value Extraction",
-      "authors": [
-        "Chenhao Fang",
-        "Xiaohan Li",
-        "Zezhong Fan"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00863v2",
-      "abstract": "Product attribute value extraction is a pivotal component in Natural Language Processing (NLP) and the contemporary e-commerce industry. The provision of precise product attribute values is fundamental in ensuring high-quality recommendations and enhancing customer satisfaction. The recently emergin"
-    },
-    {
-      "title": "LLMs in Political Science: Heralding a New Era of Visual Analysis",
-      "authors": [
-        "Yu Wang"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00154v2",
-      "abstract": "Interest is increasing among political scientists in leveraging the extensive information available in images. However, the challenge of interpreting these images lies in the need for specialized knowledge in computer vision and access to specialized hardware. As a result, image analysis has been li"
-    },
-    {
-      "title": "TELEClass: Taxonomy Enrichment and LLM-Enhanced Hierarchical Text Classification with Minimal Supervision",
-      "authors": [
-        "Yunyi Zhang",
-        "Ruozhen Yang",
-        "Xueqiang Xu"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00165v3",
-      "abstract": "Hierarchical text classification aims to categorize each document into a set of classes in a label taxonomy, which is a fundamental web text mining task with broad applications such as web content analysis and semantic indexing. Most earlier works focus on fully or semi-supervised methods that requi"
-    },
-    {
-      "title": "NewsBench: A Systematic Evaluation Framework for Assessing Editorial Capabilities of Large Language Models in Chinese Journalism",
-      "authors": [
-        "Miao Li",
-        "Ming-Bin Chen",
-        "Bo Tang"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00862v4",
-      "abstract": "We present NewsBench, a novel evaluation framework to systematically assess the capabilities of Large Language Models (LLMs) for editorial capabilities in Chinese journalism. Our constructed benchmark dataset is focused on four facets of writing proficiency and six facets of safety adherence, and it"
-    },
-    {
-      "title": "Learning to Find Missing Video Frames with Synthetic Data Augmentation: A General Framework and Application in Generating Thermal Images Using RGB Cameras",
-      "authors": [
-        "Mathias Viborg Andersen",
-        "Ross Greer",
-        "Andreas Møgelmose"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00196v1",
-      "abstract": "Advanced Driver Assistance Systems (ADAS) in intelligent vehicles rely on accurate driver perception within the vehicle cabin, often leveraging a combination of sensing modalities. However, these modalities operate at varying rates, posing challenges for real-time, comprehensive driver state monitor"
-    },
-    {
-      "title": "\"Flex Tape Can't Fix That\": Bias and Misinformation in Edited Language Models",
-      "authors": [
-        "Karina Halevy",
-        "Anna Sotnikova",
-        "Badr AlKhamissi"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00180v3",
-      "abstract": "Model editing has emerged as a cost-effective strategy to update knowledge stored in language models. However, model editing can have unintended consequences after edits are applied: information unrelated to the edits can also be changed, and other general behaviors of the model can be wrongly alter"
-    },
-    {
-      "title": "Med-Real2Sim: Non-Invasive Medical Digital Twins using Physics-Informed Self-Supervised Learning",
-      "authors": [
-        "Keying Kuang",
-        "Frances Dean",
-        "Jack B. Jedlicki"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00177v3",
-      "abstract": "A digital twin is a virtual replica of a real-world physical phenomena that uses mathematical modeling to characterize and simulate its defining features. By constructing digital twins for disease processes, we can perform in-silico simulations that mimic patients' health conditions and counterfactu"
-    },
-    {
-      "title": "Go Beyond Black-box Policies: Rethinking the Design of Learning Agent for Interpretable and Verifiable HVAC Control",
-      "authors": [
-        "Zhiyu An",
-        "Xianzhong Ding",
-        "Wan Du"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00172v1",
-      "abstract": "Recent research has shown the potential of Model-based Reinforcement Learning (MBRL) to enhance energy efficiency of Heating, Ventilation, and Air Conditioning (HVAC) systems. However, existing methods rely on black-box thermal dynamics models and stochastic optimizers, lacking reliability guarantee"
-    },
-    {
-      "title": "Privacy-Preserving Distributed Optimization and Learning",
-      "authors": [
-        "Ziqin Chen",
-        "Yongqiang Wang"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00157v1",
-      "abstract": "Distributed optimization and learning has recently garnered great attention due to its wide applications in sensor networks, smart grids, machine learning, and so forth. Despite rapid development, existing distributed optimization and learning algorithms require each agent to exchange messages with "
-    },
-    {
-      "title": "Tree-Averaging Algorithms for Ensemble-Based Unsupervised Discontinuous Constituency Parsing",
-      "authors": [
-        "Behzad Shayegh",
-        "Yuqiao Wen",
-        "Lili Mou"
-      ],
-      "published": "2024-02-29",
-      "url": "http://arxiv.org/abs/2403.00143v2",
-      "abstract": "We address unsupervised discontinuous constituency parsing, where we observe a high variance in the performance of the only previous model in the literature. We propose to build an ensemble of different runs of the existing discontinuous parser by averaging the predicted trees, to stabilize and boos"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

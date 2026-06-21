@@ -1,132 +1,32 @@
 {
   "period": {
     "start": "2022-12-01",
-    "end": "2022-12-15",
-    "name": "2022-12-01"
+    "name": "2022"
   },
-  "searched_at": "2026-06-21T05:10:04Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 15,
+    "research_activity": 12,
+    "hype_models": [
+      "GPT-3.5 + ChatGPT"
+    ],
+    "period_name": "基线期",
+    "ai_news": "ChatGPT发布引爆全球AI热潮, OpenAI估值290亿美元. Stable Diffusion 2.0发布."
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Improving Chess Commentaries by Combining Language Models with Symbolic Reasoning Engines",
-      "authors": [
-        "Andrew Lee",
-        "David Wu",
-        "Emily Dinan"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08195v1",
-      "abstract": "Despite many recent advancements in language modeling, state-of-the-art language models lack grounding in the real world and struggle with tasks involving complex reasoning. Meanwhile, advances in the symbolic reasoning capabilities of AI have led to systems that outperform humans in games like ches"
-    },
-    {
-      "title": "FiDO: Fusion-in-Decoder optimized for stronger performance and faster inference",
-      "authors": [
-        "Michiel de Jong",
-        "Yury Zemlyanskiy",
-        "Joshua Ainslie"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08153v2",
-      "abstract": "Fusion-in-Decoder (FiD) is a powerful retrieval-augmented language model that sets the state-of-the-art on many knowledge-intensive NLP tasks. However, the architecture used for FiD was chosen by making minimal modifications to a standard T5 model, which our analysis shows to be highly suboptimal fo"
-    },
-    {
-      "title": "Efficient Long Sequence Modeling via State Space Augmented Transformer",
-      "authors": [
-        "Simiao Zuo",
-        "Xiaodong Liu",
-        "Jian Jiao"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08136v1",
-      "abstract": "Transformer models have achieved superior performance in various natural language processing tasks. However, the quadratic computational cost of the attention mechanism limits its practicality for long sequences. There are existing attention variants that improve the computational efficiency, but th"
-    },
-    {
-      "title": "The KITMUS Test: Evaluating Knowledge Integration from Multiple Sources in Natural Language Understanding Systems",
-      "authors": [
-        "Akshatha Arodi",
-        "Martin Pömsl",
-        "Kaheer Suleman"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08192v2",
-      "abstract": "Many state-of-the-art natural language understanding (NLU) models are based on pretrained neural language models. These models often make inferences using information from multiple sources. An important class of such inferences are those that require both background knowledge, presumably contained i"
-    },
-    {
-      "title": "MM-SHAP: A Performance-agnostic Metric for Measuring Multimodal Contributions in Vision and Language Models & Tasks",
-      "authors": [
-        "Letitia Parcalabescu",
-        "Anette Frank"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08158v3",
-      "abstract": "Vision and language models (VL) are known to exploit unrobust indicators in individual modalities (e.g., introduced by distributional biases) instead of focusing on relevant information in each modality. That a unimodal model achieves similar accuracy on a VL task to a multimodal one, indicates that"
-    },
-    {
-      "title": "Injecting Domain Knowledge in Language Models for Task-Oriented Dialogue Systems",
-      "authors": [
-        "Denis Emelin",
-        "Daniele Bonadiman",
-        "Sawsan Alqahtani"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08120v1",
-      "abstract": "Pre-trained language models (PLM) have advanced the state-of-the-art across NLP applications, but lack domain-specific knowledge that does not naturally occur in pre-training data. Previous studies augmented PLMs with symbolic knowledge for different downstream NLP tasks. However, knowledge bases (K"
-    },
-    {
-      "title": "Dataflow Analysis-Inspired Deep Learning for Efficient Vulnerability Detection",
-      "authors": [
-        "Benjamin Steenhoek",
-        "Hongyang Gao",
-        "Wei Le"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08108v3",
-      "abstract": "Deep learning-based vulnerability detection has shown great performance and, in some studies, outperformed static analysis tools. However, the highest-performing approaches use token-based transformer models, which are not the most efficient to capture code semantics required for vulnerability detec"
-    },
-    {
-      "title": "NAWQ-SR: A Hybrid-Precision NPU Engine for Efficient On-Device Super-Resolution",
-      "authors": [
-        "Stylianos I. Venieris",
-        "Mario Almeida",
-        "Royson Lee"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.09501v3",
-      "abstract": "In recent years, image and video delivery systems have begun integrating deep learning super-resolution (SR) approaches, leveraging their unprecedented visual enhancement capabilities while reducing reliance on networking conditions. Nevertheless, deploying these solutions on mobile devices still re"
-    },
-    {
-      "title": "Saved You A Click: Automatically Answering Clickbait Titles",
-      "authors": [
-        "Oliver Johnson",
-        "Beicheng Lou",
-        "Janet Zhong"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08196v1",
-      "abstract": "Often clickbait articles have a title that is phrased as a question or vague teaser that entices the user to click on the link and read the article to find the explanation. We developed a system that will automatically find the answer or explanation of the clickbait hook from the website text so tha"
-    },
-    {
-      "title": "Multi-Resolution Online Deterministic Annealing: A Hierarchical and Progressive Learning Architecture",
-      "authors": [
-        "Christos Mavridis",
-        "John Baras"
-      ],
-      "published": "2022-12-15",
-      "url": "http://arxiv.org/abs/2212.08189v3",
-      "abstract": "Hierarchical learning algorithms that gradually approximate a solution to a data-driven optimization problem are essential to decision-making systems, especially under limitations on time and computational resources. In this study, we introduce a general-purpose hierarchical learning architecture th"
+      "org": "OpenAI",
+      "model": "GPT-3.5 + ChatGPT",
+      "date": "2022-11-30",
+      "description": "ChatGPT上线, 首月1亿用户. MMLU=70.0, HumanEval=48.1. AI发展基线."
     }
   ],
-  "github": [],
-  "benchmarks_found": {}
+  "benchmarks_found": {
+    "MMLU": 70.0,
+    "HumanEval": 48.1
+  }
 }

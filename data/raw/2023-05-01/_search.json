@@ -1,135 +1,20 @@
 {
   "period": {
     "start": "2023-05-01",
-    "end": "2023-05-15",
-    "name": "2023-05-01"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:10:39Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": [
-      "DALL-E"
-    ]
+    "model_activity": 0,
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "SGP-TOD: Building Task Bots Effortlessly via Schema-Guided LLM Prompting",
-      "authors": [
-        "Xiaoying Zhang",
-        "Baolin Peng",
-        "Kun Li"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09067v1",
-      "abstract": "Building end-to-end task bots and maintaining their integration with new functionalities using minimal human efforts is a long-standing challenge in dialog research. Recently large language models (LLMs) have demonstrated exceptional proficiency in conversational engagement and adherence to instruct"
-    },
-    {
-      "title": "Soft Prompt Decoding for Multilingual Dense Retrieval",
-      "authors": [
-        "Zhiqi Huang",
-        "Hansi Zeng",
-        "Hamed Zamani"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09025v1",
-      "abstract": "In this work, we explore a Multilingual Information Retrieval (MLIR) task, where the collection includes documents in multiple languages. We demonstrate that applying state-of-the-art approaches developed for cross-lingual information retrieval to MLIR tasks leads to sub-optimal performance. This is"
-    },
-    {
-      "title": "Capturing Humans' Mental Models of AI: An Item Response Theory Approach",
-      "authors": [
-        "Markelle Kelly",
-        "Aakriti Kumar",
-        "Padhraic Smyth"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09064v1",
-      "abstract": "Improving our understanding of how humans perceive AI teammates is an important foundation for our general understanding of human-AI teams. Extending relevant work from cognitive science, we propose a framework based on item response theory for modeling these perceptions. We apply this framework to "
-    },
-    {
-      "title": "Learning Linear Embeddings for Non-Linear Network Dynamics with Koopman Message Passing",
-      "authors": [
-        "King Fai Yeh",
-        "Paris Flood",
-        "William Redman"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09060v1",
-      "abstract": "Recently, Koopman operator theory has become a powerful tool for developing linear representations of non-linear dynamical systems. However, existing data-driven applications of Koopman operator theory, including both traditional and deep learning approaches, perform poorly on non-linear network dyn"
-    },
-    {
-      "title": "Self-Supervised Pretraining on Paired Sequences of fMRI Data for Transfer Learning to Brain Decoding Tasks",
-      "authors": [
-        "Sean Paulsen",
-        "Michael Casey"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09057v1",
-      "abstract": "In this work we introduce a self-supervised pretraining framework for transformers on functional Magnetic Resonance Imaging (fMRI) data. First, we pretrain our architecture on two self-supervised tasks simultaneously to teach the model a general understanding of the temporal and spatial dynamics of "
-    },
-    {
-      "title": "SKI to go Faster: Accelerating Toeplitz Neural Networks via Asymmetric Kernels",
-      "authors": [
-        "Alexander Moreno",
-        "Jonathan Mei",
-        "Luke Walters"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09028v2",
-      "abstract": "Toeplitz Neural Networks (TNNs) (Qin et. al. 2023) are a recent sequence model with impressive results. They require O(n log n) computational complexity and O(n) relative positional encoder (RPE) multi-layer perceptron (MLP) and decay bias calls. We aim to reduce both. We first note that the RPE is "
-    },
-    {
-      "title": "DATED: Guidelines for Creating Synthetic Datasets for Engineering Design Applications",
-      "authors": [
-        "Cyril Picard",
-        "Jürg Schiffmann",
-        "Faez Ahmed"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09018v1",
-      "abstract": "Exploiting the recent advancements in artificial intelligence, showcased by ChatGPT and DALL-E, in real-world applications necessitates vast, domain-specific, and publicly accessible datasets. Unfortunately, the scarcity of such datasets poses a significant challenge for researchers aiming to apply "
-    },
-    {
-      "title": "The Brain Tumor Segmentation (BraTS) Challenge 2023: Brain MR Image Synthesis for Tumor Segmentation (BraSyn)",
-      "authors": [
-        "Hongwei Bran Li",
-        "Gian Marco Conte",
-        "Qingqiao Hu"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09011v6",
-      "abstract": "Automated brain tumor segmentation methods have become well-established and reached performance levels offering clear clinical utility. These methods typically rely on four input magnetic resonance imaging (MRI) modalities: T1-weighted images with and without contrast enhancement, T2-weighted images"
-    },
-    {
-      "title": "Skin Deep: Investigating Subjectivity in Skin Tone Annotations for Computer Vision Benchmark Datasets",
-      "authors": [
-        "Teanna Barrett",
-        "Quan Ze Chen",
-        "Amy X. Zhang"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09072v1",
-      "abstract": "To investigate the well-observed racial disparities in computer vision systems that analyze images of humans, researchers have turned to skin tone as more objective annotation than race metadata for fairness performance evaluations. However, the current state of skin tone annotation procedures is hi"
-    },
-    {
-      "title": "An Offline Time-aware Apprenticeship Learning Framework for Evolving Reward Functions",
-      "authors": [
-        "Xi Yang",
-        "Ge Gao",
-        "Min Chi"
-      ],
-      "published": "2023-05-15",
-      "url": "http://arxiv.org/abs/2305.09070v1",
-      "abstract": "Apprenticeship learning (AL) is a process of inducing effective decision-making policies via observing and imitating experts' demonstrations. Most existing AL approaches, however, are not designed to cope with the evolving reward functions commonly found in human-centric tasks such as healthcare, wh"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

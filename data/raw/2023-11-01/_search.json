@@ -1,129 +1,36 @@
 {
   "period": {
     "start": "2023-11-01",
-    "end": "2023-11-15",
-    "name": "2023-11-01"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:11:36Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 30,
+    "research_activity": 20,
+    "hype_models": [
+      "Grok 1",
+      "Claude 2.1"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "How Trustworthy are Open-Source LLMs? An Assessment under Malicious Demonstrations Shows their Vulnerabilities",
-      "authors": [
-        "Lingbo Mo",
-        "Boshi Wang",
-        "Muhao Chen"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.09447v2",
-      "abstract": "The rapid progress in open-source Large Language Models (LLMs) is significantly driving AI development forward. However, there is still a limited understanding of their trustworthiness. Deploying these models at scale without sufficient trustworthiness can pose significant risks, highlighting the ne"
+      "org": "xAI",
+      "model": "Grok 1",
+      "date": "2023-11-04",
+      "description": "Elon Musk xAI发布Grok, 实时知识"
     },
     {
-      "title": "MMC: Advancing Multimodal Chart Understanding with Large-scale Instruction Tuning",
-      "authors": [
-        "Fuxiao Liu",
-        "Xiaoyang Wang",
-        "Wenlin Yao"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.10774v2",
-      "abstract": "With the rapid development of large language models (LLMs) and their integration into large multimodal models (LMMs), there has been impressive progress in zero-shot completion of user-oriented vision-language tasks. However, a gap remains in the domain of chart image understanding due to the distin"
-    },
-    {
-      "title": "Stealthy and Persistent Unalignment on Large Language Models via Backdoor Injections",
-      "authors": [
-        "Yuanpu Cao",
-        "Bochuan Cao",
-        "Jinghui Chen"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2312.00027v2",
-      "abstract": "Recent developments in Large Language Models (LLMs) have manifested significant advancements. To facilitate safeguards against malicious exploitation, a body of research has concentrated on aligning LLMs with human preferences and inhibiting their generation of inappropriate content. Unfortunately, "
-    },
-    {
-      "title": "ToolTalk: Evaluating Tool-Usage in a Conversational Setting",
-      "authors": [
-        "Nicholas Farn",
-        "Richard Shin"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.10775v1",
-      "abstract": "Large language models (LLMs) have displayed massive improvements in reasoning and decision-making skills and can hold natural conversations with users. Many recent works seek to augment LLM-based assistants with external tools so they can access private or up-to-date information and carry out action"
-    },
-    {
-      "title": "Exploring the Privacy-Energy Consumption Tradeoff for Split Federated Learning",
-      "authors": [
-        "Joohyung Lee",
-        "Mohamed Seif",
-        "Jungchan Cho"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.09441v4",
-      "abstract": "Split Federated Learning (SFL) has recently emerged as a promising distributed learning technology, leveraging the strengths of both federated and split learning. It emphasizes the advantages of rapid convergence while addressing privacy concerns. As a result, this innovation has received significan"
-    },
-    {
-      "title": "When Large Language Models contradict humans? Large Language Models' Sycophantic Behaviour",
-      "authors": [
-        "Leonardo Ranaldi",
-        "Giulia Pucci"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.09410v4",
-      "abstract": "Large Language Models have been demonstrating broadly satisfactory generative abilities for users, which seems to be due to the intensive use of human feedback that refines responses. Nevertheless, suggestibility inherited via human feedback improves the inclination to produce answers corresponding "
-    },
-    {
-      "title": "User Persona Identification and New Service Adaptation Recommendation",
-      "authors": [
-        "Narges Tabari",
-        "Sandesh Swamy",
-        "Rashmi Gangadharaiah"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.10773v1",
-      "abstract": "Providing a personalized user experience on information dense webpages helps users in reaching their end-goals sooner. We explore an automated approach to identifying user personas by leveraging high dimensional trajectory information from user sessions on webpages. While neural collaborative filter"
-    },
-    {
-      "title": "To Translate or Not to Translate: A Systematic Investigation of Translation-Based Cross-Lingual Transfer to Low-Resource Languages",
-      "authors": [
-        "Benedikt Ebing",
-        "Goran Glavaš"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.09404v2",
-      "abstract": "Perfect machine translation (MT) would render cross-lingual transfer (XLT) by means of multilingual language models (mLMs) superfluous. Given, on the one hand, the large body of work on improving XLT with mLMs and, on the other hand, recent advances in massively multilingual MT, in this work, we sys"
-    },
-    {
-      "title": "A Survey on Online User Aggression: Content Detection and Behavioral Analysis on Social Media",
-      "authors": [
-        "Swapnil Mane",
-        "Suman Kundu",
-        "Rajesh Sharma"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.09367v2",
-      "abstract": "The rise of social media platforms has led to an increase in cyber-aggressive behavior, encompassing a broad spectrum of hostile behavior, including cyberbullying, online harassment, and the dissemination of offensive and hate speech. These behaviors have been associated with significant societal co"
-    },
-    {
-      "title": "LOKE: Linked Open Knowledge Extraction for Automated Knowledge Graph Construction",
-      "authors": [
-        "Jamie McCusker"
-      ],
-      "published": "2023-11-15",
-      "url": "http://arxiv.org/abs/2311.09366v1",
-      "abstract": "While the potential of Open Information Extraction (Open IE) for Knowledge Graph Construction (KGC) may seem promising, we find that the alignment of Open IE extraction results with existing knowledge graphs to be inadequate. The advent of Large Language Models (LLMs), especially the commercially av"
+      "org": "Anthropic",
+      "model": "Claude 2.1",
+      "date": "2023-11-21",
+      "description": "200K token上下文窗口"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

@@ -1,136 +1,29 @@
 {
   "period": {
     "start": "2025-01-16",
-    "end": "2025-01-31",
-    "name": "2025-01-16"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:13:58Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 15,
+    "research_activity": 20,
     "hype_models": [
-      "Gemini"
+      "DeepSeek Chat (R1)"
     ],
-    "key_events": [
-      "Gemini"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "DermaSynth: Rich Synthetic Image-Text Pairs Using Open Access Dermatology Datasets",
-      "authors": [
-        "Abdurrahim Yilmaz",
-        "Furkan Yuceyalcin",
-        "Ece Gokyayla"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00196v2",
-      "abstract": "A major barrier to developing vision large language models (LLMs) in dermatology is the lack of large image--text pairs dataset. We introduce DermaSynth, a dataset comprising of 92,020 synthetic image--text pairs curated from 45,205 images (13,568 clinical and 35,561 dermatoscopic) for dermatology-r"
-    },
-    {
-      "title": "HackerRank-ASTRA: Evaluating Correctness & Consistency of Large Language Models on cross-domain multi-file project problems",
-      "authors": [
-        "Jun Xing",
-        "Mayur Bhatia",
-        "Sahil Phulwani"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00226v1",
-      "abstract": "Evaluating the real-world applicability of large language models (LLMs) provides valuable insights for their development and use in software development tasks. Existing benchmarks often focus on standalone coding problems or specific libraries, overlooking multi-file, project-based scenarios and lac"
-    },
-    {
-      "title": "Reward-aware Preference Optimization: A Unified Mathematical Framework for Model Alignment",
-      "authors": [
-        "Shengyang Sun",
-        "Yian Zhang",
-        "Alexander Bukharin"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00203v2",
-      "abstract": "The rapid development of large language model (LLM) alignment algorithms has resulted in a complex and fragmented landscape, with limited clarity on the effectiveness of different methods and their inter-connections. This paper introduces Reward-Aware Preference Optimization (RPO), a mathematical fr"
-    },
-    {
-      "title": "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
-      "authors": [
-        "Kefan Dong",
-        "Tengyu Ma"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00212v4",
-      "abstract": "A fundamental challenge in formal theorem proving by LLMs is the lack of high-quality training data. Although reinforcement learning or expert iteration partially mitigates this issue by alternating between LLM generating proofs and finetuning them on correctly generated ones, performance quickly pl"
-    },
-    {
-      "title": "Fairshare Data Pricing via Data Valuation for Large Language Models",
-      "authors": [
-        "Luyang Zhang",
-        "Cathy Jiao",
-        "Beibei Li"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00198v4",
-      "abstract": "Training data is the backbone of large language models (LLMs), yet today's data markets often operate under exploitative pricing -- sourcing data from marginalized groups with little pay or recognition. This paper introduces a theoretical framework for LLM data markets, modeling the strategic intera"
-    },
-    {
-      "title": "Employee Turnover Prediction: A Cross-component Attention Transformer with Consideration of Competitor Influence and Contagious Effect",
-      "authors": [
-        "Hao Liu",
-        "Yong Ge"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.01660v1",
-      "abstract": "Employee turnover refers to an individual's termination of employment from the current organization. It is one of the most persistent challenges for firms, especially those ones in Information Technology (IT) industry that confront high turnover rates. Effective prediction of potential employee turn"
-    },
-    {
-      "title": "Improving Quality Control Of MRI Images Using Synthetic Motion Data",
-      "authors": [
-        "Charles Bricout",
-        "Kang Ik K. Cho",
-        "Michael Harms"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00160v2",
-      "abstract": "MRI quality control (QC) is challenging due to unbalanced and limited datasets, as well as subjective scoring, which hinder the development of reliable automated QC systems. To address these issues, we introduce an approach that pretrains a model on synthetically generated motion artifacts before ap"
-    },
-    {
-      "title": "Should You Use Your Large Language Model to Explore or Exploit?",
-      "authors": [
-        "Keegan Harris",
-        "Aleksandrs Slivkins"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00225v4",
-      "abstract": "We evaluate the ability of the current generation of large language models (LLMs) to help a decision-making agent facing an exploration-exploitation tradeoff. While previous work has largely study the ability of LLMs to solve combined exploration-exploitation tasks, we take a more systematic approac"
-    },
-    {
-      "title": "Year-over-Year Developments in Financial Fraud Detection via Deep Learning: A Systematic Literature Review",
-      "authors": [
-        "Yisong Chen",
-        "Chuqing Zhao",
-        "Yixin Xu"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00201v2",
-      "abstract": "This paper systematically reviews advancements in deep learning (DL) techniques for financial fraud detection, a critical issue in the financial sector. Using the Kitchenham systematic literature review approach, 57 studies published between 2019 and 2024 were analyzed. The review highlights the eff"
-    },
-    {
-      "title": "Physics-Informed Neural Network based Damage Identification for Truss Railroad Bridges",
-      "authors": [
-        "Althaf Shajihan",
-        "Kirill Mechitov",
-        "Girish Chowdhary"
-      ],
-      "published": "2025-01-31",
-      "url": "http://arxiv.org/abs/2502.00194v1",
-      "abstract": "Railroad bridges are a crucial component of the U.S. freight rail system, which moves over 40 percent of the nation's freight and plays a critical role in the economy. However, aging bridge infrastructure and increasing train traffic pose significant safety hazards and risk service disruptions. The "
+      "org": "DeepSeek",
+      "model": "DeepSeek Chat (R1)",
+      "date": "2025-01-20",
+      "description": "R1推理模型发布, 全球震惊"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

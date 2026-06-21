@@ -1,130 +1,36 @@
 {
   "period": {
     "start": "2025-12-01",
-    "end": "2025-12-15",
-    "name": "2025-12-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:15:13Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 30,
+    "research_activity": 20,
+    "hype_models": [
+      "GPT-5.2",
+      "Gemini 3.0 Flash"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "CrossTrafficLLM: A Human-Centric Framework for Interpretable Traffic Intelligence via Large Language Model",
-      "authors": [
-        "Zeming Du",
-        "Qitan Shao",
-        "Hongfei Liu"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2601.06042v1",
-      "abstract": "While accurate traffic forecasting is vital for Intelligent Transportation Systems (ITS), effectively communicating predicted conditions via natural language for human-centric decision support remains a challenge and is often handled separately. To address this, we propose CrossTrafficLLM, a novel G"
+      "org": "OpenAI",
+      "model": "GPT-5.2",
+      "date": "2025-12-11",
+      "description": "GPT-5进一步优化"
     },
     {
-      "title": "Hierarchical Multi-agent Large Language Model Reasoning for Autonomous Functional Materials Discovery",
-      "authors": [
-        "Samuel Rothfarb",
-        "Megan C. Davis",
-        "Ivana Matanovic"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.13930v1",
-      "abstract": "Artificial intelligence is reshaping scientific exploration, but most methods automate procedural tasks without engaging in scientific reasoning, limiting autonomy in discovery. We introduce Materials Agents for Simulation and Theory in Electronic-structure Reasoning (MASTER), an active learning fra"
-    },
-    {
-      "title": "Sliding Window Recurrences for Sequence Models",
-      "authors": [
-        "Dragos Secrieru",
-        "Garyk Brixi",
-        "Yoshua Bengio"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.13921v1",
-      "abstract": "Multi-hybrid architectures are poised to take over language modeling due to better quality and performance. We introduce a hierarchical decomposition framework for linear recurrences that allows us to develop algorithms aligned with GPU memory hierarchies, yielding Sliding Window Recurrences. We foc"
-    },
-    {
-      "title": "Toward Agentic Environments: GenAI and the Convergence of AI, Sustainability, and Human-Centric Spaces",
-      "authors": [
-        "Przemek Pospieszny",
-        "Dominika P. Brodowicz"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.15787v1",
-      "abstract": "In recent years, advances in artificial intelligence (AI), particularly generative AI (GenAI) and large language models (LLMs), have made human-computer interactions more frequent, efficient, and accessible across sectors ranging from banking to healthcare. AI tools embedded in digital devices suppo"
-    },
-    {
-      "title": "Informing Acquisition Functions via Foundation Models for Molecular Discovery",
-      "authors": [
-        "Qi Chen",
-        "Fabio Ramos",
-        "Alán Aspuru-Guzik"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.13935v1",
-      "abstract": "Bayesian Optimization (BO) is a key methodology for accelerating molecular discovery by estimating the mapping from molecules to their properties while seeking the optimal candidate. Typically, BO iteratively updates a probabilistic surrogate model of this mapping and optimizes acquisition functions"
-    },
-    {
-      "title": "A Complete Guide to Spherical Equivariant Graph Transformers",
-      "authors": [
-        "Sophia Tang"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.13927v1",
-      "abstract": "Spherical equivariant graph neural networks (EGNNs) provide a principled framework for learning on three-dimensional molecular and biomolecular systems, where predictions must respect the rotational symmetries inherent in physics. These models extend traditional message-passing GNNs and Transformers"
-    },
-    {
-      "title": "Context Branching for LLM Conversations: A Version Control Approach to Exploratory Programming",
-      "authors": [
-        "Bhargav Chickmagalur Nanjundappa",
-        "Spandan Maaheshwari"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.13914v1",
-      "abstract": "Large Language Models (LLMs) have become integral to software engineering workflows, yet their effectiveness degrades significantly in multi-turn conversations. Recent studies demonstrate an average 39% performance drop when instructions are delivered across multiple turns, with models making premat"
-    },
-    {
-      "title": "FiNERweb: Datasets and Artifacts for Scalable Multilingual Named Entity Recognition",
-      "authors": [
-        "Jonas Golde",
-        "Patrick Haller",
-        "Alan Akbik"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.13884v1",
-      "abstract": "Recent multilingual named entity recognition (NER) work has shown that large language models (LLMs) can provide effective synthetic supervision, yet such datasets have mostly appeared as by-products of broader experiments rather than as systematic, reusable resources. We introduce FiNERweb, a datase"
-    },
-    {
-      "title": "Development and external validation of a multimodal artificial intelligence mortality prediction model of critically ill patients using multicenter data",
-      "authors": [
-        "Behrooz Mamandipoor",
-        "Chun-Nan Hsu",
-        "Martin Krause"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.19716v1",
-      "abstract": "Early prediction of in-hospital mortality in critically ill patients can aid clinicians in optimizing treatment. The objective was to develop a multimodal deep learning model, using structured and unstructured clinical data, to predict in-hospital mortality risk among critically ill patients after t"
-    },
-    {
-      "title": "Olmo 3",
-      "authors": [
-        "Team Olmo",
-        " :",
-        "Allyson Ettinger"
-      ],
-      "published": "2025-12-15",
-      "url": "http://arxiv.org/abs/2512.13961v2",
-      "abstract": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow"
+      "org": "Google",
+      "model": "Gemini 3.0 Flash",
+      "date": "2025-12-17",
+      "description": "快速模型系列"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

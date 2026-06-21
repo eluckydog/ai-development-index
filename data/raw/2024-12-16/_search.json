@@ -1,130 +1,20 @@
 {
   "period": {
     "start": "2024-12-16",
-    "end": "2024-12-31",
-    "name": "2024-12-16"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:13:51Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "2 OLMo 2 Furious",
-      "authors": [
-        "Team OLMo",
-        "Pete Walsh",
-        "Luca Soldaini"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00656v3",
-      "abstract": "We present OLMo 2, the next generation of our fully open language models. OLMo 2 includes a family of dense autoregressive language models at 7B, 13B and 32B scales with fully released artifacts -- model weights, full training data, training code and recipes, training logs and thousands of intermedi"
-    },
-    {
-      "title": "LLM-MedQA: Enhancing Medical Question Answering through Case Studies in Large Language Models",
-      "authors": [
-        "Hang Yang",
-        "Hao Chen",
-        "Hui Guo"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.05464v2",
-      "abstract": "Accurate and efficient question-answering systems are essential for delivering high-quality patient care in the medical field. While Large Language Models (LLMs) have made remarkable strides across various domains, they continue to face significant challenges in medical question answering, particula"
-    },
-    {
-      "title": "ICONS: Influence Consensus for Vision-Language Data Selection",
-      "authors": [
-        "Xindi Wu",
-        "Mengzhou Xia",
-        "Rulin Shao"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00654v4",
-      "abstract": "Training vision-language models via instruction tuning relies on large data mixtures spanning diverse tasks and domains, yet these mixtures frequently include redundant information that increases computational costs without proportional gains. Existing methods typically rely on task-agnostic heurist"
-    },
-    {
-      "title": "Titans: Learning to Memorize at Test Time",
-      "authors": [
-        "Ali Behrouz",
-        "Peilin Zhong",
-        "Vahab Mirrokni"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00663v1",
-      "abstract": "Over more than a decade there has been an extensive research effort on how to effectively utilize recurrent models and attention. While recurrent models aim to compress the data into a fixed-size memory (called hidden state), attention allows attending to the entire context window, capturing the dir"
-    },
-    {
-      "title": "Finding Missed Code Size Optimizations in Compilers using LLMs",
-      "authors": [
-        "Davide Italiano",
-        "Chris Cummins"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00655v1",
-      "abstract": "Compilers are complex, and significant effort has been expended on testing them. Techniques such as random program generation and differential testing have proved highly effective and have uncovered thousands of bugs in production compilers. The majority of effort has been expended on validating tha"
-    },
-    {
-      "title": "Efficient Standardization of Clinical Notes using Large Language Models",
-      "authors": [
-        "Daniel B. Hier",
-        "Michael D. Carrithers",
-        "Thanh Son Do"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00644v1",
-      "abstract": "Clinician notes are a rich source of patient information but often contain inconsistencies due to varied writing styles, colloquialisms, abbreviations, medical jargon, grammatical errors, and non-standard formatting. These inconsistencies hinder the extraction of meaningful data from electronic heal"
-    },
-    {
-      "title": "Why Are Positional Encodings Nonessential for Deep Autoregressive Transformers? Revisiting a Petroglyph",
-      "authors": [
-        "Kazuki Irie"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00659v2",
-      "abstract": "Do autoregressive Transformer language models require explicit positional encodings (PEs)? The answer is 'no' provided they have more than one layer -- they can distinguish sequences with permuted tokens without the need for explicit PEs. This follows from the fact that a cascade of (permutation inv"
-    },
-    {
-      "title": "Taming Feed-forward Reconstruction Models as Latent Encoders for 3D Generative Models",
-      "authors": [
-        "Suttisak Wizadwongsa",
-        "Jinfan Zhou",
-        "Edward Li"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00651v2",
-      "abstract": "Recent AI-based 3D content creation has largely evolved along two paths: feed-forward image-to-3D reconstruction approaches and 3D generative models trained with 2D or 3D supervision. In this work, we show that existing feed-forward reconstruction methods can serve as effective latent encoders for t"
-    },
-    {
-      "title": "Enabling New HDLs with Agents",
-      "authors": [
-        "Mark Zakharov",
-        "Farzaneh Rabiei Kashanaki",
-        "Jose Renau"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00642v1",
-      "abstract": "Large Language Models (LLMs) based agents are transforming the programming language landscape by facilitating learning for beginners, enabling code generation, and optimizing documentation workflows. Hardware Description Languages (HDLs), with their smaller user community, stand to benefit significa"
-    },
-    {
-      "title": "A Study on Context Length and Efficient Transformers for Biomedical Image Analysis",
-      "authors": [
-        "Sarah M. Hooper",
-        "Hui Xue"
-      ],
-      "published": "2024-12-31",
-      "url": "http://arxiv.org/abs/2501.00619v1",
-      "abstract": "Biomedical imaging modalities often produce high-resolution, multi-dimensional images that pose computational challenges for deep neural networks. These computational challenges are compounded when training transformers due to the self-attention operator, which scales quadratically with context leng"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

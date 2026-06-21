@@ -1,134 +1,20 @@
 {
   "period": {
     "start": "2024-08-16",
-    "end": "2024-08-31",
-    "name": "2024-08-16"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:13:23Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "GenAI-powered Multi-Agent Paradigm for Smart Urban Mobility: Opportunities and Challenges for Integrating Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) with Intelligent Transpo",
-      "authors": [
-        "Haowen Xu",
-        "Jinghui Yuan",
-        "Anye Zhou"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00494v2",
-      "abstract": "Leveraging recent advances in generative AI, multi-agent systems are increasingly being developed to enhance the functionality and efficiency of smart city applications. This paper explores the transformative potential of large language models (LLMs) and emerging Retrieval-Augmented Generation (RAG)"
-    },
-    {
-      "title": "Sparse Mamba: Introducing Controllability, Observability, And Stability To Structural State Space Models",
-      "authors": [
-        "Emadeldeen Hamdan",
-        "Hongyi Pan",
-        "Ahmet Enis Cetin"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00563v3",
-      "abstract": "Structured state space models' (SSMs) development in recent studies, such as Mamba and Mamba2, outperformed and solved the computational inefficiency of transformers and large language models at small to medium scale. In this work, we introduce the concept of controllability and observability to the"
-    },
-    {
-      "title": "Geospatial foundation models for image analysis: evaluating and enhancing NASA-IBM Prithvi's domain adaptability",
-      "authors": [
-        "Chia-Yu Hsu",
-        "Wenwen Li",
-        "Sizhe Wang"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00489v1",
-      "abstract": "Research on geospatial foundation models (GFMs) has become a trending topic in geospatial artificial intelligence (AI) research due to their potential for achieving high generalizability and domain adaptability, reducing model training costs for individual researchers. Unlike large language models, "
-    },
-    {
-      "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
-      "authors": [
-        "Wenxuan Wang",
-        "Juluan Shi",
-        "Zixuan Ling"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00557v4",
-      "abstract": "Equipped with the capability to call functions, modern large language models (LLMs) can leverage external tools for addressing a range of tasks unattainable through language skills alone. However, the effective execution of these tools relies heavily not just on the advanced capabilities of LLMs but"
-    },
-    {
-      "title": "Large Language Models-Enabled Digital Twins for Precision Medicine in Rare Gynecological Tumors",
-      "authors": [
-        "Jacqueline Lammert",
-        "Nicole Pfarr",
-        "Leonid Kuligin"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00544v1",
-      "abstract": "Rare gynecological tumors (RGTs) present major clinical challenges due to their low incidence and heterogeneity. The lack of clear guidelines leads to suboptimal management and poor prognosis. Molecular tumor boards accelerate access to effective therapies by tailoring treatment based on biomarkers,"
-    },
-    {
-      "title": "Post-OCR Text Correction for Bulgarian Historical Documents",
-      "authors": [
-        "Angel Beshirov",
-        "Milena Dobreva",
-        "Dimitar Dimitrov"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00527v1",
-      "abstract": "The digitization of historical documents is crucial for preserving the cultural heritage of the society. An important step in this process is converting scanned images to text using Optical Character Recognition (OCR), which can enable further search, information extraction, etc. Unfortunately, this"
-    },
-    {
-      "title": "BreachSeek: A Multi-Agent Automated Penetration Tester",
-      "authors": [
-        "Ibrahim Alshehri",
-        "Adnan Alshehri",
-        "Abdulrahman Almalki"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.03789v1",
-      "abstract": "The increasing complexity and scale of modern digital environments have exposed significant gaps in traditional cybersecurity penetration testing methods, which are often time-consuming, labor-intensive, and unable to rapidly adapt to emerging threats. There is a critical need for an automated solut"
-    },
-    {
-      "title": "LongRecipe: Recipe for Efficient Long Context Generalization in Large Language Models",
-      "authors": [
-        "Zhiyuan Hu",
-        "Yuliang Liu",
-        "Jinman Zhao"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00509v2",
-      "abstract": "Large language models (LLMs) face significant challenges in handling long-context tasks because of their limited effective context window size during pretraining, which restricts their ability to generalize over extended sequences. Meanwhile, extending the context window in LLMs through post-pretrai"
-    },
-    {
-      "title": "Two-Stage Hierarchical and Explainable Feature Selection Framework for Dimensionality Reduction in Sleep Staging",
-      "authors": [
-        "Yangfan Deng",
-        "Hamad Albidah",
-        "Ahmed Dallal"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00565v1",
-      "abstract": "Sleep is crucial for human health, and EEG signals play a significant role in sleep research. Due to the high-dimensional nature of EEG signal data sequences, data visualization and clustering of different sleep stages have been challenges. To address these issues, we propose a two-stage hierarchica"
-    },
-    {
-      "title": "Compositional 3D-aware Video Generation with LLM Director",
-      "authors": [
-        "Hanxin Zhu",
-        "Tianyu He",
-        "Anni Tang"
-      ],
-      "published": "2024-08-31",
-      "url": "http://arxiv.org/abs/2409.00558v1",
-      "abstract": "Significant progress has been made in text-to-video generation through the use of powerful generative models and large-scale internet data. However, substantial challenges remain in precisely controlling individual concepts within the generated video, such as the motion and appearance of specific ch"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

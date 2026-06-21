@@ -1,131 +1,43 @@
 {
   "period": {
     "start": "2025-08-01",
-    "end": "2025-08-15",
-    "name": "2025-08-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:45Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 45,
+    "research_activity": 30,
+    "hype_models": [
+      "GPT-5 / GPT-5 mini",
+      "gpt-oss-20b/120b",
+      "Claude Opus 4.1"
+    ],
+    "period_name": "GPT-5发布期",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Every 28 Days the AI Dreams of Soft Skin and Burning Stars: Scaffolding AI Agents with Hormones and Emotions",
-      "authors": [
-        "Leigh Levinson",
-        "Christopher J. Agostino"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11829v1",
-      "abstract": "Despite significant advances, AI systems struggle with the frame problem: determining what information is contextually relevant from an exponentially large possibility space. We hypothesize that biological rhythms, particularly hormonal cycles, serve as natural relevance filters that could address t"
+      "org": "OpenAI",
+      "model": "GPT-5 / GPT-5 mini",
+      "date": "2025-08-07",
+      "description": "GPT-5发布! 百万token上下文. 里程碑."
     },
     {
-      "title": "Recent Advances in Transformer and Large Language Models for UAV Applications",
-      "authors": [
-        "Hamza Kheddar",
-        "Yassine Habchi",
-        "Mohamed Chahine Ghanem"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11834v1",
-      "abstract": "The rapid advancement of Transformer-based models has reshaped the landscape of uncrewed aerial vehicle (UAV) systems by enhancing perception, decision-making, and autonomy. This review paper systematically categorizes and evaluates recent developments in Transformer architectures applied to UAVs, i"
+      "org": "OpenAI",
+      "model": "gpt-oss-20b/120b",
+      "date": "2025-08-05",
+      "description": "OpenAI首次开源模型"
     },
     {
-      "title": "Rethinking Autonomy: Preventing Failures in AI-Driven Software Engineering",
-      "authors": [
-        "Satyam Kumar Navneet",
-        "Joydeep Chandra"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11824v1",
-      "abstract": "The integration of Large Language Models (LLMs) into software engineering has revolutionized code generation, enabling unprecedented productivity through promptware and autonomous AI agents. However, this transformation introduces significant risks, including insecure code generation, hallucinated o"
-    },
-    {
-      "title": "Contextual Attention-Based Multimodal Fusion of LLM and CNN for Sentiment Analysis",
-      "authors": [
-        "Meriem Zerkouk",
-        "Miloud Mihoubi",
-        "Belkacem Chikhaoui"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.13196v1",
-      "abstract": "This paper introduces a novel approach for multimodal sentiment analysis on social media, particularly in the context of natural disasters, where understanding public sentiment is crucial for effective crisis management. Unlike conventional methods that process text and image modalities separately, "
-    },
-    {
-      "title": "VideoAVE: A Multi-Attribute Video-to-Text Attribute Value Extraction Dataset and Benchmark Models",
-      "authors": [
-        "Ming Cheng",
-        "Tong Wu",
-        "Jiazhen Hu"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11801v1",
-      "abstract": "Attribute Value Extraction (AVE) is important for structuring product information in e-commerce. However, existing AVE datasets are primarily limited to text-to-text or image-to-text settings, lacking support for product videos, diverse attribute coverage, and public availability. To address these g"
-    },
-    {
-      "title": "A Multi-Task Evaluation of LLMs' Processing of Academic Text Input",
-      "authors": [
-        "Tianyi Li",
-        "Yu Qin",
-        "Olivia R. Liu Sheng"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11779v1",
-      "abstract": "How much large language models (LLMs) can aid scientific discovery, notably in assisting academic peer review, is in heated debate. Between a literature digest and a human-comparable research assistant lies their practical application potential. We organize individual tasks that computer science stu"
-    },
-    {
-      "title": "The Rise of Generative AI for Metal-Organic Framework Design and Synthesis",
-      "authors": [
-        "Chenru Duan",
-        "Aditya Nandy",
-        "Shyam Chand Pal"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.13197v1",
-      "abstract": "Advances in generative artificial intelligence are transforming how metal-organic frameworks (MOFs) are designed and discovered. This Perspective introduces the shift from laborious enumeration of MOF candidates to generative approaches that can autonomously propose and synthesize in the laboratory "
-    },
-    {
-      "title": "Labels or Input? Rethinking Augmentation in Multimodal Hate Detection",
-      "authors": [
-        "Sahajpreet Singh",
-        "Kokil Jaidka",
-        "Subhayan Mukerjee"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11808v2",
-      "abstract": "Online hate remains a significant societal challenge, especially as multimodal content enables subtle, culturally grounded, and implicit forms of harm. Hateful memes embed hostility through text-image interactions and humor, making them difficult for automated systems to interpret. Although recent V"
-    },
-    {
-      "title": "Uncalibrated Reasoning: GRPO Induces Overconfidence for Stochastic Outcomes",
-      "authors": [
-        "Michael Bereket",
-        "Jure Leskovec"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11800v1",
-      "abstract": "Reinforcement learning (RL) has proven remarkably effective at improving the accuracy of language models in verifiable and deterministic domains like mathematics. Here, we examine if current RL methods are also effective at optimizing language models in verifiable domains with stochastic outcomes, l"
-    },
-    {
-      "title": "When Does Language Transfer Help? Sequential Fine-Tuning for Cross-Lingual Euphemism Detection",
-      "authors": [
-        "Julia Sammartino",
-        "Libby Barak",
-        "Jing Peng"
-      ],
-      "published": "2025-08-15",
-      "url": "http://arxiv.org/abs/2508.11831v1",
-      "abstract": "Euphemisms are culturally variable and often ambiguous, posing challenges for language models, especially in low-resource settings. This paper investigates how cross-lingual transfer via sequential fine-tuning affects euphemism detection across five languages: English, Spanish, Chinese, Turkish, and"
+      "org": "Anthropic",
+      "model": "Claude Opus 4.1",
+      "date": "2025-08-05",
+      "description": "Opus 4增强版"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

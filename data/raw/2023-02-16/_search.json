@@ -1,132 +1,29 @@
 {
   "period": {
     "start": "2023-02-16",
-    "end": "2023-02-28",
-    "name": "2023-02-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:10:22Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 15,
+    "research_activity": 20,
+    "hype_models": [
+      "LLaMA 1"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Beyond the limitations of any imaginable mechanism: large language models and psycholinguistics",
-      "authors": [
-        "Conor Houghton",
-        "Nina Kazanina",
-        "Priyanka Sukumaran"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00077v1",
-      "abstract": "Large language models are not detailed models of human linguistic processing. They are, however, extremely successful at their primary task: providing a model for language. For this reason and because there are no animal models for language, large language models are important in psycholinguistics: "
-    },
-    {
-      "title": "EvoPrompting: Language Models for Code-Level Neural Architecture Search",
-      "authors": [
-        "Angelica Chen",
-        "David M. Dohan",
-        "David R. So"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2302.14838v3",
-      "abstract": "Given the recent impressive accomplishments of language models (LMs) for code generation, we explore the use of LMs as adaptive mutation and crossover operators for an evolutionary neural architecture search (NAS) algorithm. While NAS still proves too difficult a task for LMs to succeed at solely th"
-    },
-    {
-      "title": "Deep learning for COVID-19 topic modelling via Twitter: Alpha, Delta and Omicron",
-      "authors": [
-        "Janhavi Lande",
-        "Arti Pillay",
-        "Rohitash Chandra"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00135v1",
-      "abstract": "Topic modelling with innovative deep learning methods has gained interest for a wide range of applications that includes COVID-19. Topic modelling can provide, psychological, social and cultural insights for understanding human behaviour in extreme events such as the COVID-19 pandemic. In this paper"
-    },
-    {
-      "title": "Representation Disentaglement via Regularization by Causal Identification",
-      "authors": [
-        "Juan Castorena"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00128v3",
-      "abstract": "In this work, we propose the use of a causal collider structured model to describe the underlying data generative process assumptions in disentangled representation learning. This extends the conventional i.i.d. factorization assumption model $p(\\mathbf{y}) = \\prod_{i} p(\\mathbf{y}_i )$, inadequate "
-    },
-    {
-      "title": "The Trade-off between Universality and Label Efficiency of Representations from Contrastive Learning",
-      "authors": [
-        "Zhenmei Shi",
-        "Jiefeng Chen",
-        "Kunyang Li"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00106v1",
-      "abstract": "Pre-training representations (a.k.a. foundation models) has recently become a prevalent learning paradigm, where one first pre-trains a representation using large-scale unlabeled data, and then learns simple predictors on top of the representation using small labeled data from the downstream tasks. "
-    },
-    {
-      "title": "ClArTTS: An Open-Source Classical Arabic Text-to-Speech Corpus",
-      "authors": [
-        "Ajinkya Kulkarni",
-        "Atharva Kulkarni",
-        "Sara Abedalmonem Mohammad Shatnawi"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00069v1",
-      "abstract": "At present, Text-to-speech (TTS) systems that are trained with high-quality transcribed speech data using end-to-end neural models can generate speech that is intelligible, natural, and closely resembles human speech. These models are trained with relatively large single-speaker professionally recor"
-    },
-    {
-      "title": "Learning time-scales in two-layers neural networks",
-      "authors": [
-        "Raphaël Berthier",
-        "Andrea Montanari",
-        "Kangjie Zhou"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00055v4",
-      "abstract": "Gradient-based learning in multi-layer neural networks displays a number of striking features. In particular, the decrease rate of empirical risk is non-monotone even after averaging over large batches. Long plateaus in which one observes barely any progress alternate with intervals of rapid decreas"
-    },
-    {
-      "title": "Edit at your own risk: evaluating the robustness of edited models to distribution shifts",
-      "authors": [
-        "Davis Brown",
-        "Charles Godfrey",
-        "Cody Nizinski"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00046v2",
-      "abstract": "The current trend toward ever-larger models makes standard retraining procedures an ever-more expensive burden. For this reason, there is growing interest in model editing, which enables computationally inexpensive, interpretable, post-hoc model modifications. While many model editing techniques are"
-    },
-    {
-      "title": "Tiny Classifier Circuits: Evolving Accelerators for Tabular Data",
-      "authors": [
-        "Konstantinos Iordanou",
-        "Timothy Atkinson",
-        "Emre Ozer"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2303.00031v2",
-      "abstract": "A typical machine learning (ML) development cycle for edge computing is to maximise the performance during model training and then minimise the memory/area footprint of the trained model for deployment on edge devices targeting CPUs, GPUs, microcontrollers, or custom hardware accelerators. This pape"
-    },
-    {
-      "title": "An Efficient Tester-Learner for Halfspaces",
-      "authors": [
-        "Aravind Gollakota",
-        "Adam R. Klivans",
-        "Konstantinos Stavropoulos"
-      ],
-      "published": "2023-02-28",
-      "url": "http://arxiv.org/abs/2302.14853v2",
-      "abstract": "We give the first efficient algorithm for learning halfspaces in the testable learning model recently defined by Rubinfeld and Vasilyan (2023). In this model, a learner certifies that the accuracy of its output hypothesis is near optimal whenever the training set passes an associated test, and train"
+      "org": "Meta",
+      "model": "LLaMA 1",
+      "date": "2023-02-24",
+      "description": "Meta发布LLaMA, 开源大语言模型"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

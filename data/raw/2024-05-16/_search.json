@@ -1,132 +1,20 @@
 {
   "period": {
     "start": "2024-05-16",
-    "end": "2024-05-31",
-    "name": "2024-05-16"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:12:21Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": [
-      "Stable Diffusion"
-    ]
+    "model_activity": 0,
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "RAG Does Not Work for Enterprises",
-      "authors": [
-        "Tilmann Bruckhaus"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.04369v1",
-      "abstract": "Retrieval-Augmented Generation (RAG) improves the accuracy and relevance of large language model outputs by incorporating knowledge retrieval. However, implementing RAG in enterprises poses challenges around data security, accuracy, scalability, and integration. This paper explores the unique requir"
-    },
-    {
-      "title": "A Comparative Study of CNN, ResNet, and Vision Transformers for Multi-Classification of Chest Diseases",
-      "authors": [
-        "Ananya Jain",
-        "Aviral Bhardwaj",
-        "Kaushik Murali"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00237v1",
-      "abstract": "Large language models, notably utilizing Transformer architectures, have emerged as powerful tools due to their scalability and ability to process large amounts of data. Dosovitskiy et al. expanded this architecture to introduce Vision Transformers (ViT), extending its applicability to image process"
-    },
-    {
-      "title": "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
-      "authors": [
-        "Maximillian Chen",
-        "Ruoxi Sun",
-        "Tomas Pfister"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00222v2",
-      "abstract": "Large language models (LLMs), optimized through human feedback, have rapidly emerged as a leading paradigm for developing intelligent conversational assistants. However, despite their strong performance across many benchmarks, LLM-based agents might still lack conversational skills such as disambigu"
-    },
-    {
-      "title": "LOLAMEME: Logic, Language, Memory, Mechanistic Framework",
-      "authors": [
-        "Jay Desai",
-        "Xiaobo Guo",
-        "Srinivasan H. Sengamedu"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.02592v1",
-      "abstract": "The performance of Large Language Models has achieved superhuman breadth with unprecedented depth. At the same time, the language models are mostly black box models and the underlying mechanisms for performance have been evaluated using synthetic or mechanistic schemes. We extend current mechanistic"
-    },
-    {
-      "title": "Long-Span Question-Answering: Automatic Question Generation and QA-System Ranking via Side-by-Side Evaluation",
-      "authors": [
-        "Bernd Bohnet",
-        "Kevin Swersky",
-        "Rosanne Liu"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00179v1",
-      "abstract": "We explore the use of long-context capabilities in large language models to create synthetic reading comprehension data from entire books. Previous efforts to construct such datasets relied on crowd-sourcing, but the emergence of transformers with a context size of 1 million or more tokens now enabl"
-    },
-    {
-      "title": "On the referential capacity of language models: An internalist rejoinder to Mandelkern & Linzen",
-      "authors": [
-        "Giosue Baggio",
-        "Elliot Murphy"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00159v1",
-      "abstract": "In a recent paper, Mandelkern & Linzen (2024) - henceforth M&L - address the question of whether language models' (LMs) words refer. Their argument draws from the externalist tradition in philosophical semantics, which views reference as the capacity of words to \"achieve 'word-to-world' connections\""
-    },
-    {
-      "title": "LLM-RankFusion: Mitigating Intrinsic Inconsistency in LLM-based Ranking",
-      "authors": [
-        "Yifan Zeng",
-        "Ojas Tendolkar",
-        "Raymond Baartmans"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00231v2",
-      "abstract": "Ranking passages by prompting a large language model (LLM) can achieve promising performance in modern information retrieval (IR) systems. A common approach to sort the ranking list is by prompting LLMs for a pairwise or setwise comparison which often relies on sorting algorithms. However, sorting-b"
-    },
-    {
-      "title": "Entangled Relations: Leveraging NLI and Meta-analysis to Enhance Biomedical Relation Extraction",
-      "authors": [
-        "William Hogan",
-        "Jingbo Shang"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00226v2",
-      "abstract": "Recent research efforts have explored the potential of leveraging natural language inference (NLI) techniques to enhance relation extraction (RE). In this vein, we introduce MetaEntailRE, a novel adaptation method that harnesses NLI principles to enhance RE performance. Our approach follows past wor"
-    },
-    {
-      "title": "The Explanation Necessity for Healthcare AI",
-      "authors": [
-        "Michail Mamalakis",
-        "Héloïse de Vareilles",
-        "Graham Murray"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00216v2",
-      "abstract": "Explainability is a critical factor in enhancing the trustworthiness and acceptance of artificial intelligence (AI) in healthcare, where decisions directly impact patient outcomes. Despite advancements in AI interpretability, clear guidelines on when and to what extent explanations are required in m"
-    },
-    {
-      "title": "A-SDM: Accelerating Stable Diffusion through Model Assembly and Feature Inheritance Strategies",
-      "authors": [
-        "Jinchao Zhu",
-        "Yuxuan Wang",
-        "Siyuan Pan"
-      ],
-      "published": "2024-05-31",
-      "url": "http://arxiv.org/abs/2406.00210v3",
-      "abstract": "The Stable Diffusion Model (SDM) is a prevalent and effective model for text-to-image (T2I) and image-to-image (I2I) generation. Despite various attempts at sampler optimization, model distillation, and network quantification, these approaches typically maintain the original network architecture. Th"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

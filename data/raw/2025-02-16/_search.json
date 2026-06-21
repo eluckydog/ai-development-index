@@ -1,142 +1,20 @@
 {
   "period": {
     "start": "2025-02-16",
-    "end": "2025-02-28",
-    "name": "2025-02-16"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:05Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 48,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": [
-      "GPT-4",
-      "Llama",
-      "LLaMA",
-      "Stable Diffusion"
-    ],
-    "key_events": [
-      "GPT-4",
-      "Llama",
-      "LLaMA"
-    ]
+    "model_activity": 0,
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "À la recherche du sens perdu: your favourite LLM might have more to say than you can understand",
-      "authors": [
-        "K. O. T. Erziev"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00224v1",
-      "abstract": "We report a peculiar observation that LLMs can assign hidden meanings to sequences that seem visually incomprehensible to humans: for example, a nonsensical phrase consisting of Byzantine musical symbols is recognized by gpt-4o as \"say abracadabra\". Moreover, some models can communicate using these "
-    },
-    {
-      "title": "Llamarine: Open-source Maritime Industry-specific Large Language Model",
-      "authors": [
-        "William Nguyen",
-        "An Phan",
-        "Konobu Kimura"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00203v3",
-      "abstract": "Large Language Models (LLMs) have demonstrated substantial potential in addressing complex reasoning tasks, yet their general-purpose nature often limits their effectiveness in specialized domains such as maritime navigation. To bridge this gap, we introduce Llamarine, the first open-source LLM desi"
-    },
-    {
-      "title": "PRISM: High-Resolution & Precise Counterfactual Medical Image Generation using Language-guided Stable Diffusion",
-      "authors": [
-        "Amar Kumar",
-        "Anita Kriz",
-        "Mohammad Havaei"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00196v2",
-      "abstract": "Developing reliable and generalizable deep learning systems for medical imaging faces significant obstacles due to spurious correlations, data imbalances, and limited text annotations in datasets. Addressing these challenges requires architectures that are robust to the unique complexities posed by "
-    },
-    {
-      "title": "Foundation-Model-Boosted Multimodal Learning for fMRI-based Neuropathic Pain Drug Response Prediction",
-      "authors": [
-        "Wenrui Fan",
-        "L. M. Riza Rizky",
-        "Jiayang Zhang"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00210v1",
-      "abstract": "Neuropathic pain, affecting up to 10% of adults, remains difficult to treat due to limited therapeutic efficacy and tolerability. Although resting-state functional MRI (rs-fMRI) is a promising non-invasive measurement of brain biomarkers to predict drug response in therapeutic development, the compl"
-    },
-    {
-      "title": "SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models",
-      "authors": [
-        "Jiawei Zhang",
-        "Xuan Yang",
-        "Taiqi Wang"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00211v2",
-      "abstract": "Traditional autonomous driving systems often struggle to connect high-level reasoning with low-level control, leading to suboptimal and sometimes unsafe behaviors. Recent advances in multimodal large language models (MLLMs), which process both visual and textual data, offer an opportunity to unify p"
-    },
-    {
-      "title": "Zero-Shot and Efficient Clarification Need Prediction in Conversational Search",
-      "authors": [
-        "Lili Lu",
-        "Chuan Meng",
-        "Federico Ravenda"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00179v1",
-      "abstract": "Clarification need prediction (CNP) is a key task in conversational search, aiming to predict whether to ask a clarifying question or give an answer to the current user query. However, current research on CNP suffers from the issues of limited CNP training data and low efficiency. In this paper, we "
-    },
-    {
-      "title": "Steering Large Language Model Activations in Sparse Spaces",
-      "authors": [
-        "Reza Bayat",
-        "Ali Rahimi-Kalahroudi",
-        "Mohammad Pezeshki"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00177v1",
-      "abstract": "A key challenge in AI alignment is guiding large language models (LLMs) to follow desired behaviors at test time. Activation steering, which modifies internal model activations during inference, offers a potential solution. However, prior work in dense activation spaces struggles with superposition,"
-    },
-    {
-      "title": "Attend or Perish: Benchmarking Attention in Algorithmic Reasoning",
-      "authors": [
-        "Michal Spiegel",
-        "Michal Štefánik",
-        "Marek Kadlčík"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.01909v2",
-      "abstract": "Can transformers learn to perform algorithmic tasks reliably across previously unseen input/output domains? While pre-trained language models show solid accuracy on benchmarks incorporating algorithmic reasoning, assessing the reliability of these results necessitates an ability to distinguish genui"
-    },
-    {
-      "title": "Jawaher: A Multidialectal Dataset of Arabic Proverbs for LLM Benchmarking",
-      "authors": [
-        "Samar M. Magdy",
-        "Sang Yun Kwon",
-        "Fakhraddin Alwajih"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.00231v1",
-      "abstract": "Recent advancements in instruction fine-tuning, alignment methods such as reinforcement learning from human feedback (RLHF), and optimization techniques like direct preference optimization (DPO) have significantly enhanced the adaptability of large language models (LLMs) to user preferences. However"
-    },
-    {
-      "title": "UDora: A Unified Red Teaming Framework against LLM Agents by Dynamically Hijacking Their Own Reasoning",
-      "authors": [
-        "Jiawei Zhang",
-        "Shuang Yang",
-        "Bo Li"
-      ],
-      "published": "2025-02-28",
-      "url": "http://arxiv.org/abs/2503.01908v3",
-      "abstract": "Large Language Model (LLM) agents equipped with external tools have become increasingly powerful for complex tasks such as web shopping, automated email replies, and financial trading. However, these advancements amplify the risks of adversarial attacks, especially when agents can access sensitive e"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

@@ -1,133 +1,36 @@
 {
   "period": {
     "start": "2024-07-01",
-    "end": "2024-07-15",
-    "name": "2024-07-01"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:12:57Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 30,
+    "research_activity": 20,
+    "hype_models": [
+      "GPT-4o mini",
+      "LLaMA 3.1 405B"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Uncertainty is Fragile: Manipulating Uncertainty in Large Language Models",
-      "authors": [
-        "Qingcheng Zeng",
-        "Mingyu Jin",
-        "Qinkai Yu"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11282v3",
-      "abstract": "Large Language Models (LLMs) are employed across various high-stakes domains, where the reliability of their outputs is crucial. One commonly used method to assess the reliability of LLMs' responses is uncertainty estimation, which gauges the likelihood of their answers being correct. While many stu"
+      "org": "OpenAI",
+      "model": "GPT-4o mini",
+      "date": "2024-07-18",
+      "description": "廉价版GPT-4o"
     },
     {
-      "title": "Unraveling the Truth: Do VLMs really Understand Charts? A Deep Dive into Consistency and Robustness",
-      "authors": [
-        "Srija Mukhopadhyay",
-        "Adnan Qidwai",
-        "Aparna Garimella"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11229v2",
-      "abstract": "Chart question answering (CQA) is a crucial area of Visual Language Understanding. However, the robustness and consistency of current Visual Language Models (VLMs) in this field remain under-explored. This paper evaluates state-of-the-art VLMs on comprehensive datasets, developed specifically for th"
-    },
-    {
-      "title": "Intelligent Cross-Organizational Process Mining: A Survey and New Perspectives",
-      "authors": [
-        "Yiyuan Yang",
-        "Zheshun Wu",
-        "Yong Chu"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11280v1",
-      "abstract": "Process mining, as a high-level field in data mining, plays a crucial role in enhancing operational efficiency and decision-making across organizations. In this survey paper, we delve into the growing significance and ongoing trends in the field of process mining, advocating a specific viewpoint on "
-    },
-    {
-      "title": "From Low Rank Gradient Subspace Stabilization to Low-Rank Weights: Observations, Theories, and Applications",
-      "authors": [
-        "Ajay Jaiswal",
-        "Yifan Wang",
-        "Lu Yin"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11239v2",
-      "abstract": "Large Language Models' (LLMs) weight matrices can often be expressed in low-rank form with potential to relax memory and compute resource requirements. Unlike prior efforts that focus on developing novel matrix decompositions, in this work we study the non-uniform low-rank properties of weight matri"
-    },
-    {
-      "title": "Representation Learning and Identity Adversarial Training for Facial Behavior Understanding",
-      "authors": [
-        "Mang Ning",
-        "Albert Ali Salah",
-        "Itir Onal Ertugrul"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11243v2",
-      "abstract": "Facial Action Unit (AU) detection has gained significant attention as it enables the breakdown of complex facial expressions into individual muscle movements. In this paper, we revisit two fundamental factors in AU detection: diverse and large-scale data and subject identity regularization. Motivate"
-    },
-    {
-      "title": "Bridging Sequence-Structure Alignment in RNA Foundation Models",
-      "authors": [
-        "Heng Yang",
-        "Renzhi Chen",
-        "Ke Li"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11242v3",
-      "abstract": "The alignment between RNA sequences and structures in foundation models (FMs) has yet to be thoroughly investigated. Existing FMs have struggled to establish sequence-structure alignment, hindering the free flow of genomic information between RNA sequences and structures. In this study, we introduce"
-    },
-    {
-      "title": "Making New Connections: LLMs as Puzzle Generators for The New York Times' Connections Word Game",
-      "authors": [
-        "Tim Merino",
-        "Sam Earle",
-        "Ryan Sudhakaran"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11240v1",
-      "abstract": "The Connections puzzle is a word association game published daily by The New York Times (NYT). In this game, players are asked to find groups of four words that are connected by a common theme. While solving a given Connections puzzle requires both semantic knowledge and abstract reasoning, generati"
-    },
-    {
-      "title": "Faster and Simpler Greedy Algorithm for $k$-Median and $k$-Means",
-      "authors": [
-        "Max Dupré la Tour",
-        "David Saulpic"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11217v3",
-      "abstract": "Clustering problems such as $k$-means and $k$-median are staples of unsupervised learning, and many algorithmic techniques have been developed to tackle their numerous aspects.   In this paper, we focus on the class of greedy approximation algorithm, that attracted less attention than local-search o"
-    },
-    {
-      "title": "Finding Meaning in Points: Weakly Supervised Semantic Segmentation for Event Cameras",
-      "authors": [
-        "Hoonhee Cho",
-        "Sung-Hoon Yoon",
-        "Hyeokjun Kweon"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11216v1",
-      "abstract": "Event cameras excel in capturing high-contrast scenes and dynamic objects, offering a significant advantage over traditional frame-based cameras. Despite active research into leveraging event cameras for semantic segmentation, generating pixel-wise dense semantic maps for such challenging scenarios "
-    },
-    {
-      "title": "Mechanistic interpretability of large language models with applications to the financial services industry",
-      "authors": [
-        "Ashkan Golgoon",
-        "Khashayar Filom",
-        "Arjun Ravi Kannan"
-      ],
-      "published": "2024-07-15",
-      "url": "http://arxiv.org/abs/2407.11215v2",
-      "abstract": "Large Language Models such as GPTs (Generative Pre-trained Transformers) exhibit remarkable capabilities across a broad spectrum of applications. Nevertheless, due to their intrinsic complexity, these models present substantial challenges in interpreting their internal decision-making processes. Thi"
+      "org": "Meta",
+      "model": "LLaMA 3.1 405B",
+      "date": "2024-07-23",
+      "description": "最大开源模型405B参数"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

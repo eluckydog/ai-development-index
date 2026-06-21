@@ -1,131 +1,20 @@
 {
   "period": {
     "start": "2023-04-16",
-    "end": "2023-04-30",
-    "name": "2023-04-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:10:35Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "Reliable Gradient-free and Likelihood-free Prompt Tuning",
-      "authors": [
-        "Maohao Shen",
-        "Soumya Ghosh",
-        "Prasanna Sattigeri"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00593v1",
-      "abstract": "Due to privacy or commercial constraints, large pre-trained language models (PLMs) are often offered as black-box APIs. Fine-tuning such models to downstream tasks is challenging because one can neither access the model's internal representations nor propagate gradients through it. This paper addres"
-    },
-    {
-      "title": "How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model",
-      "authors": [
-        "Michael Hanna",
-        "Ollie Liu",
-        "Alexandre Variengien"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00586v5",
-      "abstract": "Pre-trained language models can be surprisingly adept at tasks they were not explicitly trained on, but how they implement these capabilities is poorly understood. In this paper, we investigate the basic mathematical abilities often acquired by pre-trained language models. Concretely, we use mechani"
-    },
-    {
-      "title": "MD-Manifold: A Medical-Distance-Based Representation Learning Approach for Medical Concept and Patient Representation",
-      "authors": [
-        "Shaodong Wang",
-        "Qing Li",
-        "Wenli Zhang"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00553v1",
-      "abstract": "Effectively representing medical concepts and patients is important for healthcare analytical applications. Representing medical concepts for healthcare analytical tasks requires incorporating medical domain knowledge and prior information from patient description data. Current methods, such as feat"
-    },
-    {
-      "title": "Impact of Deep Learning Libraries on Online Adaptive Lightweight Time Series Anomaly Detection",
-      "authors": [
-        "Ming-Chang Lee",
-        "Jia-Chun Lin"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00595v2",
-      "abstract": "Providing online adaptive lightweight time series anomaly detection without human intervention and domain knowledge is highly valuable. Several such anomaly detection approaches have been introduced in the past years, but all of them were only implemented in one deep learning library. With the devel"
-    },
-    {
-      "title": "Collective Relational Inference for learning heterogeneous interactions",
-      "authors": [
-        "Zhichao Han",
-        "Olga Fink",
-        "David S. Kammer"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00557v3",
-      "abstract": "Interacting systems are ubiquitous in nature and engineering, ranging from particle dynamics in physics to functionally connected brain regions. These interacting systems can be modeled by graphs where edges correspond to the interactions between interactive entities. Revealing interaction laws is o"
-    },
-    {
-      "title": "Reconstructing seen images from human brain activity via guided stochastic search",
-      "authors": [
-        "Reese Kneeland",
-        "Jordyn Ojeda",
-        "Ghislain St-Yves"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00556v2",
-      "abstract": "Visual reconstruction algorithms are an interpretive tool that map brain activity to pixels. Past reconstruction algorithms employed brute-force search through a massive library to select candidate images that, when passed through an encoding model, accurately predict brain activity. Here, we use co"
-    },
-    {
-      "title": "Deep Learning-based Spatio Temporal Facial Feature Visual Speech Recognition",
-      "authors": [
-        "Pangoth Santhosh Kumar",
-        "Garika Akshay"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00552v1",
-      "abstract": "In low-resource computing contexts, such as smartphones and other tiny devices, Both deep learning and machine learning are being used in a lot of identification systems. as authentication techniques. The transparent, contactless, and non-invasive nature of these face recognition technologies driven"
-    },
-    {
-      "title": "SoK: Pragmatic Assessment of Machine Learning for Network Intrusion Detection",
-      "authors": [
-        "Giovanni Apruzzese",
-        "Pavel Laskov",
-        "Johannes Schneider"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00550v1",
-      "abstract": "Machine Learning (ML) has become a valuable asset to solve many real-world tasks. For Network Intrusion Detection (NID), however, scientific advances in ML are still seen with skepticism by practitioners. This disconnection is due to the intrinsically limited scope of research papers, many of which "
-    },
-    {
-      "title": "Two-phase Dual COPOD Method for Anomaly Detection in Industrial Control System",
-      "authors": [
-        "Emmanuel Aboah Boateng",
-        "Jerry Bruce"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00982v1",
-      "abstract": "Critical infrastructures like water treatment facilities and power plants depend on industrial control systems (ICS) for monitoring and control, making them vulnerable to cyber attacks and system malfunctions. Traditional ICS anomaly detection methods lack transparency and interpretability, which ma"
-    },
-    {
-      "title": "SRL-Assisted AFM: Generating Planar Unstructured Quadrilateral Meshes with Supervised and Reinforcement Learning-Assisted Advancing Front Method",
-      "authors": [
-        "Hua Tong",
-        "Kuanren Qian",
-        "Eni Halilaj"
-      ],
-      "published": "2023-04-30",
-      "url": "http://arxiv.org/abs/2305.00540v1",
-      "abstract": "High-quality mesh generation is the foundation of accurate finite element analysis. Due to the vast interior vertices search space and complex initial boundaries, mesh generation for complicated domains requires substantial manual processing and has long been considered the most challenging and time"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

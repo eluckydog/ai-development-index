@@ -1,139 +1,20 @@
 {
   "period": {
     "start": "2023-10-16",
-    "end": "2023-10-31",
-    "name": "2023-10-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:11:32Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 24,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": [
-      "Llama",
-      "LLaMA"
-    ],
-    "key_events": [
-      "Llama",
-      "LLaMA"
-    ]
+    "model_activity": 0,
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "ChipNeMo: Domain-Adapted LLMs for Chip Design",
-      "authors": [
-        "Mingjie Liu",
-        "Teodor-Dumitru Ene",
-        "Robert Kirby"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00176v5",
-      "abstract": "ChipNeMo aims to explore the applications of large language models (LLMs) for industrial chip design. Instead of directly deploying off-the-shelf commercial or open-source LLMs, we instead adopt the following domain adaptation techniques: domain-adaptive tokenization, domain-adaptive continued pretr"
-    },
-    {
-      "title": "BadLlama: cheaply removing safety fine-tuning from Llama 2-Chat 13B",
-      "authors": [
-        "Pranav Gade",
-        "Simon Lermen",
-        "Charlie Rogers-Smith"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00117v3",
-      "abstract": "Llama 2-Chat is a collection of large language models that Meta developed and released to the public. While Meta fine-tuned Llama 2-Chat to refuse to output harmful content, we hypothesize that public access to model weights enables bad actors to cheaply circumvent Llama 2-Chat's safeguards and weap"
-    },
-    {
-      "title": "The Alignment Ceiling: Objective Mismatch in Reinforcement Learning from Human Feedback",
-      "authors": [
-        "Nathan Lambert",
-        "Roberto Calandra"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00168v2",
-      "abstract": "Reinforcement learning from human feedback (RLHF) has emerged as a powerful technique to make large language models (LLMs) more capable in complex settings. RLHF proceeds as collecting human preference data, training a reward model on said data, and optimizing a base ML model with respect to said re"
-    },
-    {
-      "title": "Object-centric Video Representation for Long-term Action Anticipation",
-      "authors": [
-        "Ce Zhang",
-        "Changcheng Fu",
-        "Shijie Wang"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00180v1",
-      "abstract": "This paper focuses on building object-centric representations for long-term action anticipation in videos. Our key motivation is that objects provide important cues to recognize and predict human-object interactions, especially when the predictions are longer term, as an observed \"background\" object"
-    },
-    {
-      "title": "Large-Scale Multi-Robot Assembly Planning for Autonomous Manufacturing",
-      "authors": [
-        "Kyle Brown",
-        "Dylan M. Asmar",
-        "Mac Schwager"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00192v3",
-      "abstract": "Mobile autonomous robots have the potential to revolutionize manufacturing processes. However, employing large robot fleets in manufacturing requires addressing challenges including collision-free movement in a shared workspace, effective multi-robot collaboration to manipulate and transport large p"
-    },
-    {
-      "title": "Robust Safety Classifier for Large Language Models: Adversarial Prompt Shield",
-      "authors": [
-        "Jinhwa Kim",
-        "Ali Derakhshan",
-        "Ian G. Harris"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00172v1",
-      "abstract": "Large Language Models' safety remains a critical concern due to their vulnerability to adversarial attacks, which can prompt these systems to produce harmful responses. In the heart of these systems lies a safety classifier, a computational model trained to discern and mitigate potentially harmful, "
-    },
-    {
-      "title": "Hierarchical Information-sharing Convolutional Neural Network for the Prediction of Arctic Sea Ice Concentration and Velocity",
-      "authors": [
-        "Younghyun Koo",
-        "Maryam Rahnemoonfar"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00167v2",
-      "abstract": "Forecasting sea ice concentration (SIC) and sea ice velocity (SIV) in the Arctic Ocean is of great significance as the Arctic environment has been changed by the recent warming climate. Given that physical sea ice models require high computational costs with complex parameterization, deep learning t"
-    },
-    {
-      "title": "Longer Fixations, More Computation: Gaze-Guided Recurrent Neural Networks",
-      "authors": [
-        "Xinting Huang",
-        "Jiajing Wan",
-        "Ioannis Kritikos"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00159v1",
-      "abstract": "Humans read texts at a varying pace, while machine learning models treat each token in the same way in terms of a computational process. Therefore, we ask, does it help to make models act more like humans? In this paper, we convert this intuition into a set of novel models with fixation-guided paral"
-    },
-    {
-      "title": "Adaptive and non-adaptive minimax rates for weighted Laplacian-eigenmap based nonparametric regression",
-      "authors": [
-        "Zhaoyang Shi",
-        "Krishnakumar Balasubramanian",
-        "Wolfgang Polonik"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00140v1",
-      "abstract": "We show both adaptive and non-adaptive minimax rates of convergence for a family of weighted Laplacian-Eigenmap based nonparametric regression methods, when the true regression function belongs to a Sobolev space and the sampling density is bounded from above and below. The adaptation methodology is"
-    },
-    {
-      "title": "On the effect of curriculum learning with developmental data for grammar acquisition",
-      "authors": [
-        "Mattia Opper",
-        "J. Morrison",
-        "N. Siddharth"
-      ],
-      "published": "2023-10-31",
-      "url": "http://arxiv.org/abs/2311.00128v2",
-      "abstract": "This work explores the degree to which grammar acquisition is driven by language `simplicity' and the source modality (speech vs. text) of data. Using BabyBERTa as a probe, we find that grammar acquisition is largely driven by exposure to speech data, and in particular through exposure to two of the"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

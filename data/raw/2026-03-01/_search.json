@@ -1,130 +1,50 @@
 {
   "period": {
     "start": "2026-03-01",
-    "end": "2026-03-15",
-    "name": "2026-03-01"
+    "name": "2026"
   },
-  "searched_at": "2026-06-21T05:15:34Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 60,
+    "research_activity": 40,
+    "hype_models": [
+      "GPT-5.3-Instant",
+      "GPT-5.4 / 5.4-Pro",
+      "Gemini 3.1 Flash-Lit",
+      "Claude Mythos/Capyba"
+    ],
+    "period_name": "多模型密集发布期",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "LLM-Augmented Release Intelligence: Automated Change Summarization and Impact Analysis in Cloud-Native CI/CD Pipelines",
-      "authors": [
-        "Happy Bhati"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14619v1",
-      "abstract": "Cloud-native software delivery platforms orchestrate releases through complex, multi-stage pipelines composed of dozens of independently versioned tasks. When code is promoted between environments -- development to staging, staging to production -- engineering teams need timely, accurate communicati"
+      "org": "OpenAI",
+      "model": "GPT-5.3-Instant",
+      "date": "2026-03-03",
+      "description": "超快速GPT"
     },
     {
-      "title": "Seamless Deception: Larger Language Models Are Better Knowledge Concealers",
-      "authors": [
-        "Dhananjay Ashok",
-        "Ruth-Ann Armstrong",
-        "Jonathan May"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14672v2",
-      "abstract": "Language Models (LMs) may acquire harmful knowledge, and yet feign ignorance of these topics when under audit. Inspired by the recent discovery of deception-related behaviour patterns in LMs, we aim to train classifiers that detect when a LM is actively concealing knowledge. Initial findings on smal"
+      "org": "OpenAI",
+      "model": "GPT-5.4 / 5.4-Pro",
+      "date": "2026-03-05",
+      "description": "GPT-5.4重大升级"
     },
     {
-      "title": "Punctuated Equilibria in Artificial Intelligence: The Institutional Scaling Law and the Speciation of Sovereign AI",
-      "authors": [
-        "Mark Baciak",
-        "Thomas A. Cellucci",
-        "Deanna M. Falkowski"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14664v1",
-      "abstract": "The dominant narrative of artificial intelligence development assumes that progress is continuous and that capability scales monotonically with model size. We challenge both assumptions. Drawing on punctuated equilibrium theory from evolutionary biology, we show that AI development proceeds not thro"
+      "org": "Google",
+      "model": "Gemini 3.1 Flash-Lite",
+      "date": "2026-03-03",
+      "description": "超轻量模型"
     },
     {
-      "title": "s2n-bignum-bench: A practical benchmark for evaluating low-level code reasoning of LLMs",
-      "authors": [
-        "Balaji Rao",
-        "John Harrison",
-        "Soonho Kong"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14628v2",
-      "abstract": "Neurosymbolic approaches leveraging Large Language Models (LLMs) with formal methods have recently achieved strong results on mathematics-oriented theorem-proving benchmarks. However, success on competition-style mathematics does not by itself demonstrate the ability to construct proofs about real-w"
-    },
-    {
-      "title": "PulmoVec: A Two-Stage Stacking Meta-Learning Architecture Built on the HeAR Foundation Model for Multi-Task Classification of Pediatric Respiratory Sounds",
-      "authors": [
-        "Izzet Turkalp Akbasli",
-        "Oguzhan Serin"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.15688v1",
-      "abstract": "Background: Respiratory diseases are a leading cause of childhood morbidity and mortality, yet lung auscultation remains subjective and limited by inter-listener variability, particularly in pediatric populations. Existing AI approaches are further constrained by small datasets and single-task desig"
-    },
-    {
-      "title": "GroundSet: A Cadastral-Grounded Dataset for Spatial Understanding with Vector Data",
-      "authors": [
-        "Roger Ferrod",
-        "Maël Lecene",
-        "Krishna Sapkota"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14609v1",
-      "abstract": "Precise spatial understanding in Earth Observation is essential for translating raw aerial imagery into actionable insights for critical applications like urban planning, environmental monitoring and disaster management. However, Multimodal Large Language Models exhibit critical deficiencies in fine"
-    },
-    {
-      "title": "RenderMem: Rendering as Spatial Memory Retrieval",
-      "authors": [
-        "JooHyun Park",
-        "HyeongYeop Kang"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14669v1",
-      "abstract": "Embodied reasoning is inherently viewpoint-dependent: what is visible, occluded, or reachable depends critically on where the agent stands. However, existing spatial memory systems for embodied agents typically store either multi-view observations or object-centric abstractions, making it difficult "
-    },
-    {
-      "title": "TopoCL: Topological Contrastive Learning for Medical Imaging",
-      "authors": [
-        "Guangyu Meng",
-        "Pengfei Gu",
-        "Peixian Liang"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14647v1",
-      "abstract": "Contrastive learning (CL) has become a powerful approach for learning representations from unlabeled images. However, existing CL methods focus predominantly on visual appearance features while neglecting topological characteristics (e.g., connectivity patterns, boundary configurations, cavity forma"
-    },
-    {
-      "title": "LUMINA: A Multi-Vendor Mammography Benchmark with Energy Harmonization Protocol",
-      "authors": [
-        "Hongyi Pan",
-        "Gorkem Durak",
-        "Halil Ertugrul Aktas"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14644v3",
-      "abstract": "Publicly available full-field digital mammography (FFDM) datasets remain limited in size, clinical annotations, and vendor diversity, hindering the development of robust models. We introduce LUMINA, a curated, multi-vendor FFDM dataset that explicitly encodes acquisition energy and vendor metadata t"
-    },
-    {
-      "title": "Comparative Analysis of 3D Convolutional and 2.5D Slice-Conditioned U-Net Architectures for MRI Super-Resolution via Elucidated Diffusion Models",
-      "authors": [
-        "Hendrik Chiche",
-        "Ludovic Corcos",
-        "Logan Rouge"
-      ],
-      "published": "2026-03-15",
-      "url": "http://arxiv.org/abs/2603.14667v1",
-      "abstract": "Magnetic resonance imaging (MRI) super-resolution (SR) methods that computationally enhance low-resolution acquisitions to approximate high-resolution quality offer a compelling alternative to expensive high-field scanners. In this work we investigate an elucidated diffusion model (EDM) framework fo"
+      "org": "Anthropic",
+      "model": "Claude Mythos/Capybara泄露",
+      "date": "2026-03-15",
+      "description": "Anthropic第四档模型泄露, 性能惊人"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

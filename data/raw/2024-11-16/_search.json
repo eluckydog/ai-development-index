@@ -1,140 +1,29 @@
 {
   "period": {
     "start": "2024-11-16",
-    "end": "2024-11-30",
-    "name": "2024-11-16"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:13:44Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 48,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 15,
+    "research_activity": 20,
     "hype_models": [
-      "Gemma",
-      "Mistral",
-      "Qwen",
-      "Opus"
+      "DeepSeek-R1-Lite"
     ],
-    "key_events": [
-      "Qwen"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Leveraging LLM for Automated Ontology Extraction and Knowledge Graph Generation",
-      "authors": [
-        "Mohammad Sadeq Abolhasani",
-        "Rong Pan"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00608v3",
-      "abstract": "Extracting relevant and structured knowledge from large, complex technical documents within the Reliability and Maintainability (RAM) domain is labor-intensive and prone to errors. Our work addresses this challenge by presenting OntoKGen, a genuine pipeline for ontology extraction and Knowledge Grap"
-    },
-    {
-      "title": "SeQwen at the Financial Misinformation Detection Challenge Task: Sequential Learning for Claim Verification and Explanation Generation in Financial Domains",
-      "authors": [
-        "Jebish Purbey",
-        "Siddhant Gupta",
-        "Nikhil Manali"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00549v1",
-      "abstract": "This paper presents the system description of our entry for the COLING 2025 FMD challenge, focusing on misinformation detection in financial domains. We experimented with a combination of large language models, including Qwen, Mistral, and Gemma-2, and leveraged pre-processing and sequential learnin"
-    },
-    {
-      "title": "A Flexible Method for Behaviorally Measuring Alignment Between Human and Artificial Intelligence Using Representational Similarity Analysis",
-      "authors": [
-        "Mattson Ogg",
-        "Ritwik Bose",
-        "Jamie Scharf"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00577v3",
-      "abstract": "As we consider entrusting Large Language Models (LLMs) with key societal and decision-making roles, measuring their alignment with human cognition becomes critical. This requires methods that can assess how these systems represent information and facilitate comparisons with human understanding acros"
-    },
-    {
-      "title": "Neural-Symbolic Reasoning over Knowledge Graphs: A Survey from a Query Perspective",
-      "authors": [
-        "Lihui Liu",
-        "Zihao Wang",
-        "Hanghang Tong"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.10390v1",
-      "abstract": "Knowledge graph reasoning is pivotal in various domains such as data mining, artificial intelligence, the Web, and social sciences. These knowledge graphs function as comprehensive repositories of human knowledge, facilitating the inference of new information. Traditional symbolic reasoning, despite"
-    },
-    {
-      "title": "Opus: A Large Work Model for Complex Workflow Generation",
-      "authors": [
-        "Théo Fagnoni",
-        "Bellinda Mesbah",
-        "Mahsun Altin"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00573v2",
-      "abstract": "This paper introduces Opus, a novel framework for generating and optimizing Workflows tailored to complex Business Process Outsourcing (BPO) use cases, focusing on cost reduction and quality enhancement while adhering to established industry processes and operational constraints. Our approach genera"
-    },
-    {
-      "title": "The Well: a Large-Scale Collection of Diverse Physics Simulations for Machine Learning",
-      "authors": [
-        "Ruben Ohana",
-        "Michael McCabe",
-        "Lucas Meyer"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00568v2",
-      "abstract": "Machine learning based surrogate models offer researchers powerful tools for accelerating simulation-based workflows. However, as standard datasets in this space often cover small classes of physical behavior, it can be difficult to evaluate the efficacy of new approaches. To address this gap, we in"
-    },
-    {
-      "title": "Polish-English medical knowledge transfer: A new benchmark and results",
-      "authors": [
-        "Łukasz Grzybowski",
-        "Jakub Pokrywka",
-        "Michał Ciesiółka"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00559v2",
-      "abstract": "Large Language Models (LLMs) have demonstrated significant potential in handling specialized tasks, including medical problem-solving. However, most studies predominantly focus on English-language contexts. This study introduces a novel benchmark dataset based on Polish medical licensing and special"
-    },
-    {
-      "title": "Accelerating Multimodal Large Language Models by Searching Optimal Vision Token Reduction",
-      "authors": [
-        "Shiyu Zhao",
-        "Zhenting Wang",
-        "Felix Juefei-Xu"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00556v2",
-      "abstract": "Prevailing Multimodal Large Language Models (MLLMs) encode the input image(s) as vision tokens and feed them into the language backbone, similar to how Large Language Models (LLMs) process the text tokens. However, the number of vision tokens increases quadratically as the image resolutions, leading"
-    },
-    {
-      "title": "Unveiling Performance Challenges of Large Language Models in Low-Resource Healthcare: A Demographic Fairness Perspective",
-      "authors": [
-        "Yue Zhou",
-        "Barbara Di Eugenio",
-        "Lu Cheng"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00554v2",
-      "abstract": "This paper studies the performance of large language models (LLMs), particularly regarding demographic fairness, in solving real-world healthcare tasks. We evaluate state-of-the-art LLMs with three prevalent learning frameworks across six diverse healthcare tasks and find significant challenges in a"
-    },
-    {
-      "title": "Rank It, Then Ask It: Input Reranking for Maximizing the Performance of LLMs on Symmetric Tasks",
-      "authors": [
-        "Mohsen Dehghankar",
-        "Abolfazl Asudeh"
-      ],
-      "published": "2024-11-30",
-      "url": "http://arxiv.org/abs/2412.00546v1",
-      "abstract": "Large language models (LLMs) have quickly emerged as practical and versatile tools that provide new solutions for a wide range of domains. In this paper, we consider the application of LLMs on symmetric tasks where a query is asked on an (unordered) bag of elements. Examples of such tasks include an"
+      "org": "DeepSeek",
+      "model": "DeepSeek-R1-Lite",
+      "date": "2024-11-20",
+      "description": "推理模型预览"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

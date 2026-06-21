@@ -1,132 +1,29 @@
 {
   "period": {
     "start": "2025-11-16",
-    "end": "2025-11-30",
-    "name": "2025-11-16"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:15:09Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 15,
+    "research_activity": 20,
+    "hype_models": [
+      "DeepSeek V3.2"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Neural Variable Name Repair: Learning to Rename Identifiers for Readability",
-      "authors": [
-        "Muhammad Yousuf",
-        "Akshat Bagade",
-        "Chhittebbayi Penugonda"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.01141v1",
-      "abstract": "Developers routinely work with source files whose variable names are generic or misleading, and with teams moving quickly, many functions are left undocumented. This slows comprehension, increases the risk of subtle bugs, and makes it harder for both humans and large language models (LLMs) to reason"
-    },
-    {
-      "title": "The 4/$δ$ Bound: Designing Predictable LLM-Verifier Systems for Formal Method Guarantee",
-      "authors": [
-        "PIerre Dantas",
-        "Lucas Cordeiro",
-        "Youcheng Sun"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.02080v2",
-      "abstract": "The integration of Formal Verification tools with Large Language Models (LLMs) offers a path to scale software verification beyond manual workflows. However, current methods remain unreliable: without a solid theoretical footing, the refinement process acts as a black box that may oscillate, loop, o"
-    },
-    {
-      "title": "Domain-Specific Foundation Model Improves AI-Based Analysis of Neuropathology",
-      "authors": [
-        "Ruchika Verma",
-        "Shrishtee Kandoi",
-        "Robina Afzal"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.05993v1",
-      "abstract": "Foundation models have transformed computational pathology by providing generalizable representations from large-scale histology datasets. However, existing models are predominantly trained on surgical pathology data, which is enriched for non-nervous tissue and overrepresents neoplastic, inflammato"
-    },
-    {
-      "title": "Efficiently Learning Branching Networks for Multitask Algorithmic Reasoning",
-      "authors": [
-        "Dongyue Li",
-        "Zhenshuo Zhang",
-        "Minxuan Duan"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.01113v1",
-      "abstract": "Algorithmic reasoning -- the ability to perform step-by-step logical inference -- has become a core benchmark for evaluating reasoning in graph neural networks (GNNs) and large language models (LLMs). Ideally, one would like to design a single model capable of performing well on multiple algorithmic"
-    },
-    {
-      "title": "SocialFusion: Addressing Social Degradation in Pre-trained Vision-Language Models",
-      "authors": [
-        "Hamza Tahboub",
-        "Weiyan Shi",
-        "Gang Hua"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.01148v2",
-      "abstract": "Understanding social interactions from visual cues is a fundamental challenge for a socially competent AI. While powerful pre-trained vision-language models (VLMs) have shown remarkable general capabilities, they surprisingly struggle to unify and learn multiple social perception tasks simultaneousl"
-    },
-    {
-      "title": "Mode-Conditioning Unlocks Superior Test-Time Scaling",
-      "authors": [
-        "Chen Henry Wu",
-        "Sachin Goyal",
-        "Aditi Raghunathan"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.01127v1",
-      "abstract": "Parallel sampling promises substantial gains in test-time scaling, but its effectiveness is sharply limited by diversity collapse, where models concentrate on a few modes and repeated samples produce the same mistakes. We propose the mode-conditioning (ModC) framework, which explicitly allocates tes"
-    },
-    {
-      "title": "Foundation Priors",
-      "authors": [
-        "Sanjog Misra"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.01107v1",
-      "abstract": "Foundation models, and in particular large language models, can generate highly informative responses, prompting growing interest in using these ''synthetic'' outputs as data in empirical research and decision-making. This paper introduces the idea of a foundation prior, which shows that model-gener"
-    },
-    {
-      "title": "CycliST: A Video Language Model Benchmark for Reasoning on Cyclical State Transitions",
-      "authors": [
-        "Simon Kohaut",
-        "Daniel Ochs",
-        "Shun Zhang"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.01095v2",
-      "abstract": "We present CycliST, a novel benchmark dataset designed to evaluate Video Language Models (VLM) on their ability for textual reasoning over cyclical state transitions. CycliST captures fundamental aspects of real-world processes by generating synthetic, richly structured video sequences featuring per"
-    },
-    {
-      "title": "ChromouVQA: Benchmarking Vision-Language Models under Chromatic Camouflaged Images",
-      "authors": [
-        "Yunfei Zhang",
-        "Yizhuo He",
-        "Yuanxun Shao"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.05137v1",
-      "abstract": "Vision-Language Models (VLMs) have advanced multimodal understanding, yet still struggle when targets are embedded in cluttered backgrounds requiring figure-ground segregation. To address this, we introduce ChromouVQA, a large-scale, multi-task benchmark based on Ishihara-style chromatic camouflaged"
-    },
-    {
-      "title": "World Model Robustness via Surprise Recognition",
-      "authors": [
-        "Geigh Zollicoffer",
-        "Tanush Chopra",
-        "Mingkuan Yan"
-      ],
-      "published": "2025-11-30",
-      "url": "http://arxiv.org/abs/2512.01119v1",
-      "abstract": "AI systems deployed in the real world must contend with distractions and out-of-distribution (OOD) noise that can destabilize their policies and lead to unsafe behavior. While robust training can reduce sensitivity to some forms of noise, it is infeasible to anticipate all possible OOD conditions. T"
+      "org": "DeepSeek",
+      "model": "DeepSeek V3.2",
+      "date": "2025-12-01",
+      "description": "V3系列终版"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

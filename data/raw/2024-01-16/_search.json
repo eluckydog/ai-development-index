@@ -1,139 +1,36 @@
 {
   "period": {
     "start": "2024-01-16",
-    "end": "2024-01-31",
-    "name": "2024-01-16"
+    "name": "2024"
   },
-  "searched_at": "2026-06-21T05:11:53Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 30,
+    "research_activity": 20,
     "hype_models": [
-      "Claude"
+      "Code Llama 70B",
+      "DeepSeek-MoE"
     ],
-    "key_events": [
-      "Claude"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Can Generative AI Support Patients' & Caregivers' Informational Needs? Towards Task-Centric Evaluation Of AI Systems",
-      "authors": [
-        "Shreya Rajagopal",
-        "Jae Ho Sohn",
-        "Hari Subramonyam"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.00234v2",
-      "abstract": "Generative AI systems such as ChatGPT and Claude are built upon language models that are typically evaluated for accuracy on curated benchmark datasets. Such evaluation paradigms measure predictive and reasoning capabilities of language models but do not assess if they can provide information that i"
+      "org": "Meta",
+      "model": "Code Llama 70B",
+      "date": "2024-01-29",
+      "description": "最大代码模型"
     },
     {
-      "title": "De-identification is not enough: a comparison between de-identified and synthetic clinical notes",
-      "authors": [
-        "Atiquer Rahman Sarkar",
-        "Yao-Shun Chuang",
-        "Noman Mohammed"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.00179v2",
-      "abstract": "For sharing privacy-sensitive data, de-identification is commonly regarded as adequate for safeguarding privacy. Synthetic data is also being considered as a privacy-preserving alternative. Recent successes with numerical and tabular data generative models and the breakthroughs in large generative l"
-    },
-    {
-      "title": "Capacity Constraint Analysis Using Object Detection for Smart Manufacturing",
-      "authors": [
-        "Hafiz Mughees Ahmad",
-        "Afshin Rahimi",
-        "Khizer Hayat"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.00243v1",
-      "abstract": "The increasing popularity of Deep Learning (DL) based Object Detection (OD) methods and their real-world applications have opened new venues in smart manufacturing. Traditional industries struck by capacity constraints after Coronavirus Disease (COVID-19) require non-invasive methods for in-depth op"
-    },
-    {
-      "title": "CNN-FL for Biotechnology Industry Empowered by Internet-of-BioNano Things and Digital Twins",
-      "authors": [
-        " Mohammad",
-        " Jamshidi",
-        "Dinh Thai Hoang"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.00238v1",
-      "abstract": "Digital twins (DTs) are revolutionizing the biotechnology industry by enabling sophisticated digital representations of biological assets, microorganisms, drug development processes, and digital health applications. However, digital twinning at micro and nano scales, particularly in modeling complex"
-    },
-    {
-      "title": "Exploring the limits of decoder-only models trained on public speech recognition corpora",
-      "authors": [
-        "Ankit Gupta",
-        "George Saon",
-        "Brian Kingsbury"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.00235v1",
-      "abstract": "The emergence of industrial-scale speech recognition (ASR) models such as Whisper and USM, trained on 1M hours of weakly labelled and 12M hours of audio only proprietary data respectively, has led to a stronger need for large scale public ASR corpora and competitive open source pipelines. Unlike the"
-    },
-    {
-      "title": "Learning Label Hierarchy with Supervised Contrastive Learning",
-      "authors": [
-        "Ruixue Lian",
-        "William A. Sethares",
-        "Junjie Hu"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.00232v1",
-      "abstract": "Supervised contrastive learning (SCL) frameworks treat each class as independent and thus consider all classes to be equally important. This neglects the common scenario in which label hierarchy exists, where fine-grained classes under the same category show more similarity than very different ones."
-    },
-    {
-      "title": "Wavelet Analysis of Noninvasive EEG Signals Discriminates Complex and Natural Grasp Types",
-      "authors": [
-        "Ali Rabiee",
-        "Sima Ghafoori",
-        "Anna Cetera"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.09447v2",
-      "abstract": "This research aims to decode hand grasps from Electroencephalograms (EEGs) for dexterous neuroprosthetic development and Brain-Computer Interface (BCI) applications, especially for patients with motor disorders. Particularly, it focuses on distinguishing two complex natural power and precision grasp"
-    },
-    {
-      "title": "MOD-CL: Multi-label Object Detection with Constrained Loss",
-      "authors": [
-        "Sota Moriyama",
-        "Koji Watanabe",
-        "Katsumi Inoue"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2403.07885v1",
-      "abstract": "We introduce MOD-CL, a multi-label object detection framework that utilizes constrained loss in the training process to produce outputs that better satisfy the given requirements. In this paper, we use $\\mathrm{MOD_{YOLO}}$, a multi-label object detection model built upon the state-of-the-art object"
-    },
-    {
-      "title": "Decentralized Covert Routing in Heterogeneous Networks Using Reinforcement Learning",
-      "authors": [
-        "Justin Kong",
-        "Terrence J. Moore",
-        "Fikadu T. Dagefu"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.10087v1",
-      "abstract": "This letter investigates covert routing communications in a heterogeneous network where a source transmits confidential data to a destination with the aid of relaying nodes where each transmitter judiciously chooses one modality among multiple communication modalities. We develop a novel reinforceme"
-    },
-    {
-      "title": "A Comparative Study of Conventional and Tripolar EEG for High-Performance Reach-to-Grasp BCI Systems",
-      "authors": [
-        "Ali Rabiee",
-        "Sima Ghafoori",
-        "Anna Cetera"
-      ],
-      "published": "2024-01-31",
-      "url": "http://arxiv.org/abs/2402.09448v3",
-      "abstract": "This study aims to enhance BCI applications for individuals with motor impairments by comparing the effectiveness of tripolar EEG (tEEG) with conventional EEG. The focus is on interpreting and decoding various grasping movements, such as power grasp and precision grasp. The goal is to determine whic"
+      "org": "DeepSeek",
+      "model": "DeepSeek-MoE",
+      "date": "2024-01-09",
+      "description": "MoE架构探索"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

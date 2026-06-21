@@ -1,136 +1,29 @@
 {
   "period": {
     "start": "2025-10-01",
-    "end": "2025-10-15",
-    "name": "2025-10-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:59Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 24,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 15,
+    "research_activity": 20,
     "hype_models": [
-      "Gemma",
-      "Sonnet"
-    ]
+      "Claude Haiku 4.5"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "David vs. Goliath: A comparative study of different-sized LLMs for code generation in the domain of automotive scenario generation",
-      "authors": [
-        "Philipp Bauerfeind",
-        "Amir Salarpour",
-        "David Fernandez"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14115v1",
-      "abstract": "Scenario simulation is central to testing autonomous driving systems. Scenic, a domain-specific language (DSL) for CARLA, enables precise and reproducible scenarios, but NL-to-Scenic generation with large language models (LLMs) suffers from scarce data, limited reproducibility, and inconsistent metr"
-    },
-    {
-      "title": "Toward Cybersecurity-Expert Small Language Models",
-      "authors": [
-        "Matan Levi",
-        "Daniel Ohayon",
-        "Ariel Blobstein"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14113v1",
-      "abstract": "Large language models (LLMs) are transforming everyday applications, yet deployment in cybersecurity lags due to a lack of high-quality, domain-specific models and training datasets. To address this gap, we present CyberPal 2.0, a family of cybersecurity-expert small language models (SLMs) ranging f"
-    },
-    {
-      "title": "CodeEvolve: an open source evolutionary coding agent for algorithmic discovery and optimization",
-      "authors": [
-        "Henrique Assumpção",
-        "Diego Ferreira",
-        "Leandro Campos"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14150v5",
-      "abstract": "We introduce CodeEvolve, an open-source framework that couples large language models with island-based evolutionary search for end-to-end algorithmic discovery. CodeEvolve integrates inspiration-based crossover, meta-prompting, and depth-based refinement on top of a CVT-MAP-Elites archive and a weig"
-    },
-    {
-      "title": "Inferred global dense residue transition graphs from primary structure sequences enable protein interaction prediction via directed graph convolutional neural networks",
-      "authors": [
-        "Islam Akef Ebeid",
-        "Haoteng Tang",
-        "Pengfei Gu"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14139v1",
-      "abstract": "Introduction Accurate prediction of protein-protein interactions (PPIs) is crucial for understanding cellular functions and advancing drug development. Existing in-silico methods use direct sequence embeddings from Protein Language Models (PLMs). Others use Graph Neural Networks (GNNs) for 3D protei"
-    },
-    {
-      "title": "Formalizing the Safety, Security, and Functional Properties of Agentic AI Systems",
-      "authors": [
-        "Edoardo Allegrini",
-        "Ananth Shreekumar",
-        "Z. Berkay Celik"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14133v2",
-      "abstract": "Agentic AI systems, which leverage multiple autonomous agents and large language models (LLMs), are increasingly used to address complex, multi-step tasks. The safety, security, and functionality of these systems are critical, especially in high-stakes applications. However, the current ecosystem of"
-    },
-    {
-      "title": "VaultGemma: A Differentially Private Gemma Model",
-      "authors": [
-        "Amer Sinha",
-        "Thomas Mesnard",
-        "Ryan McKenna"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.15001v2",
-      "abstract": "We introduce VaultGemma 1B, a 1 billion parameter model within the Gemma family, fully trained with differential privacy. Pretrained on the identical data mixture used for the Gemma 2 series, VaultGemma 1B represents a significant step forward in privacy-preserving large language models. We openly r"
-    },
-    {
-      "title": "Generating Fair Consensus Statements with Social Choice on Token-Level MDPs",
-      "authors": [
-        "Carter Blair",
-        "Kate Larson"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14106v1",
-      "abstract": "Current frameworks for consensus statement generation with large language models lack the inherent structure needed to provide provable fairness guarantees when aggregating diverse free-form opinions. We model the task as a multi-objective, token-level Markov Decision Process (MDP), where each objec"
-    },
-    {
-      "title": "FinAI Data Assistant: LLM-based Financial Database Query Processing with the OpenAI Function Calling API",
-      "authors": [
-        "Juhyeong Kim",
-        "Yejin Kim",
-        "Youngbin Lee"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14162v2",
-      "abstract": "We present FinAI Data Assistant, a practical approach for natural-language querying over financial databases that combines large language models (LLMs) with the OpenAI Function Calling API. Rather than synthesizing complete SQL via text-to-SQL, our system routes user requests to a small library of v"
-    },
-    {
-      "title": "PoissonNet: A Local-Global Approach for Learning on Surfaces",
-      "authors": [
-        "Arman Maesumi",
-        "Tanish Makadia",
-        "Thibault Groueix"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14146v1",
-      "abstract": "Many network architectures exist for learning on meshes, yet their constructions entail delicate trade-offs between difficulty learning high-frequency features, insufficient receptive field, sensitivity to discretization, and inefficient computational overhead. Drawing from classic local-global appr"
-    },
-    {
-      "title": "STEMS: Spatial-Temporal Enhanced Safe Multi-Agent Coordination for Building Energy Management",
-      "authors": [
-        "Huiliang Zhang",
-        "Di Wu",
-        "Arnaud Zinflou"
-      ],
-      "published": "2025-10-15",
-      "url": "http://arxiv.org/abs/2510.14112v2",
-      "abstract": "Building energy management is essential for achieving carbon reduction goals, improving occupant comfort, and reducing energy costs. Coordinated building energy management faces critical challenges in exploiting spatial-temporal dependencies while ensuring operational safety across multi-building sy"
+      "org": "Anthropic",
+      "model": "Claude Haiku 4.5",
+      "date": "2025-10-15",
+      "description": "Haiku升级版"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

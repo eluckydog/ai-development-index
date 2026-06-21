@@ -1,143 +1,43 @@
 {
   "period": {
     "start": "2025-03-01",
-    "end": "2025-03-15",
-    "name": "2025-03-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:09Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 48,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 45,
+    "research_activity": 30,
     "hype_models": [
-      "Llama",
-      "LLaMA",
-      "GPT-4",
-      "DeepSeek"
+      "Claude 3.7 Sonnet",
+      "DeepSeek V3-0324",
+      "Gemini 2.5 Pro"
     ],
-    "key_events": [
-      "Llama",
-      "LLaMA",
-      "GPT-4"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "VeriMind: Agentic LLM for Automated Verilog Generation with a Novel Evaluation Metric",
-      "authors": [
-        "Bardia Nadimi",
-        "Ghali Omar Boutaib",
-        "Hao Zheng"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.16514v3",
-      "abstract": "Designing Verilog modules requires meticulous attention to correctness, efficiency, and adherence to design specifications. However, manually writing Verilog code remains a complex and time-consuming task that demands both expert knowledge and iterative refinement. Leveraging recent advancements in "
+      "org": "Anthropic",
+      "model": "Claude 3.7 Sonnet",
+      "date": "2025-02-24",
+      "description": "编程能力再次突破"
     },
     {
-      "title": "Integrating Chain-of-Thought and Retrieval Augmented Generation Enhances Rare Disease Diagnosis from Clinical Notes",
-      "authors": [
-        "Zhanliang Wang",
-        "Da Wu",
-        "Quan Nguyen"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12286v2",
-      "abstract": "Background: Several studies show that large language models (LLMs) struggle with phenotype-driven gene prioritization for rare diseases. These studies typically use Human Phenotype Ontology (HPO) terms to prompt foundation models like GPT and LLaMA to predict candidate genes. However, in real-world "
+      "org": "DeepSeek",
+      "model": "DeepSeek V3-0324",
+      "date": "2025-03-24",
+      "description": "V3重大升级"
     },
     {
-      "title": "Toward Foundation Models for Online Complex Event Detection in CPS-IoT: A Case Study",
-      "authors": [
-        "Liying Han",
-        "Gaofeng Dong",
-        "Xiaomin Ouyang"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12282v2",
-      "abstract": "Complex events (CEs) play a crucial role in CPS-IoT applications, enabling high-level decision-making in domains such as smart monitoring and autonomous systems. However, most existing models focus on short-span perception tasks, lacking the long-term reasoning required for CE detection. CEs consist"
-    },
-    {
-      "title": "Agentic Search Engine for Real-Time IoT Data",
-      "authors": [
-        "Abdelrahman Elewah",
-        "Khalid Elgazzar"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12255v1",
-      "abstract": "The Internet of Things (IoT) has enabled diverse devices to communicate over the Internet, yet the fragmentation of IoT systems limits seamless data sharing and coordinated management. We have recently introduced SensorsConnect, a unified framework to enable seamless content and sensor data sharing "
-    },
-    {
-      "title": "LLM & HPC:Benchmarking DeepSeek's Performance in High-Performance Computing Tasks",
-      "authors": [
-        "Noujoud Nader",
-        "Patrick Diehl",
-        "Steve Brandt"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2504.03665v2",
-      "abstract": "Large Language Models (LLMs), such as GPT-4 and DeepSeek, have been applied to a wide range of domains in software engineering. However, their potential in the context of High-Performance Computing (HPC) much remains to be explored. This paper evaluates how well DeepSeek, a recent LLM, performs in g"
-    },
-    {
-      "title": "Minuscule Cell Detection in AS-OCT Images with Progressive Field-of-View Focusing",
-      "authors": [
-        "Boyu Chen",
-        "Ameenat L. Solebo",
-        "Daqian Shi"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12249v1",
-      "abstract": "Anterior Segment Optical Coherence Tomography (AS-OCT) is an emerging imaging technique with great potential for diagnosing anterior uveitis, a vision-threatening ocular inflammatory condition. A hallmark of this condition is the presence of inflammatory cells in the eye's anterior chamber, and dete"
-    },
-    {
-      "title": "Research on Large Language Model Cross-Cloud Privacy Protection and Collaborative Training based on Federated Learning",
-      "authors": [
-        "Ze Yang",
-        "Yihong Jin",
-        "Yihan Zhang"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12226v1",
-      "abstract": "The fast development of large language models (LLMs) and popularization of cloud computing have led to increasing concerns on privacy safeguarding and data security of cross-cloud model deployment and training as the key challenges. We present a new framework for addressing these issues along with e"
-    },
-    {
-      "title": "The Lucie-7B LLM and the Lucie Training Dataset: Open resources for multilingual language generation",
-      "authors": [
-        "Olivier Gouvert",
-        "Julie Hunter",
-        "Jérôme Louradour"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12294v1",
-      "abstract": "We present both the Lucie Training Dataset and the Lucie-7B foundation model. The Lucie Training Dataset is a multilingual collection of textual corpora centered around French and designed to offset anglo-centric biases found in many datasets for large language model pretraining. Its French data is "
-    },
-    {
-      "title": "Unified Modeling Language Code Generation from Diagram Images Using Multimodal Large Language Models",
-      "authors": [
-        "Averi Bates",
-        "Ryan Vavricka",
-        "Shane Carleton"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12293v2",
-      "abstract": "The Unified Modeling Language is a standardized visual language widely used for modeling and documenting the design of software systems. Although many tools generate UML diagrams from UML code, generating executable UML code from image-based UML diagrams remains challenging. This paper proposes a ne"
-    },
-    {
-      "title": "Exploration of VLMs for Driver Monitoring Systems Applications",
-      "authors": [
-        "Paola Natalia Cañas",
-        "Marcos Nieto",
-        "Oihana Otaegui"
-      ],
-      "published": "2025-03-15",
-      "url": "http://arxiv.org/abs/2503.12281v1",
-      "abstract": "In recent years, we have witnessed significant progress in emerging deep learning models, particularly Large Language Models (LLMs) and Vision-Language Models (VLMs). These models have demonstrated promising results, indicating a new era of Artificial Intelligence (AI) that surpasses previous method"
+      "org": "Google",
+      "model": "Gemini 2.5 Pro",
+      "date": "2025-03-25",
+      "description": "推理能力新高度, 1M token"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

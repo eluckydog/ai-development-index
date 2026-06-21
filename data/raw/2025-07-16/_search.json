@@ -1,130 +1,20 @@
 {
   "period": {
     "start": "2025-07-16",
-    "end": "2025-07-31",
-    "name": "2025-07-16"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:41Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "Watch the Weights: Unsupervised monitoring and control of fine-tuned LLMs",
-      "authors": [
-        "Ziqian Zhong",
-        "Aditi Raghunathan"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00161v3",
-      "abstract": "The releases of powerful open-weight large language models (LLMs) are often not accompanied by access to their full training data. Existing interpretability methods, particularly those based on activations, often require or assume distributionally similar data. This is a significant limitation when "
-    },
-    {
-      "title": "Tabular Data Understanding with LLMs: A Survey of Recent Advances and Challenges",
-      "authors": [
-        "Xiaofeng Wu",
-        "Alan Ritter",
-        "Wei Xu"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00217v1",
-      "abstract": "Tables have gained significant attention in large language models (LLMs) and multimodal large language models (MLLMs) due to their complex and flexible structure. Unlike linear text inputs, tables are two-dimensional, encompassing formats that range from well-structured database tables to complex, m"
-    },
-    {
-      "title": "RL-PLUS: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization",
-      "authors": [
-        "Yihong Dong",
-        "Xue Jiang",
-        "Yongding Tao"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00222v5",
-      "abstract": "Reinforcement Learning with Verifiable Reward (RLVR) has significantly advanced the complex reasoning abilities of Large Language Models (LLMs). However, it struggles to break through the inherent capability boundaries of the base LLM, due to its essentially on-policy strategy coupled with LLM's imm"
-    },
-    {
-      "title": "Semantic Compression for Word and Sentence Embeddings using Discrete Wavelet Transform",
-      "authors": [
-        "Rana Aref Salama",
-        "Abdou Youssef",
-        "Mona Diab"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00220v1",
-      "abstract": "Wavelet transforms, a powerful mathematical tool, have been widely used in different domains, including Signal and Image processing, to unravel intricate patterns, enhance data representation, and extract meaningful features from data. Tangible results from their application suggest that Wavelet tra"
-    },
-    {
-      "title": "Comparison of Large Language Models for Deployment Requirements",
-      "authors": [
-        "Alper Yaman",
-        "Jannik Schwab",
-        "Christof Nitsche"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00185v1",
-      "abstract": "Large Language Models (LLMs), such as Generative Pre-trained Transformers (GPTs) are revolutionizing the generation of human-like text, producing contextually relevant and syntactically correct content. Despite challenges like biases and hallucinations, these Artificial Intelligence (AI) models exce"
-    },
-    {
-      "title": "EMA Without the Lag: Bias-Corrected Iterate Averaging Schemes",
-      "authors": [
-        "Adam Block",
-        "Cyril Zhang"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00180v1",
-      "abstract": "Stochasticity in language model fine-tuning, often caused by the small batch sizes typically used in this regime, can destabilize training by introducing large oscillations in generation quality. A popular approach to mitigating this instability is to take an Exponential moving average (EMA) of weig"
-    },
-    {
-      "title": "On the Risk of Misleading Reports: Diagnosing Textual Biases in Multimodal Clinical AI",
-      "authors": [
-        "David Restrepo",
-        "Ira Ktena",
-        "Maria Vakalopoulou"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00171v1",
-      "abstract": "Clinical decision-making relies on the integrated analysis of medical images and the associated clinical reports. While Vision-Language Models (VLMs) can offer a unified framework for such tasks, they can exhibit strong biases toward one modality, frequently overlooking critical visual cues in favor"
-    },
-    {
-      "title": "Robust Classification under Noisy Labels: A Geometry-Aware Reliability Framework for Foundation Models",
-      "authors": [
-        "Ecem Bozkurt",
-        "Antonio Ortega"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00202v1",
-      "abstract": "Foundation models (FMs) pretrained on large datasets have become fundamental for various downstream machine learning tasks, in particular in scenarios where obtaining perfectly labeled data is prohibitively expensive. In this paper, we assume an FM has to be fine-tuned with noisy data and present a "
-    },
-    {
-      "title": "Graph Lineages and Skeletal Graph Products",
-      "authors": [
-        "Eric Mjolsness",
-        "Cory B. Scott"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00197v1",
-      "abstract": "Graphs, and sequences of growing graphs, can be used to specify the architecture of mathematical models in many fields including machine learning and computational science. Here we define structured graph \"lineages\" (ordered by level number) that grow in a hierarchical fashion, so that: (1) the numb"
-    },
-    {
-      "title": "The SPACE of AI: Real-World Lessons on AI's Impact on Developers",
-      "authors": [
-        "Brian Houck",
-        "Travis Lowdermilk",
-        "Cody Beyer"
-      ],
-      "published": "2025-07-31",
-      "url": "http://arxiv.org/abs/2508.00178v1",
-      "abstract": "As artificial intelligence (AI) tools become increasingly embedded in software development workflows, questions persist about their true impact on developer productivity and experience. This paper presents findings from a mixed-methods study examining how developers perceive AI's influence across th"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

@@ -1,140 +1,20 @@
 {
   "period": {
     "start": "2025-07-01",
-    "end": "2025-07-15",
-    "name": "2025-07-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:37Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 36,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": [
-      "Llama",
-      "LLaMA",
-      "Opus"
-    ],
-    "key_events": [
-      "Llama",
-      "LLaMA"
-    ]
+    "model_activity": 0,
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "Auto-Formulating Dynamic Programming Problems with Large Language Models",
-      "authors": [
-        "Chenyu Zhou",
-        "Jingyuan Yang",
-        "Linwei Xin"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11737v2",
-      "abstract": "Dynamic programming (DP) is a fundamental method in operations research, but formulating DP models has traditionally required expert knowledge of both the problem context and DP techniques. Large Language Models (LLMs) offer the potential to automate this process. However, DP problems pose unique ch"
-    },
-    {
-      "title": "EEG Foundation Models: A Critical Review of Current Progress and Future Directions",
-      "authors": [
-        "Gayal Kuruppu",
-        "Neeraj Wagh",
-        "Vaclav Kremen"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11783v3",
-      "abstract": "Premise. Patterns of electrical brain activity recorded via electroencephalography (EEG) offer immense value for scientific and clinical investigations. The inability of supervised EEG encoders to learn robust EEG patterns and their over-reliance on expensive signal annotations have sparked a transi"
-    },
-    {
-      "title": "Evaluating Speech-to-Text x LLM x Text-to-Speech Combinations for AI Interview Systems",
-      "authors": [
-        "Rumi Allbert",
-        "Nima Yazdani",
-        "Ali Ansari"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.16835v2",
-      "abstract": "Voice-based conversational AI systems increasingly rely on cascaded architectures that combine speech-to-text (STT), large language models (LLMs), and text-to-speech (TTS) components. We present a large-scale empirical comparison of STT x LLM x TTS stacks using data sampled from over 300,000 AI-cond"
-    },
-    {
-      "title": "Scaling laws for activation steering with Llama 2 models and refusal mechanisms",
-      "authors": [
-        "Sheikh Abdur Raheem Ali",
-        "Justin Xu",
-        "Ivory Yang"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11771v1",
-      "abstract": "As large language models (LLMs) evolve in complexity and capability, the efficacy of less widely deployed alignment techniques are uncertain. Building on previous work on activation steering and contrastive activation addition (CAA), this paper explores the effectiveness of CAA with model scale usin"
-    },
-    {
-      "title": "AI Wizards at CheckThat! 2025: Enhancing Transformer-Based Embeddings with Sentiment for Subjectivity Detection in News Articles",
-      "authors": [
-        "Matteo Fasulo",
-        "Luca Babboni",
-        "Luca Tedeschini"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11764v1",
-      "abstract": "This paper presents AI Wizards' participation in the CLEF 2025 CheckThat! Lab Task 1: Subjectivity Detection in News Articles, classifying sentences as subjective/objective in monolingual, multilingual, and zero-shot settings. Training/development datasets were provided for Arabic, German, English, "
-    },
-    {
-      "title": "Seeing the Signs: A Survey of Edge-Deployable OCR Models for Billboard Visibility Analysis",
-      "authors": [
-        "Maciej Szankin",
-        "Vidhyananth Venkatasamy",
-        "Lihang Ying"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11730v1",
-      "abstract": "Outdoor advertisements remain a critical medium for modern marketing, yet accurately verifying billboard text visibility under real-world conditions is still challenging. Traditional Optical Character Recognition (OCR) pipelines excel at cropped text recognition but often struggle with complex outdo"
-    },
-    {
-      "title": "FOUNDER: Grounding Foundation Models in World Models for Open-Ended Embodied Decision Making",
-      "authors": [
-        "Yucen Wang",
-        "Rui Yu",
-        "Shenghua Wan"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.12496v1",
-      "abstract": "Foundation Models (FMs) and World Models (WMs) offer complementary strengths in task generalization at different levels. In this work, we propose FOUNDER, a framework that integrates the generalizable knowledge embedded in FMs with the dynamic modeling capabilities of WMs to enable open-ended task s"
-    },
-    {
-      "title": "Survey of Swarm Intelligence Approaches to Search Documents Based On Semantic Similarity",
-      "authors": [
-        "Chandrashekar Muniyappa",
-        "Eunjin Kim"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11787v1",
-      "abstract": "Swarm Intelligence (SI) is gaining a lot of popularity in artificial intelligence, where the natural behavior of animals and insects is observed and translated into computer algorithms called swarm computing to solve real-world problems. Due to their effectiveness, they are applied in solving variou"
-    },
-    {
-      "title": "Predicting Delayed Trajectories Using Network Features: A Study on the Dutch Railway Network",
-      "authors": [
-        "Merel Kampere",
-        "Ali Mohammed Mansoor Alsahag"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11776v1",
-      "abstract": "The Dutch railway network is one of the busiest in the world, with delays being a prominent concern for the principal passenger railway operator NS. This research addresses a gap in delay prediction studies within the Dutch railway network by employing an XGBoost Classifier with a focus on topologic"
-    },
-    {
-      "title": "Challenges in GenAI and Authentication: a scoping review",
-      "authors": [
-        "Wesley dos Reis Bezerra",
-        "Lais Machado Bezerra",
-        "Carlos Becker Westphall"
-      ],
-      "published": "2025-07-15",
-      "url": "http://arxiv.org/abs/2507.11775v1",
-      "abstract": "Authentication and authenticity have been a security challenge since the beginning of information sharing, especially in the context of digital information. With the advancement of generative artificial intelligence, these challenges have evolved, demanding a more up-to-date analysis of their impact"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

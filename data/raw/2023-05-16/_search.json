@@ -1,133 +1,20 @@
 {
   "period": {
     "start": "2023-05-16",
-    "end": "2023-05-31",
-    "name": "2023-05-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:10:42Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "An Invariant Learning Characterization of Controlled Text Generation",
-      "authors": [
-        "Carolina Zheng",
-        "Claudia Shi",
-        "Keyon Vafa"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00198v1",
-      "abstract": "Controlled generation refers to the problem of creating text that contains stylistic or semantic attributes of interest. Many approaches reduce this problem to training a predictor of the desired attribute. For example, researchers hoping to deploy a large language model to produce non-toxic content"
-    },
-    {
-      "title": "Automated Annotation with Generative AI Requires Validation",
-      "authors": [
-        "Nicholas Pangakis",
-        "Samuel Wolken",
-        "Neil Fasching"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00176v1",
-      "abstract": "Generative large language models (LLMs) can be a powerful tool for augmenting text annotation procedures, but their performance varies across annotation tasks due to prompt quality, text data idiosyncrasies, and conceptual difficulty. Because these challenges will persist even as LLM technology impr"
-    },
-    {
-      "title": "A Universal Latent Fingerprint Enhancer Using Transformers",
-      "authors": [
-        "Andre Brasil Vieira Wyzykowski",
-        "Anil K. Jain"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00231v1",
-      "abstract": "Forensic science heavily relies on analyzing latent fingerprints, which are crucial for criminal investigations. However, various challenges, such as background noise, overlapping prints, and contamination, make the identification process difficult. Moreover, limited access to real crime scene and l"
-    },
-    {
-      "title": "Using Visual Cropping to Enhance Fine-Detail Question Answering of BLIP-Family Models",
-      "authors": [
-        "Jiarui Zhang",
-        "Mahyar Khayatkhoei",
-        "Prateek Chhikara"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00228v1",
-      "abstract": "Visual Question Answering is a challenging task, as it requires seamless interaction between perceptual, linguistic, and background knowledge systems. While the recent progress of visual and natural language models like BLIP has led to improved performance on this task, we lack understanding of the "
-    },
-    {
-      "title": "Examining the Emergence of Deductive Reasoning in Generative Language Models",
-      "authors": [
-        "Peter Belcak",
-        "Luca A. Lanzendörfer",
-        "Roger Wattenhofer"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.01009v1",
-      "abstract": "We conduct a preliminary inquiry into the ability of generative transformer models to deductively reason from premises provided. We observe notable differences in the performance of models coming from different training setups and find that the deductive reasoning ability increases with scale. Furth"
-    },
-    {
-      "title": "SSL-CPCD: Self-supervised learning with composite pretext-class discrimination for improved generalisability in endoscopic image analysis",
-      "authors": [
-        "Ziang Xu",
-        "Jens Rittscher",
-        "Sharib Ali"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00197v1",
-      "abstract": "Data-driven methods have shown tremendous progress in medical image analysis. In this context, deep learning-based supervised methods are widely popular. However, they require a large amount of training data and face issues in generalisability to unseen datasets that hinder clinical translation. End"
-    },
-    {
-      "title": "Multi-environment lifelong deep reinforcement learning for medical imaging",
-      "authors": [
-        "Guangyao Zheng",
-        "Shuhao Lai",
-        "Vladimir Braverman"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00188v1",
-      "abstract": "Deep reinforcement learning(DRL) is increasingly being explored in medical imaging. However, the environments for medical imaging tasks are constantly evolving in terms of imaging orientations, imaging sequences, and pathologies. To that end, we developed a Lifelong DRL framework, SERIL to continual"
-    },
-    {
-      "title": "BetaZero: Belief-State Planning for Long-Horizon POMDPs using Learned Approximations",
-      "authors": [
-        "Robert J. Moss",
-        "Anthony Corso",
-        "Jef Caers"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00249v4",
-      "abstract": "Real-world planning problems, including autonomous driving and sustainable energy applications like carbon storage and resource exploration, have recently been modeled as partially observable Markov decision processes (POMDPs) and solved using approximate methods. To solve high-dimensional POMDPs in"
-    },
-    {
-      "title": "TransAct: Transformer-based Realtime User Action Model for Recommendation at Pinterest",
-      "authors": [
-        "Xue Xia",
-        "Pong Eksombatchai",
-        "Nikil Pancha"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00248v1",
-      "abstract": "Sequential models that encode user activity for next action prediction have become a popular design choice for building web-scale personalized recommendation systems. Traditional methods of sequential recommendation either utilize end-to-end learning on realtime user actions, or learn user represent"
-    },
-    {
-      "title": "Combinatorial Neural Bandits",
-      "authors": [
-        "Taehyun Hwang",
-        "Kyuwook Chai",
-        "Min-hwan Oh"
-      ],
-      "published": "2023-05-31",
-      "url": "http://arxiv.org/abs/2306.00242v1",
-      "abstract": "We consider a contextual combinatorial bandit problem where in each round a learning agent selects a subset of arms and receives feedback on the selected arms according to their scores. The score of an arm is an unknown function of the arm's feature. Approximating this unknown score function with de"
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

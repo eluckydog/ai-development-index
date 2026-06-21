@@ -1,132 +1,20 @@
 {
   "period": {
     "start": "2023-06-16",
-    "end": "2023-06-30",
-    "name": "2023-06-16"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:10:49Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
     "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "research_activity": 20,
+    "hype_models": [],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
-    {
-      "title": "Performance of ChatGPT on USMLE: Unlocking the Potential of Large Language Models for AI-Assisted Medical Education",
-      "authors": [
-        "Prabin Sharma",
-        "Kisan Thapa",
-        "Dikshya Thapa"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00112v2",
-      "abstract": "Artificial intelligence is gaining traction in more ways than ever before. The popularity of language models and AI-based businesses has soared since ChatGPT was made available to the general public via OpenAI. It is becoming increasingly common for people to use ChatGPT both professionally and pers"
-    },
-    {
-      "title": "Still No Lie Detector for Language Models: Probing Empirical and Conceptual Roadblocks",
-      "authors": [
-        "B. A. Levinstein",
-        "Daniel A. Herrmann"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00175v1",
-      "abstract": "We consider the questions of whether or not large language models (LLMs) have beliefs, and, if they do, how we might measure them. First, we evaluate two existing approaches, one due to Azaria and Mitchell (2023) and the other to Burns et al. (2022). We provide empirical results that show that these"
-    },
-    {
-      "title": "VoxWatch: An open-set speaker recognition benchmark on VoxCeleb",
-      "authors": [
-        "Raghuveer Peri",
-        "Seyed Omid Sadjadi",
-        "Daniel Garcia-Romero"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00169v1",
-      "abstract": "Despite its broad practical applications such as in fraud prevention, open-set speaker identification (OSI) has received less attention in the speaker recognition community compared to speaker verification (SV). OSI deals with determining if a test speech sample belongs to a speaker from a set of pr"
-    },
-    {
-      "title": "Large Language Models (GPT) for automating feedback on programming assignments",
-      "authors": [
-        "Maciej Pankiewicz",
-        "Ryan S. Baker"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00150v1",
-      "abstract": "Addressing the challenge of generating personalized feedback for programming assignments is demanding due to several factors, like the complexity of code syntax or different ways to correctly solve a task. In this experimental study, we automated the process of feedback generation by employing OpenA"
-    },
-    {
-      "title": "SMILE: Evaluation and Domain Adaptation for Social Media Language Understanding",
-      "authors": [
-        "Vasilisa Bashlovkina",
-        "Riley Matthews",
-        "Zhaobin Kuang"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00135v1",
-      "abstract": "We study the ability of transformer-based language models (LMs) to understand social media language. Social media (SM) language is distinct from standard written language, yet existing benchmarks fall short of capturing LM performance in this socially, economically, and politically important domain."
-    },
-    {
-      "title": "How Do Human Users Teach a Continual Learning Robot in Repeated Interactions?",
-      "authors": [
-        "Ali Ayub",
-        "Jainish Mehta",
-        "Zachary De Francesco"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00123v1",
-      "abstract": "Continual learning (CL) has emerged as an important avenue of research in recent years, at the intersection of Machine Learning (ML) and Human-Robot Interaction (HRI), to allow robots to continually learn in their environments over long-term interactions with humans. Most research in continual learn"
-    },
-    {
-      "title": "Meta-training with Demonstration Retrieval for Efficient Few-shot Learning",
-      "authors": [
-        "Aaron Mueller",
-        "Kanika Narang",
-        "Lambert Mathias"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00119v1",
-      "abstract": "Large language models show impressive results on few-shot NLP tasks. However, these models are memory and computation-intensive. Meta-training allows one to leverage smaller models for few-shot generalization in a domain-general and task-agnostic manner; however, these methods alone results in model"
-    },
-    {
-      "title": "Goal Representations for Instruction Following: A Semi-Supervised Language Interface to Control",
-      "authors": [
-        "Vivek Myers",
-        "Andre He",
-        "Kuan Fang"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00117v2",
-      "abstract": "Our goal is for robots to follow natural language instructions like \"put the towel next to the microwave.\" But getting large amounts of labeled data, i.e. data that contains demonstrations of tasks labeled with the language instruction, is prohibitive. In contrast, obtaining policies that respond to"
-    },
-    {
-      "title": "Ticket-BERT: Labeling Incident Management Tickets with Language Models",
-      "authors": [
-        "Zhexiong Liu",
-        "Cris Benge",
-        "Siduo Jiang"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00108v1",
-      "abstract": "An essential aspect of prioritizing incident tickets for resolution is efficiently labeling tickets with fine-grained categories. However, ticket data is often complex and poses several unique challenges for modern machine learning methods: (1) tickets are created and updated either by machines with"
-    },
-    {
-      "title": "Counterfactual Collaborative Reasoning",
-      "authors": [
-        "Jianchao Ji",
-        "Zelong Li",
-        "Shuyuan Xu"
-      ],
-      "published": "2023-06-30",
-      "url": "http://arxiv.org/abs/2307.00165v1",
-      "abstract": "Causal reasoning and logical reasoning are two important types of reasoning abilities for human intelligence. However, their relationship has not been extensively explored under machine intelligence context. In this paper, we explore how the two reasoning abilities can be jointly modeled to enhance "
-    }
-  ],
-  "github": [],
+  "releases": [],
   "benchmarks_found": {}
 }

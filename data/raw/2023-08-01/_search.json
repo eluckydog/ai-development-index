@@ -1,133 +1,29 @@
 {
   "period": {
     "start": "2023-08-01",
-    "end": "2023-08-15",
-    "name": "2023-08-01"
+    "name": "2023"
   },
-  "searched_at": "2026-06-21T05:11:14Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 15,
+    "research_activity": 20,
     "hype_models": [
-      "GPT-4"
+      "Code Llama"
     ],
-    "key_events": [
-      "GPT-4"
-    ]
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Domain Adaptation for Code Model-based Unit Test Case Generation",
-      "authors": [
-        "Jiho Shin",
-        "Sepehr Hashtroudi",
-        "Hadi Hemmati"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08033v3",
-      "abstract": "Recently, deep learning-based test case generation approaches have been proposed to automate the generation of unit test cases. In this study, we leverage Transformer-based code models to generate unit tests with the help of Domain Adaptation (DA) at a project level. Specifically, we use CodeT5, a r"
-    },
-    {
-      "title": "The Costly Dilemma: Generalization, Evaluation and Cost-Optimal Deployment of Large Language Models",
-      "authors": [
-        "Abi Aryan",
-        "Aakash Kumar Nain",
-        "Andrew McMahon"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08061v1",
-      "abstract": "When deploying machine learning models in production for any product/application, there are three properties that are commonly desired. First, the models should be generalizable, in that we can extend it to further use cases as our knowledge of the domain area develops. Second they should be evaluab"
-    },
-    {
-      "title": "DiagGPT: An LLM-based and Multi-agent Dialogue System with Automatic Topic Management for Flexible Task-Oriented Dialogue",
-      "authors": [
-        "Lang Cao"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08043v4",
-      "abstract": "A significant application of Large Language Models (LLMs), like ChatGPT, is their deployment as chat agents, which respond to human inquiries across a variety of domains. While current LLMs proficiently answer general questions, they often fall short in complex diagnostic scenarios such as legal, me"
-    },
-    {
-      "title": "Using Artificial Populations to Study Psychological Phenomena in Neural Models",
-      "authors": [
-        "Jesse Roberts",
-        "Kyle Moore",
-        "Drew Wilenzick"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08032v1",
-      "abstract": "The recent proliferation of research into transformer based natural language processing has led to a number of studies which attempt to detect the presence of human-like cognitive behavior in the models. We contend that, as is true of human psychology, the investigation of cognitive behavior in lang"
-    },
-    {
-      "title": "Large Language Models in Introductory Programming Education: ChatGPT's Performance and Implications for Assessments",
-      "authors": [
-        "Natalie Kiesler",
-        "Daniel Schiffner"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08572v1",
-      "abstract": "This paper investigates the performance of the Large Language Models (LLMs) ChatGPT-3.5 and GPT-4 in solving introductory programming tasks. Based on the performance, implications for didactic scenarios and assessment formats utilizing LLMs are derived. For the analysis, 72 Python tasks for novice p"
-    },
-    {
-      "title": "A Reinforcement Learning Approach for Performance-aware Reduction in Power Consumption of Data Center Compute Nodes",
-      "authors": [
-        "Akhilesh Raj",
-        "Swann Perarnau",
-        "Aniruddha Gokhale"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08069v1",
-      "abstract": "As Exascale computing becomes a reality, the energy needs of compute nodes in cloud data centers will continue to grow. A common approach to reducing this energy demand is to limit the power consumption of hardware components when workloads are experiencing bottlenecks elsewhere in the system. Howev"
-    },
-    {
-      "title": "Analyzing the Capabilities of Nature-inspired Feature Selection Algorithms in Predicting Student Performance",
-      "authors": [
-        "Thomas Trask"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08574v2",
-      "abstract": "Predicting student performance is key in leveraging effective pre-failure interventions for at-risk students. As educational data grows larger, more effective means of analyzing student data in a timely manner are needed in order to provide useful predictions and interventions. In this paper, an ana"
-    },
-    {
-      "title": "Classification of Data Generated by Gaussian Mixture Models Using Deep ReLU Networks",
-      "authors": [
-        "Tian-Yi Zhou",
-        "Xiaoming Huo"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08030v1",
-      "abstract": "This paper studies the binary classification of unbounded data from ${\\mathbb R}^d$ generated under Gaussian Mixture Models (GMMs) using deep ReLU neural networks. We obtain $\\unicode{x2013}$ for the first time $\\unicode{x2013}$ non-asymptotic upper bounds and convergence rates of the excess risk (e"
-    },
-    {
-      "title": "Sophisticated Learning: A novel algorithm for active learning during model-based planning",
-      "authors": [
-        "Rowan Hodson",
-        "Bruce Bassett",
-        "Charel van Hoof"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08029v2",
-      "abstract": "We introduce Sophisticated Learning (SL), a planning-to-learn algorithm that embeds active parameter learning inside the Sophisticated Inference (SI) tree-search framework of Active Inference. Unlike SI -- which optimizes beliefs about hidden states -- SL also updates beliefs about model parameters "
-    },
-    {
-      "title": "Potential Energy Advantage of Quantum Economy",
-      "authors": [
-        "Junyu Liu",
-        "Hansheng Jiang",
-        "Zuo-Jun Max Shen"
-      ],
-      "published": "2023-08-15",
-      "url": "http://arxiv.org/abs/2308.08025v1",
-      "abstract": "Energy cost is increasingly crucial in the modern computing industry with the wide deployment of large-scale machine learning models and language models. For the firms that provide computing services, low energy consumption is important both from the perspective of their own market growth and the go"
+      "org": "Meta",
+      "model": "Code Llama",
+      "date": "2023-08-24",
+      "description": "代码生成专用LLM"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

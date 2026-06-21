@@ -1,135 +1,36 @@
 {
   "period": {
     "start": "2025-04-01",
-    "end": "2025-04-15",
-    "name": "2025-04-01"
+    "name": "2025"
   },
-  "searched_at": "2026-06-21T05:14:16Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 12,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
+    "model_activity": 30,
+    "research_activity": 20,
     "hype_models": [
-      "MiMo"
-    ]
+      "LLaMA 4 Scout/Maveri",
+      "o3/o4-mini"
+    ],
+    "period_name": "",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "70% Size, 100% Accuracy: Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float (DFloat11)",
-      "authors": [
-        "Tianyi Zhang",
-        "Mohsen Hariri",
-        "Shaochen Zhong"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.11651v3",
-      "abstract": "Large-scale AI models, such as Large Language Models (LLMs) and Diffusion Models (DMs), have grown rapidly in size, creating significant challenges for efficient deployment on resource-constrained hardware. In this paper, we introduce Dynamic-Length Float (DFloat11), a lossless compression framework"
+      "org": "Meta",
+      "model": "LLaMA 4 Scout/Maverick",
+      "date": "2025-04-05",
+      "description": "LLaMA 4开源, MoE架构"
     },
     {
-      "title": "Nemotron-CrossThink: Scaling Self-Learning beyond Math Reasoning",
-      "authors": [
-        "Syeda Nahida Akter",
-        "Shrimai Prabhumoye",
-        "Matvei Novikov"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.13941v3",
-      "abstract": "Large Language Models (LLMs) have shown strong reasoning capabilities, particularly when enhanced through Reinforcement Learning (RL). While prior work has successfully applied RL to mathematical reasoning -- where rules and correctness are well-defined -- generalizing these methods to broader reaso"
-    },
-    {
-      "title": "A Large-Language Model Framework for Relative Timeline Extraction from PubMed Case Reports",
-      "authors": [
-        "Jing Wang",
-        "Jeremy C Weiss"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.12350v1",
-      "abstract": "Timing of clinical events is central to characterization of patient trajectories, enabling analyses such as process tracing, forecasting, and causal reasoning. However, structured electronic health records capture few data elements critical to these tasks, while clinical reports lack temporal locali"
-    },
-    {
-      "title": "Improving LLM Interpretability and Performance via Guided Embedding Refinement for Sequential Recommendation",
-      "authors": [
-        "Nanshan Jia",
-        "Chenfei Yuan",
-        "Yuhang Wu"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.11658v1",
-      "abstract": "The fast development of Large Language Models (LLMs) offers growing opportunities to further improve sequential recommendation systems. Yet for some practitioners, integrating LLMs to their existing base recommendation systems raises questions about model interpretability, transparency and related s"
-    },
-    {
-      "title": "Data driven approach towards more efficient Newton-Raphson power flow calculation for distribution grids",
-      "authors": [
-        "Shengyuan Yan",
-        "Farzad Vazinram",
-        "Zeynab Kaseb"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.11650v1",
-      "abstract": "Power flow (PF) calculations are fundamental to power system analysis to ensure stable and reliable grid operation. The Newton-Raphson (NR) method is commonly used for PF analysis due to its rapid convergence when initialized properly. However, as power grids operate closer to their capacity limits,"
-    },
-    {
-      "title": "Recommending Clinical Trials for Online Patient Cases using Artificial Intelligence",
-      "authors": [
-        "Joey Chan",
-        "Qiao Jin",
-        "Nicholas Wan"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.20059v1",
-      "abstract": "Clinical trials are crucial for assessing new treatments; however, recruitment challenges - such as limited awareness, complex eligibility criteria, and referral barriers - hinder their success. With the growth of online platforms, patients increasingly turn to social media and health communities fo"
-    },
-    {
-      "title": "AskQE: Question Answering as Automatic Evaluation for Machine Translation",
-      "authors": [
-        "Dayeon Ki",
-        "Kevin Duh",
-        "Marine Carpuat"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.11582v2",
-      "abstract": "How can a monolingual English speaker determine whether an automatic translation in French is good enough to be shared? Existing MT error detection and quality estimation (QE) techniques do not address this practical scenario. We introduce AskQE, a question generation and answering framework designe"
-    },
-    {
-      "title": "Co-STAR: Collaborative Curriculum Self-Training with Adaptive Regularization for Source-Free Video Domain Adaptation",
-      "authors": [
-        "Amirhossein Dadashzadeh",
-        "Parsa Esmati",
-        "Majid Mirmehdi"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.11669v2",
-      "abstract": "Recent advances in Source-Free Unsupervised Video Domain Adaptation (SFUVDA) leverage vision-language models to enhance pseudo-label generation. However, challenges such as noisy pseudo-labels and over-confident predictions limit their effectiveness in adapting well across domains. We propose Co-STA"
-    },
-    {
-      "title": "Transformer-Driven Neural Beamforming with Imperfect CSI in Urban Macro Wireless Channels",
-      "authors": [
-        "Cemil Vahapoglu",
-        "Timothy J. O'Shea",
-        "Wan Liu"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.11667v1",
-      "abstract": "The literature is abundant with methodologies focusing on using transformer architectures due to their prominence in wireless signal processing and their capability to capture long-range dependencies via attention mechanisms. In particular, depthwise separable convolutions enhance parameter efficien"
-    },
-    {
-      "title": "Deep Generative Model-Based Generation of Synthetic Individual-Specific Brain MRI Segmentations",
-      "authors": [
-        "Ruijie Wang",
-        "Luca Rossetto",
-        "Susan Mérillat"
-      ],
-      "published": "2025-04-15",
-      "url": "http://arxiv.org/abs/2504.12352v2",
-      "abstract": "To the best of our knowledge, all existing methods that can generate synthetic brain magnetic resonance imaging (MRI) scans for a specific individual require detailed structural or volumetric information about the individual's brain. However, such brain information is often scarce, expensive, and di"
+      "org": "OpenAI",
+      "model": "o3/o4-mini",
+      "date": "2025-04-16",
+      "description": "o3推理模型正式发布"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }

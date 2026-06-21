@@ -1,131 +1,43 @@
 {
   "period": {
     "start": "2026-04-01",
-    "end": "2026-04-15",
-    "name": "2026-04-01"
+    "name": "2026"
   },
-  "searched_at": "2026-06-21T05:15:41Z",
+  "searched_at": "2026-06-21 (manual/AI Release Tracker)",
   "sources": [
-    "arxiv",
-    "github"
+    "aireleasetracker.com",
+    "websearch"
   ],
   "summary": {
-    "arxiv_papers": 10,
-    "github_repos": 0,
-    "model_activity": 0,
-    "research_activity": 80,
-    "open_source_activity": 0.0,
-    "hype_models": []
+    "model_activity": 45,
+    "research_activity": 30,
+    "hype_models": [
+      "Claude Opus 4.7",
+      "GPT-5.5 / 5.5-Pro",
+      "DeepSeek V4-Pro/Flas"
+    ],
+    "period_name": "GPT-5.5 + DeepSeek V4期",
+    "ai_news": ""
   },
-  "arxiv": [
+  "releases": [
     {
-      "title": "Evo-MedAgent: Beyond One-Shot Diagnosis with Agents That Remember, Reflect, and Improve",
-      "authors": [
-        "Weixiang Shen",
-        "Bailiang Jian",
-        "Jun Li"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14475v1",
-      "abstract": "Tool-augmented large language model (LLM) agents can orchestrate specialist classifiers, segmentation models, and visual question-answering modules to interpret chest X-rays. However, these agents still solve each case in isolation: they fail to accumulate experience across cases, correct recurrent "
+      "org": "Anthropic",
+      "model": "Claude Opus 4.7",
+      "date": "2026-04-16",
+      "description": "Opus升级"
     },
     {
-      "title": "Filling in the Mechanisms: How do LMs Learn Filler-Gap Dependencies under Developmental Constraints?",
-      "authors": [
-        "Atrey Desai",
-        "Sathvik Nair"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14459v1",
-      "abstract": "For humans, filler-gap dependencies require a shared representation across different syntactic constructions. Although causal analyses suggest this may also be true for LLMs (Boguraev et al., 2025), it is still unclear if such a representation also exists for language models trained on developmental"
+      "org": "OpenAI",
+      "model": "GPT-5.5 / 5.5-Pro",
+      "date": "2026-04-23",
+      "description": "GPT-5.5发布! SWE-Bench 58.6%"
     },
     {
-      "title": "AIBuildAI: An AI Agent for Automatically Building AI Models",
-      "authors": [
-        "Ruiyi Zhang",
-        "Peijia Qin",
-        "Qi Cao"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14455v1",
-      "abstract": "AI models underpin modern intelligent systems, driving advances across science, medicine, finance, and technology. Yet developing high-performing AI models remains a labor-intensive process that requires expert practitioners to iteratively design architectures, engineer representations, implement tr"
-    },
-    {
-      "title": "Exascale Multi-Task Graph Foundation Models for Imbalanced, Multi-Fidelity Atomistic Data",
-      "authors": [
-        "Massimiliano Lupo Pasini",
-        "Jong Youl Choi",
-        "Kshitij Mehta"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.15380v1",
-      "abstract": "We present an exascale workflow for materials discovery using atomistic graph foundation models built on HydraGNN. We jointly train on 16 open first-principles datasets (544+ million structures covering 85+ elements) using a multi-task architecture with per-dataset heads and a scalable ADIOS2/DDStor"
-    },
-    {
-      "title": "Seeing Through Circuits: Faithful Mechanistic Interpretability for Vision Transformers",
-      "authors": [
-        "Nina Żukowska",
-        "Wolfgang Stammer",
-        "Bernt Schiele"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14477v1",
-      "abstract": "Transparency of neural networks' internal reasoning is at the heart of interpretability research, adding to trust, safety, and understanding of these models. The field of mechanistic interpretability has recently focused on studying task-specific computational graphs, defined by connections (edges) "
-    },
-    {
-      "title": "Scouting By Reward: VLM-TO-IRL-Driven Player Selection For Esports",
-      "authors": [
-        "Qing Yan",
-        "Wenyu Yang",
-        "Yufei Wang"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14474v1",
-      "abstract": "Traditional esports scouting workflows rely heavily on manual video review and aggregate performance metrics, which often fail to capture the nuanced decision-making patterns necessary to determine if a prospect fits a specific tactical archetype. To address this, we reframe style-based player evalu"
-    },
-    {
-      "title": "Psychological Steering of Large Language Models",
-      "authors": [
-        "Leonardo Blas",
-        "Robin Jia",
-        "Emilio Ferrara"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14463v1",
-      "abstract": "Large language models (LLMs) emulate a consistent human-like behavior that can be shaped through activation-level interventions. This paradigm is converging on additive residual-stream injections, which rely on injection-strength sweeps to approximate optimal intervention settings. However, existing"
-    },
-    {
-      "title": "MARCA: A Checklist-Based Benchmark for Multilingual Web Search",
-      "authors": [
-        "Thales Sales Almeida",
-        "Giovana Kerche Bonás",
-        "Ramon Pires"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14448v1",
-      "abstract": "Large language models (LLMs) are increasingly used as sources of information, yet their reliability depends on the ability to search the web, select relevant evidence, and synthesize complete answers. While recent benchmarks evaluate web-browsing and agentic tool use, multilingual settings, and Port"
-    },
-    {
-      "title": "Hierarchical vs. Flat Iteration in Shared-Weight Transformers",
-      "authors": [
-        "Sang-Il Han"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14442v1",
-      "abstract": "We present an empirical study of whether hierarchically structured, shared-weight recurrence can match the representational quality of independent-layer stacking in a Transformer-based language model. HRM-LM replaces L independent Transformer layers with a two-speed recurrent pair: a Fast module ope"
-    },
-    {
-      "title": "LLMs taking shortcuts in test generation: A study with SAP HANA and LevelDB",
-      "authors": [
-        "Vekil Bekmyradov",
-        "Noah C. Pütz",
-        "Thomas Bartz-Beielstein"
-      ],
-      "published": "2026-04-15",
-      "url": "http://arxiv.org/abs/2604.14437v1",
-      "abstract": "Large Language Models (LLMs) have achieved impressive results on public benchmarks, often leading to claims of advanced reasoning and understanding. However, recent research in cognitive science reveals that these models sometimes rely on shallow heuristics and memorization, taking shortcuts rather "
+      "org": "DeepSeek",
+      "model": "DeepSeek V4-Pro/Flash",
+      "date": "2026-04-24",
+      "description": "V4正式发布, SWE-Bench 83.7%, 价格仅1/20"
     }
   ],
-  "github": [],
   "benchmarks_found": {}
 }
