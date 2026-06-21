@@ -1,0 +1,97 @@
+{
+  "baseline": {
+    "date": "2022-12-01",
+    "aic": 1000,
+    "aidi": 100
+  },
+  "current": {
+    "date": "2026-06-16",
+    "aic": 4900,
+    "aidi": 0
+  },
+  "aic_growth": 3900,
+  "aic_growth_pct": 390.0,
+  "cn_us_parity": 78,
+  "cn_us_breakdown": null,
+  "global_aic_corrected": 4361,
+  "prediction": {
+    "predicted": 4959,
+    "ci_low": 4898,
+    "ci_high": 5020,
+    "confidence": 99,
+    "trend_delta": 59.2,
+    "volatility": 31.0,
+    "predicted_aidi": 59.2
+  },
+  "validation": {
+    "F": 0.914,
+    "mape": 0.0099,
+    "in_ci_rate": 0.75,
+    "calibration": 0.8,
+    "total_checks": 84,
+    "errors": [
+      {
+        "date": "2026-04-16",
+        "actual": 4802,
+        "predicted": 4814,
+        "error": -12,
+        "in_ci": true
+      },
+      {
+        "date": "2026-05-01",
+        "actual": 4826,
+        "predicted": 4861,
+        "error": -35,
+        "in_ci": true
+      },
+      {
+        "date": "2026-05-16",
+        "actual": 4850,
+        "predicted": 4885,
+        "error": -35,
+        "in_ci": true
+      },
+      {
+        "date": "2026-06-01",
+        "actual": 4900,
+        "predicted": 4909,
+        "error": -9,
+        "in_ci": true
+      },
+      {
+        "date": "2026-06-16",
+        "actual": 4900,
+        "predicted": 4959,
+        "error": -59,
+        "in_ci": true
+      }
+    ]
+  },
+  "baselines": {
+    "2022-12-01": {
+      "aic": 1000,
+      "aidi": 100,
+      "cn_parity": 12
+    },
+    "2024-01-01": {
+      "aic": 1641,
+      "aidi": 39,
+      "cn_parity": null
+    },
+    "2025-01-01": {
+      "aic": 2887,
+      "aidi": 129,
+      "cn_parity": null
+    },
+    "2026-01-01": {
+      "aic": 4216,
+      "aidi": 40,
+      "cn_parity": null
+    },
+    "2026-06-16": {
+      "aic": 4900,
+      "aidi": 0,
+      "cn_parity": null
+    }
+  }
+}

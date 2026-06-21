@@ -10,38 +10,37 @@ name: backfill
         description: End
         required: true
         default: '2026-06-16'
-      batch_size:
-        description: Batch size
-        required: true
-        default: '10'
 
 jobs:
-  generate:
-    runs-on: ubuntu-latest
-    outputs:
-      periods: ${{ steps.gen.outputs.periods }}
-    steps:
-      - uses: actions/checkout@v4
-      - id: gen
-        run: |
-          python engine/gen_periods.py ${{ github.event.inputs.start_date }} ${{ github.event.inputs.end_date }} > periods.json
-          echo "periods=$(cat periods.json)" >> $GITHUB_OUTPUT
-
-  collect:
-    needs: generate
+  backfill:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    strategy:
-      max-parallel: 3
-      matrix:
-        period: ${{ fromJSON(needs.generate.outputs.periods) }}
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          mkdir -p "data/raw/${{ matrix.period.name }}"
-          echo '{"start":"${{ matrix.period.start }}","end":"${{ matrix.period.end }}"}' > "data/raw/${{ matrix.period.name }}/_period.json"
-      - run: |
+
+      - name: Generate and collect all periods
+        run: |
+          python engine/gen_periods.py ${{ github.event.inputs.start_date }} ${{ github.event.inputs.end_date }} > periods.json
+
+          periods=$(python3 -c "import json; ps=json.load(open('periods.json')); print(len(ps))")
+          echo "Total periods to collect: $periods"
+
+          mkdir -p data/raw
+
+          python3 -c "
+import json, os
+ps = json.load(open('periods.json'))
+for p in ps:
+    dirname = 'data/raw/' + p['name']
+    os.makedirs(dirname, exist_ok=True)
+    with open(dirname + '/_period.json', 'w', encoding='utf-8') as f:
+        json.dump({'start': p['start'], 'end': p['end']}, f, ensure_ascii=False)
+print(f'Created {len(ps)} period directories')
+"
+
+      - name: Commit and push
+        run: |
           git config user.name "bot" && git config user.email "bot@bot"
           git add data/raw/
-          git diff --staged --quiet || (git commit -m "data ${{ matrix.period.name }}" && git push)
+          git diff --staged --quiet || (git commit -m "backfill ${{ github.event.inputs.start_date }} to ${{ github.event.inputs.end_date }}" && git push)
