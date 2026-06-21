@@ -12,54 +12,54 @@
   "total_periods": 86,
   "prediction": {
     "predicted": 4959,
-    "ci_low": 4902,
-    "ci_high": 1000,
+    "ci_low": 4898,
+    "ci_high": 5020,
     "confidence": 99,
     "trend_delta": 59.2,
-    "volatility": 29.0,
+    "volatility": 31.0,
     "predicted_aidi": 59.2
   },
   "validation": {
-    "F": 0.6143,
-    "mape": 0.0096,
-    "in_ci_rate": 0.0,
-    "calibration": 0.05,
+    "F": 0.914,
+    "mape": 0.0099,
+    "in_ci_rate": 0.75,
+    "calibration": 0.8,
     "total_checks": 84,
     "errors": [
       {
         "date": "2026-04-16",
-        "actual": 4721,
-        "predicted": 4741,
-        "error": -20,
-        "in_ci": false
+        "actual": 4802,
+        "predicted": 4814,
+        "error": -12,
+        "in_ci": true
       },
       {
         "date": "2026-05-01",
-        "actual": 4761,
-        "predicted": 4780,
-        "error": -19,
-        "in_ci": false
+        "actual": 4826,
+        "predicted": 4861,
+        "error": -35,
+        "in_ci": true
       },
       {
         "date": "2026-05-16",
-        "actual": 4800,
-        "predicted": 4820,
-        "error": -20,
-        "in_ci": false
+        "actual": 4850,
+        "predicted": 4885,
+        "error": -35,
+        "in_ci": true
       },
       {
         "date": "2026-06-01",
         "actual": 4900,
-        "predicted": 4859,
-        "error": 41,
-        "in_ci": false
+        "predicted": 4909,
+        "error": -9,
+        "in_ci": true
       },
       {
         "date": "2026-06-16",
         "actual": 4900,
         "predicted": 4959,
         "error": -59,
-        "in_ci": false
+        "in_ci": true
       }
     ]
   },
@@ -75,14 +75,24 @@
       "aic": 1400
     },
     {
+      "date": "2023-07-15",
+      "event": "Claude 2发布",
+      "aic": 1500
+    },
+    {
       "date": "2023-12-15",
       "event": "Gemini Ultra发布",
       "aic": 1600
     },
     {
       "date": "2024-02-15",
-      "event": "Sora发布",
+      "event": "Sora + Gemma发布",
       "aic": 1750
+    },
+    {
+      "date": "2024-03-15",
+      "event": "Claude 3 Opus",
+      "aic": 1900
     },
     {
       "date": "2024-05-15",
@@ -101,13 +111,18 @@
     },
     {
       "date": "2024-12-15",
-      "event": "DeepSeek V3",
+      "event": "DeepSeek V3 + Gemini 2.0",
       "aic": 2750
     },
     {
       "date": "2025-01-15",
       "event": "o3发布",
       "aic": 3000
+    },
+    {
+      "date": "2025-02-15",
+      "event": "Grok 3发布",
+      "aic": 3100
     },
     {
       "date": "2025-03-15",
@@ -121,7 +136,7 @@
     },
     {
       "date": "2025-07-15",
-      "event": "Llama 4开源",
+      "event": "Llama 4开源 + Mistral Large 3",
       "aic": 3500
     },
     {
@@ -136,8 +151,13 @@
     },
     {
       "date": "2026-01-15",
-      "event": "DeepSeek V4预告",
+      "event": "DeepSeek V4预告 + Gemini 3.0",
       "aic": 4250
+    },
+    {
+      "date": "2026-02-15",
+      "event": "Grok 4发布",
+      "aic": 4400
     },
     {
       "date": "2026-03-01",
@@ -145,13 +165,23 @@
       "aic": 4600
     },
     {
-      "date": "2026-05-16",
-      "event": "Claude Opus 4.8",
+      "date": "2026-03-15",
+      "event": "Claude Mythos/Capybara泄露",
+      "aic": 4700
+    },
+    {
+      "date": "2026-04-15",
+      "event": "GPT-5.5 + Claude Opus 4.7",
       "aic": 4800
     },
     {
+      "date": "2026-05-16",
+      "event": "Claude Opus 4.8",
+      "aic": 4850
+    },
+    {
       "date": "2026-06-01",
-      "event": "GPT-5.6内测",
+      "event": "GPT-5.6内测 + Gemini 3.1 Pro",
       "aic": 4900
     }
   ]
