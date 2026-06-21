@@ -140,7 +140,7 @@
     },
     {
       "date": "2025-07-15",
-      "event": "Llama 4开源 + Mistral Large 3",
+      "event": "Llama 4 + Mistral Large 3",
       "aic": 3500
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "date": "2026-02-15",
-      "event": "Grok 4发布",
+      "event": "Grok 4 + 智谱GLM-5发布",
       "aic": 4400
     },
     {
@@ -175,17 +175,17 @@
     },
     {
       "date": "2026-04-15",
-      "event": "GPT-5.5 + Claude Opus 4.7",
+      "event": "GPT-5.5 + GLM-5.1 + Claude 4.7",
       "aic": 4800
     },
     {
       "date": "2026-05-16",
-      "event": "Claude Opus 4.8",
+      "event": "Claude Opus 4.8 + Qwen3.7 Max",
       "aic": 4850
     },
     {
       "date": "2026-06-01",
-      "event": "GPT-5.6内测 + Gemini 3.1 Pro",
+      "event": "GPT-5.6 + Gemini 3.1 Pro",
       "aic": 4900
     }
   ]
