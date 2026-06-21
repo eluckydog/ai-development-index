@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "date": "2022-12-01",
+    "aic": 39,
+    "aidi": 100
+  },
+  "current": {
+    "date": "2026-06-16",
+    "aic": 8694,
+    "aidi": 458
+  },
+  "aic_growth": 8655,
+  "aic_growth_pct": 22192.3,
+  "current_dimensions": {
+    "intelligence": 2750,
+    "multimodal": 1470,
+    "agent": 1580,
+    "programming": 2150,
+    "knowledge": 1380,
+    "ecosystem": 1450
+  },
+  "base_aic": 1797,
+  "synergy_bonus": 6897,
+  "synergy_pct": 79.3,
+  "total_periods": 86
+}
