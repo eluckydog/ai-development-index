@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-21",
+  "version": "v3+v4",
+  "baseline": {
+    "date": "2022-12-01",
+    "aic": 39,
+    "dvi": 38
+  },
+  "current": {
+    "date": "2026-06-16",
+    "aic": 8694,
+    "dvi": 3788
+  },
+  "baselines": {
+    "2022-12-01": {
+      "aic": 39,
+      "dvi": 38,
+      "state": "plateau"
+    },
+    "2024-01-01": {
+      "aic": 403,
+      "dvi": 142,
+      "state": "decelerating"
+    },
+    "2025-01-01": {
+      "aic": 1169,
+      "dvi": 630,
+      "state": "decelerating"
+    },
+    "2026-01-01": {
+      "aic": 3267,
+      "dvi": 1788,
+      "state": "accelerating"
+    },
+    "2026-06-16": {
+      "aic": 8694,
+      "dvi": 3788,
+      "state": "accelerating"
+    }
+  },
+  "data_sources": [
+    "AI Release Tracker",
+    "BenchLM Pricing",
+    "NVIDIA GTC Rubin",
+    "HBM Roadmap"
+  ],
+  "confidence": "A级: 模型/硬件/定价已验证; B级: 维度评分为推演"
+}
