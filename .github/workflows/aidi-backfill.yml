@@ -3,44 +3,25 @@ on:
   workflow_dispatch:
     inputs:
       start_date:
-        description: Start
+        description: Start date
         required: true
         default: '2022-12-01'
       end_date:
-        description: End
+        description: End date
         required: true
         default: '2026-06-16'
 
 jobs:
-  backfill:
+  run:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
-
-      - name: Generate and collect all periods
-        run: |
-          python engine/gen_periods.py ${{ github.event.inputs.start_date }} ${{ github.event.inputs.end_date }} > periods.json
-
-          periods=$(python3 -c "import json; ps=json.load(open('periods.json')); print(len(ps))")
-          echo "Total periods to collect: $periods"
-
-          mkdir -p data/raw
-
-          python3 -c "
-import json, os
-ps = json.load(open('periods.json'))
-for p in ps:
-    dirname = 'data/raw/' + p['name']
-    os.makedirs(dirname, exist_ok=True)
-    with open(dirname + '/_period.json', 'w', encoding='utf-8') as f:
-        json.dump({'start': p['start'], 'end': p['end']}, f, ensure_ascii=False)
-print(f'Created {len(ps)} period directories')
-"
-
-      - name: Commit and push
-        run: |
-          git config user.name "bot" && git config user.email "bot@bot"
+      - run: python engine/gen_periods.py ${{ github.event.inputs.start_date }} ${{ github.event.inputs.end_date }} > periods.json
+      - run: python3 -c "import json,os; ps=json.load(open('periods.json')); [os.makedirs(f'data/raw/{p[\"name\"]}',exist_ok=True) or open(f'data/raw/{p[\"name\"]}/_period.json','w').write('{\"start\":\"'+p['start']+'\",\"end\":\"'+p['end']+'\"}') for p in ps]; print(f'Created {len(ps)} periods')"
+      - run: |
+          git config user.name "bot"
+          git config user.email "bot@bot"
           git add data/raw/
-          git diff --staged --quiet || (git commit -m "backfill ${{ github.event.inputs.start_date }} to ${{ github.event.inputs.end_date }}" && git push)
+          git diff --staged --quiet || (git commit -m "backfill data" && git push)
