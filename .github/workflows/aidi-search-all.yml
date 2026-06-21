@@ -1,0 +1,54 @@
+name: aidi-search-all
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: Start date
+        required: true
+        default: '2022-12-01'
+      end_date:
+        description: End date
+        required: true
+        default: '2026-06-16'
+      skip_existing:
+        description: Skip existing (true/false)
+        required: false
+        default: 'true'
+
+jobs:
+  search-all:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run batch search for all periods
+        id: search
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python engine/batch_search.py \
+            --start ${{ github.event.inputs.start_date }} \
+            --end ${{ github.event.inputs.end_date }} \
+            ${{ github.event.inputs.skip_existing == 'true' && '--skip-existing' || '' }}
+
+      - name: Commit and push results
+        run: |
+          git config user.name "aidi-bot"
+          git config user.email "aidi-bot@eluckydog"
+          git add data/raw/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "search: batch AI development data ${{ github.event.inputs.start_date }} ~ ${{ github.event.inputs.end_date }}"
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            git push
+          fi
