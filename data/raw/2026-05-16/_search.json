@@ -1,0 +1,41 @@
+{
+  "period": {
+    "start": "2026-05-16",
+    "name": "2026-05-16"
+  },
+  "sources": [
+    "AIC_ANCHORS"
+  ],
+  "anchor_event": {
+    "name": "Claude Opus 4.8 + Qwen3.7 Max",
+    "org": "Anthropic",
+    "country": "US",
+    "aic": 4850
+  },
+  "dimensions": {
+    "model": {
+      "score": 970,
+      "rationale": "Claude Opus 4.8 + Qwen3.7 Max"
+    },
+    "hardware": {
+      "score": 0,
+      "rationale": ""
+    },
+    "algorithm": {
+      "score": 0,
+      "rationale": ""
+    },
+    "business": {
+      "score": 0,
+      "rationale": ""
+    },
+    "adoption": {
+      "score": 0,
+      "rationale": ""
+    },
+    "opensource": {
+      "score": 0,
+      "rationale": ""
+    }
+  }
+}

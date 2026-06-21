@@ -1,0 +1,48 @@
+{
+  "period": {
+    "start": "2026-03-01",
+    "name": "2026-03-01"
+  },
+  "sources": [
+    "AIC_ANCHORS"
+  ],
+  "anchor_event": {
+    "name": "DeepSeek V4上线",
+    "org": "DeepSeek",
+    "country": "CN",
+    "aic": 4600
+  },
+  "dimensions": {
+    "model": {
+      "score": 920,
+      "rationale": "DeepSeek V4上线"
+    },
+    "hardware": {
+      "score": 0,
+      "rationale": ""
+    },
+    "algorithm": {
+      "score": 0,
+      "rationale": ""
+    },
+    "business": {
+      "score": 0,
+      "rationale": ""
+    },
+    "adoption": {
+      "score": 0,
+      "rationale": ""
+    },
+    "opensource": {
+      "score": 0,
+      "rationale": ""
+    }
+  },
+  "cn_us_parity": {
+    "composite": 78,
+    "pure_capability": 72,
+    "cost_perf": 96,
+    "opensource": 88,
+    "innovation": 82
+  }
+}

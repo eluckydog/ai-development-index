@@ -1,0 +1,36 @@
+{
+  "period": {
+    "start": "2023-03-16",
+    "name": "2023-03-16"
+  },
+  "sources": [
+    "interpolated"
+  ],
+  "note": "No major anchor event - interpolated from neighboring anchors",
+  "dimensions": {
+    "model": {
+      "score": null,
+      "rationale": ""
+    },
+    "hardware": {
+      "score": null,
+      "rationale": ""
+    },
+    "algorithm": {
+      "score": null,
+      "rationale": ""
+    },
+    "business": {
+      "score": null,
+      "rationale": ""
+    },
+    "adoption": {
+      "score": null,
+      "rationale": ""
+    },
+    "opensource": {
+      "score": null,
+      "rationale": ""
+    }
+  }
+}

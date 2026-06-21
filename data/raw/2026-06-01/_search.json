@@ -1,0 +1,48 @@
+{
+  "period": {
+    "start": "2026-06-01",
+    "name": "2026-06-01"
+  },
+  "sources": [
+    "AIC_ANCHORS"
+  ],
+  "anchor_event": {
+    "name": "GPT-5.6 + Gemini 3.1 Pro",
+    "org": "OpenAI",
+    "country": "US",
+    "aic": 4900
+  },
+  "dimensions": {
+    "model": {
+      "score": 980,
+      "rationale": "GPT-5.6 + Gemini 3.1 Pro"
+    },
+    "hardware": {
+      "score": 0,
+      "rationale": ""
+    },
+    "algorithm": {
+      "score": 0,
+      "rationale": ""
+    },
+    "business": {
+      "score": 0,
+      "rationale": ""
+    },
+    "adoption": {
+      "score": 0,
+      "rationale": ""
+    },
+    "opensource": {
+      "score": 0,
+      "rationale": ""
+    }
+  },
+  "cn_us_parity": {
+    "composite": 78,
+    "pure_capability": 74,
+    "cost_perf": 90,
+    "opensource": 84,
+    "innovation": 80
+  }
+}

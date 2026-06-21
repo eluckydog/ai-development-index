@@ -1,0 +1,48 @@
+{
+  "period": {
+    "start": "2022-12-01",
+    "name": "2022-12-01"
+  },
+  "sources": [
+    "AIC_ANCHORS"
+  ],
+  "anchor_event": {
+    "name": "GPT-4发布",
+    "org": "OpenAI",
+    "country": "US",
+    "aic": 1000
+  },
+  "dimensions": {
+    "model": {
+      "score": 200,
+      "rationale": "GPT-4发布"
+    },
+    "hardware": {
+      "score": 0,
+      "rationale": ""
+    },
+    "algorithm": {
+      "score": 0,
+      "rationale": ""
+    },
+    "business": {
+      "score": 0,
+      "rationale": ""
+    },
+    "adoption": {
+      "score": 0,
+      "rationale": ""
+    },
+    "opensource": {
+      "score": 0,
+      "rationale": ""
+    }
+  },
+  "cn_us_parity": {
+    "composite": 12,
+    "pure_capability": 12,
+    "cost_perf": 15,
+    "opensource": 8,
+    "innovation": 10
+  }
+}
