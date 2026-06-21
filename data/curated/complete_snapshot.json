@@ -1,0 +1,1679 @@
+{
+  "generated": "2026-06-21",
+  "total_periods": 86,
+  "date_range": "2022-12-01 ~ 2026-06-16",
+  "data_layers": [
+    {
+      "layer": "raw/_search.json",
+      "description": "模型发布原始数据 (不可变)"
+    },
+    {
+      "layer": "curated/dim_scores.json",
+      "description": "六维能力评分 (可更新/扩展)"
+    },
+    {
+      "layer": "engine/aidicore_v3.py",
+      "description": "AIC/AIDI计算引擎 (可升级)"
+    }
+  ],
+  "periods": [
+    {
+      "period": "2022-12-01",
+      "releases": 1,
+      "benchmarks": [
+        "MMLU",
+        "HumanEval"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2022-12-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 100,
+        "multimodal": 10,
+        "agent": 5,
+        "programming": 80,
+        "knowledge": 10,
+        "ecosystem": 30
+      },
+      "v3_note": "ChatGPT上线, 编程有Copilot/Codex, 其他刚起步"
+    },
+    {
+      "period": "2022-12-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "arxiv",
+        "github"
+      ],
+      "file": "data/raw/2022-12-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 120,
+        "multimodal": 10,
+        "agent": 5,
+        "programming": 85,
+        "knowledge": 10,
+        "ecosystem": 35
+      },
+      "v3_note": "ChatGPT爆发, 微软百亿投资"
+    },
+    {
+      "period": "2023-01-01",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-01-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 130,
+        "multimodal": 12,
+        "agent": 8,
+        "programming": 90,
+        "knowledge": 15,
+        "ecosystem": 40
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-01-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-01-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 140,
+        "multimodal": 12,
+        "agent": 8,
+        "programming": 90,
+        "knowledge": 15,
+        "ecosystem": 45
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-02-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-02-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 150,
+        "multimodal": 15,
+        "agent": 10,
+        "programming": 95,
+        "knowledge": 15,
+        "ecosystem": 45
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-02-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-02-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 200,
+        "multimodal": 15,
+        "agent": 10,
+        "programming": 100,
+        "knowledge": 20,
+        "ecosystem": 50
+      },
+      "v3_note": "LLaMA泄露, 开源AI萌芽"
+    },
+    {
+      "period": "2023-03-01",
+      "releases": 3,
+      "benchmarks": [
+        "MMLU",
+        "HumanEval"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-03-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 400,
+        "multimodal": 200,
+        "agent": 20,
+        "programming": 200,
+        "knowledge": 30,
+        "ecosystem": 60
+      },
+      "v3_note": "GPT-4多模态+编程飞跃, Claude 1同日发布"
+    },
+    {
+      "period": "2023-03-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-03-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 420,
+        "multimodal": 220,
+        "agent": 25,
+        "programming": 220,
+        "knowledge": 35,
+        "ecosystem": 65
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-04-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-04-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 430,
+        "multimodal": 230,
+        "agent": 30,
+        "programming": 230,
+        "knowledge": 40,
+        "ecosystem": 70
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-04-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-04-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 440,
+        "multimodal": 240,
+        "agent": 35,
+        "programming": 240,
+        "knowledge": 45,
+        "ecosystem": 75
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-05-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-05-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 450,
+        "multimodal": 250,
+        "agent": 40,
+        "programming": 250,
+        "knowledge": 50,
+        "ecosystem": 80
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-05-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-05-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 460,
+        "multimodal": 260,
+        "agent": 45,
+        "programming": 255,
+        "knowledge": 55,
+        "ecosystem": 85
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-06-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-06-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 470,
+        "multimodal": 270,
+        "agent": 50,
+        "programming": 260,
+        "knowledge": 60,
+        "ecosystem": 90
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-06-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-06-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 480,
+        "multimodal": 280,
+        "agent": 55,
+        "programming": 270,
+        "knowledge": 65,
+        "ecosystem": 95
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-07-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-07-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 520,
+        "multimodal": 290,
+        "agent": 60,
+        "programming": 300,
+        "knowledge": 70,
+        "ecosystem": 100
+      },
+      "v3_note": "Claude 2 (100K上下文), LLaMA 2开源可商用"
+    },
+    {
+      "period": "2023-07-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-07-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 530,
+        "multimodal": 300,
+        "agent": 65,
+        "programming": 310,
+        "knowledge": 75,
+        "ecosystem": 105
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-08-01",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-08-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 550,
+        "multimodal": 310,
+        "agent": 70,
+        "programming": 350,
+        "knowledge": 80,
+        "ecosystem": 110
+      },
+      "v3_note": "Code Llama发布, 代码能力专精"
+    },
+    {
+      "period": "2023-08-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-08-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 560,
+        "multimodal": 320,
+        "agent": 75,
+        "programming": 360,
+        "knowledge": 85,
+        "ecosystem": 115
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-09-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-09-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 570,
+        "multimodal": 400,
+        "agent": 80,
+        "programming": 370,
+        "knowledge": 90,
+        "ecosystem": 120
+      },
+      "v3_note": "GPT-4V多模态看懂图片"
+    },
+    {
+      "period": "2023-09-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-09-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 580,
+        "multimodal": 410,
+        "agent": 85,
+        "programming": 380,
+        "knowledge": 95,
+        "ecosystem": 125
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-10-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-10-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 590,
+        "multimodal": 420,
+        "agent": 90,
+        "programming": 390,
+        "knowledge": 100,
+        "ecosystem": 130
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-10-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-10-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 600,
+        "multimodal": 430,
+        "agent": 95,
+        "programming": 400,
+        "knowledge": 105,
+        "ecosystem": 135
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2023-11-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-11-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 620,
+        "multimodal": 440,
+        "agent": 100,
+        "programming": 420,
+        "knowledge": 110,
+        "ecosystem": 150
+      },
+      "v3_note": "Grok 1实时知识, Claude 2.1 (200K上下文)"
+    },
+    {
+      "period": "2023-11-16",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-11-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 630,
+        "multimodal": 450,
+        "agent": 105,
+        "programming": 430,
+        "knowledge": 120,
+        "ecosystem": 155
+      },
+      "v3_note": "DeepSeek Coder崛起, 开源追赶"
+    },
+    {
+      "period": "2023-12-01",
+      "releases": 1,
+      "benchmarks": [
+        "MMLU"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-12-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 650,
+        "multimodal": 500,
+        "agent": 110,
+        "programming": 440,
+        "knowledge": 130,
+        "ecosystem": 160
+      },
+      "v3_note": "Gemini 1.0原生多模态, MMLU 90%"
+    },
+    {
+      "period": "2023-12-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2023-12-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 660,
+        "multimodal": 510,
+        "agent": 115,
+        "programming": 450,
+        "knowledge": 140,
+        "ecosystem": 165
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-01-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-01-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 670,
+        "multimodal": 520,
+        "agent": 120,
+        "programming": 460,
+        "knowledge": 150,
+        "ecosystem": 170
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-01-16",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-01-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 690,
+        "multimodal": 530,
+        "agent": 125,
+        "programming": 500,
+        "knowledge": 160,
+        "ecosystem": 180
+      },
+      "v3_note": "Code Llama 70B, DeepSeek MoE创新"
+    },
+    {
+      "period": "2024-02-01",
+      "releases": 2,
+      "benchmarks": [
+        "MMLU"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-02-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 720,
+        "multimodal": 550,
+        "agent": 130,
+        "programming": 510,
+        "knowledge": 170,
+        "ecosystem": 190
+      },
+      "v3_note": "Gemini 1.0 Ultra, Gemini 1.5 Pro百万token"
+    },
+    {
+      "period": "2024-02-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-02-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 730,
+        "multimodal": 560,
+        "agent": 135,
+        "programming": 520,
+        "knowledge": 180,
+        "ecosystem": 195
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-03-01",
+      "releases": 1,
+      "benchmarks": [
+        "MMLU",
+        "GPQA"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-03-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 780,
+        "multimodal": 580,
+        "agent": 150,
+        "programming": 550,
+        "knowledge": 200,
+        "ecosystem": 200
+      },
+      "v3_note": "Claude 3 Opus全面超越GPT-4, 推理+编程同时提升"
+    },
+    {
+      "period": "2024-03-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-03-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 790,
+        "multimodal": 590,
+        "agent": 160,
+        "programming": 560,
+        "knowledge": 210,
+        "ecosystem": 210
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-04-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-04-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 800,
+        "multimodal": 600,
+        "agent": 170,
+        "programming": 600,
+        "knowledge": 220,
+        "ecosystem": 220
+      },
+      "v3_note": "LLaMA 3开源, DeepSeek V2性价比"
+    },
+    {
+      "period": "2024-04-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-04-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 810,
+        "multimodal": 610,
+        "agent": 180,
+        "programming": 610,
+        "knowledge": 230,
+        "ecosystem": 230
+      },
+      "v3_note": "DeepSeek V2 MoE 236B"
+    },
+    {
+      "period": "2024-05-01",
+      "releases": 2,
+      "benchmarks": [
+        "MMLU"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-05-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 850,
+        "multimodal": 750,
+        "agent": 200,
+        "programming": 620,
+        "knowledge": 250,
+        "ecosystem": 250
+      },
+      "v3_note": "GPT-4o全程多模态实时语音, Agent雏形出现"
+    },
+    {
+      "period": "2024-05-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-05-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 860,
+        "multimodal": 760,
+        "agent": 210,
+        "programming": 630,
+        "knowledge": 260,
+        "ecosystem": 260
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-06-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-06-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 880,
+        "multimodal": 770,
+        "agent": 220,
+        "programming": 680,
+        "knowledge": 270,
+        "ecosystem": 270
+      },
+      "v3_note": "Claude 3.5 Sonnet编程领先, RAG技术成熟"
+    },
+    {
+      "period": "2024-06-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-06-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 890,
+        "multimodal": 780,
+        "agent": 230,
+        "programming": 690,
+        "knowledge": 280,
+        "ecosystem": 280
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-07-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-07-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 900,
+        "multimodal": 790,
+        "agent": 250,
+        "programming": 720,
+        "knowledge": 300,
+        "ecosystem": 300
+      },
+      "v3_note": "GPT-4o mini普及, LLaMA 3.1 405B最大开源, Agent框架兴起"
+    },
+    {
+      "period": "2024-07-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-07-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 910,
+        "multimodal": 800,
+        "agent": 260,
+        "programming": 730,
+        "knowledge": 310,
+        "ecosystem": 310
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-08-01",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-08-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 920,
+        "multimodal": 810,
+        "agent": 270,
+        "programming": 740,
+        "knowledge": 320,
+        "ecosystem": 320
+      },
+      "v3_note": "Grok 2多模态"
+    },
+    {
+      "period": "2024-08-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-08-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 930,
+        "multimodal": 820,
+        "agent": 280,
+        "programming": 750,
+        "knowledge": 330,
+        "ecosystem": 330
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-09-01",
+      "releases": 2,
+      "benchmarks": [
+        "AIME"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-09-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 950,
+        "multimodal": 830,
+        "agent": 400,
+        "programming": 760,
+        "knowledge": 350,
+        "ecosystem": 340
+      },
+      "v3_note": "o1推理模型突破! Agent能力跃升(学会了推理)"
+    },
+    {
+      "period": "2024-09-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-09-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 960,
+        "multimodal": 840,
+        "agent": 420,
+        "programming": 770,
+        "knowledge": 360,
+        "ecosystem": 350
+      },
+      "v3_note": "Gemini 1.5 Pro-002"
+    },
+    {
+      "period": "2024-10-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-10-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 970,
+        "multimodal": 850,
+        "agent": 430,
+        "programming": 780,
+        "knowledge": 370,
+        "ecosystem": 360
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-10-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-10-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 980,
+        "multimodal": 860,
+        "agent": 440,
+        "programming": 790,
+        "knowledge": 380,
+        "ecosystem": 370
+      },
+      "v3_note": "Claude 3.5 Haiku"
+    },
+    {
+      "period": "2024-11-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-11-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 990,
+        "multimodal": 870,
+        "agent": 450,
+        "programming": 800,
+        "knowledge": 400,
+        "ecosystem": 380
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2024-11-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-11-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1000,
+        "multimodal": 880,
+        "agent": 460,
+        "programming": 810,
+        "knowledge": 420,
+        "ecosystem": 390
+      },
+      "v3_note": "DeepSeek R1推理预览"
+    },
+    {
+      "period": "2024-12-01",
+      "releases": 3,
+      "benchmarks": [
+        "MMLU",
+        "GPQA",
+        "HumanEval"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-12-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1050,
+        "multimodal": 890,
+        "agent": 480,
+        "programming": 830,
+        "knowledge": 450,
+        "ecosystem": 500
+      },
+      "v3_note": "DeepSeek V3开源逼近GPT-4o, 成本骤降! o1正式版推理能力"
+    },
+    {
+      "period": "2024-12-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2024-12-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1060,
+        "multimodal": 900,
+        "agent": 490,
+        "programming": 840,
+        "knowledge": 460,
+        "ecosystem": 520
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-01-01",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-01-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1100,
+        "multimodal": 910,
+        "agent": 500,
+        "programming": 850,
+        "knowledge": 480,
+        "ecosystem": 530
+      },
+      "v3_note": "o3-mini推理, ARC-AGI突破"
+    },
+    {
+      "period": "2025-01-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-01-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1120,
+        "multimodal": 920,
+        "agent": 520,
+        "programming": 860,
+        "knowledge": 500,
+        "ecosystem": 550
+      },
+      "v3_note": "DeepSeek R1推理模型震惊全球"
+    },
+    {
+      "period": "2025-02-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-02-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1150,
+        "multimodal": 930,
+        "agent": 530,
+        "programming": 870,
+        "knowledge": 510,
+        "ecosystem": 560
+      },
+      "v3_note": "Grok 3, GPT-4.5最后非推理旗舰"
+    },
+    {
+      "period": "2025-02-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-02-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1160,
+        "multimodal": 940,
+        "agent": 540,
+        "programming": 880,
+        "knowledge": 520,
+        "ecosystem": 570
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-03-01",
+      "releases": 3,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-03-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1200,
+        "multimodal": 950,
+        "agent": 550,
+        "programming": 900,
+        "knowledge": 550,
+        "ecosystem": 580
+      },
+      "v3_note": "Claude 3.7 Sonnet编程突破, Gemini 2.5 Pro百万token推理"
+    },
+    {
+      "period": "2025-03-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-03-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1210,
+        "multimodal": 960,
+        "agent": 560,
+        "programming": 910,
+        "knowledge": 560,
+        "ecosystem": 590
+      },
+      "v3_note": "DeepSeek V3-0324升级"
+    },
+    {
+      "period": "2025-04-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-04-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1250,
+        "multimodal": 970,
+        "agent": 580,
+        "programming": 920,
+        "knowledge": 570,
+        "ecosystem": 600
+      },
+      "v3_note": "LLaMA 4开源MoE, o3正式发布"
+    },
+    {
+      "period": "2025-04-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-04-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1260,
+        "multimodal": 980,
+        "agent": 590,
+        "programming": 930,
+        "knowledge": 580,
+        "ecosystem": 610
+      },
+      "v3_note": "Gemini 2.5 Flash"
+    },
+    {
+      "period": "2025-05-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-05-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1300,
+        "multimodal": 990,
+        "agent": 650,
+        "programming": 950,
+        "knowledge": 600,
+        "ecosystem": 620
+      },
+      "v3_note": "Claude Opus 4+Sonnet 4深度推理/编程领先, Agent框架成熟"
+    },
+    {
+      "period": "2025-05-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-05-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1310,
+        "multimodal": 1000,
+        "agent": 660,
+        "programming": 960,
+        "knowledge": 610,
+        "ecosystem": 630
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-06-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-06-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1330,
+        "multimodal": 1010,
+        "agent": 680,
+        "programming": 970,
+        "knowledge": 630,
+        "ecosystem": 650
+      },
+      "v3_note": "o3-pro专业推理, DeepSeek R1升级"
+    },
+    {
+      "period": "2025-06-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-06-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1340,
+        "multimodal": 1020,
+        "agent": 690,
+        "programming": 980,
+        "knowledge": 640,
+        "ecosystem": 660
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-07-01",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-07-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1350,
+        "multimodal": 1030,
+        "agent": 700,
+        "programming": 990,
+        "knowledge": 650,
+        "ecosystem": 670
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-07-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-07-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1360,
+        "multimodal": 1040,
+        "agent": 710,
+        "programming": 1000,
+        "knowledge": 660,
+        "ecosystem": 680
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-08-01",
+      "releases": 3,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-08-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1550,
+        "multimodal": 1050,
+        "agent": 800,
+        "programming": 1200,
+        "knowledge": 700,
+        "ecosystem": 700
+      },
+      "v3_note": "GPT-5发布! 百万token, Agent能力跃升, OpenAI首次开源"
+    },
+    {
+      "period": "2025-08-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-08-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1580,
+        "multimodal": 1060,
+        "agent": 810,
+        "programming": 1210,
+        "knowledge": 720,
+        "ecosystem": 720
+      },
+      "v3_note": "DeepSeek V3.1"
+    },
+    {
+      "period": "2025-09-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-09-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1600,
+        "multimodal": 1070,
+        "agent": 820,
+        "programming": 1250,
+        "knowledge": 740,
+        "ecosystem": 740
+      },
+      "v3_note": "GPT-5 Codex编程专精, Agent全面商用"
+    },
+    {
+      "period": "2025-09-16",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-09-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1620,
+        "multimodal": 1080,
+        "agent": 830,
+        "programming": 1260,
+        "knowledge": 760,
+        "ecosystem": 760
+      },
+      "v3_note": "Claude Sonnet 4.5, DeepSeek V3.2"
+    },
+    {
+      "period": "2025-10-01",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-10-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1640,
+        "multimodal": 1090,
+        "agent": 840,
+        "programming": 1280,
+        "knowledge": 780,
+        "ecosystem": 780
+      },
+      "v3_note": "Claude Haiku 4.5"
+    },
+    {
+      "period": "2025-10-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-10-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1650,
+        "multimodal": 1100,
+        "agent": 850,
+        "programming": 1290,
+        "knowledge": 800,
+        "ecosystem": 800
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-11-01",
+      "releases": 4,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-11-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1750,
+        "multimodal": 1120,
+        "agent": 880,
+        "programming": 1350,
+        "knowledge": 850,
+        "ecosystem": 850
+      },
+      "v3_note": "GPT-5.1升级, Gemini 3.0 Pro, Claude Opus 4.5科学推理领先"
+    },
+    {
+      "period": "2025-11-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-11-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1760,
+        "multimodal": 1130,
+        "agent": 890,
+        "programming": 1360,
+        "knowledge": 860,
+        "ecosystem": 860
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2025-12-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-12-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1800,
+        "multimodal": 1150,
+        "agent": 900,
+        "programming": 1400,
+        "knowledge": 900,
+        "ecosystem": 880
+      },
+      "v3_note": "GPT-5.2优化, Gemini 3.0 Flash"
+    },
+    {
+      "period": "2025-12-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2025-12-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1810,
+        "multimodal": 1160,
+        "agent": 910,
+        "programming": 1410,
+        "knowledge": 910,
+        "ecosystem": 900
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2026-01-01",
+      "releases": 2,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-01-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1850,
+        "multimodal": 1180,
+        "agent": 930,
+        "programming": 1450,
+        "knowledge": 950,
+        "ecosystem": 920
+      },
+      "v3_note": "Gemini 2.0系列, o3-mini高算力版"
+    },
+    {
+      "period": "2026-01-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-01-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1860,
+        "multimodal": 1190,
+        "agent": 940,
+        "programming": 1460,
+        "knowledge": 960,
+        "ecosystem": 940
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2026-02-01",
+      "releases": 4,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-02-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 1950,
+        "multimodal": 1210,
+        "agent": 970,
+        "programming": 1500,
+        "knowledge": 980,
+        "ecosystem": 970
+      },
+      "v3_note": "Claude Opus 4.6, Grok 4, Gemini 3.1 Pro"
+    },
+    {
+      "period": "2026-02-16",
+      "releases": 3,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-02-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2000,
+        "multimodal": 1220,
+        "agent": 980,
+        "programming": 1550,
+        "knowledge": 1000,
+        "ecosystem": 1000
+      },
+      "v3_note": "GPT-5.3-Codex编程, Gemini 3.1 Flash"
+    },
+    {
+      "period": "2026-03-01",
+      "releases": 4,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-03-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2300,
+        "multimodal": 1250,
+        "agent": 1100,
+        "programming": 1700,
+        "knowledge": 1050,
+        "ecosystem": 1100
+      },
+      "v3_note": "GPT-5.4, Capybara泄露第四档, 三模型密集发布"
+    },
+    {
+      "period": "2026-03-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-03-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2350,
+        "multimodal": 1260,
+        "agent": 1120,
+        "programming": 1750,
+        "knowledge": 1080,
+        "ecosystem": 1150
+      },
+      "v3_note": "Muse Spark Meta新系列"
+    },
+    {
+      "period": "2026-04-01",
+      "releases": 3,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-04-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2500,
+        "multimodal": 1280,
+        "agent": 1300,
+        "programming": 1900,
+        "knowledge": 1150,
+        "ecosystem": 1200
+      },
+      "v3_note": "GPT-5.5发布! DeepSeek V4-Pro/Flash开源! SWE-Bench 83.7%, Agent进入新纪元"
+    },
+    {
+      "period": "2026-04-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-04-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2520,
+        "multimodal": 1290,
+        "agent": 1320,
+        "programming": 1920,
+        "knowledge": 1180,
+        "ecosystem": 1250
+      },
+      "v3_note": ""
+    },
+    {
+      "period": "2026-05-01",
+      "releases": 3,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-05-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2600,
+        "multimodal": 1400,
+        "agent": 1450,
+        "programming": 2000,
+        "knowledge": 1250,
+        "ecosystem": 1300
+      },
+      "v3_note": "Gemini Omni全模态, Claude Opus 4.8科学推理登顶 (HLE 49.8%)"
+    },
+    {
+      "period": "2026-05-16",
+      "releases": 1,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-05-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2650,
+        "multimodal": 1420,
+        "agent": 1500,
+        "programming": 2050,
+        "knowledge": 1300,
+        "ecosystem": 1350
+      },
+      "v3_note": "Claude Fable 5发布, SWE-Bench 80.3%"
+    },
+    {
+      "period": "2026-06-01",
+      "releases": 1,
+      "benchmarks": [
+        "SWE-Bench",
+        "HLE"
+      ],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-06-01/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2700,
+        "multimodal": 1450,
+        "agent": 1550,
+        "programming": 2100,
+        "knowledge": 1350,
+        "ecosystem": 1400
+      },
+      "v3_note": "最新数据 "
+    },
+    {
+      "period": "2026-06-16",
+      "releases": 0,
+      "benchmarks": [],
+      "sources": [
+        "aireleasetracker.com",
+        "websearch"
+      ],
+      "file": "data/raw/2026-06-16/_search.json",
+      "v3_dim_scores": {
+        "intelligence": 2750,
+        "multimodal": 1470,
+        "agent": 1580,
+        "programming": 2150,
+        "knowledge": 1380,
+        "ecosystem": 1450
+      },
+      "v3_note": "当前半月 (预估)"
+    }
+  ]
+}
