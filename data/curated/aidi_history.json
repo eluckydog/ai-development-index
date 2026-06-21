@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "name": "AI Development Index (AIDI)",
+    "baseline": 1000,
+    "baseline_date": "2026-01-01",
+    "dimensions": [
+      "model",
+      "hardware",
+      "algorithm",
+      "business",
+      "adoption",
+      "opensource"
+    ],
+    "weights": {
+      "model": 0.25,
+      "hardware": 0.2,
+      "algorithm": 0.2,
+      "business": 0.15,
+      "adoption": 0.1,
+      "opensource": 0.1
+    }
+  },
+  "history": [
+    {
+      "date": "2026-01-01",
+      "cycle": 1,
+      "dimensions": {
+        "model": 700,
+        "hardware": 800,
+        "algorithm": 700,
+        "business": 500,
+        "adoption": 620,
+        "opensource": 575
+      },
+      "aidi": 670,
+      "direction": "accelerating",
+      "summary": "DeepSeek V4预告, NVIDIA Rubin六芯发布, 云算力成本拐点信号"
+    },
+    {
+      "date": "2026-01-16",
+      "cycle": 2,
+      "dimensions": {
+        "model": 800,
+        "hardware": 800,
+        "algorithm": 800,
+        "business": 420,
+        "adoption": 715,
+        "opensource": 660
+      },
+      "aidi": 720,
+      "direction": "accelerating",
+      "summary": "中美模型竞赛白热化, Agent元年共识形成"
+    },
+    {
+      "date": "2026-02-01",
+      "cycle": 3,
+      "dimensions": {
+        "model": 900,
+        "hardware": 700,
+        "algorithm": 700,
+        "business": 500,
+        "adoption": 810,
+        "opensource": 745
+      },
+      "aidi": 736,
+      "direction": "accelerating",
+      "summary": "DeepSeek V4即将上线, 开源生态爆发"
+    },
+    {
+      "date": "2026-02-16",
+      "cycle": 4,
+      "dimensions": {
+        "model": 900,
+        "hardware": 800,
+        "algorithm": 700,
+        "business": 500,
+        "adoption": 810,
+        "opensource": 745
+      },
+      "aidi": 756,
+      "direction": "accelerating",
+      "summary": "GTC 2026 Rubin Ultra发布, OpenClaw超越Linux"
+    },
+    {
+      "date": "2026-03-01",
+      "cycle": 5,
+      "dimensions": {
+        "model": 900,
+        "hardware": 900,
+        "algorithm": 800,
+        "business": 660,
+        "adoption": 905,
+        "opensource": 830
+      },
+      "aidi": 838,
+      "direction": "accelerating",
+      "summary": "DeepSeek V4正式上线 API价格仅为GPT-5的1/20"
+    },
+    {
+      "date": "2026-03-16",
+      "cycle": 6,
+      "dimensions": {
+        "model": 900,
+        "hardware": 900,
+        "algorithm": 800,
+        "business": 660,
+        "adoption": 905,
+        "opensource": 830
+      },
+      "aidi": 838,
+      "direction": "stable",
+      "summary": "AI基础设施全面升级, NemoClaw平台发布"
+    },
+    {
+      "date": "2026-04-01",
+      "cycle": 7,
+      "dimensions": {
+        "model": 900,
+        "hardware": 800,
+        "algorithm": 800,
+        "business": 580,
+        "adoption": 905,
+        "opensource": 830
+      },
+      "aidi": 806,
+      "direction": "decelerating",
+      "summary": "硬件供给开始受限, 模型竞争趋于稳定"
+    },
+    {
+      "date": "2026-04-16",
+      "cycle": 8,
+      "dimensions": {
+        "model": 900,
+        "hardware": 700,
+        "algorithm": 800,
+        "business": 660,
+        "adoption": 905,
+        "opensource": 830
+      },
+      "aidi": 798,
+      "direction": "stable",
+      "summary": "GPU涨价潮来袭, 台积电产能到极限"
+    },
+    {
+      "date": "2026-05-01",
+      "cycle": 9,
+      "dimensions": {
+        "model": 900,
+        "hardware": 700,
+        "algorithm": 800,
+        "business": 660,
+        "adoption": 905,
+        "opensource": 830
+      },
+      "aidi": 798,
+      "direction": "stable",
+      "summary": "中美AI权力转移加速"
+    },
+    {
+      "date": "2026-05-16",
+      "cycle": 10,
+      "dimensions": {
+        "model": 1000,
+        "hardware": 900,
+        "algorithm": 900,
+        "business": 660,
+        "adoption": 1000,
+        "opensource": 915
+      },
+      "aidi": 900,
+      "direction": "accelerating",
+      "summary": "Anthropic估值9650亿首超OpenAI, Agent走向个人用户"
+    },
+    {
+      "date": "2026-06-01",
+      "cycle": 11,
+      "dimensions": {
+        "model": 1000,
+        "hardware": 900,
+        "algorithm": 900,
+        "business": 500,
+        "adoption": 905,
+        "opensource": 830
+      },
+      "aidi": 858,
+      "direction": "decelerating",
+      "summary": "GPT-5.6内测, DeepSeek V4跑通AMD MI300X打破CUDA垄断"
+    },
+    {
+      "date": "2026-06-21",
+      "cycle": 1,
+      "dimensions": {
+        "model": 800,
+        "hardware": 700,
+        "algorithm": 700,
+        "business": 500,
+        "adoption": 620,
+        "opensource": 575
+      },
+      "aidi": 674,
+      "direction": "decelerating",
+      "summary": "Claude Opus 4.8登顶科学推理"
+    }
+  ]
+}

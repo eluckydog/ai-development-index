@@ -1,0 +1,88 @@
+name: AIDI 数据采集
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: '搜索开始日期 (YYYY-MM-DD)'
+        required: true
+        default: '2026-06-01'
+      end_date:
+        description: '搜索结束日期 (YYYY-MM-DD)'
+        required: true
+        default: '2026-06-16'
+      period_name:
+        description: '周期名称 (用于存档路径)'
+        required: false
+        default: ''
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 设置Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 运行六维搜索
+        id: search
+        env:
+          START_DATE: ${{ github.event.inputs.start_date }}
+          END_DATE: ${{ github.event.inputs.end_date }}
+          PERIOD: ${{ github.event.inputs.period_name }}
+        run: |
+          python -c "
+import json, os, sys
+from datetime import datetime
+
+start = os.environ['START_DATE']
+end = os.environ['END_DATE']
+period = os.environ.get('PERIOD', f'{start}_to_{end}')
+
+# 占位: 实际搜索逻辑由WebSearch/千寻完成
+# 这里创建原始数据目录结构
+raw_dir = f'data/raw/{period}'
+os.makedirs(raw_dir, exist_ok=True)
+
+# 创建空的数据占位文件
+placeholder = {
+    'period': {'start': start, 'end': end},
+    'searched_at': datetime.now().isoformat(),
+    'dimensions': {
+        'model': {'entries': [], 'score': None, 'score_rationale': ''},
+        'hardware': {'entries': [], 'score': None, 'score_rationale': ''},
+        'algorithm': {'entries': [], 'score': None, 'score_rationale': ''},
+        'business': {'entries': [], 'score': None, 'score_rationale': ''},
+        'adoption': {'entries': [], 'score': None, 'score_rationale': ''},
+        'opensource': {'entries': [], 'score': None, 'score_rationale': ''},
+    },
+    'summary': ''
+}
+
+# 保存维度占位文件
+for dim in ['model','hardware','algorithm','business','adoption','opensource']:
+    path = f'{raw_dir}/{dim}.json'
+    json.dump(placeholder['dimensions'][dim], open(path,'w',encoding='utf-8'), ensure_ascii=False, indent=2)
+
+# 保存周期摘要
+summary = {**placeholder, 'dimensions': {d: {'path': f'{raw_dir}/{d}.json'} for d in placeholder['dimensions']}}
+json.dump(summary, open(f'{raw_dir}/_period.json','w',encoding='utf-8'), ensure_ascii=False, indent=2)
+
+print(f'[OK] 数据目录已创建: {raw_dir}')
+print(f'[INFO] 6个维度文件已初始化')
+"
+          echo "raw_path=data/raw/${{ github.event.inputs.period_name || format('{0}_to_{1}', github.event.inputs.start_date, github.event.inputs.end_date) }}" >> $GITHUB_OUTPUT
+
+      - name: 提交原始数据
+        run: |
+          git config user.name "aidi-bot"
+          git config user.email "aidi-bot@eluckydog"
+          git pull --rebase origin main || true
+          git add data/raw/
+          git diff --staged --quiet || (git commit -m "data: raw search data for ${{ github.event.inputs.start_date }} to ${{ github.event.inputs.end_date }}" && git push)

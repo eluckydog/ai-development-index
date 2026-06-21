@@ -1,0 +1,80 @@
+name: AIDI 批量回填 (86期)
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: '起始日期'
+        required: true
+        default: '2022-12-01'
+      end_date:
+        description: '结束日期'
+        required: true
+        default: '2026-06-16'
+      batch_size:
+        description: '每批期数'
+        required: true
+        default: '6'
+
+jobs:
+  generate-periods:
+    runs-on: ubuntu-latest
+    outputs:
+      periods: ${{ steps.gen.outputs.periods }}
+
+    steps:
+      - id: gen
+        run: |
+          python -c "
+import json
+from datetime import datetime, timedelta
+
+start = datetime.strptime('${{ github.event.inputs.start_date }}', '%Y-%m-%d')
+end = datetime.strptime('${{ github.event.inputs.end_date }}', '%Y-%m-%d')
+batch = int('${{ github.event.inputs.batch_size }}')
+
+# 生成半月周期
+periods = []
+current = start
+while current <= end:
+      # 每月1日和16日
+      for day in [1, 16]:
+            d = current.replace(day=day)
+            if d < start or d > end:
+                  continue
+            # 周期结束 = 下个周期日 - 1天
+            if day == 1:
+                  next_d = current.replace(day=16) - timedelta(days=1)
+            else:
+                  if current.month == 12:
+                        next_m = current.replace(year=current.year+1, month=1, day=1)
+                  else:
+                        next_m = current.replace(month=current.month+1, day=1)
+                  next_d = next_m - timedelta(days=1)
+            
+            periods.append({
+                  'start': d.strftime('%Y-%m-%d'),
+                  'end': next_d.strftime('%Y-%m-%d'),
+                  'name': d.strftime('%Y-%m-%d')
+            })
+      current = current.replace(month=current.month+1) if current.month < 12 else current.replace(year=current.year+1, month=1)
+
+print(f'共{len(periods)}个周期')
+
+# 分批
+batches = [periods[i:i+batch] for i in range(0, len(periods), batch)]
+print(f'分{len(batches)}批, 每批{batch}期')
+print(json.dumps(batches))
+" > periods.json
+          echo "periods=$(cat periods.json | tr -d '\n')" >> $GITHUB_OUTPUT
+
+  collect:
+    needs: generate-periods
+    strategy:
+      matrix:
+        period: ${{ fromJson(needs.generate-periods.outputs.periods) }}
+    uses: ./.github/workflows/aidi-collect.yml
+    with:
+      start_date: ${{ matrix.period.start }}
+      end_date: ${{ matrix.period.end }}
+      period_name: ${{ matrix.period.name }}

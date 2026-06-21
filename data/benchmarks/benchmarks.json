@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "name": "外部AI基准测评数据库",
+    "description": "真实世界的AI能力测评数据, 用于校准AIC模型",
+    "source": "各大模型评测榜单 (MMLU/SWE-Bench/HumanEval等)"
+  },
+  "records": [
+    {
+      "date": "2026-01-01",
+      "aic_actual": 1000,
+      "source": "baseline",
+      "event": "基线设定"
+    },
+    {
+      "date": "2026-03-01",
+      "aic_actual": 1150,
+      "source": "DeepSeek V4/SWE-Bench 83.7%",
+      "event": "DeepSeek V4正式上线, SWE-Bench超越GPT/Claude, API价格仅为GPT-5的1/20"
+    },
+    {
+      "date": "2026-05-16",
+      "aic_actual": 1320,
+      "source": "Claude Opus 4.8 / GPT-5.6",
+      "event": "Anthropic估值9650亿首超OpenAI, Claude Opus 4.8登顶科学推理"
+    },
+    {
+      "date": "2026-06-01",
+      "aic_actual": 1350,
+      "source": "GPT-5.6内测 / DeepSeek V4 AMD",
+      "event": "GPT-5.6进入内测, DeepSeek V4成功运行AMD MI300X打破CUDA垄断"
+    }
+  ]
+}
