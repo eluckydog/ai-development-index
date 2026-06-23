@@ -41,12 +41,28 @@ AIC_ANCHORS = [
     ("2025-09-15", "GPT-5发布", 3900, "OpenAI, 百万token上下文"),
     ("2025-11-15", "Claude Opus 4.5", 4100, "Anthropic, 科学推理领先"),
     ("2026-01-15", "DeepSeek V4预告 + Gemini 3.0", 4250, "中国模型突破+Google"),
-    ("2026-02-15", "Grok 4 + 智谱GLM-5发布", 4400, "xAI + 中国并行突破"),
-    ("2026-03-01", "DeepSeek V4上线", 4600, "SWE-Bench 83.7%, API价格1/20"),
-    ("2026-03-15", "Claude Mythos/Capybara泄露", 4700, "Anthropic第四档"),
-    ("2026-04-15", "GPT-5.5 + GLM-5.1 + Claude 4.7", 4800, "三巨头密集发布期"),
-    ("2026-05-16", "Claude Opus 4.8 + Qwen3.7 Max", 4850, "Anthropic+阿里同期发布"),
-    ("2026-06-01", "GPT-5.6 + Gemini 3.1 Pro", 4900, "OpenAI+Google最新旗舰"),
+    ("2026-01-27", "Kimi K2.5", 4280, "Moonshot, 国产推理新高度"),
+    ("2026-02-02", "Step 3.5 Flash", 4300, "阶跃星辰, 轻量级多模态"),
+    ("2026-02-05", "Claude Opus 4.6", 4350, "Anthropic, 编程能力大幅提升"),
+    ("2026-02-11", "GLM-5发布", 4400, "智谱, 国产首个全面对标GPT-4o"),
+    ("2026-02-14", "豆包 2.0", 4380, "字节跳动, 多模态突破"),
+    ("2026-02-16", "Qwen3.5", 4420, "阿里, 除夕发布"),
+    ("2026-03-05", "GPT-5.4", 4550, "OpenAI, 推理+编程双提升"),
+    ("2026-03-18", "MiMo-V2-Pro + MiniMax M2.7", 4580, "昆仑+MiniMax"),
+    ("2026-04-08", "GLM-5.1", 4700, "智谱, SWE-bench 58.4% Pro"),
+    ("2026-04-16", "Opus 4.7", 4750, "Anthropic, SWE-bench 64.3% Pro"),
+    ("2026-04-20", "Kimi K2.6", 4720, "Moonshot, AA Index 54, Arena 1410"),
+    ("2026-04-23", "GPT-5.5", 4800, "OpenAI, SWE-bench 88.7% Verified"),
+    ("2026-04-24", "DeepSeek V4", 4600, "深度求索, SWE-bench 83.7%, 价格1/20"),
+    ("2026-04-28", "MiMo-V2.5 MIT开源", 4650, "昆仑万维, 最强开源"),
+    ("2026-05-19", "Gemini 3.5 Flash", 4830, "Google I/O, AA Index 50.2%"),
+    ("2026-05-20", "Qwen3.7 Max", 4820, "阿里, AA Index 46.0%"),
+    ("2026-05-28", "Claude Opus 4.8", 4900, "Anthropic, AA Index 55.7, SWE-bench 88.6%"),
+    ("2026-06-01", "MiniMax M3", 4780, "MiniMax, AA Index 44.4%, 1M上下文"),
+    ("2026-06-09", "Fable 5", 4950, "Anthropic内部, SWE-bench 95.0%"),
+    ("2026-06-12", "Fable 5被禁 + Kimi K2.7", 4850, "生态波动, Moonshot新版本"),
+    ("2026-06-13", "GLM-5.2 开源", 4880, "智谱, AA Index 51.1%, 最强开源"),
+    ("2026-06-22", "GPT-5.6 + Gemini 3.1 Pro", 4920, "OpenAI+Google最新旗舰"),
 ]
 
 # ── 中美大模型能力差距锚点 ──────────────────────────────────────
@@ -64,6 +80,22 @@ AIC_ANCHORS = [
 #   Qwen 3.7         = US TOP × 95% (Arena Elo 1400/1465)
 #   GLM-6            = US TOP × 93%
 #   Kimi K2.6        = US TOP × 92%
+
+# ── AA Intelligence Index 校准参考（第三方独立排名）─────────────
+# 来源: Artificial Analysis (artificialanalysis.ai), 采集 2026-06-19
+# 用途: AIC排名验证，非直接映射
+AA_INDEX_202606 = {
+    "Claude Opus 4.8": 55.7,
+    "GPT-5.5": 54.8,
+    "Claude Opus 4.7 (Adaptive)": 53.5,
+    "GPT-5.4": 51.4,
+    "GLM-5.2": 51.1,
+    "Gemini 3.5 Flash": 50.2,
+    "Gemini 3.1 Pro": 46.5,
+    "Qwen3.7 Max": 46.0,
+    "MiniMax M3": 44.4,
+    "DeepSeek V4 Pro (Max)": 44.3,
+}
 
 CN_US_PARITY = [
     # (日期, 事件, 综合parity, 纯能力, 性价比, 开源, 创新, 说明)
